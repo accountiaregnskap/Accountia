@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ partial "page-hero.html" . }}
+  <main class="section">
+    <div class="container">
+      {{ .Content }}
+      {{ if eq .RelPermalink "/kontakt/" }}
+        {{ partial "contact-form.html" . }}
+      {{ end }}
+    </div>
+  </main>
+{{ end }}

@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
+      <div class="brand-text">
+        <div class="brand-name">{{ site.Params.siteName }}</div>
+        <div class="brand-sub">Regnskap</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      {{ range site.Menus.main }}
+        <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

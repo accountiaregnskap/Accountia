@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ partial "page-hero.html" . }}
+  <main class="section">
+    <div class="container">
+      {{ .Content }}
+      {{ range .Pages }}
+        <div class="card" style="margin-top:14px">
+          <h2><a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit">{{ .Title }}</a></h2>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </main>
+{{ end }}

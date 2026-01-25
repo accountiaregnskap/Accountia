@@ -1,0 +1,36 @@
+<section class="contact-block">
+  <div class="contact-grid">
+    <div class="card">
+      <h2>Kontakt oss</h2>
+      <p>Send oss en melding – vi svarer så raskt som mulig innen åpningstid.</p>
+
+      <form class="form" method="post" action="https://formspree.io/f/mgoagpwd">
+        <label>Navn
+          <input type="text" name="name" placeholder="Ditt navn" required>
+        </label>
+
+        <label>E-post
+          <input type="email" name="email" placeholder="din@epost.no" required>
+        </label>
+
+        <label>Melding
+          <textarea name="message" rows="5" placeholder="Hva kan vi hjelpe deg med?" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send melding</button>
+        <p class="form-note">NB: Skjemaet er klart visuelt. Når du vil motta meldinger, kan du koble til Formspree/Netlify.</p>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Kontaktinformasjon</h2>
+      <ul class="info-list">
+        <li><strong>Telefon:</strong> {{ site.Params.phone }}</li>
+        <li><strong>E-post:</strong> {{ site.Params.email }}</li>
+        <li><strong>Adresse:</strong> {{ site.Params.address }}</li>
+        <li><strong>Åpningstid:</strong> {{ site.Params.openhours }}</li>
+        <li><strong>Org.nr:</strong> {{ site.Params.orgnr }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

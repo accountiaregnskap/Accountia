@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>{{ site.Params.siteName }}</strong><br>
+      Org.nr: {{ site.Params.orgnr }}<br>
+      {{ site.Params.address }}
+    </div>
+
+    <div>
+      <strong>Kontakt</strong><br>
+      Tlf: {{ site.Params.phone }}<br>
+      E-post: {{ site.Params.email }}<br>
+      {{ site.Params.openhours }}
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    © {{ now.Year }} {{ site.Params.siteName }}
+  </div>
+</footer>

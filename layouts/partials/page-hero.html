@@ -1,0 +1,8 @@
+{{ $bg := .Params.bg | default "/images/hero.jpg" }}
+<section class="page-hero" style="--bg:url('{{ $bg }}');">
+  <div class="hero-overlay"></div>
+  <div class="container page-hero-inner">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
