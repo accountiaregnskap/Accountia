@@ -131,3 +131,9 @@ li{margin:6px 0;color:#1f2937}
   .hero h1{font-size:34px}
   .brand-logo{height:60px}
 }
+/* ===== Mobile menu toggle: skjul checkbox helt (fjerner "firkanten") ===== */
+.nav-toggle{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
