@@ -1,6 +1,5 @@
 <header class="site-header">
   <div class="container header-inner">
-    <!-- Logo -->
     <a class="brand" href="/">
       <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
       <div class="brand-text">
@@ -9,22 +8,15 @@
       </div>
     </a>
 
-    <!-- Mobil meny-toggle -->
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Åpne meny">
-
-    <label class="nav-toggle-btn" for="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span class="menu-text">Meny</span>
+    <!-- Mobil toggle (skjult på desktop) -->
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+    <label class="nav-toggle-btn" for="nav-toggle" aria-hidden="true">
+      <span></span><span></span><span></span>
     </label>
 
-    <!-- Navigasjon -->
     <nav class="nav" role="navigation">
       {{ range site.Menus.main }}
-        <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
-          {{ .Name }}
-        </a>
+        <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>
