@@ -63,8 +63,9 @@ h1 {
   font-size: 28px;
   margin-bottom: var(--space-lg);
   line-height: 1.15;
-  white-space: normal;
-  word-spacing: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h2 {
@@ -170,6 +171,7 @@ strong {
   margin: 0;
   position: relative;
   height: 80px;
+  width: 100%;
 }
 
 .brand {
@@ -374,6 +376,7 @@ strong {
 
   h1 {
     font-size: 48px;
+    white-space: nowrap;
   }
 
   h2 {
@@ -416,6 +419,7 @@ strong {
   min-height: 500px;
   overflow: hidden;
   padding: 0;
+  width: 100%;
 }
 
 .hero {
@@ -457,13 +461,17 @@ strong {
   position: relative;
   z-index: 1;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--space-4xl) var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
+  width: 100%;
 }
 
 .hero h1 {
@@ -472,8 +480,7 @@ strong {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.15;
-  white-space: normal;
-  word-spacing: 9999px;
+  white-space: nowrap;
   animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
@@ -489,7 +496,7 @@ strong {
 .page-hero h1 {
   margin-bottom: var(--space-md);
   font-size: 32px;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 .page-hero p {
@@ -526,7 +533,7 @@ strong {
     font-size: 18px;
   }
 
-  .hero-inner {
+  .hero-content {
     padding: var(--space-7xl) var(--space-lg);
   }
 }
