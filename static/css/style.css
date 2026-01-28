@@ -901,7 +901,7 @@ strong {
 .brand-logo {
   height: 100% !important;     /* fyll header-høyden */
   max-height: 80px !important;
-  width: auto;
+  width: 550px;
   object-fit: contain;
   display: block;
 }
@@ -950,17 +950,17 @@ strong {
 }
 
 /* =========================
-   LOGO: større og mer “dekker header”
+   LOGO: større og “dekker hele header”
    ========================= */
-.site-header .brand{
+.site-header .brand{ logo background
   align-items: center;
   gap: 12px;
 }
 
 .site-header .brand-logo{
-  height: 80px !important;     /* matcher header-høyden din */
+  height: 120px !important;     /* matcher header-høyden din */
   max-height: 80px !important;
-  width: auto;
+  width: 550px;
   object-fit: contain;
   display: block;
 }
