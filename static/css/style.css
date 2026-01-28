@@ -868,7 +868,7 @@ strong {
 }
 
 /* B) PC: vis HELE bildet (ikke crop) på både forside-hero og page-hero */
-@media (min-width: 821px) {
+@media (min-width: 900px) {
   .hero, .page-hero {
     background-size: contain;        /* <- hele bildet synlig */
     background-position: center;
@@ -901,7 +901,7 @@ strong {
 .brand-logo {
   height: 100% !important;     /* fyll header-høyden */
   max-height: 80px !important;
-  width: 550px;
+  width: auto;
   object-fit: contain;
   display: block;
 }
@@ -942,7 +942,7 @@ strong {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
-    min-height: 480px; /* litt lavere enn 550 så den ikke blir “for stor” på mobil */
+    min-height: 550px; /* litt lavere enn 550 så den ikke blir “for stor” på mobil */
   }
   .page-hero{
     background-size: cover; /* behold slik du allerede har (fungerer) */
@@ -960,7 +960,7 @@ strong {
 .site-header .brand-logo{
   height: 120px !important;     /* matcher header-høyden din */
   max-height: 80px !important;
-  width: 550px;
+  width: auto;
   object-fit: contain;
   display: block;
 }
