@@ -520,8 +520,8 @@ strong {
 /* Mobile: Forside litt større (120%), undersider keep cover */
 @media (max-width: 820px) {
   .hero {
-    background-size: 120%;
-    background-position: center;
+    background-size: cover;
+    background-position: center 40%;
     background-repeat: no-repeat;
     background-color: #0b1220;
   }
