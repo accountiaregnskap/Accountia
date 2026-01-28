@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accountia</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Accountia</description>
+    <generator>Hugo</generator>
+    <language>nb-no</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kontakt</title>
+      <link>http://localhost:1313/kontakt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kontakt/</guid>
+      <description>&lt;p&gt;Under finner du kontaktskjema og kontaktinformasjon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Om oss</title>
+      <link>http://localhost:1313/om-oss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/om-oss/</guid>
+      <description>&lt;h2 id=&#34;tydelig-effektiv-og-trygg-samarbeidspartner&#34;&gt;Tydelig, effektiv og trygg samarbeidspartner&lt;/h2&gt;&#xA;&lt;p&gt;Vi hjelper bedrifter med alt fra løpende regnskap og lønn til årsoppgjør og rådgivning. Målet er enkelt: du skal få oversikt, kontroll og tid til å fokusere på drift.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slik-jobber-vi&#34;&gt;Slik jobber vi&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Klare avtaler og faste rutiner&lt;/li&gt;&#xA;&lt;li&gt;God kommunikasjon og rask respons&lt;/li&gt;&#xA;&lt;li&gt;Rapportering som gir mening for ledelsen&lt;/li&gt;&#xA;&lt;li&gt;Systemer som effektiviserer hverdagen&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Personvern</title>
+      <link>http://localhost:1313/personvern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/personvern/</guid>
+      <description>&lt;h2 id=&#34;behandling-av-personopplysninger&#34;&gt;Behandling av personopplysninger&lt;/h2&gt;&#xA;&lt;p&gt;Når du kontakter oss via e-post eller kontaktskjema, bruker vi informasjonen for å kunne svare deg og følge opp henvendelsen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;kontakt&#34;&gt;Kontakt&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Accountia&lt;/strong&gt;&lt;br&gt;&#xA;Org.nr: 936 229 239&lt;br&gt;&#xA;E-post: &lt;a href=&#34;mailto:post.acountia@gmail.com&#34;&gt;post.acountia@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;Adresse: Oterdalen 58, 5914 Isdalstø&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tjenester</title>
+      <link>http://localhost:1313/tjenester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tjenester/</guid>
+      <description>&lt;h2 id=&#34;regnskapsføring&#34;&gt;Regnskapsføring&lt;/h2&gt;&#xA;&lt;p&gt;Vi sørger for struktur, kvalitet og løpende oversikt – så du slipper overraskelser.&lt;/p&gt;&#xA;&lt;h2 id=&#34;lønn-og-a-melding&#34;&gt;Lønn og A-melding&lt;/h2&gt;&#xA;&lt;p&gt;Trygg lønnskjøring med riktig rapportering og gode rutiner.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mva-og-rapportering&#34;&gt;MVA og rapportering&lt;/h2&gt;&#xA;&lt;p&gt;Korrekt MVA-håndtering og innlevering – til riktig tid.&lt;/p&gt;&#xA;&lt;h2 id=&#34;årsoppgjør--skattemelding--rådgivning&#34;&gt;Årsoppgjør / skattemelding / rådgivning&lt;/h2&gt;&#xA;&lt;p&gt;Effektiv prosess med god plan og tydelige avklaringer.&lt;/p&gt;&#xA;&lt;h2 id=&#34;fakturering--purring--inkasso&#34;&gt;Fakturering / purring / inkasso&lt;/h2&gt;&#xA;&lt;p&gt;Vi kan ta hele eller deler av fakturaflyten – med oppfølging.&lt;/p&gt;&#xA;&lt;h2 id=&#34;etablering-av-asenk&#34;&gt;Etablering av AS/ENK&lt;/h2&gt;&#xA;&lt;p&gt;Trygg oppstart med riktig struktur og registrering.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
