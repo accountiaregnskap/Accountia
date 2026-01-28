@@ -205,7 +205,7 @@ strong {
   object-fit: contain;
 }
 
-/* DESKTOP: Navn vises på høyre side av logo */
+/* DESKTOP: Navn vises på høyre side av logo med litt avstand */
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -219,8 +219,8 @@ strong {
 
 .brand-name {
   display: block;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 20px;
   color: var(--text);
   line-height: 1.1;
   margin: 0;
@@ -230,7 +230,7 @@ strong {
 .brand-sub {
   display: block;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.1;
   margin: 0;
@@ -353,11 +353,11 @@ strong {
   }
 
   .brand-name {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .brand-sub {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .nav {
@@ -966,4 +966,13 @@ address {
     box-shadow: none;
     border: 1px solid #ddd;
   }
+}
+.brand-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo-link {
+  display: flex;
+  align-items: center;
 }
