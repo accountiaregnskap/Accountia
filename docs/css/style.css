@@ -510,7 +510,7 @@ strong {
 /* PC: Show full background image - litt større (105%) */
 @media (min-width: 821px) {
   .hero, .page-hero {
-    background-size: 105%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
