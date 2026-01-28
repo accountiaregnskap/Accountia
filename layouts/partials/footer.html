@@ -3,13 +3,13 @@
     <div>
       <strong>{{ site.Params.siteName }}</strong><br>
       Org.nr: {{ site.Params.orgnr }}<br>
-      {{ site.Params.address }}
+      <a href="https://maps.google.com/?q={{ site.Params.address }}" target="_blank">{{ site.Params.address }}</a>
     </div>
 
     <div>
       <strong>Kontakt</strong><br>
-      Tlf: {{ site.Params.phone }}<br>
-      E-post: {{ site.Params.email }}<br>
+      Tlf: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a><br>
+      E-post: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
       {{ site.Params.openhours }}
     </div>
   </div>

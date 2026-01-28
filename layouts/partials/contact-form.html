@@ -18,16 +18,15 @@
         </label>
 
         <button class="btn" type="submit">Send melding</button>
-        <p class="form-note">NB: Skjemaet er klart visuelt. Når du vil motta meldinger, kan du koble til Formspree/Netlify.</p>
       </form>
     </div>
 
     <div class="card">
       <h2>Kontaktinformasjon</h2>
       <ul class="info-list">
-        <li><strong>Telefon:</strong> {{ site.Params.phone }}</li>
-        <li><strong>E-post:</strong> {{ site.Params.email }}</li>
-        <li><strong>Adresse:</strong> {{ site.Params.address }}</li>
+        <li><strong>Telefon:</strong> <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></li>
+        <li><strong>E-post:</strong> <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+        <li><strong>Adresse:</strong> <a href="https://maps.google.com/?q={{ site.Params.address }}" target="_blank">{{ site.Params.address }}</a></li>
         <li><strong>Åpningstid:</strong> {{ site.Params.openhours }}</li>
         <li><strong>Org.nr:</strong> {{ site.Params.orgnr }}</li>
       </ul>
