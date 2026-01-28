@@ -1,4 +1,4 @@
-/* ===== ACOUNTIA REDESIGN - PROFESSIONAL GOLD HEADER ===== */
+/* ===== ACOUNTIA REDESIGN - PROFESSIONAL logo HEADER ===== */
 /* Requirements: 
    1. "Regnskap som gir deg kontroll" på EN linje
    2. Bakgrunnsbildet vises HELT
@@ -14,8 +14,8 @@
   --line: #e5e7eb;
   --accent: #d4a574;
   --accent-dark: #b8915f;
-  --gold: #ffd700;
-  --gold-dark: #e6c200;
+  --Logo: #ffd700;
+  --Logo-dark: #e6c200;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -151,13 +151,13 @@ strong {
   }
 }
 
-/* ===== HEADER - FULL WIDTH GOLD ===== */
+/* ===== HEADER - FULL WIDTH logo ===== */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--gold);
-  border-bottom: 3px solid var(--gold-dark);
+  background: var(--logo);
+  border-bottom: 3px solid var(--logo-);
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -975,49 +975,4 @@ strong {
   text-overflow: unset;     /* IKKE “…” */
   max-width: 100%;
   font-size: clamp(22px, 4.2vw, 56px); /* skalerer ned heller enn å wrappe */
-}
-/* =========================
-   FIX-ACOUNTIA: HERO + LOGO + H1 (matches YOUR classes)
-   ========================= */
-
-/* 1) PC: vis hele bakgrunnsbildet (ikke crop) på forside + undersider */
-@media (min-width: 821px) {
-  .hero, .page-hero {
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-color: #0b1220 !important;
-  }
-}
-
-/* 2) Mobil: undersider funker hos deg -> la page-hero være cover.
-      Men forsiden er for stor/croppet -> gjør hero contain + litt lavere høyde */
-@media (max-width: 820px) {
-  .hero {
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-color: #0b1220 !important;
-    min-height: 460px !important;
-  }
-  .page-hero {
-    background-size: cover !important;
-  }
-}
-
-/* 3) Logo skal “dekke” header mer */
-.header-inner { height: 80px; } /* du har allerede 80px, vi låser den */
-.brand-logo {
-  height: 80px !important;     /* fyll header */
-  max-height: 80px !important;
-  width: auto !important;
-  object-fit: contain !important;
-}
-
-/* 4) “Regnskap som gir deg kontroll.” på én linje (uten ellipsis-kutt) */
-.hero h1 {
-  white-space: nowrap !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  font-size: clamp(22px, 4.2vw, 56px) !important;
 }
