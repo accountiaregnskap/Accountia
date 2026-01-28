@@ -1,11 +1,11 @@
-/* ===== ACOUNTIA - FINAL PERFECT CSS ===== */
-/* REQUIREMENTS:
-   1. Formspree-notisen: FJERNET
-   2. Telefon klikkbar: tel: link
-   3. Adresse klikkbar: maps link
-   4. Hero bakgrunn bredere for PC: background-size contain
-   5. H1 på EN linje: white-space nowrap + overflow visible
-   6. Mobil: selskapsnavn i midten + logo venstre (større) + meny høyre
+/* ===== ACOUNTIA - CORRECT FINAL CSS ===== */
+/* FIXES:
+   1. Navn på bedriften VISES på mobil i midten
+   2. Logo på VENSTRE på mobil (ikke sentrert)
+   3. Bakgrunnsstørrelse bedre (ikke for liten)
+   4. Formspree-notisen fjernet
+   5. Telefon/adresse klikkbar
+   6. H1 på EN linje
 */
 
 :root {
@@ -181,8 +181,8 @@ strong {
 .brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0;
+  justify-content: flex-start;
+  gap: var(--space-md);
   text-decoration: none;
   color: inherit;
   transition: opacity 0.2s ease;
@@ -302,21 +302,59 @@ strong {
   display: flex;
 }
 
-/* ===== MOBILE MENU DROPDOWN ===== */
+/* ===== MOBILE LAYOUT ===== */
 @media (max-width: 820px) {
   .header-inner {
     position: relative;
     height: 80px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
+  /* Logo på venstre */
   .brand {
-    flex: 1;
-    justify-content: center;
+    order: 1;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    gap: 0;
   }
 
   .brand-logo {
     height: 65px;
+  }
+
+  /* Navn i midten */
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    order: 2;
+    gap: 0;
+    text-align: center;
+  }
+
+  .brand-name {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .brand-sub {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1;
+  }
+
+  /* Meny på høyre */
+  .nav-toggle-btn {
+    order: 3;
+    position: relative;
+    right: 0;
   }
 
   .nav {
@@ -352,11 +390,6 @@ strong {
 
   .nav-link:last-child {
     border-bottom: none;
-  }
-
-  .nav-toggle-btn {
-    position: absolute;
-    right: var(--space-lg);
   }
 }
 
@@ -471,10 +504,10 @@ strong {
   }
 }
 
-/* PC: Show FULL background image (wider, not higher) */
+/* PC: Show full background image (wider, not higher) - BETTER SIZE */
 @media (min-width: 821px) {
   .hero, .page-hero {
-    background-size: contain;
+    background-size: 120%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
@@ -484,7 +517,7 @@ strong {
 /* Mobile: Forside shows full image, undersider keep cover */
 @media (max-width: 820px) {
   .hero {
-    background-size: contain;
+    background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
