@@ -30,6 +30,18 @@
   </url><url>
     <loc>http://localhost:1313/en/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/en/kontakt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/kontakt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/kontakt/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/prices/</loc>
   </url><url>
     <loc>http://localhost:1313/en/privacy/</loc>

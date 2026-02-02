@@ -22,6 +22,13 @@
       <description>&lt;p&gt;Use the form below or contact us directly.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/en/kontakt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/kontakt/</guid>
+      <description>&lt;p&gt;Under finner du kontaktskjema og kontaktinformasjon.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Kontakt</title>
       <link>http://localhost:1313/kontakt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
