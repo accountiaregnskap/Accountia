@@ -2,21 +2,31 @@
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <h1>Regnskap som gir deg kontroll.</h1>
+      <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}Regnskap som gir deg kontroll.{{ end }}</h1>
       <p>
-        Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør
-        og rådgivning – med moderne systemer og tydelig oppfølging.
+        {{ with .Params.hero_lead }}
+          {{ . }}
+        {{ else }}
+          Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør
+          og rådgivning – med moderne systemer og tydelig oppfølging.
+        {{ end }}
       </p>
 
       <div class="hero-actions">
-        <a class="btn" href="/kontakt/">Kontakt oss</a>
-        <a class="btn btn-ghost" href="/tjenester/">Se tjenester</a>
+        <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
+        <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
       </div>
 
       <div class="hero-cards">
-        <div class="mini-card"><strong>Lønn & A-melding</strong><span>Trygg og korrekt lønnskjøring</span></div>
-        <div class="mini-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
-        <div class="mini-card"><strong>Årsoppgjør</strong><span>God plan, ryddig prosess</span></div>
+        {{ with .Params.hero_cards }}
+          {{ range . }}
+            <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
+          {{ end }}
+        {{ else }}
+          <div class="mini-card"><strong>Lønn & A-melding</strong><span>Trygg og korrekt lønnskjøring</span></div>
+          <div class="mini-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
+          <div class="mini-card"><strong>Årsoppgjør</strong><span>God plan, ryddig prosess</span></div>
+        {{ end }}
       </div>
     </div>
   </div>
