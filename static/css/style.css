@@ -1051,3 +1051,45 @@ address {
 }
 
 .about-text p{ margin: 0 0 12px; }
+
+/* Desktop only: make page hero same height as front page hero */
+@media (min-width: 901px){
+  .page-hero{
+    min-height: 550px;
+  }
+}
+
+/* About value cards section */
+.value-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 26px;
+  align-items: start;
+}
+.value-title{ margin:0 0 10px; font-size: 34px; line-height:1.1; }
+.value-lead{ margin:0; opacity:0.85; }
+
+.value-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.value-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 16px 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+.value-card h3{ margin:0 0 6px; font-size: 16px; }
+.value-card p{ margin:0; font-size: 14px; opacity:0.85; line-height:1.5; }
+
+/* Mobile layout for cards */
+@media (max-width: 900px){
+  .value-wrap{ grid-template-columns: 1fr; padding: 28px 0 6px; }
+  .value-grid{ grid-template-columns: 1fr; }
+  .value-title{ font-size: 26px; }
+}
