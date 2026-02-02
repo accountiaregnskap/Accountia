@@ -1247,64 +1247,40 @@ address {
   }
 }
 
-/* Brand horizontal: AR+ | ACCOUNTIA (REGNSKAP/ACCOUNTING under) */
 .brand.brand-horizontal{
-  display:flex !important;
-  align-items:center !important;
-  gap:14px !important;
-  text-decoration:none;
-  color:inherit;
-  font-family:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  white-space:nowrap;
+    justify-content:center;
+  }
 }
-.brand.brand-horizontal .brand-mark{
-  width:44px !important;
-  height:auto !important;
-  display:block;
-  flex:0 0 auto;
-}
-.brand.brand-horizontal .brand-divider{
-  width:2px;
-  height:28px;
-  background: rgba(0,0,0,0.18);
-  border-radius:2px;
-  flex:0 0 auto;
-}
-.brand.brand-horizontal .brand-text{
+
+/* Header logo image (use full logo only) */
+.brand.brand-image{
   display:flex;
-  flex-direction:column;
-  line-height:1.05;
+  align-items:center;
+  text-decoration:none;
 }
-.brand.brand-horizontal .brand-name{
-  font-weight:800;
-  letter-spacing:0.8px;
-  font-size:20px;
-  line-height:1;
-}
-.brand.brand-horizontal .brand-sub{
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#c9a24d;
-  font-size:12px;
-  margin-top:2px;
-  line-height:1;
+.brand.brand-image .brand-img{
+  display:block;
+  height:44px;
+  width:auto;
+  max-width:280px;
 }
 
-/* Desktop tweak */
+/* Desktop */
 @media (min-width: 1024px){
-  .brand.brand-horizontal .brand-mark{ width:48px !important; }
-  .brand.brand-horizontal .brand-name{ font-size:22px; }
+  .brand.brand-image .brand-img{
+    height:52px;
+    max-width:360px;
+  }
 }
 
-/* Mobile: center the brand, keep horizontal (like your example) */
+/* Mobile: center logo */
 @media (max-width: 768px){
   .site-header .header-inner{
     display:flex;
-    justify-content:center;
-    position:relative;
+    align-items:center;
+    justify-content:space-between;
   }
-  .brand.brand-horizontal{
-    justify-content:center;
+  .brand.brand-image{
+    margin:0 auto;
   }
 }
