@@ -1380,23 +1380,9 @@ address {
   }
 }
 
-/* Mobile logo: slightly bigger + tiny move down, centered */
+/* Mobile menu: move slightly up */
 @media (max-width: 768px){
-  .site-header .header-inner{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding-top: 12px;
-    padding-bottom: 8px;
-  }
-
-  .brand.brand-image{
-    margin: 0 auto;
-    transform: translateY(8px);
-  }
-
-  .brand.brand-image .brand-img{
-    height:48px;
-    max-width:260px;
+  .nav{
+    margin-top: -10px;
   }
 }

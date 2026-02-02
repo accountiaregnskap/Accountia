@@ -1,8 +1,7 @@
 ---
 title: "Contact"
-lead: "Reach out for a no-obligation chat — we reply during opening hours."
+lead: "Ta kontakt for en uforpliktende prat – vi svarer innen åpningstid."
 bg: "/images/hero.jpg"
 ---
 
-Use the form below or contact us directly.
-
+Under finner du kontaktskjema og kontaktinformasjon.
