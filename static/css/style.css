@@ -1305,7 +1305,9 @@ address {
 
 }
 
-/* Header logo image (big + slightly centered on desktop) */
+}
+
+/* Header logo image (final tuned) */
 .brand.brand-image{
   display:flex;
   align-items:center;
@@ -1314,26 +1316,29 @@ address {
 
 .brand.brand-image .brand-img{
   display:block;
-  height:140px;
+  height:120px;
   width:auto;
-  max-width:900px;
+  max-width:760px;
 }
 
-/* Desktop: a bit bigger + move toward middle */
+/* Desktop: slightly bigger, placed between left and center */
 @media (min-width: 1024px){
   .brand.brand-image{
-    margin-left: 140px;
+    margin-left: 90px;
   }
   .brand.brand-image .brand-img{
-    height:180px;
-    max-width:1200px;
+    height:140px;
+    max-width:900px;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px){
+  .brand.brand-image{
+    margin-left: 0;
+  }
   .brand.brand-image .brand-img{
-    height:110px;
-    max-width:600px;
+    height:96px;
+    max-width:520px;
   }
 }
