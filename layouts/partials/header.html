@@ -1,18 +1,15 @@
 <header class="site-header">
   <div class="header-inner">
 
-    <div class="brand" aria-label="Accountia - Regnskap">
-      <!-- Logo: own link -->
-      <a class="brand-logo-link" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Go to home">
-        <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
-      </a>
 
-      <!-- Center text: own link -->
-      <a class="brand-text brand-text-link" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Go to home">
-        <div class="brand-name">{{ site.Params.siteName }}</div>
-        <div class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</div>
-      </a>
-    </div>
+    <a class="brand brand-link" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
+      <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
+      <span class="brand-text">
+        <span class="brand-name">{{ site.Params.siteName }}</span>
+        <span class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</span>
+      </span>
+    </a>
+
 
     <!-- Mobil meny-toggle -->
     <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ if eq site.Language.Lang "en" }}Open menu{{ else }}Åpne meny{{ end }}">
