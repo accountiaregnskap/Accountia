@@ -998,3 +998,10 @@ address {
 .nav .lang-link:hover {
   background: rgba(0,0,0,0.05);
 }
+
+
+/* mobile brand sizing override */
+@media (max-width: 820px) {
+  .brand-name { font-size: 20px; }
+  .brand-sub { font-size: 13px; }
+}
