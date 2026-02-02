@@ -2,11 +2,10 @@
   <div class="header-inner">
 
 
-    <a class="brand" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
-      <span class="brand-mark">
-        <span class="brand-word">Accountia</span><span class="brand-plus">+</span>
-      </span>
-      <span class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</span>
+    <a class="brand brand-stacked" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
+      <span class="brand-ar" aria-hidden="true"><span class="brand-ar-text">AR</span><span class="brand-ar-plus">+</span></span>
+      <span class="brand-title">ACCOUNTIA</span>
+      <span class="brand-subtitle">{{ if eq site.Language.Lang "en" }}ACCOUNTING{{ else }}REGNSKAP{{ end }}</span>
     </a>
 
 
