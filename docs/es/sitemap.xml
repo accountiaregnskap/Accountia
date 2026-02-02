@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/es/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -39,28 +61,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/contact/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="no"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/prices/</loc>

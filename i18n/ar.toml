@@ -1,2 +1,11 @@
 [lang_label]
 other = "اللغة"
+
+[footer_contact]
+other = "اتصال"
+
+[footer_phone]
+other = "هاتف"
+
+[footer_email]
+other = "البريد"

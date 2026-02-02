@@ -3,7 +3,7 @@
   <main class="section">
     <div class="container">
       {{ .Content }}
-      {{ if or (eq .RelPermalink "/kontakt/") (or (eq .RelPermalink "/en/contact/") (eq .RelPermalink "/en/kontakt/")) }}
+      {{ if or (eq .RelPermalink "/kontakt/") (or (eq .RelPermalink "/en/contact/") (or (eq .RelPermalink "/es/contact/") (or (eq .RelPermalink "/ar/contact/") (eq .RelPermalink "/en/kontakt/")))) }}
         {{ partial "contact-form.html" . }}
       {{ end }}
     </div>

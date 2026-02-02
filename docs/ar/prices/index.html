@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="no">
+<html lang="ar" dir="rtl">
   <head>
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 </head>
 
 
-  <body class="page ar ">
+  <body class="page page ">
     <header class="site-header">
   <div class="header-inner">
 
@@ -45,34 +45,42 @@
 
     <nav class="nav" role="navigation">
       
-        <a class="nav-link " href="/">
-          Forside
+        <a class="nav-link " href="/ar/">
+          الرئيسية
         </a>
       
-        <a class="nav-link " href="/tjenester/">
-          Tjenester
+        <a class="nav-link " href="/ar/services/">
+          الخدمات
         </a>
       
-        <a class="nav-link " href="/om-oss/">
-          Om oss
+        <a class="nav-link " href="/ar/about/">
+          من نحن
         </a>
       
-        <a class="nav-link " href="/kontakt/">
-          Kontakt
+        <a class="nav-link " href="/ar/contact/">
+          اتصل بنا
         </a>
       
-        <a class="nav-link " href="/personvern/">
-          Personvern
+        <a class="nav-link " href="/ar/privacy/">
+          الخصوصية
         </a>
       
-        <a class="nav-link " href="/priser/">
-          Priser
+        <a class="nav-link " href="/ar/prices/">
+          الأسعار
         </a>
       
 
-      
-        <a class="nav-link lang-link" href="/en/" aria-label="English">EN</a>
-      
+      <div class="lang-dd">
+        <details>
+          <summary>اللغة: AR</summary>
+          <div class="lang-dd-menu">
+            <a class="lang-item " href="/">NO</a>
+            <a class="lang-item " href="/en/">EN</a>
+            <a class="lang-item " href="/es/">ES</a>
+            <a class="lang-item active" href="/ar/">AR</a>
+          </div>
+        </details>
+      </div>
     </nav>
   </div>
 </header>
@@ -86,13 +94,278 @@
   <div class="page-hero-inner">
     <div class="hero-content">
       <h1>الأسعار</h1>
-      
+      <p>أسعار تنافسية مبنية على الجودة دون رسوم مخفية. نتولى عملية الانتقال بالكامل مجانًا.</p>
     </div>
   </div>
 </section>
   <main class="section">
     <div class="container">
-      <p>سيتم إضافة المحتوى باللغة العربية قريباً.</p>
+      <h1 id="حاسبة-الأسعار">حاسبة الأسعار</h1>
+<p>اختر الخيارات أدناه للحصول على تقدير <strong>للرسوم الشهرية الثابتة</strong> و<strong>الإضافات السنوية</strong> و<strong>إجمالي التكلفة السنوية</strong>.</p>
+
+<div class="ac-calc" data-lang="ar">
+  <div class="ac-calc-grid">
+    
+    <div class="ac-calc-card">
+      <h2 class="ac-calc-title">الخيارات</h2>
+
+      <label class="ac-label" for="companyType">نوع الشركة</label>
+      <select class="ac-select" id="companyType">
+        <option value="ENK" selected>مؤسسة فردية (ENK)</option>
+        <option value="AS">شركة محدودة (AS)</option>
+      </select>
+
+      <label class="ac-label" for="vouchers">المستندات شهريًا</label>
+      <select class="ac-select" id="vouchers"></select>
+      <div class="ac-help" id="vHelp">اختر “0” إذا لم ترغب بحساب السعر الآن.</div>
+
+      <label class="ac-label" for="vat">مسجل لضريبة القيمة المضافة</label>
+      <select class="ac-select" id="vat">
+        <option value="no" selected>لا</option>
+        <option value="yes">نعم</option>
+      </select>
+
+      <label class="ac-label" for="employees">عدد الموظفين</label>
+      <select class="ac-select" id="employees">
+        <option value="0" selected>0 (None)</option>
+        <option value="1">1</option>
+        <option value="2-3">2–3</option>
+        <option value="4-6">4–6</option>
+        <option value="7-9">7–9</option>
+        <option value="10-15">10–15</option>
+        <option value="15+">15+</option>
+      </select>
+
+      <label class="ac-label" id="annualLabel" for="annualAddon"></label>
+      <select class="ac-select" id="annualAddon">
+        <option value="no" selected>لا</option>
+        <option value="yes">نعم</option>
+      </select>
+      <div class="ac-help" id="annualHelp"></div>
+    </div>
+
+    
+    <div class="ac-calc-card">
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">Summary</h2>
+
+      <div class="ac-summary">
+        <div class="ac-srow"><span>نوع الشركة</span><strong id="sCompany">—</strong></div>
+        <div class="ac-srow"><span>مستندات</span><strong id="sVouchers">—</strong></div>
+        <div class="ac-srow"><span>VAT</span><strong id="sVat">—</strong></div>
+        <div class="ac-srow"><span>Employees</span><strong id="sEmp">—</strong></div>
+        <div class="ac-srow"><span id="sAnnualName">Annual service</span><strong id="sAnnual">—</strong></div>
+
+        <hr class="ac-hr" />
+
+        <div class="ac-srow ac-big"><span>Monthly fee</span><strong id="outMonthly">—</strong></div>
+        <div class="ac-srow"><span>Annual add-ons</span><strong id="outAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>Total annual cost</span><strong id="outTotalAnnual">—</strong></div>
+
+        <div class="ac-note" id="outNote"></div>
+
+        <div class="ac-srow" style="margin-top:14px;">
+          <span>ساعة استشارة</span><strong id="outAdvisory">—</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ac-calc { margin-top: 16px; }
+  .ac-calc-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items:start; }
+  .ac-calc-card{
+    background: rgba(255,255,255,0.98);
+    border: 1px solid rgba(17,24,39,0.12);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  }
+  .ac-calc-title{ font-size: 20px; margin: 0 0 12px; color:#111827; }
+  .ac-label{ display:block; font-weight:700; margin: 12px 0 6px; color:#111827; }
+  .ac-select{
+    width:100%; min-height: 44px; border-radius: 12px;
+    border: 1px solid rgba(17,24,39,0.18); padding: 10px 12px;
+    background:#fff; font-size: 15px; outline:none;
+  }
+  .ac-select:focus{ border-color: rgba(212,165,116,0.9); box-shadow: 0 0 0 3px rgba(212,165,116,0.18); }
+  .ac-help{ font-size: 12px; color: rgba(17,24,39,0.65); margin-top: 6px; }
+  .ac-summary{ margin-top: 6px; }
+  .ac-srow{
+    display:flex; justify-content:space-between; gap: 10px; padding: 10px 0;
+    border-bottom: 1px dashed rgba(17,24,39,0.14); color:#111827;
+  }
+  .ac-srow strong{ font-weight:800; }
+  .ac-hr{ border:0; border-top:1px solid rgba(17,24,39,0.12); margin: 14px 0; }
+  .ac-big span{ font-weight:800; }
+  .ac-big strong{ font-size: 18px; }
+  .ac-note{
+    margin-top: 12px; padding: 10px 12px; border-radius: 12px;
+    background: rgba(11,18,32,0.06); color: rgba(17,24,39,0.75); font-size: 13px;
+  }
+  @media (max-width: 900px){ .ac-calc-grid{ grid-template-columns: 1fr; } }
+</style>
+
+<script>
+(function(){
+  const root = document.querySelector(".ac-calc[data-lang]");
+  if(!root) return;
+  const lang = root.getAttribute("data-lang") || "no";
+
+  const T = (no, en) => (lang === "no" ? no : en);
+
+  const VAT_ADDON_MONTHLY = 700;
+  const ADVISORY_HOURLY = 899;
+  const ENK_TAX_RETURN_ANNUAL = 4999;
+  const AS_FIN_STMT_ANNUAL = 7999;
+
+  const BASE = {
+    ENK: [
+      { key:"0", label:T("0 (Ikke klar)", "0 (Not ready)"), price:null },
+      { key:"1-10", label:"1–10", price:2990 },
+      { key:"11-25", label:"11–25", price:3490 },
+      { key:"26-40", label:"26–40", price:3990 },
+      { key:"40+", label:T("40+ (Kontakt oss)", "40+ (Contact us)"), price:"contact" }
+    ],
+    AS: [
+      { key:"0", label:T("0 (Ikke klar)", "0 (Not ready)"), price:null },
+      { key:"1-15", label:"1–15", price:3990 },
+      { key:"16-40", label:"16–40", price:4990 },
+      { key:"41-80", label:"41–80", price:5990 },
+      { key:"80+", label:T("80+ (Kontakt oss)", "80+ (Contact us)"), price:"contact" }
+    ]
+  };
+
+  const EMP_ADDON = {
+    "0": 0,
+    "1": 390,
+    "2-3": 690,
+    "4-6": 1100,
+    "7-9": 1490,
+    "10-15": 2250,
+    "15+": "contact"
+  };
+
+  const $ = (id) => document.getElementById(id);
+
+  const elCompany = $("companyType");
+  const elVouchers = $("vouchers");
+  const elVat = $("vat");
+  const elEmp = $("employees");
+  const elAnnual = $("annualAddon");
+  const elAnnualLabel = $("annualLabel");
+  const elAnnualHelp = $("annualHelp");
+
+  function money(n){
+    if (typeof n !== "number") return n;
+    return new Intl.NumberFormat(lang === "no" ? "nb-NO" : "en-US", {
+      style:"currency", currency:"NOK", maximumFractionDigits: 0
+    }).format(n);
+  }
+
+  function setVoucherOptions(company){
+    elVouchers.innerHTML = "";
+    BASE[company].forEach(opt => {
+      const o = document.createElement("option");
+      o.value = opt.key;
+      o.textContent = opt.label;
+      elVouchers.appendChild(o);
+    });
+    elVouchers.value = "0";
+  }
+
+  function updateAnnualUI(company){
+    if (company === "ENK"){
+      elAnnualLabel.textContent = T("Skattemelding (årlig)", "Annual tax return");
+      elAnnualHelp.textContent = T("Valgfritt årlig tillegg for ENK.", "Optional annual service for ENK.");
+      $("sAnnualName").textContent = T("Skattemelding", "Tax return");
+    } else {
+      elAnnualLabel.textContent = T("Årsregnskap (årlig)", "Annual financial statements");
+      elAnnualHelp.textContent = T("Valgfritt årlig tillegg for AS.", "Optional annual service for AS.");
+      $("sAnnualName").textContent = T("Årsregnskap", "Financial statements");
+    }
+    elAnnual.value = "no";
+  }
+
+  function getBasePrice(company, voucherKey){
+    const opt = BASE[company].find(x => x.key === voucherKey);
+    return opt ? opt.price : "contact";
+  }
+
+  function compute(){
+    const company = elCompany.value;
+    const voucherKey = elVouchers.value;
+    const vat = elVat.value;
+    const empKey = elEmp.value;
+    const annualYes = elAnnual.value === "yes";
+
+    $("sCompany").textContent = company;
+    $("sVouchers").textContent = voucherKey;
+    $("sVat").textContent = (vat === "yes")
+      ? T("MVA-registrert", "VAT registered")
+      : T("Ikke MVA-registrert", "Not VAT registered");
+    $("sEmp").textContent = empKey;
+
+    $("outAdvisory").textContent = money(ADVISORY_HOURLY) + T(" / time", " / hour");
+
+    const basePrice = getBasePrice(company, voucherKey);
+
+    if (voucherKey === "0"){
+      $("outMonthly").textContent = "—";
+      $("outAnnual").textContent = "—";
+      $("outTotalAnnual").textContent = "—";
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outNote").textContent = T("Velg bilagsintervall for å få et estimat.", "Select your voucher range to get an estimate.");
+      return;
+    }
+
+    if (basePrice === "contact" || EMP_ADDON[empKey] === "contact"){
+      $("outMonthly").textContent = T("Kontakt oss", "Contact us");
+      $("outAnnual").textContent = T("Kontakt oss", "Contact us");
+      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outNote").textContent = T(
+        "Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.",
+        "Your selection is outside the standard packages. Contact us for a tailored quote."
+      );
+      return;
+    }
+
+    const vatAddon = (vat === "yes") ? VAT_ADDON_MONTHLY : 0;
+    const empAddon = EMP_ADDON[empKey];
+
+    const monthly = basePrice + vatAddon + empAddon;
+
+    let annualAddon = 0;
+    if (company === "ENK" && annualYes) annualAddon += ENK_TAX_RETURN_ANNUAL;
+    if (company === "AS" && annualYes) annualAddon += AS_FIN_STMT_ANNUAL;
+
+    const totalAnnual = (monthly * 12) + annualAddon;
+
+    $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+    $("outMonthly").textContent = money(monthly) + T(" / mnd", " / month");
+    $("outAnnual").textContent = money(annualAddon) + T(" / år", " / year");
+    $("outTotalAnnual").textContent = money(totalAnnual) + T(" / år", " / year");
+    $("outNote").textContent = T(
+      "Estimater basert på standardpakker. Endelig pris kan variere med kompleksitet og omfang.",
+      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope."
+    );
+  }
+
+  setVoucherOptions(elCompany.value);
+  updateAnnualUI(elCompany.value);
+  compute();
+
+  elCompany.addEventListener("change", () => {
+    setVoucherOptions(elCompany.value);
+    updateAnnualUI(elCompany.value);
+    compute();
+  });
+
+  [elVouchers, elVat, elEmp, elAnnual].forEach(el => el.addEventListener("change", compute));
+})();
+</script>
+
 
       
     </div>
@@ -103,20 +376,20 @@
     <footer class="site-footer">
   <div class="container footer-inner">
     <div>
-      <strong>Accountia</strong><br>
-      Org.nr: 936 229 239<br>
-      <a href="https://maps.google.com/?q=Oterdalen%2058%2c%205914%20Isdalst%c3%b8" target="_blank">Oterdalen 58, 5914 Isdalstø</a>
+      <strong></strong><br>
+      Org.nr: <br>
+      <a href="https://maps.google.com/?q=" target="_blank"></a>
     </div>
 
     <div>
-      <strong>Kontakt</strong><br>
-      Tlf: <a href="tel:483%2042%20461">483 42 461</a><br>
-      E-post: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
-      Åpent 08:00–16:00 (man–fre)
+      <strong>اتصال</strong><br>
+      هاتف: <a href="tel:"></a><br>
+      البريد: <a href="mailto:"></a><br>
+      
     </div>
   </div>
   <div class="container footer-bottom">
-    © 2026 Accountia
+    © 2026 
   </div>
 </footer>
   </body>

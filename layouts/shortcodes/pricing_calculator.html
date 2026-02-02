@@ -3,27 +3,27 @@
   <div class="ac-calc-grid">
     <!-- LEFT: Inputs -->
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title">{{ if eq $lang "no" }}Valg{{ else }}Inputs{{ end }}</h2>
+      <h2 class="ac-calc-title">{{ if eq $lang "no" }}Valg{{ else if eq $lang "en" }}Inputs{{ else if eq $lang "es" }}Opciones{{ else if eq $lang "ar" }}الخيارات{{ else }}Inputs{{ end }}</h2>
 
-      <label class="ac-label" for="companyType">{{ if eq $lang "no" }}Selskapsform{{ else }}Company type{{ end }}</label>
+      <label class="ac-label" for="companyType">{{ if eq $lang "no" }}Selskapsform{{ else if eq $lang "en" }}Company type{{ else if eq $lang "es" }}Tipo de empresa{{ else if eq $lang "ar" }}نوع الشركة{{ else }}Company type{{ end }}</label>
       <select class="ac-select" id="companyType">
-        <option value="ENK" selected>{{ if eq $lang "no" }}ENK (Enkeltpersonforetak){{ else }}Sole Proprietorship (ENK){{ end }}</option>
-        <option value="AS">{{ if eq $lang "no" }}AS (Aksjeselskap){{ else }}Limited Company (AS){{ end }}</option>
+        <option value="ENK" selected>{{ if eq $lang "no" }}ENK (Enkeltpersonforetak){{ else if eq $lang "en" }}Sole Proprietorship (ENK){{ else if eq $lang "es" }}Autónomo (ENK){{ else if eq $lang "ar" }}مؤسسة فردية (ENK){{ else }}Sole Proprietorship (ENK){{ end }}</option>
+        <option value="AS">{{ if eq $lang "no" }}AS (Aksjeselskap){{ else if eq $lang "en" }}Limited Company (AS){{ else if eq $lang "es" }}Sociedad limitada (AS){{ else if eq $lang "ar" }}شركة محدودة (AS){{ else }}Limited Company (AS){{ end }}</option>
       </select>
 
-      <label class="ac-label" for="vouchers">{{ if eq $lang "no" }}Bilag per måned{{ else }}Vouchers per month{{ end }}</label>
+      <label class="ac-label" for="vouchers">{{ if eq $lang "no" }}Bilag per måned{{ else if eq $lang "en" }}Vouchers per month{{ else if eq $lang "es" }}Comprobantes por mes{{ else if eq $lang "ar" }}المستندات شهريًا{{ else }}Vouchers per month{{ end }}</label>
       <select class="ac-select" id="vouchers"></select>
-      <div class="ac-help" id="vHelp">{{ if eq $lang "no" }}Velg “0” hvis du ikke vil beregne pris ennå.{{ else }}Choose “0” if you’re not ready to estimate yet.{{ end }}</div>
+      <div class="ac-help" id="vHelp">{{ if eq $lang "no" }}Velg “0” hvis du ikke vil beregne pris ennå.{{ else if eq $lang "en" }}Choose “0” if you’re not ready to estimate yet.{{ else if eq $lang "es" }}Elige “0” si aún no quieres calcular el precio.{{ else if eq $lang "ar" }}اختر “0” إذا لم ترغب بحساب السعر الآن.{{ else }}Choose “0” if you’re not ready to estimate yet.{{ end }}</div>
 
-      <label class="ac-label" for="vat">{{ if eq $lang "no" }}MVA-registrert{{ else }}VAT registered{{ end }}</label>
+      <label class="ac-label" for="vat">{{ if eq $lang "no" }}MVA-registrert{{ else if eq $lang "en" }}VAT registered{{ else if eq $lang "es" }}Registrado en IVA{{ else if eq $lang "ar" }}مسجل لضريبة القيمة المضافة{{ else }}VAT registered{{ end }}</label>
       <select class="ac-select" id="vat">
-        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else }}No{{ end }}</option>
-        <option value="yes">{{ if eq $lang "no" }}Ja{{ else }}Yes{{ end }}</option>
+        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else if eq $lang "en" }}No{{ else if eq $lang "es" }}No{{ else if eq $lang "ar" }}لا{{ else }}No{{ end }}</option>
+        <option value="yes">{{ if eq $lang "no" }}Ja{{ else if eq $lang "en" }}Yes{{ else if eq $lang "es" }}Sí{{ else if eq $lang "ar" }}نعم{{ else }}Yes{{ end }}</option>
       </select>
 
-      <label class="ac-label" for="employees">{{ if eq $lang "no" }}Antall ansatte{{ else }}Employees{{ end }}</label>
+      <label class="ac-label" for="employees">{{ if eq $lang "no" }}Antall ansatte{{ else if eq $lang "en" }}Employees{{ else if eq $lang "es" }}Empleados{{ else if eq $lang "ar" }}عدد الموظفين{{ else }}Employees{{ end }}</label>
       <select class="ac-select" id="employees">
-        <option value="0" selected>{{ if eq $lang "no" }}0 (Ingen){{ else }}0 (None){{ end }}</option>
+        <option value="0" selected>{{ if eq $lang "no" }}0 (Ingen){{ else if eq $lang "en" }}0 (None){{ else if eq $lang "es" }}0 (None){{ else if eq $lang "ar" }}0 (None){{ else }}0 (None){{ end }}</option>
         <option value="1">1</option>
         <option value="2-3">2–3</option>
         <option value="4-6">4–6</option>
@@ -34,33 +34,33 @@
 
       <label class="ac-label" id="annualLabel" for="annualAddon"></label>
       <select class="ac-select" id="annualAddon">
-        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else }}No{{ end }}</option>
-        <option value="yes">{{ if eq $lang "no" }}Ja{{ else }}Yes{{ end }}</option>
+        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else if eq $lang "en" }}No{{ else if eq $lang "es" }}No{{ else if eq $lang "ar" }}لا{{ else }}No{{ end }}</option>
+        <option value="yes">{{ if eq $lang "no" }}Ja{{ else if eq $lang "en" }}Yes{{ else if eq $lang "es" }}Sí{{ else if eq $lang "ar" }}نعم{{ else }}Yes{{ end }}</option>
       </select>
       <div class="ac-help" id="annualHelp"></div>
     </div>
 
     <!-- RIGHT: Summary -->
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title" style="margin:0 0 12px;">{{ if eq $lang "no" }}Oppsummering{{ else }}Summary{{ end }}</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">{{ if eq $lang "no" }}Oppsummering{{ else if eq $lang "en" }}Summary{{ else if eq $lang "es" }}Summary{{ else if eq $lang "ar" }}Summary{{ else }}Summary{{ end }}</h2>
 
       <div class="ac-summary">
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Selskapsform{{ else }}Company type{{ end }}</span><strong id="sCompany">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Bilag{{ else }}Vouchers{{ end }}</span><strong id="sVouchers">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}MVA{{ else }}VAT{{ end }}</span><strong id="sVat">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Ansatte{{ else }}Employees{{ end }}</span><strong id="sEmp">—</strong></div>
-        <div class="ac-srow"><span id="sAnnualName">{{ if eq $lang "no" }}Årlig tjeneste{{ else }}Annual service{{ end }}</span><strong id="sAnnual">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Selskapsform{{ else if eq $lang "en" }}Company type{{ else if eq $lang "es" }}Tipo de empresa{{ else if eq $lang "ar" }}نوع الشركة{{ else }}Company type{{ end }}</span><strong id="sCompany">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Bilag{{ else if eq $lang "en" }}Vouchers{{ else if eq $lang "es" }}Comprobantes{{ else if eq $lang "ar" }}مستندات{{ else }}Vouchers{{ end }}</span><strong id="sVouchers">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}MVA{{ else if eq $lang "en" }}VAT{{ else if eq $lang "es" }}VAT{{ else if eq $lang "ar" }}VAT{{ else }}VAT{{ end }}</span><strong id="sVat">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Ansatte{{ else if eq $lang "en" }}Employees{{ else if eq $lang "es" }}Employees{{ else if eq $lang "ar" }}Employees{{ else }}Employees{{ end }}</span><strong id="sEmp">—</strong></div>
+        <div class="ac-srow"><span id="sAnnualName">{{ if eq $lang "no" }}Årlig tjeneste{{ else if eq $lang "en" }}Annual service{{ else if eq $lang "es" }}Annual service{{ else if eq $lang "ar" }}Annual service{{ else }}Annual service{{ end }}</span><strong id="sAnnual">—</strong></div>
 
         <hr class="ac-hr" />
 
-        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Månedspris{{ else }}Monthly fee{{ end }}</span><strong id="outMonthly">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
-        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Månedspris{{ else if eq $lang "en" }}Monthly fee{{ else if eq $lang "es" }}Monthly fee{{ else if eq $lang "ar" }}Monthly fee{{ else }}Monthly fee{{ end }}</span><strong id="outMonthly">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else if eq $lang "en" }}Annual add-ons{{ else if eq $lang "es" }}Annual add-ons{{ else if eq $lang "ar" }}Annual add-ons{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else if eq $lang "en" }}Total annual cost{{ else if eq $lang "es" }}Total annual cost{{ else if eq $lang "ar" }}Total annual cost{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
 
         <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
-          <span>{{ if eq $lang "no" }}Rådgivningstime{{ else }}Advisory hourly rate{{ end }}</span><strong id="outAdvisory">—</strong>
+          <span>{{ if eq $lang "no" }}Rådgivningstime{{ else if eq $lang "en" }}Advisory hourly rate{{ else if eq $lang "es" }}Hora de asesoría{{ else if eq $lang "ar" }}ساعة استشارة{{ else }}Advisory hourly rate{{ end }}</span><strong id="outAdvisory">—</strong>
         </div>
       </div>
     </div>

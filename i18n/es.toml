@@ -1,2 +1,11 @@
 [lang_label]
 other = "Idioma"
+
+[footer_contact]
+other = "Contacto"
+
+[footer_phone]
+other = "Tel."
+
+[footer_email]
+other = "Correo"

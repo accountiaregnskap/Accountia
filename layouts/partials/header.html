@@ -26,11 +26,17 @@
         </a>
       {{ end }}
 
-      {{ if eq site.Language.Lang "no" }}
-        <a class="nav-link lang-link" href="/en/" aria-label="English">EN</a>
-      {{ else }}
-        <a class="nav-link lang-link" href="/" aria-label="Norwegian">NO</a>
-      {{ end }}
+      <div class="lang-dd">
+        <details>
+          <summary>{{ i18n "lang_label" }}: {{ upper site.Language.Lang }}</summary>
+          <div class="lang-dd-menu">
+            <a class="lang-item {{ if eq site.Language.Lang "no" }}active{{ end }}" href="/">NO</a>
+            <a class="lang-item {{ if eq site.Language.Lang "en" }}active{{ end }}" href="/en/">EN</a>
+            <a class="lang-item {{ if eq site.Language.Lang "es" }}active{{ end }}" href="/es/">ES</a>
+            <a class="lang-item {{ if eq site.Language.Lang "ar" }}active{{ end }}" href="/ar/">AR</a>
+          </div>
+        </details>
+      </div>
     </nav>
   </div>
 </header>

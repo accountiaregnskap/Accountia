@@ -6,3 +6,6 @@ other = "Tlf"
 
 [footer_email]
 other = "E-post"
+
+[lang_label]
+other = "Språk"
