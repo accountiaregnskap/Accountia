@@ -498,7 +498,7 @@ strong {
 }
 
 .page-hero {
-  min-height: 550px;
+  min-height: 350px;
 }
 
 @media (min-width: 768px) {
@@ -507,7 +507,7 @@ strong {
   }
 
   .page-hero {
-    min-height: 650px;
+    min-height: 400px;
   }
 }
 
@@ -517,7 +517,7 @@ strong {
   }
 
   .page-hero {
-    min-height: 750px;
+    min-height: 450px;
   }
 }
 
