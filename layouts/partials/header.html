@@ -26,11 +26,16 @@
         </a>
       {{ end }}
 
-      {{ if eq site.Language.Lang "no" }}
-        <a class="nav-link lang-link" href="/en/" aria-label="English">EN</a>
-      {{ else }}
-        <a class="nav-link lang-link" href="/" aria-label="Norwegian">NO</a>
-      {{ end }}
+      <div class="lang-dd">
+        <details>
+          <summary>{{ i18n "lang_label" }}</summary>
+          <div class="lang-dd-menu">
+            {{ range site.Languages }}
+              <a class="lang-item {{ if eq .Lang $.Site.Language.Lang }}active{{ end }}" href="{{ .Lang | relLangURL }}">{{ if eq .Lang "no" }}NO{{ else if eq .Lang "en" }}EN{{ else if eq .Lang "es" }}ES{{ else if eq .Lang "ar" }}AR{{ else }}{{ upper .Lang }}{{ end }}</a>
+            {{ end }}
+          </div>
+        </details>
+      </div>
     </nav>
   </div>
 </header>
