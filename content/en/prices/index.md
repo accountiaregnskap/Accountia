@@ -1,7 +1,7 @@
 ---
 title: "Pricing"
+lead: "Competitive pricing built on quality — no hidden fees. We handle the entire switching process completely free of charge."
 bg: "/images/hero.jpg"
-lead: "Competitive pricing built on quality — no hidden fees. We handle the switching process completely free of charge."
 ---
 
 # Pricing Calculator

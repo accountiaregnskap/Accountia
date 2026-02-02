@@ -1,7 +1,7 @@
 ---
 title: "Priser"
+lead: "Lave priser som tåler sammenligning – basert på kvalitet, uten skjulte tillegg. Vi tar hele bytteprosessen helt gratis."
 bg: "/images/hero.jpg"
-lead: "Lave priser basert på kvalitet – ingen skjulte tillegg. Vi tar flytteprosessen helt gratis."
 ---
 
 # Priskalkulator
