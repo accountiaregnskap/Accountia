@@ -2,12 +2,11 @@
   <div class="header-inner">
 
 
-    <a class="brand brand-link" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
-      <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
-      <span class="brand-text">
-        <span class="brand-name">{{ site.Params.siteName }}</span>
-        <span class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</span>
+    <a class="brand" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
+      <span class="brand-mark">
+        <span class="brand-word">Accountia</span><span class="brand-plus">+</span>
       </span>
+      <span class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</span>
     </a>
 
 
