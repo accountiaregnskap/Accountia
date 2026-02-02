@@ -7,9 +7,9 @@
     </div>
 
     <div>
-      <strong>Kontakt</strong><br>
-      Tlf: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a><br>
-      E-post: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
+      <strong>{{ i18n "footer_contact" }}</strong><br>
+      {{ i18n "footer_phone" }}: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a><br>
+      {{ i18n "footer_email" }}: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
       {{ site.Params.openhours }}
     </div>
   </div>

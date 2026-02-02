@@ -1387,12 +1387,17 @@ address {
   }
 }
 
-/* Mobile header fine-tune: logo down ~15px, menu button up ~5px */
+.nav-toggle-btn{
+    transform: translateY(-5px);
+  }
+}
+
+/* Mobile header fine-tune: logo down slightly, menu button up slightly */
 @media (max-width: 768px){
   .brand.brand-image{
-    transform: translateY(15px);
+    transform: translateY(22px);
   }
   .nav-toggle-btn{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
