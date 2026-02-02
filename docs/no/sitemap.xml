@@ -40,6 +40,8 @@
   </url><url>
     <loc>http://localhost:1313/en/prices/</loc>
   </url><url>
+    <loc>http://localhost:1313/priser/</loc>
+  </url><url>
     <loc>http://localhost:1313/en/privacy/</loc>
   </url><url>
     <loc>http://localhost:1313/en/services/</loc>

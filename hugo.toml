@@ -41,6 +41,10 @@ defaultContentLanguageInSubdir = false
         name = "Personvern"
         url = "/personvern/"
         weight = 5
+      [[languages.no.menu.main]]
+        name = "Priser"
+        url = "/priser/"
+        weight = 6
 
   [languages.en]
     languageName = "English"

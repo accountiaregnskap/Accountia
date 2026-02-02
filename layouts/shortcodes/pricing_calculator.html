@@ -1,27 +1,29 @@
-<div class="ac-calc">
+{{ $lang := site.Language.Lang }}
+<div class="ac-calc" data-lang="{{ $lang }}">
   <div class="ac-calc-grid">
+    <!-- LEFT: Inputs -->
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title">Inputs</h2>
+      <h2 class="ac-calc-title">{{ if eq $lang "no" }}Valg{{ else }}Inputs{{ end }}</h2>
 
-      <label class="ac-label" for="companyType">Company type</label>
+      <label class="ac-label" for="companyType">{{ if eq $lang "no" }}Selskapsform{{ else }}Company type{{ end }}</label>
       <select class="ac-select" id="companyType">
-        <option value="ENK" selected>Sole Proprietorship (ENK)</option>
-        <option value="AS">Limited Company (AS)</option>
+        <option value="ENK" selected>{{ if eq $lang "no" }}ENK (Enkeltpersonforetak){{ else }}Sole Proprietorship (ENK){{ end }}</option>
+        <option value="AS">{{ if eq $lang "no" }}AS (Aksjeselskap){{ else }}Limited Company (AS){{ end }}</option>
       </select>
 
-      <label class="ac-label" for="vouchers">Vouchers per month</label>
+      <label class="ac-label" for="vouchers">{{ if eq $lang "no" }}Bilag per måned{{ else }}Vouchers per month{{ end }}</label>
       <select class="ac-select" id="vouchers"></select>
-      <div class="ac-help">Choose “0” if you’re not ready to estimate yet.</div>
+      <div class="ac-help" id="vHelp">{{ if eq $lang "no" }}Velg “0” hvis du ikke vil beregne pris ennå.{{ else }}Choose “0” if you’re not ready to estimate yet.{{ end }}</div>
 
-      <label class="ac-label" for="vat">VAT registered</label>
+      <label class="ac-label" for="vat">{{ if eq $lang "no" }}MVA-registrert{{ else }}VAT registered{{ end }}</label>
       <select class="ac-select" id="vat">
-        <option value="no" selected>No</option>
-        <option value="yes">Yes</option>
+        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else }}No{{ end }}</option>
+        <option value="yes">{{ if eq $lang "no" }}Ja{{ else }}Yes{{ end }}</option>
       </select>
 
-      <label class="ac-label" for="employees">Employees</label>
+      <label class="ac-label" for="employees">{{ if eq $lang "no" }}Antall ansatte{{ else }}Employees{{ end }}</label>
       <select class="ac-select" id="employees">
-        <option value="0" selected>0 (None)</option>
+        <option value="0" selected>{{ if eq $lang "no" }}0 (Ingen){{ else }}0 (None){{ end }}</option>
         <option value="1">1</option>
         <option value="2-3">2–3</option>
         <option value="4-6">4–6</option>
@@ -30,34 +32,35 @@
         <option value="15+">15+</option>
       </select>
 
-      <label class="ac-label" id="annualLabel" for="annualAddon">Annual service</label>
+      <label class="ac-label" id="annualLabel" for="annualAddon"></label>
       <select class="ac-select" id="annualAddon">
-        <option value="no" selected>No</option>
-        <option value="yes">Yes</option>
+        <option value="no" selected>{{ if eq $lang "no" }}Nei{{ else }}No{{ end }}</option>
+        <option value="yes">{{ if eq $lang "no" }}Ja{{ else }}Yes{{ end }}</option>
       </select>
       <div class="ac-help" id="annualHelp"></div>
     </div>
 
+    <!-- RIGHT: Summary -->
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title">Summary</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">{{ if eq $lang "no" }}Oppsummering{{ else }}Summary{{ end }}</h2>
 
       <div class="ac-summary">
-        <div class="ac-srow"><span>Company type</span><strong id="sCompany">—</strong></div>
-        <div class="ac-srow"><span>Vouchers</span><strong id="sVouchers">—</strong></div>
-        <div class="ac-srow"><span>VAT</span><strong id="sVat">—</strong></div>
-        <div class="ac-srow"><span>Employees</span><strong id="sEmp">—</strong></div>
-        <div class="ac-srow"><span id="sAnnualName">Annual service</span><strong id="sAnnual">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Selskapsform{{ else }}Company type{{ end }}</span><strong id="sCompany">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Bilag{{ else }}Vouchers{{ end }}</span><strong id="sVouchers">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}MVA{{ else }}VAT{{ end }}</span><strong id="sVat">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Ansatte{{ else }}Employees{{ end }}</span><strong id="sEmp">—</strong></div>
+        <div class="ac-srow"><span id="sAnnualName">{{ if eq $lang "no" }}Årlig tjeneste{{ else }}Annual service{{ end }}</span><strong id="sAnnual">—</strong></div>
 
         <hr class="ac-hr" />
 
-        <div class="ac-srow ac-big"><span>Monthly fee</span><strong id="outMonthly">—</strong></div>
-        <div class="ac-srow"><span>Annual add-ons</span><strong id="outAnnual">—</strong></div>
-        <div class="ac-srow ac-big"><span>Total annual cost</span><strong id="outTotalAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Månedspris{{ else }}Monthly fee{{ end }}</span><strong id="outMonthly">—</strong></div>
+        <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
 
         <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
-          <span>Advisory hourly rate</span><strong id="outAdvisory">—</strong>
+          <span>{{ if eq $lang "no" }}Rådgivningstime{{ else }}Advisory hourly rate{{ end }}</span><strong id="outAdvisory">—</strong>
         </div>
       </div>
     </div>
@@ -77,41 +80,36 @@
   .ac-calc-title{ font-size: 20px; margin: 0 0 12px; color:#111827; }
   .ac-label{ display:block; font-weight:700; margin: 12px 0 6px; color:#111827; }
   .ac-select{
-    width:100%;
-    min-height: 44px;
-    border-radius: 12px;
-    border: 1px solid rgba(17,24,39,0.18);
-    padding: 10px 12px;
-    background:#fff;
-    font-size: 15px;
-    outline:none;
+    width:100%; min-height: 44px; border-radius: 12px;
+    border: 1px solid rgba(17,24,39,0.18); padding: 10px 12px;
+    background:#fff; font-size: 15px; outline:none;
   }
   .ac-select:focus{ border-color: rgba(212,165,116,0.9); box-shadow: 0 0 0 3px rgba(212,165,116,0.18); }
   .ac-help{ font-size: 12px; color: rgba(17,24,39,0.65); margin-top: 6px; }
   .ac-summary{ margin-top: 6px; }
   .ac-srow{
-    display:flex; justify-content:space-between; gap: 10px;
-    padding: 10px 0;
-    border-bottom: 1px dashed rgba(17,24,39,0.14);
-    color:#111827;
+    display:flex; justify-content:space-between; gap: 10px; padding: 10px 0;
+    border-bottom: 1px dashed rgba(17,24,39,0.14); color:#111827;
   }
   .ac-srow strong{ font-weight:800; }
   .ac-hr{ border:0; border-top:1px solid rgba(17,24,39,0.12); margin: 14px 0; }
   .ac-big span{ font-weight:800; }
   .ac-big strong{ font-size: 18px; }
   .ac-note{
-    margin-top: 12px;
-    padding: 10px 12px;
-    border-radius: 12px;
-    background: rgba(11,18,32,0.06);
-    color: rgba(17,24,39,0.75);
-    font-size: 13px;
+    margin-top: 12px; padding: 10px 12px; border-radius: 12px;
+    background: rgba(11,18,32,0.06); color: rgba(17,24,39,0.75); font-size: 13px;
   }
   @media (max-width: 900px){ .ac-calc-grid{ grid-template-columns: 1fr; } }
 </style>
 
 <script>
 (function(){
+  const root = document.querySelector(".ac-calc[data-lang]");
+  if(!root) return;
+  const lang = root.getAttribute("data-lang") || "no";
+
+  const T = (no, en) => (lang === "no" ? no : en);
+
   const VAT_ADDON_MONTHLY = 700;
   const ADVISORY_HOURLY = 899;
   const ENK_TAX_RETURN_ANNUAL = 4999;
@@ -119,18 +117,18 @@
 
   const BASE = {
     ENK: [
-      { key:"0", label:"0 (Not ready)", price:null },
+      { key:"0", label:T("0 (Ikke klar)", "0 (Not ready)"), price:null },
       { key:"1-10", label:"1–10", price:2990 },
       { key:"11-25", label:"11–25", price:3490 },
       { key:"26-40", label:"26–40", price:3990 },
-      { key:"40+", label:"40+ (Contact us)", price:"contact" }
+      { key:"40+", label:T("40+ (Kontakt oss)", "40+ (Contact us)"), price:"contact" }
     ],
     AS: [
-      { key:"0", label:"0 (Not ready)", price:null },
+      { key:"0", label:T("0 (Ikke klar)", "0 (Not ready)"), price:null },
       { key:"1-15", label:"1–15", price:3990 },
       { key:"16-40", label:"16–40", price:4990 },
       { key:"41-80", label:"41–80", price:5990 },
-      { key:"80+", label:"80+ (Contact us)", price:"contact" }
+      { key:"80+", label:T("80+ (Kontakt oss)", "80+ (Contact us)"), price:"contact" }
     ]
   };
 
@@ -156,7 +154,9 @@
 
   function money(n){
     if (typeof n !== "number") return n;
-    return new Intl.NumberFormat("en-US", { style:"currency", currency:"NOK", maximumFractionDigits: 0 }).format(n);
+    return new Intl.NumberFormat(lang === "no" ? "nb-NO" : "en-US", {
+      style:"currency", currency:"NOK", maximumFractionDigits: 0
+    }).format(n);
   }
 
   function setVoucherOptions(company){
@@ -172,13 +172,13 @@
 
   function updateAnnualUI(company){
     if (company === "ENK"){
-      elAnnualLabel.textContent = "Annual tax return";
-      elAnnualHelp.textContent = "Optional annual service for ENK.";
-      $("sAnnualName").textContent = "Tax return";
+      elAnnualLabel.textContent = T("Skattemelding (årlig)", "Annual tax return");
+      elAnnualHelp.textContent = T("Valgfritt årlig tillegg for ENK.", "Optional annual service for ENK.");
+      $("sAnnualName").textContent = T("Skattemelding", "Tax return");
     } else {
-      elAnnualLabel.textContent = "Annual financial statements";
-      elAnnualHelp.textContent = "Optional annual service for AS.";
-      $("sAnnualName").textContent = "Financial statements";
+      elAnnualLabel.textContent = T("Årsregnskap (årlig)", "Annual financial statements");
+      elAnnualHelp.textContent = T("Valgfritt årlig tillegg for AS.", "Optional annual service for AS.");
+      $("sAnnualName").textContent = T("Årsregnskap", "Financial statements");
     }
     elAnnual.value = "no";
   }
@@ -195,11 +195,14 @@
     const empKey = elEmp.value;
     const annualYes = elAnnual.value === "yes";
 
-    $("sCompany").textContent = (company === "ENK") ? "ENK" : "AS";
+    $("sCompany").textContent = company;
     $("sVouchers").textContent = voucherKey;
-    $("sVat").textContent = (vat === "yes") ? "VAT registered" : "Not VAT registered";
+    $("sVat").textContent = (vat === "yes")
+      ? T("MVA-registrert", "VAT registered")
+      : T("Ikke MVA-registrert", "Not VAT registered");
     $("sEmp").textContent = empKey;
-    $("outAdvisory").textContent = money(ADVISORY_HOURLY) + " / hour";
+
+    $("outAdvisory").textContent = money(ADVISORY_HOURLY) + T(" / time", " / hour");
 
     const basePrice = getBasePrice(company, voucherKey);
 
@@ -207,17 +210,20 @@
       $("outMonthly").textContent = "—";
       $("outAnnual").textContent = "—";
       $("outTotalAnnual").textContent = "—";
-      $("sAnnual").textContent = annualYes ? "Yes" : "No";
-      $("outNote").textContent = "Select your voucher range to get an estimate.";
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outNote").textContent = T("Velg bilagsintervall for å få et estimat.", "Select your voucher range to get an estimate.");
       return;
     }
 
     if (basePrice === "contact" || EMP_ADDON[empKey] === "contact"){
-      $("outMonthly").textContent = "Contact us";
-      $("outAnnual").textContent = "Contact us";
-      $("outTotalAnnual").textContent = "Contact us";
-      $("sAnnual").textContent = annualYes ? "Yes" : "No";
-      $("outNote").textContent = "Your selection is outside the standard packages. Contact us for a tailored quote.";
+      $("outMonthly").textContent = T("Kontakt oss", "Contact us");
+      $("outAnnual").textContent = T("Kontakt oss", "Contact us");
+      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outNote").textContent = T(
+        "Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.",
+        "Your selection is outside the standard packages. Contact us for a tailored quote."
+      );
       return;
     }
 
@@ -232,11 +238,14 @@
 
     const totalAnnual = (monthly * 12) + annualAddon;
 
-    $("sAnnual").textContent = annualYes ? "Yes" : "No";
-    $("outMonthly").textContent = money(monthly) + " / month";
-    $("outAnnual").textContent = money(annualAddon) + " / year";
-    $("outTotalAnnual").textContent = money(totalAnnual) + " / year";
-    $("outNote").textContent = "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope.";
+    $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+    $("outMonthly").textContent = money(monthly) + T(" / mnd", " / month");
+    $("outAnnual").textContent = money(annualAddon) + T(" / år", " / year");
+    $("outTotalAnnual").textContent = money(totalAnnual) + T(" / år", " / year");
+    $("outNote").textContent = T(
+      "Estimater basert på standardpakker. Endelig pris kan variere med kompleksitet og omfang.",
+      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope."
+    );
   }
 
   setVoucherOptions(elCompany.value);
