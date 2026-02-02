@@ -14,8 +14,9 @@
       </a>
     </div>
 
-    <!-- Mobil meny-toggle -->
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ if eq site.Language.Lang \"en\" }}Open menu{{ else }}Åpne meny{{ end }}">
+    <!-- Mobile menu toggle -->
+    <input class="nav-toggle" type="checkbox" id="nav-toggle"
+      aria-label="{{ if eq site.Language.Lang "en" }}Open menu{{ else }}Åpne meny{{ end }}">
 
     <label class="nav-toggle-btn" for="nav-toggle">
       <span></span>
@@ -24,7 +25,7 @@
       <span class="menu-text">{{ if eq site.Language.Lang "en" }}Menu{{ else }}Meny{{ end }}</span>
     </label>
 
-    <nav class="nav" role="navigation">
+    <nav class="nav" role="navigation" aria-label="{{ if eq site.Language.Lang "en" }}Main menu{{ else }}Hovedmeny{{ end }}">
       {{ range site.Menus.main }}
         <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
           {{ .Name }}
@@ -32,10 +33,11 @@
       {{ end }}
 
       {{ if eq site.Language.Lang "no" }}
-        <a class="nav-link lang-link" href="/en/" aria-label="English">EN</a>
+        <a class="nav-link lang-link" href="/en/">EN</a>
       {{ else }}
-        <a class="nav-link lang-link" href="/" aria-label="Norwegian">NO</a>
+        <a class="nav-link lang-link" href="/">NO</a>
       {{ end }}
     </nav>
+
   </div>
 </header>

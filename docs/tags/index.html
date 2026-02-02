@@ -16,16 +16,23 @@
   <body class="taxonomy tags ">
     <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="/">
-      <img class="brand-logo" src="/logo.png" alt="Accountia logo">
-      <div class="brand-text">
+
+    <div class="brand" aria-label="Accountia">
+      
+      <a class="brand-logo-link" href="/" aria-label="Go to home">
+        <img class="brand-logo" src="/logo.png" alt="Accountia logo">
+      </a>
+
+      
+      <a class="brand-text brand-text-link" href="/" aria-label="Go to home">
         <div class="brand-name">Accountia</div>
         <div class="brand-sub">Regnskap</div>
-      </div>
-    </a>
+      </a>
+    </div>
 
     
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Åpne meny">
+    <input class="nav-toggle" type="checkbox" id="nav-toggle"
+      aria-label="Åpne meny">
 
     <label class="nav-toggle-btn" for="nav-toggle">
       <span></span>
@@ -34,7 +41,7 @@
       <span class="menu-text">Meny</span>
     </label>
 
-    <nav class="nav" role="navigation">
+    <nav class="nav" role="navigation" aria-label="Hovedmeny">
       
         <a class="nav-link " href="/">
           Forside
@@ -56,9 +63,19 @@
           Personvern
         </a>
       
+        <a class="nav-link " href="/priser/">
+          Priser
+        </a>
+      
+
+      
+        <a class="nav-link lang-link" href="/en/">EN</a>
+      
     </nav>
+
   </div>
 </header>
+
 
     <main class="site-main">
       
