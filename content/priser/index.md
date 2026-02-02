@@ -1,6 +1,7 @@
 ---
 title: "Priser"
 bg: "/images/hero.jpg"
+lead: "Lave priser basert på kvalitet – ingen skjulte tillegg. Vi tar flytteprosessen helt gratis."
 ---
 
 # Priskalkulator
