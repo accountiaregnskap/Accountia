@@ -1410,50 +1410,8 @@ address {
   }
 
   .site-header .brand img {
-    transform: translateY(13px) scale(1.15);
+    transform: translateY(18px) scale(1.15);
     margin: 0 auto;
     width: auto;
   }
-}
-
-/* Language dropdown (single button) */
-.lang-dd{
-  margin-left: 8px;
-  display:flex;
-  align-items:center;
-}
-.lang-dd details{ position:relative; }
-.lang-dd summary{
-  list-style:none;
-  cursor:pointer;
-  padding:8px 10px;
-  border-radius:10px;
-  font-weight:700;
-  border:1px solid rgba(0,0,0,0.12);
-}
-.lang-dd summary::-webkit-details-marker{ display:none; }
-.lang-dd-menu{
-  position:absolute;
-  right:0;
-  top:calc(100% + 8px);
-  background:#fff;
-  border:1px solid rgba(0,0,0,0.12);
-  border-radius:12px;
-  overflow:hidden;
-  min-width:140px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.12);
-  z-index:999;
-}
-.lang-item{
-  display:block;
-  padding:10px 12px;
-  text-decoration:none;
-  color:inherit;
-  white-space:nowrap;
-}
-.lang-item:hover{ background:rgba(0,0,0,0.06); }
-.lang-item.active{ font-weight:800; }
-@media (max-width:768px){
-  .lang-dd{ width:100%; margin:10px 0 0; }
-  .lang-dd-menu{ left:0; right:auto; }
 }
