@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header-inner">
 
-    <div class="brand" aria-label="Accountia">
+    <div class="brand" aria-label="Accountia - Regnskap">
       <!-- Logo: own link -->
       <a class="brand-logo-link" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Go to home">
         <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
@@ -15,16 +15,16 @@
     </div>
 
     <!-- Mobil meny-toggle -->
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ if eq site.Language.Lang "en" }}Open menu{{ else }}Åpne meny{{ end }}">
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Åpne meny">
 
     <label class="nav-toggle-btn" for="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
-      <span class="menu-text">{{ if eq site.Language.Lang "en" }}Menu{{ else }}Meny{{ end }}</span>
+      <span class="menu-text">Meny</span>
     </label>
 
-    <nav class="nav" role="navigation" aria-label="{{ if eq site.Language.Lang "en" }}Main menu{{ else }}Hovedmeny{{ end }}">
+    <nav class="nav" role="navigation">
       {{ range site.Menus.main }}
         <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
           {{ .Name }}
