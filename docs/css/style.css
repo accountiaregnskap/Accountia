@@ -1379,3 +1379,19 @@ address {
     max-width:220px;
   }
 }
+
+/* Mobile logo: centered and slightly lower (do NOT change size) */
+@media (max-width: 768px){
+  .site-header .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
+
+  .brand.brand-image{
+    margin: 0 auto;
+    transform: translateY(6px);
+  }
+}
