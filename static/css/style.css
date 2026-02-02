@@ -1005,3 +1005,47 @@ address {
   .brand-name { font-size: 20px; }
   .brand-sub { font-size: 13px; }
 }
+
+/* About split layout */
+.about-split{
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items:start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+.about-photo img{
+  width:100%;
+  height:auto;
+  border-radius: 18px;
+  display:block;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+.about-name{
+  margin: 0 0 6px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+.about-role{
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.about-hr{
+  border: 0;
+  border-top: 2px solid rgba(0,0,0,0.12);
+  width: 80px;
+  margin: 14px 0 16px;
+}
+/* Mobile */
+@media (max-width: 900px){
+  .about-split{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-name{
+    font-size: 26px;
+  }
+}

@@ -1,20 +1,28 @@
 ---
 title: "Services"
-lead: "Complete accounting services — tailored to your business and your needs."
 bg: "/images/hero.jpg"
 ---
 
-## Bookkeeping
-We ensure structure, quality, and continuous overview — so you always know where your business stands.
+## Accounting
+We provide ongoing accounting with a strong focus on structure, accuracy, and up-to-date financial overview. Transactions are recorded continuously so the accounts support real decisions — not just reporting after the fact. You get better control, fewer surprises, and clear follow-up throughout the year.
 
-## Payroll & reporting
-Correct payroll processing and required submissions, delivered on time.
+## Payroll and reporting
+Reliable payroll processing with correct reporting. We ensure solid routines, accurate documentation, and on-time submissions. Your employees are paid correctly, and you avoid risks tied to incorrect filings.
 
-## VAT
-We handle VAT reporting and follow-up, so you avoid mistakes and surprises.
+## VAT and reporting
+Correct VAT handling and submissions on time. We follow VAT requirements, documentation, and deadlines, and ensure your VAT reporting matches your business activities and transactions — minimizing errors and unnecessary deviations.
 
-## Annual reporting
-We prepare and deliver the annual reporting you need, depending on your company type.
+## Annual accounts / tax filings / advisory
+An efficient process with clear planning and clarifications. We handle annual accounts and tax filings in a structured way and provide insights into results, balance, and improvement opportunities. When needed, we also support you with advisory related to operations, taxation, and financial decisions.
 
-## Advisory
-Fixed hourly rate advisory when you need guidance, planning, or a second opinion.
+## Invoicing / reminders / collections
+We can handle all or part of your invoicing flow — from invoicing to follow-up and collections. This improves cash flow, reduces admin work, and ensures a professional process with your customers. You decide how much you want to outsource.
+
+## Company setup (AS/ENK)
+A safe start with the right structure and registrations. We help you choose the right company form, register properly, and set up routines and systems so you avoid expensive mistakes early on.
+
+## Budgeting / liquidity / controlling
+Better decisions through reporting, analysis, and follow-up. We support budgeting, liquidity oversight, and controlling to give you control over profitability, costs, and performance — with clear numbers you can act on.
+
+## Systems
+Tripletex, PowerOffice, UniMicro, Fiken and more. We adapt system selection and setup to what fits your business. The goal is efficient workflow, correct reporting, and a system that genuinely supports your operations.
