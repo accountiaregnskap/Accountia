@@ -1049,3 +1049,5 @@ address {
     font-size: 26px;
   }
 }
+
+.about-text p{ margin: 0 0 12px; }

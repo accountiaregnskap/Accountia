@@ -1,0 +1,14 @@
+<section class="about-split">
+  <div class="about-photo">
+    <img src="{{ .Get "image" | default "/images/ayham.jpg" }}" alt="{{ .Get "name" | default "Ayham Layous" }}">
+  </div>
+
+  <div class="about-body">
+    <h2 class="about-name">{{ .Get "name" | default "Ayham Layous" }}</h2>
+    <div class="about-role">{{ .Get "role" | default "" }}</div>
+    <hr class="about-hr">
+    <div class="about-text">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</section>
