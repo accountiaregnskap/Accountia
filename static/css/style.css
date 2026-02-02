@@ -1307,19 +1307,6 @@ address {
 
 }
 
-/* Header logo image (final tuned) */
-.brand.brand-image{
-  display:flex;
-  align-items:center;
-  text-decoration:none;
-}
-
-.brand.brand-image .brand-img{
-  display:block;
-  height:120px;
-  width:auto;
-  max-width:760px;
-}
 
 /* Desktop: slightly bigger, placed between left and center */
 @media (min-width: 1024px){
@@ -1340,5 +1327,55 @@ address {
   .brand.brand-image .brand-img{
     height:96px;
     max-width:520px;
+  }
+}
+
+/* Header logo image (fit inside white header bar) */
+.site-header{
+  /* ensure header is tall enough so logo never overlaps hero */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-header .header-inner{
+  align-items:center;
+}
+
+.brand.brand-image{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.brand.brand-image .brand-img{
+  display:block;
+  height:64px;          /* desktop default */
+  width:auto;
+  max-width:520px;
+}
+
+/* Desktop: slightly bigger + placed between left and center */
+@media (min-width: 1024px){
+  .brand.brand-image{
+    margin-left: 70px;  /* between left and center */
+  }
+  .brand.brand-image .brand-img{
+    height:72px;        /* a bit bigger, but fits header */
+    max-width:600px;
+  }
+}
+
+/* Mobile: smaller (prevent oversized logo) */
+@media (max-width: 768px){
+  .site-header{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .brand.brand-image{
+    margin-left: 0;
+  }
+  .brand.brand-image .brand-img{
+    height:40px;
+    max-width:220px;
   }
 }
