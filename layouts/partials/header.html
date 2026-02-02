@@ -4,7 +4,7 @@
       <img class="brand-logo" src="{{ "logo.png" | relURL }}" alt="Accountia logo">
       <div class="brand-text">
         <div class="brand-name">{{ site.Params.siteName }}</div>
-        <div class="brand-sub">Regnskap</div>
+        <div class="brand-sub">{{ if eq site.Language.Lang "en" }}Accounting{{ else }}Regnskap{{ end }}</div>
       </div>
     </a>
 
@@ -24,6 +24,7 @@
           {{ .Name }}
         </a>
       {{ end }}
+        <a class="nav-link lang-link" href="/en/" aria-label="English">EN</a>
     </nav>
   </div>
 </header>

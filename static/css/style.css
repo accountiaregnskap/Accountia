@@ -205,7 +205,7 @@ strong {
   object-fit: contain;
 }
 
-/* DESKTOP: Navn vises på høyre side av logo med litt avstand */
+/* DESKTOP: Navn vises på høyre side av logo */
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -219,8 +219,8 @@ strong {
 
 .brand-name {
   display: block;
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   color: var(--text);
   line-height: 1.1;
   margin: 0;
@@ -230,7 +230,7 @@ strong {
 .brand-sub {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-secondary);
   line-height: 1.1;
   margin: 0;
@@ -353,11 +353,11 @@ strong {
   }
 
   .brand-name {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .brand-sub {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .nav {
@@ -510,7 +510,7 @@ strong {
 /* PC: Show full background image - litt større (105%) */
 @media (min-width: 821px) {
   .hero, .page-hero {
-    background-size: cover;
+    background-size: 105%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
@@ -520,8 +520,8 @@ strong {
 /* Mobile: Forside litt større (120%), undersider keep cover */
 @media (max-width: 820px) {
   .hero {
-    background-size: cover;
-    background-position: center 40%;
+    background-size: 120%;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
   }
@@ -967,12 +967,19 @@ address {
     border: 1px solid #ddd;
   }
 }
-.brand-text-link {
-  text-decoration: none;
-  color: inherit;
-}
 
-.brand-logo-link {
-  display: flex;
-  align-items: center;
+/* ===== LANGUAGE LINK (EN) ===== */
+@media (min-width: 821px) {
+  .nav .lang-link {
+    margin-left: auto;
+  }
+}
+.nav .lang-link {
+  font-weight: 800;
+  border: 2px solid rgba(17,24,39,0.15);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+.nav .lang-link:hover {
+  background: rgba(0,0,0,0.05);
 }
