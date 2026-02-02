@@ -90,13 +90,6 @@ disableKinds = ["taxonomy", "term"]
 languageName = "Español"
 weight = 3
 contentDir = "content/es"
-[languages.es.params]
-siteName = "Accountia"
-orgnr = "936 229 239"
-address = "Oterdalen 58, 5914 Isdalstø"
-phone = "+47 483 42 461"
-email = "post.acountia@gmail.com"
-openhours = "Abierto 08:00–16:00 (Lun–Vie)"
 [languages.es.menu]
 [[languages.es.menu.main]]
 name = "Inicio"
@@ -104,11 +97,11 @@ url = "/es/"
 weight = 1
 [[languages.es.menu.main]]
 name = "Servicios"
-url = "/es/servicios/"
+url = "/es/services/"
 weight = 2
 [[languages.es.menu.main]]
 name = "Sobre nosotros"
-url = "/es/sobre-nosotros/"
+url = "/es/about/"
 weight = 3
 [[languages.es.menu.main]]
 name = "Contacto"
@@ -127,13 +120,6 @@ weight = 6
 languageName = "العربية"
 weight = 4
 contentDir = "content/ar"
-[languages.ar.params]
-siteName = "Accountia"
-orgnr = "936 229 239"
-address = "Oterdalen 58, 5914 Isdalstø"
-phone = "+47 483 42 461"
-email = "post.acountia@gmail.com"
-openhours = "08:00–16:00 (الاثنين–الجمعة)"
 [languages.ar.menu]
 [[languages.ar.menu.main]]
 name = "الرئيسية"

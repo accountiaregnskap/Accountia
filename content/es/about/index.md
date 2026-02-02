@@ -1,5 +1,5 @@
 ---
-title: "Inicio"
+title: "Sobre nosotros"
 ---
 
 Contenido en español pronto.
