@@ -1107,3 +1107,9 @@ address {
 .privacy-card h3{margin:0 0 8px;font-size:16px}
 .privacy-card p{margin:0;font-size:14px;opacity:.85;line-height:1.5}
 @media(max-width:900px){.privacy-grid{grid-template-columns:1fr}}
+
+
+.brand-sub {
+  color: #c9a24d;
+  font-weight: 600;
+}
