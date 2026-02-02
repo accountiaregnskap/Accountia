@@ -1,33 +1,33 @@
 <section class="contact-block">
   <div class="contact-grid">
     <div class="card">
-      <h2>Kontakt oss</h2>
-      <p>Send oss en melding – vi svarer så raskt som mulig innen åpningstid.</p>
+      <h2>{{ if eq site.Language.Lang "en" }}Contact us{{ else }}Kontakt oss{{ end }}</h2>
+      <p>{{ if eq site.Language.Lang "en" }}Send us a message — we’ll reply as quickly as possible during business hours.{{ else }}Send oss en melding – vi svarer så raskt som mulig innen åpningstid.{{ end }}</p>
 
       <form class="form" method="post" action="https://formspree.io/f/mgoagpwd">
-        <label>Navn
-          <input type="text" name="name" placeholder="Ditt navn" required>
+        <label>{{ if eq site.Language.Lang "en" }}Name{{ else }}Navn{{ end }}
+          <input type="text" name="name" placeholder="{{ if eq site.Language.Lang "en" }}Your name{{ else }}Ditt navn{{ end }}" required>
         </label>
 
-        <label>E-post
-          <input type="email" name="email" placeholder="din@epost.no" required>
+        <label>{{ if eq site.Language.Lang "en" }}Email{{ else }}E-post{{ end }}
+          <input type="email" name="email" placeholder="{{ if eq site.Language.Lang "en" }}you@email.com{{ else }}din@epost.no{{ end }}" required>
         </label>
 
-        <label>Melding
-          <textarea name="message" rows="5" placeholder="Hva kan vi hjelpe deg med?" required></textarea>
+        <label>{{ if eq site.Language.Lang "en" }}Message{{ else }}Melding{{ end }}
+          <textarea name="message" rows="5" placeholder="{{ if eq site.Language.Lang "en" }}How can we help?{{ else }}Hva kan vi hjelpe deg med?{{ end }}" required></textarea>
         </label>
 
-        <button class="btn" type="submit">Send melding</button>
+        <button class="btn" type="submit">{{ if eq site.Language.Lang "en" }}Send message{{ else }}Send melding{{ end }}</button>
       </form>
     </div>
 
     <div class="card">
-      <h2>Kontaktinformasjon</h2>
+      <h2>{{ if eq site.Language.Lang "en" }}Contact information{{ else }}Kontaktinformasjon{{ end }}</h2>
       <ul class="info-list">
-        <li><strong>Telefon:</strong> <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></li>
-        <li><strong>E-post:</strong> <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
-        <li><strong>Adresse:</strong> <a href="https://maps.google.com/?q={{ site.Params.address }}" target="_blank">{{ site.Params.address }}</a></li>
-        <li><strong>Åpningstid:</strong> {{ site.Params.openhours }}</li>
+        <li><strong>{{ if eq site.Language.Lang "en" }}Phone{{ else }}Telefon{{ end }}:</strong> <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></li>
+        <li><strong>{{ if eq site.Language.Lang "en" }}Email{{ else }}E-post{{ end }}:</strong> <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+        <li><strong>{{ if eq site.Language.Lang "en" }}Address{{ else }}Adresse{{ end }}:</strong> <a href="https://maps.google.com/?q={{ site.Params.address }}" target="_blank">{{ site.Params.address }}</a></li>
+        <li><strong>{{ if eq site.Language.Lang "en" }}Opening hours{{ else }}Åpningstid{{ end }}:</strong> {{ if eq site.Language.Lang "en" }}Open 08:00–16:00 (Mon–Fri){{ else }}Åpent 08:00–16:00 (man–fre){{ end }}</li>
         <li><strong>Org.nr:</strong> {{ site.Params.orgnr }}</li>
       </ul>
     </div>

@@ -1386,3 +1386,13 @@ address {
     margin-top: -10px;
   }
 }
+
+/* Mobile header fine-tune: logo down ~15px, menu button up ~5px */
+@media (max-width: 768px){
+  .brand.brand-image{
+    transform: translateY(15px);
+  }
+  .nav-toggle-btn{
+    transform: translateY(-5px);
+  }
+}
