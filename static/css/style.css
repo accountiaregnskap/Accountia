@@ -1084,6 +1084,12 @@ address {
   padding: 16px 16px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.06);
 }
+.value-icon{
+  width: 40px;
+  height: 40px;
+  margin: 0 0 10px;
+  opacity: 0.9;
+}
 .value-card h3{ margin:0 0 6px; font-size: 16px; }
 .value-card p{ margin:0; font-size: 14px; opacity:0.85; line-height:1.5; }
 

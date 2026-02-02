@@ -5,27 +5,34 @@
   </div>
 
   <div class="value-grid">
+    {{/* Card 1 */}}
     <div class="value-card">
+      {{ with (.Get "c1i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c1t" }}</h3>
       <p>{{ .Get "c1d" }}</p>
     </div>
     <div class="value-card">
+      {{ with (.Get "c2i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c2t" }}</h3>
       <p>{{ .Get "c2d" }}</p>
     </div>
     <div class="value-card">
+      {{ with (.Get "c3i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c3t" }}</h3>
       <p>{{ .Get "c3d" }}</p>
     </div>
     <div class="value-card">
+      {{ with (.Get "c4i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c4t" }}</h3>
       <p>{{ .Get "c4d" }}</p>
     </div>
     <div class="value-card">
+      {{ with (.Get "c5i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c5t" }}</h3>
       <p>{{ .Get "c5d" }}</p>
     </div>
     <div class="value-card">
+      {{ with (.Get "c6i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c6t" }}</h3>
       <p>{{ .Get "c6d" }}</p>
     </div>
