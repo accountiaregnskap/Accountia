@@ -1401,3 +1401,17 @@ address {
     transform: translateY(-8px);
   }
 }
+
+/* === MOBILE HEADER LOGO FINAL ADJUST === */
+@media (max-width: 768px) {
+  .site-header .brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-header .brand img {
+    transform: translateY(18px) scale(1.15);
+    margin: 0 auto;
+    width: auto;
+  }
+}
