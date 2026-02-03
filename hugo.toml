@@ -117,6 +117,7 @@ url = "/es/prices/"
 weight = 6
 
 [languages.ar]
+languageDirection = "rtl"
 languageName = "العربية"
 weight = 4
 contentDir = "content/ar"

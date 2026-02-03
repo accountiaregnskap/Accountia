@@ -1457,3 +1457,8 @@ address {
   .lang-dd{ width:100%; margin:10px 0 0; }
   .lang-dd-menu{ left:0; right:auto; }
 }
+
+/* RTL (Arabic) tweaks */
+html[dir="rtl"] .hero-content{ text-align:right; }
+html[dir="rtl"] .hero h1{ white-space:normal; }
+html[dir="rtl"] .hero-actions{ justify-content:flex-end; }
