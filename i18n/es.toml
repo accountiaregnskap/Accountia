@@ -10,6 +10,12 @@ other = "Tel."
 [footer_email]
 other = "Correo"
 
+[footer_address]
+other = "Dirección"
+
+[footer_openhours]
+other = "Horario"
+
 [[translations]]
 id = "contact_info_title"
 translation = "Información de contacto"

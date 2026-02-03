@@ -1,6 +1,14 @@
 baseURL = "http://localhost:1313/"
 languageCode = "nb-no"
 title = "Accountia"
+
+[params]
+siteName = "Accountia"
+phone = "+47 483 42 461"
+email = "post.acountia@gmail.com"
+address = "Oterdalen 58, 5914 Isdalstø"
+orgnr = "936 229 239"
+openHours = "Open 08:00–16:00 (Mon–Fri)"
 enableRobotsTXT = true
 
 defaultContentLanguage = "no"

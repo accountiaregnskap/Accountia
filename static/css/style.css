@@ -1472,17 +1472,26 @@ html[dir="rtl"] body {
   overflow-x: hidden;
 }
 
-html[dir="rtl"] .site-header .header-inner {
-  flex-direction: row-reverse;
+/* Keep containers centered in RTL */
+html[dir="rtl"] .container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-html[dir="rtl"] .nav {
-  flex-direction: row-reverse;
-}
+/* Only reverse header/menu on desktop so mobile layout stays consistent */
+@media (min-width: 900px) {
+  html[dir="rtl"] .site-header .header-inner {
+    flex-direction: row-reverse;
+  }
 
-html[dir="rtl"] .nav-link { 
-  margin-left: var(--space-lg);
-  margin-right: 0;
+  html[dir="rtl"] .nav {
+    flex-direction: row-reverse;
+  }
+
+  html[dir="rtl"] .nav-link {
+    margin-right: var(--space-lg);
+    margin-left: 0;
+  }
 }
 
 html[dir="rtl"] .hero,

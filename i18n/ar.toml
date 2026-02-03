@@ -10,6 +10,33 @@ other = "هاتف"
 [footer_email]
 other = "البريد"
 
+[footer_address]
+other = "العنوان"
+
+[footer_openhours]
+other = "ساعات العمل"
+
+[contact_phone]
+other = "هاتف"
+
+[contact_email]
+other = "البريد"
+
+[contact_address]
+other = "العنوان"
+
+[contact_openhours]
+other = "ساعات العمل"
+
+[contact_orgnr]
+other = "رقم المؤسسة"
+
+[footer_address]
+other = "العنوان"
+
+[footer_openhours]
+other = "ساعات العمل"
+
 [[translations]]
 id = "contact_info_title"
 translation = "معلومات التواصل"
@@ -64,7 +91,7 @@ translation = "اسمك"
 
 [[translations]]
 id = "form_email_ph"
-translation = "you@example.com"
+translation = "name@example.com"
 
 [[translations]]
 id = "form_message_ph"
