@@ -1,6 +1,7 @@
 ---
 title: "Sobre nosotros"
 bg: "/images/hero.jpg"
+lead: "Un equipo pequeño con estándares altos — estructura, calidad y seguimiento cercano."
 ---
 
 {{< value_cards

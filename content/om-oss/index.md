@@ -1,6 +1,7 @@
 ---
 title: "Om oss"
 bg: "/images/hero.jpg"
+lead: "Et lite team med høy standard — struktur, kvalitet og tett oppfølging."
 ---
 
 {{< value_cards

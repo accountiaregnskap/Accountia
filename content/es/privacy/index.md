@@ -1,6 +1,7 @@
 ---
 title: "Privacidad"
 bg: "/images/hero.jpg"
+lead: "Cómo tratamos los datos personales, cookies y seguridad — de forma clara y transparente."
 ---
 
 {{< privacy_cards

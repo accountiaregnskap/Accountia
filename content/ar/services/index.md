@@ -1,6 +1,7 @@
 ---
 title: "الخدمات"
 bg: "/images/hero.jpg"
+lead: "خدمات تمنحك السيطرة وتقارير صحيحة وإدارة أقل."
 ---
 
 ## المحاسبة
@@ -26,3 +27,6 @@ bg: "/images/hero.jpg"
 
 ## الأنظمة
 Tripletex و PowerOffice و DNB Regnskap و UniMicro و Fiken وغيرها — نختار معك ما يناسبك.
+
+
+{{< systems_logos >}}

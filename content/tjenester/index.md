@@ -1,6 +1,7 @@
 ---
 title: "Tjenester"
 bg: "/images/hero.jpg"
+lead: "Tjenester som gir kontroll, riktig rapportering og mindre administrasjon."
 ---
 
 ## Regnskapsføring
@@ -26,3 +27,6 @@ Bedre beslutninger gjennom rapportpakker, analyser og oppfølging. Vi kan bidra 
 
 ## Systemer
 Tripletex, PowerOffice, UniMicro, Fiken m.fl. Vi tilpasser systemvalg og oppsett etter hva som passer best for deg. Målet er effektiv arbeidsflyt, riktig rapportering og et system som faktisk støtter virksomheten din.
+
+
+{{< systems_logos >}}

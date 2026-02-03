@@ -1,6 +1,7 @@
 ---
 title: "Servicios"
 bg: "/images/hero.jpg"
+lead: "Servicios para tener control, informes correctos y menos administración."
 ---
 
 ## Contabilidad
@@ -26,3 +27,6 @@ Mejores decisiones con reportes, análisis y control. Creamos paquetes de report
 
 ## Sistemas
 Tripletex, PowerOffice, DNB Regnskap, UniMicro, Fiken y más — nos adaptamos a lo que mejor te funcione.
+
+
+{{< systems_logos >}}

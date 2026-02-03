@@ -1,6 +1,7 @@
 ---
 title: "About"
 bg: "/images/hero.jpg"
+lead: "A small team with high standards — structure, quality, and close follow-up."
 ---
 
 {{< value_cards

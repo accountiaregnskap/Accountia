@@ -1631,3 +1631,55 @@ html[dir="rtl"], html[dir="rtl"] body{
     overflow-x: hidden;
   }
 }
+
+/* Systems logos (Services page) */
+.system-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+}
+.system-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+.system-logos img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 520px) {
+  .system-logos img { height: 28px; }
+}
+
+/* Systems logos (Services page) */
+.system-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+}
+.system-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+.system-logos img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 520px) {
+  .system-logos img { height: 28px; }
+}

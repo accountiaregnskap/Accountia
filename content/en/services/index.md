@@ -1,6 +1,7 @@
 ---
 title: "Services"
 bg: "/images/hero.jpg"
+lead: "Services that give you control, correct reporting, and less admin."
 ---
 
 ## Accounting
@@ -26,3 +27,6 @@ Better decisions through reporting, analysis, and follow-up. We support budgetin
 
 ## Systems
 Tripletex, PowerOffice, UniMicro, Fiken and more. We adapt system selection and setup to what fits your business. The goal is efficient workflow, correct reporting, and a system that genuinely supports your operations.
+
+
+{{< systems_logos >}}

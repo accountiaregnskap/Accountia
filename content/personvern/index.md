@@ -1,6 +1,7 @@
 ---
 title: "Personvern"
 bg: "/images/hero.jpg"
+lead: "Hvordan vi håndterer personopplysninger, informasjonskapsler og sikkerhet — kort og tydelig."
 ---
 
 {{< privacy_cards
