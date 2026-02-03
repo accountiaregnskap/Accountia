@@ -1455,7 +1455,9 @@ address {
 .lang-item:hover{ background:rgba(0,0,0,0.06); }
 .lang-item.active{ font-weight:800; }
 @media (max-width:768px){
-  .lang-dd{ width:100%; margin:10px 0 0; }
+  /* Keep language selector in the header row on mobile (avoid dropping below hero) */
+  .lang-dd{ width:auto; margin:0 0 0 10px; }
+  html[dir="rtl"] .lang-dd{ margin:0 10px 0 0; }
   .lang-dd-menu{ left:0; right:auto; }
 }
 
@@ -1600,6 +1602,19 @@ html[dir="rtl"], html[dir="rtl"] body{
   html[dir="rtl"] .nav{
     flex-direction: row-reverse;
   }
+}
+
+/* Pricing calculator advisory line (shown under the calculator title) */
+.ac-calc-advisory{
+  margin: 10px auto 18px;
+  max-width: 980px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #b91c1c;
+  background: rgba(185, 28, 28, 0.06);
+  text-align: center;
 }
 
 /* RTL: prevent accidental horizontal scroll on desktop */

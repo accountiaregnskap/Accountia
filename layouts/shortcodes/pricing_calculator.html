@@ -1,5 +1,6 @@
 {{ $lang := site.Language.Lang }}
 <div class="ac-calc" data-lang="{{ $lang }}">
+  <div class="ac-calc-advisory">{{ if eq .Page.Lang "ar" }}الأسعار تقديرية وليست نهائية. يسعدنا تقديم عروض وخصومات لعملائنا.{{ else if eq .Page.Lang "es" }}Los precios son orientativos y no definitivos. Ofrecemos buenas ofertas y descuentos a nuestros clientes.{{ else if eq .Page.Lang "en" }}Prices are indicative and not final. We’re happy to offer good deals and discounts to our customers.{{ else }}Prisene er veiledende og ikke endelige. Vi gir gjerne gode tilbud og rabatter til våre kunder.{{ end }}</div>
   <div class="ac-calc-grid">
     <!-- LEFT: Inputs -->
     <div class="ac-calc-card">
@@ -47,20 +48,18 @@
       <div class="ac-summary">
         <div class="ac-srow"><span>{{ if eq $lang "no" }}Selskapsform{{ else if eq $lang "en" }}Company type{{ else if eq $lang "es" }}Tipo de empresa{{ else if eq $lang "ar" }}نوع الشركة{{ else }}Company type{{ end }}</span><strong id="sCompany">—</strong></div>
         <div class="ac-srow"><span>{{ if eq $lang "no" }}Bilag{{ else if eq $lang "en" }}Vouchers{{ else if eq $lang "es" }}Comprobantes{{ else if eq $lang "ar" }}مستندات{{ else }}Vouchers{{ end }}</span><strong id="sVouchers">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}MVA{{ else if eq $lang "en" }}VAT{{ else if eq $lang "es" }}VAT{{ else if eq $lang "ar" }}VAT{{ else }}VAT{{ end }}</span><strong id="sVat">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Ansatte{{ else if eq $lang "en" }}Employees{{ else if eq $lang "es" }}Employees{{ else if eq $lang "ar" }}Employees{{ else }}Employees{{ end }}</span><strong id="sEmp">—</strong></div>
-        <div class="ac-srow"><span id="sAnnualName">{{ if eq $lang "no" }}Årlig tjeneste{{ else if eq $lang "en" }}Annual service{{ else if eq $lang "es" }}Annual service{{ else if eq $lang "ar" }}Annual service{{ else }}Annual service{{ end }}</span><strong id="sAnnual">—</strong></div>
+	        <div class="ac-srow"><span>{{ if eq $lang "no" }}MVA{{ else if eq $lang "en" }}VAT{{ else if eq $lang "es" }}IVA{{ else if eq $lang "ar" }}ضريبة القيمة المضافة{{ else }}VAT{{ end }}</span><strong id="sVat">—</strong></div>
+	        <div class="ac-srow"><span>{{ if eq $lang "no" }}Ansatte{{ else if eq $lang "en" }}Employees{{ else if eq $lang "es" }}Empleados{{ else if eq $lang "ar" }}عدد الموظفين{{ else }}Employees{{ end }}</span><strong id="sEmp">—</strong></div>
+	        <div class="ac-srow"><span id="sAnnualName">{{ if eq $lang "no" }}Årlig tjeneste{{ else if eq $lang "en" }}Annual service{{ else if eq $lang "es" }}Servicio anual{{ else if eq $lang "ar" }}خدمة سنوية{{ else }}Annual service{{ end }}</span><strong id="sAnnual">—</strong></div>
 
         <hr class="ac-hr" />
 
-        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Månedspris{{ else if eq $lang "en" }}Monthly fee{{ else if eq $lang "es" }}Monthly fee{{ else if eq $lang "ar" }}Monthly fee{{ else }}Monthly fee{{ end }}</span><strong id="outMonthly">—</strong></div>
-        <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else if eq $lang "en" }}Annual add-ons{{ else if eq $lang "es" }}Annual add-ons{{ else if eq $lang "ar" }}Annual add-ons{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
-        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else if eq $lang "en" }}Total annual cost{{ else if eq $lang "es" }}Total annual cost{{ else if eq $lang "ar" }}Total annual cost{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
+	        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Månedspris{{ else if eq $lang "en" }}Monthly fee{{ else if eq $lang "es" }}Cuota mensual{{ else if eq $lang "ar" }}الرسوم الشهرية{{ else }}Monthly fee{{ end }}</span><strong id="outMonthly">—</strong></div>
+	        <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else if eq $lang "en" }}Annual add-ons{{ else if eq $lang "es" }}Extras anuales{{ else if eq $lang "ar" }}إضافات سنوية{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
+	        <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else if eq $lang "en" }}Total annual cost{{ else if eq $lang "es" }}Coste anual total{{ else if eq $lang "ar" }}إجمالي التكلفة السنوية{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
 
     
-    <div class="ac-help" id="advisoryNote">{{ if eq .Page.Lang "ar" }}الأسعار تقديرية وليست نهائية. يسعدنا تقديم عروض وخصومات لعملائنا.{{ else if eq .Page.Lang "es" }}Los precios son orientativos y no definitivos. Ofrecemos buenas ofertas y descuentos a nuestros clientes.{{ else if eq .Page.Lang "en" }}Prices are indicative and not final. We’re happy to offer good deals and discounts to our customers.{{ else }}Prisene er veiledende og ikke endelige. Vi gir gjerne gode tilbud og rabatter til våre kunder.{{ end }}</div>
-
-    <div class="ac-note" id="outNote"></div>
+	    <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
           <span>{{ if eq $lang "no" }}Rådgivningstime{{ else if eq $lang "en" }}Advisory hourly rate{{ else if eq $lang "es" }}Hora de asesoría{{ else if eq $lang "ar" }}ساعة استشارة{{ else }}Advisory hourly rate{{ end }}</span><strong id="outAdvisory">—</strong>
