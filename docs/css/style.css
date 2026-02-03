@@ -1566,11 +1566,12 @@ address {
 }
 
 
-/* RTL desktop menu order (Arabic): keep DOM order and align from the right on desktop */
+/* RTL desktop menu order (Arabic): keep DOM order and read from right-to-left */
 @media (min-width: 821px){
-  html[dir="rtl"] .nav{
+  html[lang="ar"][dir="rtl"] .nav{
+    direction: rtl;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 }
 /* RTL (Arabic) tweaks */
@@ -1603,13 +1604,16 @@ html[dir="rtl"] .container {
     flex-direction: row-reverse;
   }
 
-  html[dir="rtl"] .nav {
-    flex-direction: row-reverse;
+  /* Arabic desktop: keep DOM order (language first), but flow right-to-left */
+  html[lang="ar"][dir="rtl"] .nav {
+    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
-  html[dir="rtl"] .nav-link {
-    margin-right: var(--space-lg);
-    margin-left: 0;
+  html[lang="ar"][dir="rtl"] .nav-link {
+    margin-left: var(--space-lg);
+    margin-right: 0;
   }
 }
 
@@ -1756,11 +1760,18 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 /* Keep Arabic mobile menu consistent; apply RTL nav alignment only on desktop */
 @media (min-width: 769px){
-  html[dir="rtl"] .header-inner{
+  html[lang="ar"][dir="rtl"] .header-inner{
     flex-direction: row-reverse;
   }
-  html[dir="rtl"] .nav{
-    flex-direction: row-reverse;
+  /* Arabic desktop: keep menu items in DOM order and flow RTL */
+  html[lang="ar"][dir="rtl"] .nav{
+    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  html[lang="ar"][dir="rtl"] .nav-link{
+    margin-left: var(--space-lg);
+    margin-right: 0;
   }
 }
 
