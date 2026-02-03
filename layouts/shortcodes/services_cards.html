@@ -1,0 +1,19 @@
+<section class="svc-wrap">
+  <div class="svc-head">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="svc-grid">
+    {{ range $i, $n := (slice 1 2 3 4 5 6) }}
+      {{ $ti := printf "c%dt" $n }}
+      {{ $di := printf "c%dd" $n }}
+      {{ $ii := printf "c%di" $n }}
+      <div class="svc-card">
+        {{ with ($.Get $ii) }}<img class="svc-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
+        <h3>{{ $.Get $ti }}</h3>
+        <p>{{ $.Get $di }}</p>
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section class="svc-faq">
+  <div class="svc-faq-head">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="svc-faq-list" role="list">
+    {{ range $i, $n := (slice 1 2 3 4) }}
+      {{ $qt := printf "q%dt" $n }}
+      {{ $qd := printf "q%dd" $n }}
+      {{ if ($.Get $qt) }}
+        <details class="svc-faq-item">
+          <summary class="svc-faq-q">{{ $.Get $qt }}</summary>
+          <div class="svc-faq-a">{{ $.Get $qd | markdownify }}</div>
+        </details>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
