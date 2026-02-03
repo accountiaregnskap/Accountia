@@ -1601,3 +1601,18 @@ html[dir="rtl"], html[dir="rtl"] body{
     flex-direction: row-reverse;
   }
 }
+
+/* RTL: prevent accidental horizontal scroll on desktop */
+@media (min-width: 769px){
+  html[dir="rtl"] body,
+  html[dir="rtl"] .site-header,
+  html[dir="rtl"] main,
+  html[dir="rtl"] footer,
+  html[dir="rtl"] .container,
+  html[dir="rtl"] .hero,
+  html[dir="rtl"] .page-hero,
+  html[dir="rtl"] .contact-section{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
