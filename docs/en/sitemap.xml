@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/en/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -16,16 +16,14 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="http://localhost:1313/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/no/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -40,20 +38,14 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ar/</loc>
-  </url><url>
-    <loc>http://localhost:1313/en/</loc>
-  </url><url>
-    <loc>http://localhost:1313/es/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/no/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -68,10 +60,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://localhost:1313/en/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -85,26 +77,22 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/contact/"
+                href="http://localhost:1313/en/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/contact/</loc>
-  </url><url>
     <loc>http://localhost:1313/en/kontakt/</loc>
-  </url><url>
-    <loc>http://localhost:1313/es/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/kontakt/</loc>
-  </url><url>
-    <loc>http://localhost:1313/om-oss/</loc>
-  </url><url>
-    <loc>http://localhost:1313/personvern/</loc>
-  </url><url>
-    <loc>http://localhost:1313/es/prices/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/kontakt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/kontakt/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/prices/</loc>
-  </url><url>
-    <loc>http://localhost:1313/prices/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -118,16 +106,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/prices/"
+                href="http://localhost:1313/en/prices/"
                 />
   </url><url>
-    <loc>http://localhost:1313/priser/</loc>
-  </url><url>
-    <loc>http://localhost:1313/es/privacy/</loc>
-  </url><url>
     <loc>http://localhost:1313/en/privacy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/privacy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -141,12 +123,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/privacy/"
+                href="http://localhost:1313/en/privacy/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/services/</loc>
-  </url><url>
-    <loc>http://localhost:1313/services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -160,18 +140,14 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/services/"
+                href="http://localhost:1313/en/services/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/services/</loc>
-  </url><url>
-    <loc>http://localhost:1313/es/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/no/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -186,19 +162,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/tjenester/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ar/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ar/prices/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ar/services/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ar/privacy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ar/about/</loc>
   </url>
 </urlset>

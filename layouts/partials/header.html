@@ -1,8 +1,20 @@
+{{/*
+  Build language switch links:
+  - Prefer current page translation if it exists
+  - Fallback to language homepage
+*/}}
+{{ $cur := . }}
+{{ $homeLinks := dict }}
+{{ range site.Home.AllTranslations }}
+  {{ $homeLinks = merge $homeLinks (dict .Lang .RelPermalink) }}
+{{ end }}
+{{ $homeLinks = merge $homeLinks (dict site.Home.Lang site.Home.RelPermalink) }}
+
 <header class="site-header">
   <div class="header-inner">
 
 
-    <a class="brand brand-stack brand-image" href="{{ if eq site.Language.Lang "en" }}/en/{{ else }}/{{ end }}" aria-label="Accountia">
+    <a class="brand brand-stack brand-image" href="{{ "/" | relLangURL }}" aria-label="Accountia">
       
       <img class="brand-img" src="{{ "images/accountia_logo_horizontal.png" | relURL }}" alt="Accountia Regnskap">
 
@@ -26,14 +38,28 @@
         </a>
       {{ end }}
 
+      {{/* Language dropdown: go to the same page in the chosen language when possible */}}
+      {{ $cur := . }}
+      {{ $home := site.Home }}
+      {{ $homeLinks := dict }}
+      {{ range $home.AllTranslations }}
+        {{ $homeLinks = merge $homeLinks (dict .Lang .RelPermalink) }}
+      {{ end }}
+      {{ $homeLinks = merge $homeLinks (dict $home.Lang $home.RelPermalink) }}
+
       <div class="lang-dd">
         <details>
           <summary>{{ i18n "lang_label" }}: {{ upper site.Language.Lang }}</summary>
           <div class="lang-dd-menu">
-            <a class="lang-item {{ if eq site.Language.Lang "no" }}active{{ end }}" href="/">NO</a>
-            <a class="lang-item {{ if eq site.Language.Lang "en" }}active{{ end }}" href="/en/">EN</a>
-            <a class="lang-item {{ if eq site.Language.Lang "es" }}active{{ end }}" href="/es/">ES</a>
-            <a class="lang-item {{ if eq site.Language.Lang "ar" }}active{{ end }}" href="/ar/">AR</a>
+            {{ range site.Languages }}
+              {{ $lang := .Lang }}
+              {{ $url := (index $homeLinks $lang) }}
+              {{ range $cur.AllTranslations }}
+                {{ if eq .Lang $lang }}{{ $url = .RelPermalink }}{{ end }}
+              {{ end }}
+              {{ if eq $cur.Lang $lang }}{{ $url = $cur.RelPermalink }}{{ end }}
+              <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ upper $lang }}</a>
+            {{ end }}
           </div>
         </details>
       </div>

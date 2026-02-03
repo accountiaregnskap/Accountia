@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="no" dir="ltr">
   <head>
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,25 @@
 
 
   <body class="page page ">
-    <header class="site-header">
+    
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+<header class="site-header">
   <div class="header-inner">
 
 
-    <a class="brand brand-stack brand-image" href="/en/" aria-label="Accountia">
+    <a class="brand brand-stack brand-image" href="/" aria-label="Accountia">
       
       <img class="brand-img" src="/images/accountia_logo_horizontal.png" alt="Accountia Regnskap">
 
@@ -34,50 +48,94 @@
 
 
     
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Åpne meny">
 
     <label class="nav-toggle-btn" for="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
-      <span class="menu-text">Menu</span>
+      <span class="menu-text">Meny</span>
     </label>
 
     <nav class="nav" role="navigation">
       
-        <a class="nav-link " href="/en/">
-          Home
+        <a class="nav-link " href="/">
+          Forside
         </a>
       
-        <a class="nav-link " href="/en/services/">
-          Services
+        <a class="nav-link " href="/tjenester/">
+          Tjenester
         </a>
       
-        <a class="nav-link " href="/en/about/">
-          About
+        <a class="nav-link " href="/om-oss/">
+          Om oss
         </a>
       
-        <a class="nav-link " href="/en/contact/">
-          Contact
+        <a class="nav-link " href="/kontakt/">
+          Kontakt
         </a>
       
-        <a class="nav-link " href="/en/privacy/">
-          Privacy
+        <a class="nav-link " href="/personvern/">
+          Personvern
         </a>
       
-        <a class="nav-link " href="/en/prices/">
-          Pricing
+        <a class="nav-link " href="/priser/">
+          Priser
         </a>
+      
+
+      
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
       
 
       <div class="lang-dd">
         <details>
-          <summary>Language: EN</summary>
+          <summary>Språk: NO</summary>
           <div class="lang-dd-menu">
-            <a class="lang-item " href="/">NO</a>
-            <a class="lang-item active" href="/en/">EN</a>
-            <a class="lang-item " href="/es/">ES</a>
-            <a class="lang-item " href="/ar/">AR</a>
+            
+              
+              
+              
+                
+              
+              
+              <a class="lang-item active" href="/priser/">NO</a>
+            
+              
+              
+              
+                
+              
+              
+              <a class="lang-item " href="/en/">EN</a>
+            
+              
+              
+              
+                
+              
+              
+              <a class="lang-item " href="/es/">ES</a>
+            
+              
+              
+              
+                
+              
+              
+              <a class="lang-item " href="/ar/">AR</a>
+            
           </div>
         </details>
       </div>
@@ -103,31 +161,31 @@
       <h1 id="priskalkulator">Priskalkulator</h1>
 <p>Velg alternativene under for å få et estimat på <strong>fast månedspris</strong>, <strong>årlige tillegg</strong> og <strong>total årskostnad</strong>.</p>
 
-<div class="ac-calc" data-lang="en">
+<div class="ac-calc" data-lang="no">
   <div class="ac-calc-grid">
     
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title">Inputs</h2>
+      <h2 class="ac-calc-title">Valg</h2>
 
-      <label class="ac-label" for="companyType">Company type</label>
+      <label class="ac-label" for="companyType">Selskapsform</label>
       <select class="ac-select" id="companyType">
-        <option value="ENK" selected>Sole Proprietorship (ENK)</option>
-        <option value="AS">Limited Company (AS)</option>
+        <option value="ENK" selected>ENK (Enkeltpersonforetak)</option>
+        <option value="AS">AS (Aksjeselskap)</option>
       </select>
 
-      <label class="ac-label" for="vouchers">Vouchers per month</label>
+      <label class="ac-label" for="vouchers">Bilag per måned</label>
       <select class="ac-select" id="vouchers"></select>
-      <div class="ac-help" id="vHelp">Choose “0” if you’re not ready to estimate yet.</div>
+      <div class="ac-help" id="vHelp">Velg “0” hvis du ikke vil beregne pris ennå.</div>
 
-      <label class="ac-label" for="vat">VAT registered</label>
+      <label class="ac-label" for="vat">MVA-registrert</label>
       <select class="ac-select" id="vat">
-        <option value="no" selected>No</option>
-        <option value="yes">Yes</option>
+        <option value="no" selected>Nei</option>
+        <option value="yes">Ja</option>
       </select>
 
-      <label class="ac-label" for="employees">Employees</label>
+      <label class="ac-label" for="employees">Antall ansatte</label>
       <select class="ac-select" id="employees">
-        <option value="0" selected>0 (None)</option>
+        <option value="0" selected>0 (Ingen)</option>
         <option value="1">1</option>
         <option value="2-3">2–3</option>
         <option value="4-6">4–6</option>
@@ -138,33 +196,33 @@
 
       <label class="ac-label" id="annualLabel" for="annualAddon"></label>
       <select class="ac-select" id="annualAddon">
-        <option value="no" selected>No</option>
-        <option value="yes">Yes</option>
+        <option value="no" selected>Nei</option>
+        <option value="yes">Ja</option>
       </select>
       <div class="ac-help" id="annualHelp"></div>
     </div>
 
     
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title" style="margin:0 0 12px;">Summary</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">Oppsummering</h2>
 
       <div class="ac-summary">
-        <div class="ac-srow"><span>Company type</span><strong id="sCompany">—</strong></div>
-        <div class="ac-srow"><span>Vouchers</span><strong id="sVouchers">—</strong></div>
-        <div class="ac-srow"><span>VAT</span><strong id="sVat">—</strong></div>
-        <div class="ac-srow"><span>Employees</span><strong id="sEmp">—</strong></div>
-        <div class="ac-srow"><span id="sAnnualName">Annual service</span><strong id="sAnnual">—</strong></div>
+        <div class="ac-srow"><span>Selskapsform</span><strong id="sCompany">—</strong></div>
+        <div class="ac-srow"><span>Bilag</span><strong id="sVouchers">—</strong></div>
+        <div class="ac-srow"><span>MVA</span><strong id="sVat">—</strong></div>
+        <div class="ac-srow"><span>Ansatte</span><strong id="sEmp">—</strong></div>
+        <div class="ac-srow"><span id="sAnnualName">Årlig tjeneste</span><strong id="sAnnual">—</strong></div>
 
         <hr class="ac-hr" />
 
-        <div class="ac-srow ac-big"><span>Monthly fee</span><strong id="outMonthly">—</strong></div>
-        <div class="ac-srow"><span>Annual add-ons</span><strong id="outAnnual">—</strong></div>
-        <div class="ac-srow ac-big"><span>Total annual cost</span><strong id="outTotalAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>Månedspris</span><strong id="outMonthly">—</strong></div>
+        <div class="ac-srow"><span>Årlige tillegg</span><strong id="outAnnual">—</strong></div>
+        <div class="ac-srow ac-big"><span>Total årskostnad</span><strong id="outTotalAnnual">—</strong></div>
 
         <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
-          <span>Advisory hourly rate</span><strong id="outAdvisory">—</strong>
+          <span>Rådgivningstime</span><strong id="outAdvisory">—</strong>
         </div>
       </div>
     </div>
@@ -382,10 +440,10 @@
     </div>
 
     <div>
-      <strong>Contact</strong><br>
-      Phone: <a href="tel:&#43;47%20483%2042%20461">&#43;47 483 42 461</a><br>
-      Email: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
-      Open 08:00–16:00 (Mon–Fri)
+      <strong>Kontakt</strong><br>
+      Tlf: <a href="tel:483%2042%20461">483 42 461</a><br>
+      E-post: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
+      Åpent 08:00–16:00 (man–fre)
     </div>
   </div>
   <div class="container footer-bottom">
