@@ -22,13 +22,13 @@
 
 
     <!-- Mobil meny-toggle -->
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ if eq site.Language.Lang "en" }}Open menu{{ else }}Åpne meny{{ end }}">
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ i18n "open_menu" }}">
 
     <label class="nav-toggle-btn" for="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
-      <span class="menu-text">{{ if eq site.Language.Lang "en" }}Menu{{ else }}Meny{{ end }}</span>
+      <span class="menu-text">{{ i18n "menu" }}</span>
     </label>
 
     <nav class="nav" role="navigation">

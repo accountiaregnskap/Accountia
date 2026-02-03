@@ -38,7 +38,10 @@
       <h2 class="contact-title">{{ i18n "contact_form_title" }}</h2>
       <p class="contact-intro">{{ i18n "contact_form_intro" }}</p>
 
-      <form action="https://formspree.io/f/myzgjlgl" method="POST">
+      {{/* Formspree endpoints per language */}}
+      {{ $formspreeMap := dict "no" "https://formspree.io/f/mgoagpwd" "en" "https://formspree.io/f/xojlrzrw" "es" "https://formspree.io/f/meeznbqe" "ar" "https://formspree.io/f/mzdvoqne" }}
+      {{ $formAction := index $formspreeMap site.Language.Lang | default "https://formspree.io/f/mgoagpwd" }}
+      <form action="{{ $formAction }}" method="POST">
         <label for="name">{{ i18n "form_name" }}</label>
         <input type="text" id="name" name="name" placeholder="{{ i18n "form_name_ph" }}" required>
 

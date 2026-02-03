@@ -63,3 +63,9 @@ other = "¿En qué podemos ayudarte?"
 
 [footer_orgnr]
 other = "N.º org."
+
+[menu]
+other = "Menú"
+
+[open_menu]
+other = "Abrir menú"

@@ -63,3 +63,9 @@ other = "كيف يمكننا مساعدتك؟"
 
 [footer_orgnr]
 other = "رقم المؤسسة"
+
+[menu]
+other = "القائمة"
+
+[open_menu]
+other = "فتح القائمة"
