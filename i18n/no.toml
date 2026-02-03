@@ -10,62 +10,47 @@ other = "E-post"
 [lang_label]
 other = "Språk"
 
-[[translations]]
-id = "contact_info_title"
-translation = "Kontaktinformasjon"
+[contact_info_title]
+other = "Kontaktinformasjon"
 
-[[translations]]
-id = "contact_form_title"
-translation = "Kontakt oss"
+[contact_form_title]
+other = "Kontakt oss"
 
-[[translations]]
-id = "contact_form_intro"
-translation = "Send oss en melding – vi svarer så raskt vi kan i åpningstiden."
+[contact_form_intro]
+other = "Send oss en melding – vi svarer så raskt vi kan i åpningstiden."
 
-[[translations]]
-id = "contact_phone"
-translation = "Telefon"
+[contact_phone]
+other = "Telefon"
 
-[[translations]]
-id = "contact_email"
-translation = "E-post"
+[contact_email]
+other = "E-post"
 
-[[translations]]
-id = "contact_address"
-translation = "Adresse"
+[contact_address]
+other = "Adresse"
 
-[[translations]]
-id = "contact_openhours"
-translation = "Åpningstid"
+[contact_openhours]
+other = "Åpningstid"
 
-[[translations]]
-id = "contact_orgnr"
-translation = "Org.nr"
+[contact_orgnr]
+other = "Org.nr"
 
-[[translations]]
-id = "form_name"
-translation = "Navn"
+[form_name]
+other = "Navn"
 
-[[translations]]
-id = "form_email"
-translation = "E-post"
+[form_email]
+other = "E-post"
 
-[[translations]]
-id = "form_message"
-translation = "Melding"
+[form_message]
+other = "Melding"
 
-[[translations]]
-id = "form_send"
-translation = "Send melding"
+[form_send]
+other = "Send melding"
 
-[[translations]]
-id = "form_name_ph"
-translation = "Ditt navn"
+[form_name_ph]
+other = "Ditt navn"
 
-[[translations]]
-id = "form_email_ph"
-translation = "din@epost.no"
+[form_email_ph]
+other = "din@epost.no"
 
-[[translations]]
-id = "form_message_ph"
-translation = "Hva kan vi hjelpe deg med?"
+[form_message_ph]
+other = "Hva kan vi hjelpe deg med?"

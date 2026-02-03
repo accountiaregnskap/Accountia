@@ -16,62 +16,47 @@ other = "Dirección"
 [footer_openhours]
 other = "Horario"
 
-[[translations]]
-id = "contact_info_title"
-translation = "Información de contacto"
+[contact_info_title]
+other = "Información de contacto"
 
-[[translations]]
-id = "contact_form_title"
-translation = "Contáctanos"
+[contact_form_title]
+other = "Contáctanos"
 
-[[translations]]
-id = "contact_form_intro"
-translation = "Envíanos un mensaje: responderemos lo antes posible durante el horario laboral."
+[contact_form_intro]
+other = "Envíanos un mensaje: responderemos lo antes posible durante el horario laboral."
 
-[[translations]]
-id = "contact_phone"
-translation = "Teléfono"
+[contact_phone]
+other = "Teléfono"
 
-[[translations]]
-id = "contact_email"
-translation = "Correo electrónico"
+[contact_email]
+other = "Correo electrónico"
 
-[[translations]]
-id = "contact_address"
-translation = "Dirección"
+[contact_address]
+other = "Dirección"
 
-[[translations]]
-id = "contact_openhours"
-translation = "Horario de atención"
+[contact_openhours]
+other = "Horario de atención"
 
-[[translations]]
-id = "contact_orgnr"
-translation = "N.º de organización"
+[contact_orgnr]
+other = "N.º de organización"
 
-[[translations]]
-id = "form_name"
-translation = "Nombre"
+[form_name]
+other = "Nombre"
 
-[[translations]]
-id = "form_email"
-translation = "Correo electrónico"
+[form_email]
+other = "Correo electrónico"
 
-[[translations]]
-id = "form_message"
-translation = "Mensaje"
+[form_message]
+other = "Mensaje"
 
-[[translations]]
-id = "form_send"
-translation = "Enviar mensaje"
+[form_send]
+other = "Enviar mensaje"
 
-[[translations]]
-id = "form_name_ph"
-translation = "Tu nombre"
+[form_name_ph]
+other = "Tu nombre"
 
-[[translations]]
-id = "form_email_ph"
-translation = "tu@correo.com"
+[form_email_ph]
+other = "tu@correo.com"
 
-[[translations]]
-id = "form_message_ph"
-translation = "¿En qué podemos ayudarte?"
+[form_message_ph]
+other = "¿En qué podemos ayudarte?"

@@ -31,68 +31,32 @@ other = "ساعات العمل"
 [contact_orgnr]
 other = "رقم المؤسسة"
 
-[footer_address]
-other = "العنوان"
+[contact_info_title]
+other = "معلومات التواصل"
 
-[footer_openhours]
-other = "ساعات العمل"
+[contact_form_title]
+other = "تواصل معنا"
 
-[[translations]]
-id = "contact_info_title"
-translation = "معلومات التواصل"
+[contact_form_intro]
+other = "أرسل لنا رسالة — سنرد عليك بأسرع ما يمكن خلال ساعات العمل."
 
-[[translations]]
-id = "contact_form_title"
-translation = "تواصل معنا"
+[form_name]
+other = "الاسم"
 
-[[translations]]
-id = "contact_form_intro"
-translation = "أرسل لنا رسالة — سنرد عليك بأسرع ما يمكن خلال ساعات العمل."
+[form_email]
+other = "البريد الإلكتروني"
 
-[[translations]]
-id = "contact_phone"
-translation = "هاتف"
+[form_message]
+other = "الرسالة"
 
-[[translations]]
-id = "contact_email"
-translation = "البريد الإلكتروني"
+[form_send]
+other = "إرسال"
 
-[[translations]]
-id = "contact_address"
-translation = "العنوان"
+[form_name_ph]
+other = "اسمك"
 
-[[translations]]
-id = "contact_openhours"
-translation = "ساعات العمل"
+[form_email_ph]
+other = "name@example.com"
 
-[[translations]]
-id = "contact_orgnr"
-translation = "رقم المؤسسة"
-
-[[translations]]
-id = "form_name"
-translation = "الاسم"
-
-[[translations]]
-id = "form_email"
-translation = "البريد الإلكتروني"
-
-[[translations]]
-id = "form_message"
-translation = "الرسالة"
-
-[[translations]]
-id = "form_send"
-translation = "إرسال"
-
-[[translations]]
-id = "form_name_ph"
-translation = "اسمك"
-
-[[translations]]
-id = "form_email_ph"
-translation = "name@example.com"
-
-[[translations]]
-id = "form_message_ph"
-translation = "كيف يمكننا مساعدتك؟"
+[form_message_ph]
+other = "كيف يمكننا مساعدتك؟"

@@ -10,62 +10,47 @@ other = "Email"
 [lang_label]
 other = "Language"
 
-[[translations]]
-id = "contact_info_title"
-translation = "Contact information"
+[contact_info_title]
+other = "Contact information"
 
-[[translations]]
-id = "contact_form_title"
-translation = "Contact us"
+[contact_form_title]
+other = "Contact us"
 
-[[translations]]
-id = "contact_form_intro"
-translation = "Send us a message — we'll get back to you as quickly as possible during business hours."
+[contact_form_intro]
+other = "Send us a message — we'll get back to you as quickly as possible during business hours."
 
-[[translations]]
-id = "contact_phone"
-translation = "Phone"
+[contact_phone]
+other = "Phone"
 
-[[translations]]
-id = "contact_email"
-translation = "Email"
+[contact_email]
+other = "Email"
 
-[[translations]]
-id = "contact_address"
-translation = "Address"
+[contact_address]
+other = "Address"
 
-[[translations]]
-id = "contact_openhours"
-translation = "Opening hours"
+[contact_openhours]
+other = "Opening hours"
 
-[[translations]]
-id = "contact_orgnr"
-translation = "Org. no."
+[contact_orgnr]
+other = "Org. no."
 
-[[translations]]
-id = "form_name"
-translation = "Name"
+[form_name]
+other = "Name"
 
-[[translations]]
-id = "form_email"
-translation = "Email"
+[form_email]
+other = "Email"
 
-[[translations]]
-id = "form_message"
-translation = "Message"
+[form_message]
+other = "Message"
 
-[[translations]]
-id = "form_send"
-translation = "Send message"
+[form_send]
+other = "Send message"
 
-[[translations]]
-id = "form_name_ph"
-translation = "Your name"
+[form_name_ph]
+other = "Your name"
 
-[[translations]]
-id = "form_email_ph"
-translation = "you@example.com"
+[form_email_ph]
+other = "you@example.com"
 
-[[translations]]
-id = "form_message_ph"
-translation = "How can we help you?"
+[form_message_ph]
+other = "How can we help you?"
