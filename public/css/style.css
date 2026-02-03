@@ -265,7 +265,7 @@ strong {
 
 .nav-link {
   text-decoration: none;
-  color: var(--text);
+  color: var(--accent-dark);
   padding: var(--space-md) var(--space-lg);
   border-radius: var(--radius-md);
   font-weight: 600;
@@ -276,8 +276,8 @@ strong {
 }
 
 .nav-link:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--text);
+  background: rgba(212, 165, 116, 0.12);
+  color: var(--accent-dark);
 }
 
 .nav-link.active {
@@ -1566,14 +1566,10 @@ address {
 }
 
 
-/* RTL desktop menu order (Arabic):
-   We only change the visual order of the menu headings.
-   The language selector is rendered first in HTML for Arabic; using row-reverse
-   places it on the far right, followed by Home, Services, About, Contact, Privacy, Pricing.
-*/
+/* RTL desktop menu order (Arabic): keep DOM order and align from the right on desktop */
 @media (min-width: 821px){
   html[dir="rtl"] .nav{
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-start;
   }
 }
@@ -1848,4 +1844,11 @@ html[dir="rtl"], html[dir="rtl"] body{
 }
 @media (max-width: 520px) {
   .system-logos img { height: 28px; }
+}
+
+/* Gold active nav */
+.nav-link[aria-current="page"],
+.nav-link.is-active{
+  color: #fff;
+  background: var(--accent-dark);
 }
