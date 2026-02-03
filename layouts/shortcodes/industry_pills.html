@@ -1,0 +1,15 @@
+{{ $items := split (.Get "items") "," }}
+
+<section class="pills-wrap">
+  <div class="pills-head">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="pills-row">
+    {{ range $items }}
+      {{ $t := trim . " " }}
+      {{ if $t }}<span class="pill">{{ $t }}</span>{{ end }}
+    {{ end }}
+  </div>
+</section>

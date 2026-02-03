@@ -1,0 +1,19 @@
+<section class="process-wrap">
+  <div class="process-head">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="process-grid">
+    {{ range $i, $n := (slice 1 2 3 4) }}
+      {{ $ti := printf "s%dt" $n }}
+      {{ $di := printf "s%dd" $n }}
+      {{ $ii := printf "s%di" $n }}
+      <div class="process-card">
+        {{ with ($.Get $ii) }}<img class="process-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
+        <h3>{{ $.Get $ti }}</h3>
+        <p>{{ $.Get $di }}</p>
+      </div>
+    {{ end }}
+  </div>
+</section>

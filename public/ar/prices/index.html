@@ -59,30 +59,6 @@
 
     <nav class="nav" role="navigation">
       
-        <a class="nav-link " href="/ar/">
-          الرئيسية
-        </a>
-      
-        <a class="nav-link " href="/ar/services/">
-          الخدمات
-        </a>
-      
-        <a class="nav-link " href="/ar/about/">
-          من نحن
-        </a>
-      
-        <a class="nav-link " href="/ar/contact/">
-          اتصل بنا
-        </a>
-      
-        <a class="nav-link " href="/ar/privacy/">
-          الخصوصية
-        </a>
-      
-        <a class="nav-link " href="/ar/prices/">
-          الأسعار
-        </a>
-      
 
       
       
@@ -102,62 +78,100 @@
       
       
 
-      <div class="lang-dd">
-        <details>
-          <summary>اللغة: العربية</summary>
-          <div class="lang-dd-menu">
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              
-              <a class="lang-item " href="/">Norsk</a>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              
-              <a class="lang-item " href="/en/prices/">English</a>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              
-              <a class="lang-item " href="/es/prices/">Español</a>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              
-              <a class="lang-item active" href="/ar/prices/">العربية</a>
-            
-          </div>
-        </details>
-      </div>
+      
+      
+
+      
+        
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<div class="lang-dd">
+  <details>
+    <summary>اللغة: العربية</summary>
+    <div class="lang-dd-menu">
+      
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        
+        <a class="lang-item " href="/">Norsk</a>
+      
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        
+        <a class="lang-item " href="/en/prices/">English</a>
+      
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        
+        <a class="lang-item " href="/es/prices/">Español</a>
+      
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        
+        <a class="lang-item active" href="/ar/prices/">العربية</a>
+      
+    </div>
+  </details>
+</div>
+
+        
+          <a class="nav-link " href="/ar/">الرئيسية</a>
+        
+          <a class="nav-link " href="/ar/services/">الخدمات</a>
+        
+          <a class="nav-link " href="/ar/about/">من نحن</a>
+        
+          <a class="nav-link " href="/ar/contact/">اتصل بنا</a>
+        
+          <a class="nav-link " href="/ar/privacy/">الخصوصية</a>
+        
+          <a class="nav-link " href="/ar/prices/">الأسعار</a>
+        
+      
     </nav>
   </div>
 </header>
@@ -400,19 +414,19 @@
       $("outMonthly").textContent = "—";
       $("outAnnual").textContent = "—";
       $("outTotalAnnual").textContent = "—";
-      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
       $("outNote").textContent = T("Velg bilagsintervall for å få et estimat.", "Select your voucher range to get an estimate", "Selecciona tu rango de comprobantes para obtener una estimación.", "اختر نطاق المستندات للحصول على تقدير.");
       return;
     }
 
     if (basePrice === "contact" || EMP_ADDON[empKey] === "contact"){
-      $("outMonthly").textContent = T("Kontakt oss", "Contact us");
-      $("outAnnual").textContent = T("Kontakt oss", "Contact us");
-      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us");
-      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outMonthly").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("outAnnual").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
       $("outNote").textContent = T(
         "Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.",
-        "Your selection is outside the standard packages. Contact us for a tailored quote."
+        T("Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.", "Your selection is outside the standard packages. Contact us for a tailored quote.", "Tu selección está fuera de los paquetes estándar. Contáctanos para una oferta a medida.", "اختيارك خارج الباقات القياسية. اتصل بنا للحصول على عرض مخصص.")
       );
       return;
     }
@@ -428,13 +442,15 @@
 
     const totalAnnual = (monthly * 12) + annualAddon;
 
-    $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+    $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
     $("outMonthly").textContent = money(monthly) + T(" / mnd", " / month", " / mes", " / شهر");
     $("outAnnual").textContent = money(annualAddon) + T(" / år", " / year", " / año", " / سنة");
     $("outTotalAnnual").textContent = money(totalAnnual) + T(" / år", " / year", " / año", " / سنة");
     $("outNote").textContent = T(
       "Estimater basert på standardpakker. Endelig pris kan variere med kompleksitet og omfang.",
-      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope."
+      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope.",
+      "Las estimaciones se basan en paquetes estándar. El precio final puede variar según la complejidad y el alcance.",
+      "التقديرات مبنية على باقات قياسية. قد يختلف السعر النهائي حسب التعقيد ونطاق العمل."
     );
   }
 
@@ -472,6 +488,15 @@
       هاتف: <a href="tel:&#43;47%2048342461">&#43;47 48342461</a><br>
       البريد: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
       ساعات العمل 08:00–16:00 (الاثنين–الجمعة)
+
+      <div class="footer-social">
+        <a class="social-btn" href="https://www.linkedin.com/company/accountia-regnskap/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="/images/icons/linkedin.svg" alt="" aria-hidden="true"> LinkedIn
+        </a>
+        <a class="social-btn" href="https://www.facebook.com/share/19zMEBXbLv/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="/images/icons/facebook.svg" alt="" aria-hidden="true"> Facebook
+        </a>
+      </div>
     </div>
   </div>
   <div class="container footer-bottom">

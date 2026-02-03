@@ -219,19 +219,19 @@
       $("outMonthly").textContent = "—";
       $("outAnnual").textContent = "—";
       $("outTotalAnnual").textContent = "—";
-      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
       $("outNote").textContent = T("Velg bilagsintervall for å få et estimat.", "Select your voucher range to get an estimate", "Selecciona tu rango de comprobantes para obtener una estimación.", "اختر نطاق المستندات للحصول على تقدير.");
       return;
     }
 
     if (basePrice === "contact" || EMP_ADDON[empKey] === "contact"){
-      $("outMonthly").textContent = T("Kontakt oss", "Contact us");
-      $("outAnnual").textContent = T("Kontakt oss", "Contact us");
-      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us");
-      $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+      $("outMonthly").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("outAnnual").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("outTotalAnnual").textContent = T("Kontakt oss", "Contact us", "Contáctanos", "اتصل بنا");
+      $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
       $("outNote").textContent = T(
         "Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.",
-        "Your selection is outside the standard packages. Contact us for a tailored quote."
+        T("Valget er utenfor standardpakkene. Kontakt oss for et skreddersydd tilbud.", "Your selection is outside the standard packages. Contact us for a tailored quote.", "Tu selección está fuera de los paquetes estándar. Contáctanos para una oferta a medida.", "اختيارك خارج الباقات القياسية. اتصل بنا للحصول على عرض مخصص.")
       );
       return;
     }
@@ -247,13 +247,15 @@
 
     const totalAnnual = (monthly * 12) + annualAddon;
 
-    $("sAnnual").textContent = annualYes ? T("Ja", "Yes") : T("Nei", "No");
+    $("sAnnual").textContent = annualYes ? T("Ja", "Yes", "Sí", "نعم") : T("Nei", "No", "No", "لا");
     $("outMonthly").textContent = money(monthly) + T(" / mnd", " / month", " / mes", " / شهر");
     $("outAnnual").textContent = money(annualAddon) + T(" / år", " / year", " / año", " / سنة");
     $("outTotalAnnual").textContent = money(totalAnnual) + T(" / år", " / year", " / año", " / سنة");
     $("outNote").textContent = T(
       "Estimater basert på standardpakker. Endelig pris kan variere med kompleksitet og omfang.",
-      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope."
+      "Estimates are based on standard packages. Final pricing may vary depending on complexity and scope.",
+      "Las estimaciones se basan en paquetes estándar. El precio final puede variar según la complejidad y el alcance.",
+      "التقديرات مبنية على باقات قياسية. قد يختلف السعر النهائي حسب التعقيد ونطاق العمل."
     );
   }
 

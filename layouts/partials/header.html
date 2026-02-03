@@ -32,11 +32,13 @@
     </label>
 
     <nav class="nav" role="navigation">
-      {{ range site.Menus.main }}
-        <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
-          {{ .Name }}
-        </a>
-      {{ end }}
+      {{/*
+        RTL (Arabic) desired behavior:
+        - Language selector on the far right
+        - Then Forside, Tjenester, Om oss, Kontakt, Personvern, Priser (reading right-to-left)
+        Achieve this by rendering the language dropdown first for Arabic,
+        and keeping menu items in their natural order.
+      */}}
 
       {{/* Language dropdown: go to the same page in the chosen language when possible */}}
       {{ $cur := . }}
@@ -50,22 +52,20 @@
       {{/* Pretty, native language names in the dropdown */}}
       {{ $langNames := dict "no" "Norsk" "en" "English" "es" "Español" "ar" "العربية" }}
 
-      <div class="lang-dd">
-        <details>
-          <summary>{{ i18n "lang_label" }}: {{ index $langNames site.Language.Lang | default (upper site.Language.Lang) }}</summary>
-          <div class="lang-dd-menu">
-            {{ range site.Languages }}
-              {{ $lang := .Lang }}
-              {{ $url := (index $homeLinks $lang) }}
-              {{ range $cur.AllTranslations }}
-                {{ if eq .Lang $lang }}{{ $url = .RelPermalink }}{{ end }}
-              {{ end }}
-              {{ if eq $cur.Lang $lang }}{{ $url = $cur.RelPermalink }}{{ end }}
-              <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ index $langNames $lang | default (upper $lang) }}</a>
-            {{ end }}
-          </div>
-        </details>
-      </div>
+      {{/* Language dropdown component */}}
+      {{ $langDropdown := partial "lang-dropdown.html" . }}
+
+      {{ if eq site.Language.Lang "ar" }}
+        {{ $langDropdown | safeHTML }}
+        {{ range site.Menus.main }}
+          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      {{ else }}
+        {{ range site.Menus.main }}
+          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+        {{ $langDropdown | safeHTML }}
+      {{ end }}
     </nav>
   </div>
 </header>

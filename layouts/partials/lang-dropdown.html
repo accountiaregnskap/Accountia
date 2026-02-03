@@ -1,0 +1,32 @@
+{{/*
+  Language dropdown (details/summary) used in the header.
+  Tries to link to the current page translation if it exists, otherwise to the language home.
+*/}}
+
+{{ $cur := . }}
+{{ $home := site.Home }}
+
+{{ $homeLinks := dict }}
+{{ range $home.AllTranslations }}
+  {{ $homeLinks = merge $homeLinks (dict .Lang .RelPermalink) }}
+{{ end }}
+{{ $homeLinks = merge $homeLinks (dict $home.Lang $home.RelPermalink) }}
+
+{{ $langNames := dict "no" "Norsk" "en" "English" "es" "Español" "ar" "العربية" }}
+
+<div class="lang-dd">
+  <details>
+    <summary>{{ i18n "lang_label" }}: {{ index $langNames site.Language.Lang | default (upper site.Language.Lang) }}</summary>
+    <div class="lang-dd-menu">
+      {{ range site.Languages }}
+        {{ $lang := .Lang }}
+        {{ $url := (index $homeLinks $lang) }}
+        {{ range $cur.AllTranslations }}
+          {{ if eq .Lang $lang }}{{ $url = .RelPermalink }}{{ end }}
+        {{ end }}
+        {{ if eq $cur.Lang $lang }}{{ $url = $cur.RelPermalink }}{{ end }}
+        <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ index $langNames $lang | default (upper $lang) }}</a>
+      {{ end }}
+    </div>
+  </details>
+</div>

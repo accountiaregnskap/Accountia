@@ -1,0 +1,19 @@
+{{ $items := split (.Get "items") "||" }}
+
+<section class="testi-wrap">
+  <div class="testi-head">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="testi-grid">
+    {{ range $items }}
+      {{ $t := trim . " " }}
+      {{ if $t }}
+        <div class="testi-card">
+          <p class="testi-quote">“{{ $t }}”</p>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
