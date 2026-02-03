@@ -1514,3 +1514,90 @@ html[dir="rtl"] .privacy-grid {
 html[dir="rtl"] .footer-grid {
   direction: rtl;
 }
+
+/* Contact page layout (restores proper form styling) */
+.contact-section{
+  padding: 24px 0 40px;
+}
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 22px;
+  align-items: start;
+}
+.contact-card{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.contact-title{
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.contact-intro{
+  margin: 0 0 14px;
+  opacity: .9;
+}
+.contact-info-list .contact-row{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.contact-info-list .contact-row:first-child{
+  border-top: 0;
+  padding-top: 0;
+}
+.contact-label{
+  font-weight: 700;
+  opacity: .9;
+}
+.contact-value a{
+  text-decoration: none;
+}
+
+.contact-form form{
+  display: grid;
+  gap: 10px;
+}
+.contact-form label{
+  font-weight: 700;
+  margin-top: 6px;
+}
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 14px;
+  background: #fff;
+}
+.contact-form textarea{ resize: vertical; }
+
+@media (max-width: 768px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact-info-list .contact-row{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Arabic (RTL) overflow fix (desktop + mobile) */
+html[dir="rtl"], html[dir="rtl"] body{
+  overflow-x: hidden;
+}
+
+/* Keep Arabic mobile menu consistent; apply RTL nav alignment only on desktop */
+@media (min-width: 769px){
+  html[dir="rtl"] .header-inner{
+    flex-direction: row-reverse;
+  }
+  html[dir="rtl"] .nav{
+    flex-direction: row-reverse;
+  }
+}

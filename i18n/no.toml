@@ -54,3 +54,6 @@ other = "din@epost.no"
 
 [form_message_ph]
 other = "Hva kan vi hjelpe deg med?"
+
+[footer_orgnr]
+other = "Org.nr"

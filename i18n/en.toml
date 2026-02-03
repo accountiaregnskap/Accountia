@@ -54,3 +54,6 @@ other = "you@example.com"
 
 [form_message_ph]
 other = "How can we help you?"
+
+[footer_orgnr]
+other = "Org. no."

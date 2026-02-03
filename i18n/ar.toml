@@ -60,3 +60,6 @@ other = "name@example.com"
 
 [form_message_ph]
 other = "كيف يمكننا مساعدتك؟"
+
+[footer_orgnr]
+other = "رقم المؤسسة"

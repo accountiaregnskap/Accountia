@@ -60,3 +60,6 @@ other = "tu@correo.com"
 
 [form_message_ph]
 other = "¿En qué podemos ayudarte?"
+
+[footer_orgnr]
+other = "N.º org."
