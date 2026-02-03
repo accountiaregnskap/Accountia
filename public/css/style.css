@@ -50,6 +50,7 @@ html {
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -191,6 +192,18 @@ strong {
   padding: 0;
   animation: slideInLeft 0.5s ease-out;
 }
+
+.brand-logo-link,
+.brand-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo-link {
+  display: flex;
+  align-items: center;
+}
+
 
 .brand:hover {
   opacity: 0.9;
@@ -337,7 +350,7 @@ strong {
   }
 
   .brand-logo {
-    height: 65px;
+    height: 70px;
   }
 
   /* Navn i MIDTEN */
@@ -394,6 +407,8 @@ strong {
   .nav-link:last-child {
     border-bottom: none;
   }
+
+  .lang-link{margin-left:0;}
 }
 
 /* ===== DESKTOP MENU ===== */
@@ -520,14 +535,15 @@ strong {
 /* Mobile: Forside litt større (120%), undersider keep cover */
 @media (max-width: 820px) {
   .hero {
-    background-size: 120%;
-    background-position: center;
+    background-size: cover;
+    background-position: center 30%;
     background-repeat: no-repeat;
     background-color: #0b1220;
   }
 
   .page-hero {
     background-size: cover;
+    background-position: center 35%;
   }
 }
 
@@ -982,4 +998,688 @@ address {
 }
 .nav .lang-link:hover {
   background: rgba(0,0,0,0.05);
+}
+
+
+/* mobile brand sizing override */
+@media (max-width: 820px) {
+  .brand-name { font-size: 20px; }
+  .brand-sub { font-size: 13px; }
+}
+
+/* About split layout */
+.about-split{
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items:start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+.about-photo img{
+  width:100%;
+  height:auto;
+  border-radius: 18px;
+  display:block;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+.about-name{
+  margin: 0 0 6px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+.about-role{
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.about-hr{
+  border: 0;
+  border-top: 2px solid rgba(0,0,0,0.12);
+  width: 80px;
+  margin: 14px 0 16px;
+}
+/* Mobile */
+@media (max-width: 900px){
+  .about-split{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-name{
+    font-size: 26px;
+  }
+}
+
+.about-text p{ margin: 0 0 12px; }
+
+/* Desktop only: make page hero same height as front page hero */
+@media (min-width: 901px){
+  .page-hero{
+    min-height: 550px;
+  }
+}
+
+/* About value cards section */
+.value-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 26px;
+  align-items: start;
+}
+.value-title{ margin:0 0 10px; font-size: 34px; line-height:1.1; }
+.value-lead{ margin:0; opacity:0.85; }
+
+.value-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.value-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 16px 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+.value-icon{
+  width: 40px;
+  height: 40px;
+  margin: 0 0 10px;
+  opacity: 0.9;
+}
+.value-card h3{ margin:0 0 6px; font-size: 16px; }
+.value-card p{ margin:0; font-size: 14px; opacity:0.85; line-height:1.5; }
+
+/* Mobile layout for cards */
+@media (max-width: 900px){
+  .value-wrap{ grid-template-columns: 1fr; padding: 28px 0 6px; }
+  .value-grid{ grid-template-columns: 1fr; }
+  .value-title{ font-size: 26px; }
+}
+
+
+.privacy-wrap{max-width:1100px;margin:0 auto;padding:40px 0}
+.privacy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.privacy-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.privacy-card h3{margin:0 0 8px;font-size:16px}
+.privacy-card p{margin:0;font-size:14px;opacity:.85;line-height:1.5}
+@media(max-width:900px){.privacy-grid{grid-template-columns:1fr}}
+
+
+.brand-sub {
+  color: #c9a24d;
+  font-weight: 600;
+}
+
+/* Desktop only – make inner-page hero background behave like home */
+@media (min-width: 1024px) {
+  .page-hero{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+  }
+}
+
+
+
+
+/* ===== TEXT LOGO (Accountia) ===== */
+.brand-textlogo{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  line-height:1.1;
+}
+
+.brand-ar{
+  font-size:34px;
+  font-weight:700;
+  color:#c9a24d;
+}
+
+.brand-plus{
+  font-size:22px;
+  vertical-align:top;
+}
+
+.brand-name{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#0f1f28;
+}
+
+.brand-sub{
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:4px;
+  color:#c9a24d;
+}
+
+/* Mobile center */
+@media (max-width: 768px){
+  .brand-textlogo{
+    align-items:center;
+    text-align:center;
+  }
+}
+
+/* Brand logo (text-based) – matches AR+ / ACCOUNTIA / REGNSKAP */
+.brand-stacked{
+  font-family: "Montserrat", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: inherit;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.05;
+  gap:4px;
+}
+
+.brand-stacked .brand-ar{
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  color: #c9a24d;
+  letter-spacing: 0.5px;
+}
+
+.brand-stacked .brand-ar-plus{
+  position: relative;
+  top: -10px;
+  left: 2px;
+  font-size: 22px;
+}
+
+.brand-stacked .brand-title{
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #0f1b24;
+}
+
+.brand-stacked .brand-subtitle{
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c9a24d;
+}
+
+/* Mobile: center the brand in the header */
+@media (max-width: 900px){
+  .brand-stacked{
+    align-items:center;
+    text-align:center;
+    margin: 0 auto;
+  }
+}
+
+
+/* Desktop: a bit larger */
+@media (min-width: 1024px){
+  .brand.brand-stack .brand-mark{ width:56px; }
+  .brand.brand-stack .brand-name{ font-size:22px; }
+  .brand.brand-stack .brand-sub{ font-size:12px; }
+}
+
+/* Mobile: center the stacked brand */
+@media (max-width: 900px){
+  .site-header .header-inner{
+    position:relative;
+  }
+  .brand.brand-stack{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    align-items:center !important;
+    text-align:center;
+  }
+}
+
+/* Brand stack: AR+ over ACCOUNTIA, subline under (desktop + mobile) */
+.brand.brand-stack{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:4px !important;
+  text-decoration:none;
+  color:inherit;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  position: static !important;
+  transform: none !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.brand.brand-stack .brand-mark{
+  width:44px !important;
+  height:auto !important;
+  max-width:44px !important;
+  display:block;
+}
+
+.brand.brand-stack .brand-name{
+  display:block;
+  font-weight:800;
+  letter-spacing:0.8px;
+  line-height:1;
+  font-size:20px;
+}
+
+.brand.brand-stack .brand-sub{
+  display:block;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#c9a24d;
+  line-height:1.1;
+  font-size:12px;
+  margin-top:2px;
+}
+
+/* Desktop: slightly bigger but never overflowing */
+@media (min-width: 1024px){
+  .brand.brand-stack .brand-mark{ width:48px !important; max-width:48px !important; }
+  .brand.brand-stack .brand-name{ font-size:22px; }
+  .brand.brand-stack .brand-sub{ font-size:12px; }
+}
+
+/* Mobile: center brand without absolute positioning (prevents overflow) */
+@media (max-width: 768px){
+  .site-header .header-inner{
+    display:flex;
+    justify-content:center;
+  }
+  .brand.brand-stack{
+    align-items:center !important;
+    text-align:center;
+  }
+}
+
+}
+
+}
+
+}
+
+
+/* Desktop: slightly bigger, placed between left and center */
+@media (min-width: 1024px){
+  .brand.brand-image{
+    margin-left: 90px;
+  }
+  .brand.brand-image .brand-img{
+    height:140px;
+    max-width:900px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .brand.brand-image{
+    margin-left: 0;
+  }
+  .brand.brand-image .brand-img{
+    height:96px;
+    max-width:520px;
+  }
+}
+
+/* Header logo image (fit inside white header bar) */
+.site-header{
+  /* ensure header is tall enough so logo never overlaps hero */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-header .header-inner{
+  align-items:center;
+}
+
+.brand.brand-image{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.brand.brand-image .brand-img{
+  display:block;
+  height:64px;          /* desktop default */
+  width:auto;
+  max-width:520px;
+}
+
+/* Desktop: slightly bigger + placed between left and center */
+@media (min-width: 1024px){
+  .brand.brand-image{
+    margin-left: 70px;  /* between left and center */
+  }
+  .brand.brand-image .brand-img{
+    height:72px;        /* a bit bigger, but fits header */
+    max-width:600px;
+  }
+}
+
+/* Mobile: smaller (prevent oversized logo) */
+@media (max-width: 768px){
+  .site-header{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .brand.brand-image{
+    margin-left: 0;
+  }
+  .brand.brand-image .brand-img{
+    height:40px;
+    max-width:220px;
+  }
+}
+
+/* Mobile menu: move slightly up */
+@media (max-width: 768px){
+  .nav{
+    margin-top: -10px;
+  }
+}
+
+.nav-toggle-btn{
+    transform: translateY(-5px);
+  }
+}
+
+/* Mobile header fine-tune: logo down slightly, menu button up slightly */
+@media (max-width: 768px){
+  .brand.brand-image{
+    transform: translateY(22px);
+  }
+  .nav-toggle-btn{
+    transform: translateY(-8px);
+  }
+}
+
+/* === MOBILE HEADER LOGO FINAL ADJUST === */
+@media (max-width: 768px) {
+  .site-header .brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-header .brand img {
+    transform: translateY(13px) scale(1.15);
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+/* Language dropdown (single button) */
+.lang-dd{
+  margin-left: 8px;
+  display:flex;
+  align-items:center;
+}
+.lang-dd details{ position:relative; }
+.lang-dd summary{
+  list-style:none;
+  cursor:pointer;
+  padding:8px 10px;
+  border-radius:10px;
+  font-weight:700;
+  border:1px solid rgba(0,0,0,0.12);
+}
+.lang-dd summary::-webkit-details-marker{ display:none; }
+.lang-dd-menu{
+  position:absolute;
+  right:0;
+  top:calc(100% + 8px);
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.12);
+  border-radius:12px;
+  overflow:hidden;
+  min-width:140px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  z-index:999;
+}
+.lang-item{
+  display:block;
+  padding:10px 12px;
+  text-decoration:none;
+  color:inherit;
+  white-space:nowrap;
+}
+.lang-item:hover{ background:rgba(0,0,0,0.06); }
+.lang-item.active{ font-weight:800; }
+@media (max-width:768px){
+  /* Keep language selector in the header row on mobile (avoid dropping below hero) */
+  .lang-dd{ width:auto; margin:0 0 0 10px; }
+  html[dir="rtl"] .lang-dd{ margin:0 10px 0 0; }
+  .lang-dd-menu{ left:0; right:auto; }
+}
+
+/* RTL (Arabic) tweaks */
+html[dir="rtl"] .hero-content{ text-align:right; }
+html[dir="rtl"] .hero h1{ white-space:normal; }
+html[dir="rtl"] .hero-actions{ justify-content:flex-end; }
+
+/* ==========================
+   RTL (Arabic) fixes
+   Prevent horizontal overflow and mirror layout.
+   ========================== */
+html[dir="rtl"],
+html[dir="rtl"] body {
+  overflow-x: hidden;
+}
+
+/* Keep containers centered in RTL */
+html[dir="rtl"] .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Only reverse header/menu on desktop so mobile layout stays consistent */
+@media (min-width: 900px) {
+  html[dir="rtl"] .site-header .header-inner {
+    flex-direction: row-reverse;
+  }
+
+  html[dir="rtl"] .nav {
+    flex-direction: row-reverse;
+  }
+
+  html[dir="rtl"] .nav-link {
+    margin-right: var(--space-lg);
+    margin-left: 0;
+  }
+}
+
+html[dir="rtl"] .hero,
+html[dir="rtl"] .page-hero {
+  text-align: right;
+}
+
+html[dir="rtl"] .btn-row {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .value-cards,
+html[dir="rtl"] .services-grid,
+html[dir="rtl"] .pricing-grid,
+html[dir="rtl"] .privacy-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+/* Contact page layout (restores proper form styling) */
+.contact-section{
+  padding: 24px 0 40px;
+}
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 22px;
+  align-items: start;
+}
+.contact-card{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.contact-title{
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.contact-intro{
+  margin: 0 0 14px;
+  opacity: .9;
+}
+.contact-info-list .contact-row{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.contact-info-list .contact-row:first-child{
+  border-top: 0;
+  padding-top: 0;
+}
+.contact-label{
+  font-weight: 700;
+  opacity: .9;
+}
+.contact-value a{
+  text-decoration: none;
+}
+
+.contact-form form{
+  display: grid;
+  gap: 10px;
+}
+.contact-form label{
+  font-weight: 700;
+  margin-top: 6px;
+}
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 14px;
+  background: #fff;
+}
+.contact-form textarea{ resize: vertical; }
+
+@media (max-width: 768px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact-info-list .contact-row{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Arabic (RTL) overflow fix (desktop + mobile) */
+html[dir="rtl"], html[dir="rtl"] body{
+  overflow-x: hidden;
+}
+
+/* Keep Arabic mobile menu consistent; apply RTL nav alignment only on desktop */
+@media (min-width: 769px){
+  html[dir="rtl"] .header-inner{
+    flex-direction: row-reverse;
+  }
+  html[dir="rtl"] .nav{
+    flex-direction: row-reverse;
+  }
+}
+
+/* Pricing calculator advisory line (shown under the calculator title) */
+.ac-calc-advisory{
+  margin: 10px auto 18px;
+  max-width: 980px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #b91c1c;
+  background: rgba(185, 28, 28, 0.06);
+  text-align: center;
+}
+
+/* RTL: prevent accidental horizontal scroll on desktop */
+@media (min-width: 769px){
+  html[dir="rtl"] body,
+  html[dir="rtl"] .site-header,
+  html[dir="rtl"] main,
+  html[dir="rtl"] footer,
+  html[dir="rtl"] .container,
+  html[dir="rtl"] .hero,
+  html[dir="rtl"] .page-hero,
+  html[dir="rtl"] .contact-section{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Systems logos (Services page) */
+.system-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+}
+.system-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+.system-logos img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 520px) {
+  .system-logos img { height: 28px; }
+}
+
+/* Systems logos (Services page) */
+.system-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+}
+.system-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+.system-logos img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 520px) {
+  .system-logos img { height: 28px; }
 }
