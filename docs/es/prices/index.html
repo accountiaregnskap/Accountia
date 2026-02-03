@@ -220,7 +220,7 @@
 
     
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title" style="margin:0 0 12px;">Summary</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">Resumen</h2>
 
       <div class="ac-summary">
         <div class="ac-srow"><span>Tipo de empresa</span><strong id="sCompany">—</strong></div>
@@ -235,7 +235,10 @@
         <div class="ac-srow"><span>Annual add-ons</span><strong id="outAnnual">—</strong></div>
         <div class="ac-srow ac-big"><span>Total annual cost</span><strong id="outTotalAnnual">—</strong></div>
 
-        <div class="ac-note" id="outNote"></div>
+    
+    <div class="ac-help" id="advisoryNote">Los precios son orientativos y no definitivos. Ofrecemos buenas ofertas y descuentos a nuestros clientes.</div>
+
+    <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
           <span>Hora de asesoría</span><strong id="outAdvisory">—</strong>
@@ -286,7 +289,14 @@
   if(!root) return;
   const lang = root.getAttribute("data-lang") || "no";
 
-  const T = (no, en) => (lang === "no" ? no : en);
+  const T = (no, en, es = en, ar = en) => {
+    switch (lang) {
+      case "no": return no;
+      case "es": return es;
+      case "ar": return ar;
+      default: return en;
+    }
+  };
 
   const VAT_ADDON_MONTHLY = 700;
   const ADVISORY_HOURLY = 899;
@@ -457,7 +467,7 @@
 
     <div>
       <strong>Contacto</strong><br>
-      Tel.: <a href="tel:&#43;47%20483%2042%20461">&#43;47 483 42 461</a><br>
+      Tel.: <a href="tel:&#43;47%2048342461">&#43;47 48342461</a><br>
       Correo: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
       Abierto 08:00–16:00 (Lun–Vie)
     </div>

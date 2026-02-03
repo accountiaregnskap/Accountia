@@ -219,7 +219,10 @@
         <div class="ac-srow"><span>Årlige tillegg</span><strong id="outAnnual">—</strong></div>
         <div class="ac-srow ac-big"><span>Total årskostnad</span><strong id="outTotalAnnual">—</strong></div>
 
-        <div class="ac-note" id="outNote"></div>
+    
+    <div class="ac-help" id="advisoryNote">Prisene er veiledende og ikke endelige. Vi gir gjerne gode tilbud og rabatter til våre kunder.</div>
+
+    <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
           <span>Rådgivningstime</span><strong id="outAdvisory">—</strong>
@@ -270,7 +273,14 @@
   if(!root) return;
   const lang = root.getAttribute("data-lang") || "no";
 
-  const T = (no, en) => (lang === "no" ? no : en);
+  const T = (no, en, es = en, ar = en) => {
+    switch (lang) {
+      case "no": return no;
+      case "es": return es;
+      case "ar": return ar;
+      default: return en;
+    }
+  };
 
   const VAT_ADDON_MONTHLY = 700;
   const ADVISORY_HOURLY = 899;

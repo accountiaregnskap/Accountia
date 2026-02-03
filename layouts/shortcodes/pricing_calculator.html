@@ -42,7 +42,7 @@
 
     <!-- RIGHT: Summary -->
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title" style="margin:0 0 12px;">{{ if eq $lang "no" }}Oppsummering{{ else if eq $lang "en" }}Summary{{ else if eq $lang "es" }}Summary{{ else if eq $lang "ar" }}Summary{{ else }}Summary{{ end }}</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">{{ if eq $lang "no" }}Oppsummering{{ else if eq $lang "en" }}Summary{{ else if eq $lang "es" }}Resumen{{ else if eq $lang "ar" }}الملخص{{ else }}Summary{{ end }}</h2>
 
       <div class="ac-summary">
         <div class="ac-srow"><span>{{ if eq $lang "no" }}Selskapsform{{ else if eq $lang "en" }}Company type{{ else if eq $lang "es" }}Tipo de empresa{{ else if eq $lang "ar" }}نوع الشركة{{ else }}Company type{{ end }}</span><strong id="sCompany">—</strong></div>
@@ -57,7 +57,10 @@
         <div class="ac-srow"><span>{{ if eq $lang "no" }}Årlige tillegg{{ else if eq $lang "en" }}Annual add-ons{{ else if eq $lang "es" }}Annual add-ons{{ else if eq $lang "ar" }}Annual add-ons{{ else }}Annual add-ons{{ end }}</span><strong id="outAnnual">—</strong></div>
         <div class="ac-srow ac-big"><span>{{ if eq $lang "no" }}Total årskostnad{{ else if eq $lang "en" }}Total annual cost{{ else if eq $lang "es" }}Total annual cost{{ else if eq $lang "ar" }}Total annual cost{{ else }}Total annual cost{{ end }}</span><strong id="outTotalAnnual">—</strong></div>
 
-        <div class="ac-note" id="outNote"></div>
+    
+    <div class="ac-help" id="advisoryNote">{{ if eq .Page.Lang "ar" }}الأسعار تقديرية وليست نهائية. يسعدنا تقديم عروض وخصومات لعملائنا.{{ else if eq .Page.Lang "es" }}Los precios son orientativos y no definitivos. Ofrecemos buenas ofertas y descuentos a nuestros clientes.{{ else if eq .Page.Lang "en" }}Prices are indicative and not final. We’re happy to offer good deals and discounts to our customers.{{ else }}Prisene er veiledende og ikke endelige. Vi gir gjerne gode tilbud og rabatter til våre kunder.{{ end }}</div>
+
+    <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
           <span>{{ if eq $lang "no" }}Rådgivningstime{{ else if eq $lang "en" }}Advisory hourly rate{{ else if eq $lang "es" }}Hora de asesoría{{ else if eq $lang "ar" }}ساعة استشارة{{ else }}Advisory hourly rate{{ end }}</span><strong id="outAdvisory">—</strong>
@@ -108,7 +111,14 @@
   if(!root) return;
   const lang = root.getAttribute("data-lang") || "no";
 
-  const T = (no, en) => (lang === "no" ? no : en);
+  const T = (no, en, es = en, ar = en) => {
+    switch (lang) {
+      case "no": return no;
+      case "es": return es;
+      case "ar": return ar;
+      default: return en;
+    }
+  };
 
   const VAT_ADDON_MONTHLY = 700;
   const ADVISORY_HOURLY = 899;

@@ -220,7 +220,7 @@
 
     
     <div class="ac-calc-card">
-      <h2 class="ac-calc-title" style="margin:0 0 12px;">Summary</h2>
+      <h2 class="ac-calc-title" style="margin:0 0 12px;">الملخص</h2>
 
       <div class="ac-summary">
         <div class="ac-srow"><span>نوع الشركة</span><strong id="sCompany">—</strong></div>
@@ -235,7 +235,10 @@
         <div class="ac-srow"><span>Annual add-ons</span><strong id="outAnnual">—</strong></div>
         <div class="ac-srow ac-big"><span>Total annual cost</span><strong id="outTotalAnnual">—</strong></div>
 
-        <div class="ac-note" id="outNote"></div>
+    
+    <div class="ac-help" id="advisoryNote">الأسعار تقديرية وليست نهائية. يسعدنا تقديم عروض وخصومات لعملائنا.</div>
+
+    <div class="ac-note" id="outNote"></div>
 
         <div class="ac-srow" style="margin-top:14px;">
           <span>ساعة استشارة</span><strong id="outAdvisory">—</strong>
@@ -286,7 +289,14 @@
   if(!root) return;
   const lang = root.getAttribute("data-lang") || "no";
 
-  const T = (no, en) => (lang === "no" ? no : en);
+  const T = (no, en, es = en, ar = en) => {
+    switch (lang) {
+      case "no": return no;
+      case "es": return es;
+      case "ar": return ar;
+      default: return en;
+    }
+  };
 
   const VAT_ADDON_MONTHLY = 700;
   const ADVISORY_HOURLY = 899;
@@ -457,7 +467,7 @@
 
     <div>
       <strong>اتصال</strong><br>
-      هاتف: <a href="tel:&#43;47%20483%2042%20461">&#43;47 483 42 461</a><br>
+      هاتف: <a href="tel:&#43;47%2048342461">&#43;47 48342461</a><br>
       البريد: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
       ساعات العمل 08:00–16:00 (الاثنين–الجمعة)
     </div>
