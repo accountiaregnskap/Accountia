@@ -9,3 +9,63 @@ other = "Email"
 
 [lang_label]
 other = "Language"
+
+[[translations]]
+id = "contact_info_title"
+translation = "Contact information"
+
+[[translations]]
+id = "contact_form_title"
+translation = "Contact us"
+
+[[translations]]
+id = "contact_form_intro"
+translation = "Send us a message — we'll get back to you as quickly as possible during business hours."
+
+[[translations]]
+id = "contact_phone"
+translation = "Phone"
+
+[[translations]]
+id = "contact_email"
+translation = "Email"
+
+[[translations]]
+id = "contact_address"
+translation = "Address"
+
+[[translations]]
+id = "contact_openhours"
+translation = "Opening hours"
+
+[[translations]]
+id = "contact_orgnr"
+translation = "Org. no."
+
+[[translations]]
+id = "form_name"
+translation = "Name"
+
+[[translations]]
+id = "form_email"
+translation = "Email"
+
+[[translations]]
+id = "form_message"
+translation = "Message"
+
+[[translations]]
+id = "form_send"
+translation = "Send message"
+
+[[translations]]
+id = "form_name_ph"
+translation = "Your name"
+
+[[translations]]
+id = "form_email_ph"
+translation = "you@example.com"
+
+[[translations]]
+id = "form_message_ph"
+translation = "How can we help you?"

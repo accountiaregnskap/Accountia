@@ -9,3 +9,63 @@ other = "Tel."
 
 [footer_email]
 other = "Correo"
+
+[[translations]]
+id = "contact_info_title"
+translation = "Información de contacto"
+
+[[translations]]
+id = "contact_form_title"
+translation = "Contáctanos"
+
+[[translations]]
+id = "contact_form_intro"
+translation = "Envíanos un mensaje: responderemos lo antes posible durante el horario laboral."
+
+[[translations]]
+id = "contact_phone"
+translation = "Teléfono"
+
+[[translations]]
+id = "contact_email"
+translation = "Correo electrónico"
+
+[[translations]]
+id = "contact_address"
+translation = "Dirección"
+
+[[translations]]
+id = "contact_openhours"
+translation = "Horario de atención"
+
+[[translations]]
+id = "contact_orgnr"
+translation = "N.º de organización"
+
+[[translations]]
+id = "form_name"
+translation = "Nombre"
+
+[[translations]]
+id = "form_email"
+translation = "Correo electrónico"
+
+[[translations]]
+id = "form_message"
+translation = "Mensaje"
+
+[[translations]]
+id = "form_send"
+translation = "Enviar mensaje"
+
+[[translations]]
+id = "form_name_ph"
+translation = "Tu nombre"
+
+[[translations]]
+id = "form_email_ph"
+translation = "tu@correo.com"
+
+[[translations]]
+id = "form_message_ph"
+translation = "¿En qué podemos ayudarte?"

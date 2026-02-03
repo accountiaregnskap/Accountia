@@ -103,39 +103,60 @@
       <p>A continuación encontrarás el formulario de contacto y la información de contacto.</p>
 
       
-        <section class="contact-block">
+        <section class="contact-section">
   <div class="contact-grid">
-    <div class="card">
-      <h2>Contáctanos</h2>
-      <p>Envíanos un mensaje: responderemos lo antes posible durante el horario laboral.</p>
 
-      <form class="form" method="post" action="https://formspree.io/f/mgoagpwd">
-        <label>Nombre
-          <input type="text" name="name" placeholder="Ditt navn" required>
-        </label>
+    
+    <div class="contact-card contact-info">
+      <h2 class="contact-title"></h2>
 
-        <label>Correo
-          <input type="email" name="email" placeholder="din@epost.no" required>
-        </label>
+      <div class="contact-info-list">
+        <div class="contact-row">
+          <span class="contact-label"></span>
+          <span class="contact-value"><a href="tel:&#43;47%20483%2042%20461">&#43;47 483 42 461</a></span>
+        </div>
 
-        <label>Mensaje
-          <textarea name="message" rows="5" placeholder="Hva kan vi hjelpe deg med?" required></textarea>
-        </label>
+        <div class="contact-row">
+          <span class="contact-label"></span>
+          <span class="contact-value"><a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a></span>
+        </div>
 
-        <button class="btn" type="submit">Send melding</button>
+        <div class="contact-row">
+          <span class="contact-label"></span>
+          <span class="contact-value">Oterdalen 58, 5914 Isdalstø</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label"></span>
+          <span class="contact-value">Abierto 08:00–16:00 (Lun–Vie)</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label"></span>
+          <span class="contact-value">936 229 239</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="contact-card contact-form">
+      <h2 class="contact-title"></h2>
+      <p class="contact-intro"></p>
+
+      <form action="https://formspree.io/f/myzgjlgl" method="POST">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="" required>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="_replyto" placeholder="" required>
+
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="6" placeholder="" required></textarea>
+
+        <button type="submit" class="btn btn-primary"></button>
       </form>
     </div>
 
-    <div class="card">
-      <h2>Kontaktinformasjon</h2>
-      <ul class="info-list">
-        <li><strong>Telefon:</strong> <a href="tel:"></a></li>
-        <li><strong>Correo:</strong> <a href="mailto:"></a></li>
-        <li><strong>Adresse:</strong> <a href="https://maps.google.com/?q=" target="_blank"></a></li>
-        <li><strong>Åpningstid:</strong> Åpent 08:00–16:00 (man–fre)</li>
-        <li><strong>Org.nr:</strong> </li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -148,20 +169,20 @@
     <footer class="site-footer">
   <div class="container footer-inner">
     <div>
-      <strong></strong><br>
-      Org.nr: <br>
-      <a href="https://maps.google.com/?q=" target="_blank"></a>
+      <strong>Accountia</strong><br>
+      Org.nr: 936 229 239<br>
+      <a href="https://maps.google.com/?q=Oterdalen%2058%2c%205914%20Isdalst%c3%b8" target="_blank">Oterdalen 58, 5914 Isdalstø</a>
     </div>
 
     <div>
       <strong>Contacto</strong><br>
-      Tel.: <a href="tel:"></a><br>
-      Correo: <a href="mailto:"></a><br>
-      
+      Tel.: <a href="tel:&#43;47%20483%2042%20461">&#43;47 483 42 461</a><br>
+      Correo: <a href="mailto:post.acountia@gmail.com">post.acountia@gmail.com</a><br>
+      Abierto 08:00–16:00 (Lun–Vie)
     </div>
   </div>
   <div class="container footer-bottom">
-    © 2026 
+    © 2026 Accountia
   </div>
 </footer>
   </body>

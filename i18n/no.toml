@@ -9,3 +9,63 @@ other = "E-post"
 
 [lang_label]
 other = "Språk"
+
+[[translations]]
+id = "contact_info_title"
+translation = "Kontaktinformasjon"
+
+[[translations]]
+id = "contact_form_title"
+translation = "Kontakt oss"
+
+[[translations]]
+id = "contact_form_intro"
+translation = "Send oss en melding – vi svarer så raskt vi kan i åpningstiden."
+
+[[translations]]
+id = "contact_phone"
+translation = "Telefon"
+
+[[translations]]
+id = "contact_email"
+translation = "E-post"
+
+[[translations]]
+id = "contact_address"
+translation = "Adresse"
+
+[[translations]]
+id = "contact_openhours"
+translation = "Åpningstid"
+
+[[translations]]
+id = "contact_orgnr"
+translation = "Org.nr"
+
+[[translations]]
+id = "form_name"
+translation = "Navn"
+
+[[translations]]
+id = "form_email"
+translation = "E-post"
+
+[[translations]]
+id = "form_message"
+translation = "Melding"
+
+[[translations]]
+id = "form_send"
+translation = "Send melding"
+
+[[translations]]
+id = "form_name_ph"
+translation = "Ditt navn"
+
+[[translations]]
+id = "form_email_ph"
+translation = "din@epost.no"
+
+[[translations]]
+id = "form_message_ph"
+translation = "Hva kan vi hjelpe deg med?"

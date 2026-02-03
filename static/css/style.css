@@ -1462,3 +1462,45 @@ address {
 html[dir="rtl"] .hero-content{ text-align:right; }
 html[dir="rtl"] .hero h1{ white-space:normal; }
 html[dir="rtl"] .hero-actions{ justify-content:flex-end; }
+
+/* ==========================
+   RTL (Arabic) fixes
+   Prevent horizontal overflow and mirror layout.
+   ========================== */
+html[dir="rtl"],
+html[dir="rtl"] body {
+  overflow-x: hidden;
+}
+
+html[dir="rtl"] .site-header .header-inner {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-link { 
+  margin-left: var(--space-lg);
+  margin-right: 0;
+}
+
+html[dir="rtl"] .hero,
+html[dir="rtl"] .page-hero {
+  text-align: right;
+}
+
+html[dir="rtl"] .btn-row {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .value-cards,
+html[dir="rtl"] .services-grid,
+html[dir="rtl"] .pricing-grid,
+html[dir="rtl"] .privacy-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
