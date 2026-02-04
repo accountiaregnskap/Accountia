@@ -8,6 +8,8 @@ defaultContentLanguageInSubdir = false
 
 [params]
 siteName = "Accountia"
+description = "Regnskapstjenester og økonomisk rådgivning for bedrifter. Effektivt, trygt og tilgjengelig."
+ogImage = "/images/hero.jpg"
 phone = "+47 48342461"
 email = "post.acountia@gmail.com"
 address = "Oterdalen 58, 5914 Isdalstø"
@@ -22,6 +24,8 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
     contentDir = "content"
     [languages.no.params]
       siteName = "Accountia"
+      description = "Regnskapstjenester og økonomisk rådgivning for bedrifter. Effektivt, trygt og tilgjengelig."
+      ogImage = "/images/hero.jpg"
       orgnr = "936 229 239"
       address = "Oterdalen 58, 5914 Isdalstø"
       phone = "483 42 461"
@@ -60,6 +64,8 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
     contentDir = "content/en"
     [languages.en.params]
       siteName = "Accountia"
+      description = "Accounting services and financial advisory for businesses. Efficient, reliable, and accessible."
+      ogImage = "/images/hero.jpg"
       orgnr = "936 229 239"
       address = "Oterdalen 58, 5914 Isdalstø"
       phone = "+47 48342461"
@@ -101,6 +107,8 @@ contentDir = "content/es"
 
 [languages.es.params]
   siteName = "Accountia"
+  description = "Servicios contables y asesoría financiera para empresas. Eficiente, fiable y accesible."
+  ogImage = "/images/hero.jpg"
   orgnr = "936 229 239"
   address = "Oterdalen 58, 5914 Isdalstø"
   phone = "+47 48342461"
@@ -140,6 +148,8 @@ contentDir = "content/ar"
 
 [languages.ar.params]
   siteName = "Accountia"
+  description = "خدمات محاسبية واستشارات مالية للشركات. فعّالة وموثوقة وسهلة الوصول."
+  ogImage = "/images/hero.jpg"
   orgnr = "936 229 239"
   address = "Oterdalen 58, 5914 Isdalstø"
   phone = "+47 48342461"

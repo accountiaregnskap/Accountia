@@ -5,6 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
 
+{{/* Open Graph + Twitter */}}
+{{- $ogTitle := (cond .IsHome site.Title (printf "%s · %s" .Title site.Title)) -}}
+{{- $ogDesc := or .Params.description .Description (or (.Summary | plainify | htmlUnescape | truncate 160) site.Params.description) -}}
+{{- $ogImage := site.Params.ogImage -}}
+{{- with .Params.og_image }}{{ $ogImage = . }}{{ end -}}
+{{- with .Params.image }}{{ $ogImage = . }}{{ end -}}
+{{- with .Params.images }}{{ $ogImage = index . 0 }}{{ end -}}
+{{- $ogImageAbs := ($ogImage | absURL) -}}
+
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta name="description" content="{{ $ogDesc }}" />
+
+<meta property="og:title" content="{{ $ogTitle }}" />
+<meta property="og:description" content="{{ $ogDesc }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $ogImageAbs }}" />
+<meta property="og:site_name" content="{{ site.Params.siteName | default site.Title }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $ogTitle }}" />
+<meta name="twitter:description" content="{{ $ogDesc }}" />
+<meta name="twitter:image" content="{{ $ogImageAbs }}" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
