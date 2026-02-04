@@ -2,167 +2,167 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/about/</loc>
+    <loc>https://acountia.no/en/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/about/"
+                href="https://acountia.no/es/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/about/"
+                href="https://acountia.no/ar/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/about/"
+                href="https://acountia.no/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>https://acountia.no/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/"
+                href="https://acountia.no/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="https://acountia.no/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/"
+                href="https://acountia.no/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://acountia.no/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://acountia.no/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/categories/"
+                href="https://acountia.no/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/categories/"
+                href="https://acountia.no/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/categories/"
+                href="https://acountia.no/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://acountia.no/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/contact/</loc>
+    <loc>https://acountia.no/en/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/contact/"
+                href="https://acountia.no/es/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/contact/"
+                href="https://acountia.no/ar/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/contact/"
+                href="https://acountia.no/en/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/kontakt/</loc>
+    <loc>https://acountia.no/en/kontakt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/kontakt/"
+                href="https://acountia.no/kontakt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/kontakt/"
+                href="https://acountia.no/en/kontakt/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/prices/</loc>
+    <loc>https://acountia.no/en/prices/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/prices/"
+                href="https://acountia.no/es/prices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/prices/"
+                href="https://acountia.no/ar/prices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/prices/"
+                href="https://acountia.no/en/prices/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/privacy/</loc>
+    <loc>https://acountia.no/en/privacy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/privacy/"
+                href="https://acountia.no/es/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/privacy/"
+                href="https://acountia.no/ar/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/privacy/"
+                href="https://acountia.no/en/privacy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/services/</loc>
+    <loc>https://acountia.no/en/services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/services/"
+                href="https://acountia.no/es/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/services/"
+                href="https://acountia.no/ar/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/services/"
+                href="https://acountia.no/en/services/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://acountia.no/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
-                href="http://localhost:1313/tags/"
+                href="https://acountia.no/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/"
+                href="https://acountia.no/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/tags/"
+                href="https://acountia.no/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://acountia.no/en/tags/"
                 />
   </url>
 </urlset>
