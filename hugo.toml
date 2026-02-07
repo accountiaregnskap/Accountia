@@ -12,7 +12,7 @@ description = "Regnskapstjenester og økonomisk rådgivning for bedrifter. Effek
 ogImage = "/images/og-accountia-social-v3.jpg"
 phone = "+47 48342461"
       whatsapp = "https://wa.me/4748342461"
-email = "post.acountia@gmail.com"
+email = "info@acountia.no"
 address = "Oterdalen 58, 5914 Isdalstø"
 orgnr = "936 229 239"
 openhours = "Åpent 08:00–16:00 (man–fre)"
@@ -31,7 +31,7 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
       address = "Oterdalen 58, 5914 Isdalstø"
       phone = "483 42 461"
       whatsapp = "https://wa.me/4748342461"
-      email = "post.acountia@gmail.com"
+      email = "info@acountia.no"
       openhours = "Åpent 08:00–16:00 (man–fre)"
 
     [languages.no.menu]
@@ -72,7 +72,7 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
       address = "Oterdalen 58, 5914 Isdalstø"
       phone = "+47 48342461"
       whatsapp = "https://wa.me/4748342461"
-      email = "post.acountia@gmail.com"
+      email = "info@acountia.no"
       openhours = "Open 08:00–16:00 (Mon–Fri)"
 
     [languages.en.menu]
@@ -116,7 +116,7 @@ contentDir = "content/es"
   address = "Oterdalen 58, 5914 Isdalstø"
   phone = "+47 48342461"
       whatsapp = "https://wa.me/4748342461"
-  email = "post.acountia@gmail.com"
+  email = "info@acountia.no"
   openhours = "Abierto 08:00–16:00 (Lun–Vie)"
 [languages.es.menu]
 [[languages.es.menu.main]]
@@ -158,7 +158,7 @@ contentDir = "content/ar"
   address = "Oterdalen 58, 5914 Isdalstø"
   phone = "+47 48342461"
       whatsapp = "https://wa.me/4748342461"
-  email = "post.acountia@gmail.com"
+  email = "info@acountia.no"
   openhours = "ساعات العمل 08:00–16:00 (الاثنين–الجمعة)"
 
 [languages.ar.menu]

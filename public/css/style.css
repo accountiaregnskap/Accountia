@@ -1566,11 +1566,12 @@ address {
 }
 
 
-/* RTL desktop: keep natural menu order but make it read right-to-left */
+/* RTL desktop menu order (Arabic): keep DOM order and read from right-to-left */
 @media (min-width: 821px){
-  html[dir="rtl"] .nav{
+  html[lang="ar"][dir="rtl"] .nav{
     direction: rtl;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 /* RTL (Arabic) tweaks */
@@ -1603,13 +1604,16 @@ html[dir="rtl"] .container {
     flex-direction: row-reverse;
   }
 
-  html[dir="rtl"] .nav {
-    flex-direction: row-reverse;
+  /* Arabic desktop: keep DOM order (language first), but flow right-to-left */
+  html[lang="ar"][dir="rtl"] .nav {
+    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
-  html[dir="rtl"] .nav-link {
-    margin-right: var(--space-lg);
-    margin-left: 0;
+  html[lang="ar"][dir="rtl"] .nav-link {
+    margin-left: var(--space-lg);
+    margin-right: 0;
   }
 }
 
@@ -1631,6 +1635,49 @@ html[dir="rtl"] .privacy-grid {
 
 html[dir="rtl"] .footer-grid {
   direction: rtl;
+}
+
+/* ==========================
+   Services page (modern, but different from the front page)
+   ========================== */
+.svc-wrap{ margin: 28px 0; }
+.svc-head{ margin-bottom: 14px; }
+.svc-head h2{ margin:0 0 8px; }
+.svc-head p{ margin:0; color: var(--text-secondary); max-width: 72ch; }
+.svc-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 14px;
+}
+.svc-card{
+  background: rgba(255,255,255,0.98);
+  border: 1px solid rgba(17,24,39,0.10);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.05);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.svc-card:hover{ transform: translateY(-2px); box-shadow: 0 14px 34px rgba(0,0,0,0.07); }
+.svc-icon{ width: 34px; height: 34px; margin-bottom: 10px; }
+.svc-card h3{ margin: 0 0 8px; font-size: 18px; }
+.svc-card p{ margin: 0; color: var(--text-secondary); }
+
+.svc-faq{ margin: 30px 0; }
+.svc-faq-head{ margin-bottom: 12px; }
+.svc-faq-head p{ margin:0; color: var(--text-secondary); max-width: 72ch; }
+.svc-faq-list{ display:flex; flex-direction: column; gap: 10px; }
+.svc-faq-item{
+  background: rgba(255,255,255,0.98);
+  border: 1px solid rgba(17,24,39,0.10);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.svc-faq-q{ cursor:pointer; font-weight: 800; list-style: none; }
+.svc-faq-q::-webkit-details-marker{ display:none; }
+.svc-faq-a{ margin-top: 10px; color: var(--text-secondary); }
+
+@media (max-width: 900px){
+  .svc-grid{ grid-template-columns: 1fr; }
 }
 
 /* Contact page layout (restores proper form styling) */
@@ -1713,11 +1760,18 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 /* Keep Arabic mobile menu consistent; apply RTL nav alignment only on desktop */
 @media (min-width: 769px){
-  html[dir="rtl"] .header-inner{
+  html[lang="ar"][dir="rtl"] .header-inner{
     flex-direction: row-reverse;
   }
-  html[dir="rtl"] .nav{
-    flex-direction: row-reverse;
+  /* Arabic desktop: keep menu items in DOM order and flow RTL */
+  html[lang="ar"][dir="rtl"] .nav{
+    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  html[lang="ar"][dir="rtl"] .nav-link{
+    margin-left: var(--space-lg);
+    margin-right: 0;
   }
 }
 

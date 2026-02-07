@@ -50,7 +50,7 @@ other = "Send message"
 other = "Your name"
 
 [form_email_ph]
-other = "you@example.com"
+other = "info@acountia.no"
 
 [form_message_ph]
 other = "How can we help you?"
