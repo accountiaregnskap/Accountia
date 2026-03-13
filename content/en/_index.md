@@ -15,8 +15,6 @@ hero_cards:
     text: "Structured, predictable process"
 ---
 
-{{< image_slider >}}
-
 {{< value_cards
 title="Modern accounting – built for control"
 lead="We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility."
@@ -28,6 +26,7 @@ c5i="handshake" c5t="Availability" c5d="Fast responses and a partner who follows
 c6i="target" c6t="Growth focus" c6d="Advisory that supports profitability and growth."
 >}}
 
+{{< image_slider >}}
 
 {{< process_steps
 title="How we work – simple and predictable"

@@ -15,8 +15,6 @@ hero_cards:
     text: "God plan, ryddig prosess"
 ---
 
-{{< image_slider >}}
-
 {{< value_cards
 title="Et moderne regnskapsbyrå – bygget for kontroll"
 lead="Vi kombinerer gode rutiner, moderne systemer og tett oppfølging – slik at du får riktig rapportering og full oversikt."
@@ -28,6 +26,7 @@ c5i="handshake" c5t="Tilgjengelighet" c5d="Du får raskt svar og en partner som 
 c6i="target" c6t="Vekstfokus" c6d="Rådgivning som støtter beslutninger og lønnsomhet."
 >}}
 
+{{< image_slider >}}
 
 {{< process_steps
 title="Slik jobber vi – enkelt og forutsigbart"

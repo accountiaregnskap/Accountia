@@ -1,4 +1,4 @@
-<div class="ac-slider" data-autoplay="true" data-interval="5000" aria-label="Accountia gallery">
+<div class="ac-slider" data-autoplay="true" data-interval="2000" aria-label="Accountia gallery">
   <div class="ac-slider-track">
     <figure class="ac-slide is-active">
       <img src="/images/slider/accountia-slide-1.png" alt="Accountia Regnskap for bedrifter i hele Norge" loading="eager" />
@@ -28,7 +28,8 @@
 <style>
   .ac-slider {
     position: relative;
-    margin: 24px 0 40px;
+    max-width: 760px;
+    margin: 32px auto 40px;
     border-radius: 28px;
     overflow: hidden;
     background: #f5f2ec;
@@ -37,7 +38,7 @@
 
   .ac-slider-track {
     position: relative;
-    min-height: 320px;
+    min-height: 260px;
   }
 
   .ac-slide {
@@ -52,10 +53,9 @@
   .ac-slide img {
     display: block;
     width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
+    height: clamp(420px, 62vw, 760px);
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
     background: #f8f8f8;
   }
 
@@ -100,12 +100,12 @@
 
   @media (max-width: 900px) {
     .ac-slider {
-      margin: 20px 0 32px;
+      margin: 20px auto 32px;
       border-radius: 22px;
     }
 
     .ac-slide img {
-      aspect-ratio: 3 / 4;
+      height: clamp(360px, 110vw, 560px);
     }
 
     .ac-slider-nav {
@@ -155,8 +155,6 @@
       start();
     });
 
-    slider.addEventListener("mouseenter", stop);
-    slider.addEventListener("mouseleave", start);
     slider.addEventListener("focusin", stop);
     slider.addEventListener("focusout", start);
 

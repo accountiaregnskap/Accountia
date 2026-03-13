@@ -15,8 +15,6 @@ hero_cards:
     text: "Buen plan, proceso ordenado"
 ---
 
-{{< image_slider >}}
-
 {{< value_cards
 title="Contabilidad moderna — para tener control"
 lead="Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y visibilidad total."
@@ -28,6 +26,7 @@ c5i="handshake" c5t="Disponibilidad" c5d="Respuesta rápida y acompañamiento co
 c6i="target" c6t="Enfoque en crecimiento" c6d="Asesoría que impulsa rentabilidad y crecimiento."
 >}}
 
+{{< image_slider >}}
 
 {{< process_steps
 title="Cómo trabajamos — simple y predecible"

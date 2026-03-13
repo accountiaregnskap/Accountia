@@ -15,10 +15,10 @@
 <title>Accountia</title>
 
 <link rel="canonical" href="https://acountia.no/es/" />
-<meta name="description" content=" ❮ ❯ Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
+<meta name="description" content=" Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
 
 <meta property="og:title" content="Accountia" />
-<meta property="og:description" content=" ❮ ❯ Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
+<meta property="og:description" content=" Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://acountia.no/es/" />
 <meta property="og:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
@@ -26,7 +26,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Accountia" />
-<meta name="twitter:description" content=" ❮ ❯ Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
+<meta name="twitter:description" content=" Contabilidad moderna — para tener control Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y …" />
 <meta name="twitter:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -241,7 +241,48 @@
 
   <main class="section">
     <div class="container">
-      <div class="ac-slider" data-autoplay="true" data-interval="5000" aria-label="Accountia gallery">
+      <section class="value-wrap">
+  <div class="value-left">
+    <h2 class="value-title">Contabilidad moderna — para tener control</h2>
+    <p class="value-lead">Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y visibilidad total.</p>
+  </div>
+
+  <div class="value-grid">
+    
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/shield.svg" alt="" aria-hidden="true">
+      <h3>Seguridad</h3>
+      <p>Entregas con control de calidad y responsabilidad clara.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/clock.svg" alt="" aria-hidden="true">
+      <h3>Previsibilidad</h3>
+      <p>Plazos claros y seguimiento proactivo.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/chart.svg" alt="" aria-hidden="true">
+      <h3>Información</h3>
+      <p>Reportes que apoyan decisiones — no solo números.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/chip.svg" alt="" aria-hidden="true">
+      <h3>Sistemas inteligentes</h3>
+      <p>Trabajamos con Tripletex, PowerOffice, UniMicro, Fiken y más.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/handshake.svg" alt="" aria-hidden="true">
+      <h3>Disponibilidad</h3>
+      <p>Respuesta rápida y acompañamiento continuo.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/target.svg" alt="" aria-hidden="true">
+      <h3>Enfoque en crecimiento</h3>
+      <p>Asesoría que impulsa rentabilidad y crecimiento.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ac-slider" data-autoplay="true" data-interval="2000" aria-label="Accountia gallery">
   <div class="ac-slider-track">
     <figure class="ac-slide is-active">
       <img src="/images/slider/accountia-slide-1.png" alt="Accountia Regnskap for bedrifter i hele Norge" loading="eager" />
@@ -271,7 +312,8 @@
 <style>
   .ac-slider {
     position: relative;
-    margin: 24px 0 40px;
+    max-width: 760px;
+    margin: 32px auto 40px;
     border-radius: 28px;
     overflow: hidden;
     background: #f5f2ec;
@@ -280,7 +322,7 @@
 
   .ac-slider-track {
     position: relative;
-    min-height: 320px;
+    min-height: 260px;
   }
 
   .ac-slide {
@@ -295,10 +337,9 @@
   .ac-slide img {
     display: block;
     width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
+    height: clamp(420px, 62vw, 760px);
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
     background: #f8f8f8;
   }
 
@@ -343,12 +384,12 @@
 
   @media (max-width: 900px) {
     .ac-slider {
-      margin: 20px 0 32px;
+      margin: 20px auto 32px;
       border-radius: 22px;
     }
 
     .ac-slide img {
-      aspect-ratio: 3 / 4;
+      height: clamp(360px, 110vw, 560px);
     }
 
     .ac-slider-nav {
@@ -398,55 +439,12 @@
       start();
     });
 
-    slider.addEventListener("mouseenter", stop);
-    slider.addEventListener("mouseleave", start);
     slider.addEventListener("focusin", stop);
     slider.addEventListener("focusout", start);
 
     start();
   })();
 </script>
-
-<section class="value-wrap">
-  <div class="value-left">
-    <h2 class="value-title">Contabilidad moderna — para tener control</h2>
-    <p class="value-lead">Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y visibilidad total.</p>
-  </div>
-
-  <div class="value-grid">
-    
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/shield.svg" alt="" aria-hidden="true">
-      <h3>Seguridad</h3>
-      <p>Entregas con control de calidad y responsabilidad clara.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/clock.svg" alt="" aria-hidden="true">
-      <h3>Previsibilidad</h3>
-      <p>Plazos claros y seguimiento proactivo.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/chart.svg" alt="" aria-hidden="true">
-      <h3>Información</h3>
-      <p>Reportes que apoyan decisiones — no solo números.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/chip.svg" alt="" aria-hidden="true">
-      <h3>Sistemas inteligentes</h3>
-      <p>Trabajamos con Tripletex, PowerOffice, UniMicro, Fiken y más.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/handshake.svg" alt="" aria-hidden="true">
-      <h3>Disponibilidad</h3>
-      <p>Respuesta rápida y acompañamiento continuo.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/target.svg" alt="" aria-hidden="true">
-      <h3>Enfoque en crecimiento</h3>
-      <p>Asesoría que impulsa rentabilidad y crecimiento.</p>
-    </div>
-  </div>
-</section>
 
 <section class="process-wrap">
   <div class="process-head">

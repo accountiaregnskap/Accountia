@@ -15,12 +15,10 @@
 <title>Accountia</title>
 
 <link rel="canonical" href="https://acountia.no/en/" />
-<meta name="description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
-" />
+<meta name="description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
 
 <meta property="og:title" content="Accountia" />
-<meta property="og:description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
-" />
+<meta property="og:description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://acountia.no/en/" />
 <meta property="og:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
@@ -28,8 +26,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Accountia" />
-<meta name="twitter:description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
-" />
+<meta name="twitter:description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
 <meta name="twitter:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -244,7 +241,48 @@
 
   <main class="section">
     <div class="container">
-      <div class="ac-slider" data-autoplay="true" data-interval="5000" aria-label="Accountia gallery">
+      <section class="value-wrap">
+  <div class="value-left">
+    <h2 class="value-title">Modern accounting – built for control</h2>
+    <p class="value-lead">We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.</p>
+  </div>
+
+  <div class="value-grid">
+    
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/shield.svg" alt="" aria-hidden="true">
+      <h3>Reliability</h3>
+      <p>Quality‑assured deliveries and clear ownership.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/clock.svg" alt="" aria-hidden="true">
+      <h3>Predictability</h3>
+      <p>Clear deadlines and proactive follow‑up.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/chart.svg" alt="" aria-hidden="true">
+      <h3>Insights</h3>
+      <p>Reports that help you make decisions — not just numbers.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/chip.svg" alt="" aria-hidden="true">
+      <h3>Smarter systems</h3>
+      <p>We work in Tripletex, PowerOffice, UniMicro, Fiken and more.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/handshake.svg" alt="" aria-hidden="true">
+      <h3>Availability</h3>
+      <p>Fast responses and a partner who follows up.</p>
+    </div>
+    <div class="value-card">
+      <img class="value-icon" src="/images/icons/target.svg" alt="" aria-hidden="true">
+      <h3>Growth focus</h3>
+      <p>Advisory that supports profitability and growth.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ac-slider" data-autoplay="true" data-interval="2000" aria-label="Accountia gallery">
   <div class="ac-slider-track">
     <figure class="ac-slide is-active">
       <img src="/images/slider/accountia-slide-1.png" alt="Accountia Regnskap for bedrifter i hele Norge" loading="eager" />
@@ -274,7 +312,8 @@
 <style>
   .ac-slider {
     position: relative;
-    margin: 24px 0 40px;
+    max-width: 760px;
+    margin: 32px auto 40px;
     border-radius: 28px;
     overflow: hidden;
     background: #f5f2ec;
@@ -283,7 +322,7 @@
 
   .ac-slider-track {
     position: relative;
-    min-height: 320px;
+    min-height: 260px;
   }
 
   .ac-slide {
@@ -298,10 +337,9 @@
   .ac-slide img {
     display: block;
     width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
+    height: clamp(420px, 62vw, 760px);
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
     background: #f8f8f8;
   }
 
@@ -346,12 +384,12 @@
 
   @media (max-width: 900px) {
     .ac-slider {
-      margin: 20px 0 32px;
+      margin: 20px auto 32px;
       border-radius: 22px;
     }
 
     .ac-slide img {
-      aspect-ratio: 3 / 4;
+      height: clamp(360px, 110vw, 560px);
     }
 
     .ac-slider-nav {
@@ -401,55 +439,12 @@
       start();
     });
 
-    slider.addEventListener("mouseenter", stop);
-    slider.addEventListener("mouseleave", start);
     slider.addEventListener("focusin", stop);
     slider.addEventListener("focusout", start);
 
     start();
   })();
 </script>
-
-<section class="value-wrap">
-  <div class="value-left">
-    <h2 class="value-title">Modern accounting – built for control</h2>
-    <p class="value-lead">We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.</p>
-  </div>
-
-  <div class="value-grid">
-    
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/shield.svg" alt="" aria-hidden="true">
-      <h3>Reliability</h3>
-      <p>Quality‑assured deliveries and clear ownership.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/clock.svg" alt="" aria-hidden="true">
-      <h3>Predictability</h3>
-      <p>Clear deadlines and proactive follow‑up.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/chart.svg" alt="" aria-hidden="true">
-      <h3>Insights</h3>
-      <p>Reports that help you make decisions — not just numbers.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/chip.svg" alt="" aria-hidden="true">
-      <h3>Smarter systems</h3>
-      <p>We work in Tripletex, PowerOffice, UniMicro, Fiken and more.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/handshake.svg" alt="" aria-hidden="true">
-      <h3>Availability</h3>
-      <p>Fast responses and a partner who follows up.</p>
-    </div>
-    <div class="value-card">
-      <img class="value-icon" src="/images/icons/target.svg" alt="" aria-hidden="true">
-      <h3>Growth focus</h3>
-      <p>Advisory that supports profitability and growth.</p>
-    </div>
-  </div>
-</section>
 
 <section class="process-wrap">
   <div class="process-head">
