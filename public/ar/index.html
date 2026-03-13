@@ -285,7 +285,7 @@
   </div>
 </section>
 
-<div class="ac-slider" data-autoplay="true" data-interval="2000" aria-label="Accountia gallery">
+<div class="ac-slider" data-autoplay="true" data-interval="3000" aria-label="Accountia gallery">
   <div class="ac-slider-track">
     <figure class="ac-slide is-active">
       <img src="/images/slider/accountia-slide-1.png" alt="Accountia Regnskap for bedrifter i hele Norge" loading="eager" />
@@ -315,17 +315,17 @@
 <style>
   .ac-slider {
     position: relative;
-    max-width: 760px;
+    width: min(100vw - 32px, 1240px);
     margin: 32px auto 40px;
     border-radius: 28px;
     overflow: hidden;
     background: #f5f2ec;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+    box-shadow: 0 22px 48px rgba(15, 23, 42, 0.16);
   }
 
   .ac-slider-track {
     position: relative;
-    min-height: 260px;
+    min-height: 300px;
   }
 
   .ac-slide {
@@ -340,9 +340,9 @@
   .ac-slide img {
     display: block;
     width: 100%;
-    height: clamp(420px, 62vw, 760px);
+    height: clamp(360px, 48vw, 620px);
     object-fit: cover;
-    object-position: top center;
+    object-position: center center;
     background: #f8f8f8;
   }
 
@@ -392,7 +392,7 @@
     }
 
     .ac-slide img {
-      height: clamp(360px, 110vw, 560px);
+      height: clamp(300px, 72vw, 440px);
     }
 
     .ac-slider-nav {
