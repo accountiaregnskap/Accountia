@@ -1178,7 +1178,23 @@ address {
   padding:16px;
   box-shadow:0 10px 24px rgba(0,0,0,0.06);
 }
-.testi-quote{ margin:0; font-size:14px; line-height:1.6; opacity:.9; }
+.testi-quote{ margin:0 0 14px; font-size:14px; line-height:1.6; opacity:.9; }
+.testi-meta{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  padding-top:12px;
+  border-top:1px solid rgba(0,0,0,0.08);
+}
+.testi-name{
+  font-size:14px;
+  font-weight:800;
+  color:var(--text);
+}
+.testi-role{
+  font-size:13px;
+  color:var(--text-secondary);
+}
 
 .cta-banner{ max-width:1100px; margin: 32px auto 0; }
 .cta-inner{
@@ -1204,9 +1220,9 @@ address {
 
 .privacy-wrap{max-width:1100px;margin:0 auto;padding:40px 0}
 .privacy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.privacy-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
-.privacy-card h3{margin:0 0 8px;font-size:16px}
-.privacy-card p{margin:0;font-size:14px;opacity:.85;line-height:1.5}
+.privacy-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:18px;padding:20px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.privacy-card h3{margin:0 0 10px;font-size:17px;line-height:1.35}
+.privacy-card p{margin:0;font-size:14px;opacity:.88;line-height:1.65}
 @media(max-width:900px){.privacy-grid{grid-template-columns:1fr}}
 
 

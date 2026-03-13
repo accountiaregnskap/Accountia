@@ -10,8 +10,20 @@
     {{ range $items }}
       {{ $t := trim . " " }}
       {{ if $t }}
+        {{ $parts := split $t "::" }}
+        {{ $quote := index $parts 0 }}
+        {{ $name := "" }}
+        {{ $meta := "" }}
+        {{ if ge (len $parts) 2 }}{{ $name = index $parts 1 }}{{ end }}
+        {{ if ge (len $parts) 3 }}{{ $meta = index $parts 2 }}{{ end }}
         <div class="testi-card">
-          <p class="testi-quote">“{{ $t }}”</p>
+          <p class="testi-quote">"{{ $quote }}"</p>
+          {{ if or $name $meta }}
+            <div class="testi-meta">
+              {{ if $name }}<strong class="testi-name">{{ $name }}</strong>{{ end }}
+              {{ if $meta }}<span class="testi-role">{{ $meta }}</span>{{ end }}
+            </div>
+          {{ end }}
         </div>
       {{ end }}
     {{ end }}

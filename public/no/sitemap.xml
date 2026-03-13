@@ -72,6 +72,10 @@
                 href="https://acountia.no/kontakt/"
                 />
   </url><url>
+    <loc>https://acountia.no/ar/services/</loc>
+  </url><url>
+    <loc>https://acountia.no/ar/privacy/</loc>
+  </url><url>
     <loc>https://acountia.no/om-oss/</loc>
   </url><url>
     <loc>https://acountia.no/personvern/</loc>
@@ -119,10 +123,6 @@
     <loc>https://acountia.no/ar/contact/</loc>
   </url><url>
     <loc>https://acountia.no/ar/prices/</loc>
-  </url><url>
-    <loc>https://acountia.no/ar/services/</loc>
-  </url><url>
-    <loc>https://acountia.no/ar/privacy/</loc>
   </url><url>
     <loc>https://acountia.no/ar/about/</loc>
   </url>

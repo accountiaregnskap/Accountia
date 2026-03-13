@@ -8,7 +8,7 @@ other = "Tlf"
 other = "E-post"
 
 [lang_label]
-other = "Språk"
+other = "SprÃ¥k"
 
 [contact_info_title]
 other = "Kontaktinformasjon"
@@ -17,7 +17,7 @@ other = "Kontaktinformasjon"
 other = "Kontakt oss"
 
 [contact_form_intro]
-other = "Send oss en melding – vi svarer så raskt vi kan i åpningstiden."
+other = "Send oss en melding â€“ vi svarer vanligvis samme arbeidsdag."
 
 [contact_phone]
 other = "Telefon"
@@ -29,7 +29,7 @@ other = "E-post"
 other = "Adresse"
 
 [contact_openhours]
-other = "Åpningstid"
+other = "Ã…pningstid"
 
 [contact_orgnr]
 other = "Org.nr"
@@ -62,4 +62,4 @@ other = "Org.nr"
 other = "Meny"
 
 [open_menu]
-other = "Åpne meny"
+other = "Ã…pne meny"
