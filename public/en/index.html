@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-	<meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.154.5">
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
@@ -14,20 +14,23 @@
 <meta name="theme-color" content="#ffffff" />
 <title>Accountia</title>
 
-<link rel="canonical" href="http://localhost:1313/en/" />
-<meta name="description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
+<link rel="canonical" href="https://acountia.no/en/" />
+<meta name="description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
+" />
 
 <meta property="og:title" content="Accountia" />
-<meta property="og:description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
+<meta property="og:description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
+" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/en/" />
-<meta property="og:image" content="http://localhost:1313/images/og-accountia-social-v3.jpg" />
+<meta property="og:url" content="https://acountia.no/en/" />
+<meta property="og:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
 <meta property="og:site_name" content="Accountia" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Accountia" />
-<meta name="twitter:description" content=" Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility. …" />
-<meta name="twitter:image" content="http://localhost:1313/images/og-accountia-social-v3.jpg" />
+<meta name="twitter:description" content=" ❮ ❯ Modern accounting – built for control We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.
+" />
+<meta name="twitter:image" content="https://acountia.no/images/og-accountia-social-v3.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -241,7 +244,173 @@
 
   <main class="section">
     <div class="container">
-      <section class="value-wrap">
+      <div class="ac-slider" data-autoplay="true" data-interval="5000" aria-label="Accountia gallery">
+  <div class="ac-slider-track">
+    <figure class="ac-slide is-active">
+      <img src="/images/slider/accountia-slide-1.png" alt="Accountia Regnskap for bedrifter i hele Norge" loading="eager" />
+    </figure>
+    <figure class="ac-slide">
+      <img src="/images/slider/accountia-slide-2.png" alt="La oss hjelpe bedriften din å vokse" loading="lazy" />
+    </figure>
+    <figure class="ac-slide">
+      <img src="/images/slider/accountia-slide-3.png" alt="Bygg trygghet med Accountia" loading="lazy" />
+    </figure>
+    <figure class="ac-slide">
+      <img src="/images/slider/accountia-slide-4.png" alt="Bruker du for mye tid på regnskap" loading="lazy" />
+    </figure>
+    <figure class="ac-slide">
+      <img src="/images/slider/accountia-slide-5.png" alt="Ta kontakt i dag" loading="lazy" />
+    </figure>
+  </div>
+
+  <button class="ac-slider-nav ac-slider-prev" type="button" aria-label="Previous slide">
+    <span aria-hidden="true">&#10094;</span>
+  </button>
+  <button class="ac-slider-nav ac-slider-next" type="button" aria-label="Next slide">
+    <span aria-hidden="true">&#10095;</span>
+  </button>
+</div>
+
+<style>
+  .ac-slider {
+    position: relative;
+    margin: 24px 0 40px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #f5f2ec;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+  }
+
+  .ac-slider-track {
+    position: relative;
+    min-height: 320px;
+  }
+
+  .ac-slide {
+    display: none;
+    margin: 0;
+  }
+
+  .ac-slide.is-active {
+    display: block;
+  }
+
+  .ac-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+    background: #f8f8f8;
+  }
+
+  .ac-slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(17, 24, 39, 0.68);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ac-slider-nav:hover {
+    background: rgba(17, 24, 39, 0.86);
+  }
+
+  .ac-slider-nav:focus-visible {
+    outline: 3px solid rgba(212, 165, 116, 0.45);
+    outline-offset: 2px;
+  }
+
+  .ac-slider-prev {
+    left: 14px;
+  }
+
+  .ac-slider-next {
+    right: 14px;
+  }
+
+  .ac-slider-nav span {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  @media (max-width: 900px) {
+    .ac-slider {
+      margin: 20px 0 32px;
+      border-radius: 22px;
+    }
+
+    .ac-slide img {
+      aspect-ratio: 3 / 4;
+    }
+
+    .ac-slider-nav {
+      width: 42px;
+      height: 42px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const slider = document.querySelector(".ac-slider");
+    if (!slider) return;
+
+    const slides = Array.from(slider.querySelectorAll(".ac-slide"));
+    const prev = slider.querySelector(".ac-slider-prev");
+    const next = slider.querySelector(".ac-slider-next");
+    const intervalMs = Number(slider.getAttribute("data-interval")) || 5000;
+    let index = 0;
+    let timer = null;
+
+    function show(nextIndex) {
+      slides[index].classList.remove("is-active");
+      index = (nextIndex + slides.length) % slides.length;
+      slides[index].classList.add("is-active");
+    }
+
+    function start() {
+      stop();
+      timer = window.setInterval(() => show(index + 1), intervalMs);
+    }
+
+    function stop() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    prev.addEventListener("click", () => {
+      show(index - 1);
+      start();
+    });
+
+    next.addEventListener("click", () => {
+      show(index + 1);
+      start();
+    });
+
+    slider.addEventListener("mouseenter", stop);
+    slider.addEventListener("mouseleave", start);
+    slider.addEventListener("focusin", stop);
+    slider.addEventListener("focusout", start);
+
+    start();
+  })();
+</script>
+
+<section class="value-wrap">
   <div class="value-left">
     <h2 class="value-title">Modern accounting – built for control</h2>
     <p class="value-lead">We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility.</p>

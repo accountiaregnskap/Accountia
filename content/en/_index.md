@@ -15,6 +15,7 @@ hero_cards:
     text: "Structured, predictable process"
 ---
 
+{{< image_slider >}}
 
 {{< value_cards
 title="Modern accounting – built for control"
@@ -58,4 +59,3 @@ lead="Send us a message and we’ll recommend the best setup for your business."
 btn_label="Contact us"
 btn_url="/en/contact/"
 >}}
-

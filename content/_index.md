@@ -15,6 +15,7 @@ hero_cards:
     text: "God plan, ryddig prosess"
 ---
 
+{{< image_slider >}}
 
 {{< value_cards
 title="Et moderne regnskapsbyrå – bygget for kontroll"
@@ -58,4 +59,3 @@ lead="Send oss en melding – så ser vi hva som passer for din bedrift."
 btn_label="Kontakt oss"
 btn_url="/kontakt/"
 >}}
-

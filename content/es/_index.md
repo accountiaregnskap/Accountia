@@ -15,6 +15,7 @@ hero_cards:
     text: "Buen plan, proceso ordenado"
 ---
 
+{{< image_slider >}}
 
 {{< value_cards
 title="Contabilidad moderna — para tener control"
@@ -58,4 +59,3 @@ lead="Envíanos un mensaje y te proponemos la mejor configuración para tu empre
 btn_label="Contáctanos"
 btn_url="/es/contact/"
 >}}
-
