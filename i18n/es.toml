@@ -11,40 +11,40 @@ other = "Tel."
 other = "Correo"
 
 [footer_address]
-other = "DirecciÃ³n"
+other = "Dirección"
 
 [footer_openhours]
 other = "Horario"
 
 [contact_info_title]
-other = "InformaciÃ³n de contacto"
+other = "Información de contacto"
 
 [contact_form_title]
-other = "ContÃ¡ctanos"
+other = "Contáctanos"
 
 [contact_form_intro]
-other = "EnvÃ­anos un mensaje: normalmente respondemos el mismo dÃ­a laborable."
+other = "Envíanos un mensaje: responderemos lo antes posible durante el horario laboral."
 
 [contact_phone]
-other = "TelÃ©fono"
+other = "Teléfono"
 
 [contact_email]
-other = "Correo electrÃ³nico"
+other = "Correo electrónico"
 
 [contact_address]
-other = "DirecciÃ³n"
+other = "Dirección"
 
 [contact_openhours]
-other = "Horario de atenciÃ³n"
+other = "Horario de atención"
 
 [contact_orgnr]
-other = "N.Âº de organizaciÃ³n"
+other = "N.º de organización"
 
 [form_name]
 other = "Nombre"
 
 [form_email]
-other = "Correo electrÃ³nico"
+other = "Correo electrónico"
 
 [form_message]
 other = "Mensaje"
@@ -59,13 +59,13 @@ other = "Tu nombre"
 other = "info@acountia.no"
 
 [form_message_ph]
-other = "Â¿En quÃ© podemos ayudarte?"
+other = "¿En qué podemos ayudarte?"
 
 [footer_orgnr]
-other = "N.Âº org."
+other = "N.º org."
 
 [menu]
-other = "MenÃº"
+other = "Menú"
 
 [open_menu]
-other = "Abrir menÃº"
+other = "Abrir menú"
