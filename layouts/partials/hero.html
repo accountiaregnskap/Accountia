@@ -20,7 +20,11 @@
       <div class="hero-cards">
         {{ with .Params.hero_cards }}
           {{ range . }}
-            <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
+            {{ if .url }}
+              <a class="mini-card" href="{{ .url }}"><strong>{{ .title }}</strong><span>{{ .text }}</span></a>
+            {{ else }}
+              <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
+            {{ end }}
           {{ end }}
         {{ else }}
           <div class="mini-card"><strong>Lønn & A-melding</strong><span>Trygg og korrekt lønnskjøring</span></div>

@@ -27,6 +27,17 @@ lead: "Bookkeeping that gives you control, reliable numbers, and less admin."
   s4t="Follow-up and insight" s4d="You get explanations, practical advice, and one fixed point of contact when needed."
 >}}
 
+{{< service_bento
+  variant="line"
+  tag="VAT and annual accounts"
+  title="We keep reporting deadlines and year-end work under control"
+  lead="This service also includes VAT follow-up and annual accounts work, so you get one coordinated delivery with better flow and less risk of delays."
+  c1k="VAT" c1t="Deadlines and filing handled on time" c1d="We review the basis, clarify open questions, and make sure VAT reporting is submitted within the relevant deadlines."
+  c2k="Quality" c2t="Clean documentation before filing" c2d="Transactions, accounts, and reconciliations are reviewed so the reporting is based on updated and reliable figures."
+  c3k="Year-end" c3t="A structured closing process" c3d="We plan the year-end work clearly and keep track of documentation, deadlines, and the practical clarifications needed along the way."
+  c4k="Flow" c4t="Better connection between daily work and closing" c4d="When bookkeeping, VAT, and annual accounts are handled together, the process becomes easier and more predictable for your business."
+>}}
+
 {{< services_faq
   title="Common questions about bookkeeping"
   lead="Short and clear information before you decide."

@@ -9,10 +9,13 @@ hero_cta_secondary_url: "/en/services/"
 hero_cards:
   - title: "Payroll"
     text: "Accurate payroll and reporting"
+    url: "/en/services/payroll/"
   - title: "VAT"
     text: "On-time VAT handling"
+    url: "/en/services/bookkeeping/"
   - title: "Annual reporting"
     text: "Structured, predictable process"
+    url: "/en/services/bookkeeping/"
 ---
 
 {{< value_cards

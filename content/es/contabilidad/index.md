@@ -27,6 +27,17 @@ lead: "Contabilidad que te da control, cifras fiables y menos administración."
   s4t="Seguimiento y visión" s4d="Recibes explicaciones, apoyo práctico y una persona de contacto fija cuando lo necesites."
 >}}
 
+{{< service_bento
+  variant="line"
+  tag="IVA y cierre anual"
+  title="Controlamos los plazos, la presentación y el cierre del ejercicio"
+  lead="Este servicio también incluye el seguimiento del IVA y el cierre anual, para que tengas una entrega coordinada, más fluida y con menos riesgo de retrasos."
+  c1k="IVA" c1t="Plazos y presentación a tiempo" c1d="Revisamos la base, resolvemos dudas y nos aseguramos de que la declaración del IVA se presente dentro de los plazos correspondientes."
+  c2k="Calidad" c2t="Base ordenada antes de presentar" c2d="Comprobamos movimientos, cuentas y conciliaciones para que la información se apoye en cifras actualizadas y fiables."
+  c3k="Cierre anual" c3t="Un cierre planificado y claro" c3d="Organizamos el trabajo de cierre con una estructura clara y mantenemos el control sobre la documentación, los plazos y las aclaraciones necesarias."
+  c4k="Flujo" c4t="Mejor conexión entre el trabajo diario y el cierre" c4d="Cuando la contabilidad diaria, el IVA y el cierre anual se gestionan juntos, el proceso resulta más sencillo y previsible para tu empresa."
+>}}
+
 {{< services_faq
   title="Preguntas frecuentes sobre contabilidad"
   lead="Información breve y clara antes de decidir."

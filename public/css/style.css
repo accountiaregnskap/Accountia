@@ -884,6 +884,8 @@ strong {
   padding: var(--space-md);
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .mini-card:hover {

@@ -27,6 +27,17 @@ lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
   s4t="Oppfølging og innsikt" s4d="Du får forklaring på tallene, praktiske råd og en fast kontaktperson når du trenger det."
 >}}
 
+{{< service_bento
+  variant="line"
+  tag="MVA og årsoppgjør"
+  title="Vi følger opp frister, rapportering og avslutning gjennom hele året"
+  lead="Regnskapssiden dekker også MVA og årsoppgjør, slik at du får en samlet leveranse med bedre flyt og mindre risiko for forsinkelser."
+  c1k="MVA" c1t="Terminer og innsending til rett tid" c1d="Vi følger opp grunnlaget, avklarer spørsmål og sørger for at MVA-rapporteringen blir levert innen gjeldende frister."
+  c2k="Avklaring" c2t="Ryddig grunnlag før innlevering" c2d="Bilag, kontoer og avstemminger gjennomgås slik at rapporteringen bygger på oppdaterte og pålitelige tall."
+  c3k="Årsoppgjør" c3t="Planlagt avslutning med tydelig fremdrift" c3d="Vi legger en strukturert plan for årsavslutningen og holder oversikt over dokumentasjon, frister og nødvendige avklaringer."
+  c4k="Samarbeid" c4t="Bedre flyt mellom drift og avslutning" c4d="Når løpende regnskap, MVA og årsoppgjør sees i sammenheng, blir prosessen enklere og mer forutsigbar for deg."
+>}}
+
 {{< services_faq
   title="Vanlige spørsmål om regnskap"
   lead="Kort og tydelig informasjon før du bestemmer deg."

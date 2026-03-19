@@ -9,10 +9,13 @@ hero_cta_secondary_url: "/ar/services/"
 hero_cards:
   - title: "الرواتب و A‑melding"
     text: "رواتب دقيقة وآمنة"
+    url: "/ar/services/payroll/"
   - title: "ضريبة القيمة المضافة"
     text: "تقارير في الوقت المناسب"
+    url: "/ar/services/accounting/"
   - title: "الإقفال السنوي"
     text: "خطة واضحة وإجراءات منظمة"
+    url: "/ar/services/accounting/"
 ---
 
 {{< value_cards

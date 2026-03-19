@@ -9,10 +9,13 @@ hero_cta_secondary_url: "/es/services/"
 hero_cards:
   - title: "Nómina y A‑melding"
     text: "Nómina segura y correcta"
+    url: "/es/services/nomina/"
   - title: "IVA"
     text: "Reportes a tiempo"
+    url: "/es/services/contabilidad/"
   - title: "Cierre anual"
     text: "Buen plan, proceso ordenado"
+    url: "/es/services/contabilidad/"
 ---
 
 {{< value_cards

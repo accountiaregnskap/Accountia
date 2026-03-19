@@ -9,10 +9,13 @@ hero_cta_secondary_url: "/tjenester/"
 hero_cards:
   - title: "Lønn & A-melding"
     text: "Trygg og korrekt lønnskjøring"
+    url: "/tjenester/lonn/"
   - title: "MVA"
     text: "Rapportering til riktig tid"
+    url: "/tjenester/regnskap/"
   - title: "Årsoppgjør"
     text: "God plan, ryddig prosess"
+    url: "/tjenester/regnskap/"
 ---
 
 {{< value_cards
