@@ -54,15 +54,65 @@
 
       {{/* Language dropdown component */}}
       {{ $langDropdown := partial "lang-dropdown.html" . }}
+      {{ $servicePages := slice }}
+      {{ if eq site.Language.Lang "no" }}
+        {{ with site.GetPage "/tjenester/regnskap" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/tjenester/lonn" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/tjenester/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+      {{ else if eq site.Language.Lang "en" }}
+        {{ with site.GetPage "/en/services/bookkeeping" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/en/services/payroll" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/en/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+      {{ else if eq site.Language.Lang "es" }}
+        {{ with site.GetPage "/es/services/contabilidad" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/es/services/nomina" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/es/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+      {{ else if eq site.Language.Lang "ar" }}
+        {{ with site.GetPage "/ar/services/accounting" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/ar/services/payroll" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ with site.GetPage "/ar/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+      {{ end }}
 
       {{ if eq site.Language.Lang "ar" }}
         {{ $langDropdown | safeHTML }}
         {{ range site.Menus.main }}
-          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
+          {{ if and $isServicesItem (gt (len $servicePages) 0) }}
+            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") }}
+            <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
+              <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
+                {{ .Name }}
+                <span class="nav-caret" aria-hidden="true"></span>
+              </a>
+              <div class="nav-submenu">
+                {{ range $servicePages }}
+                  <a class="nav-sublink {{ if eq $cur.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else }}
+            <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         {{ end }}
       {{ else }}
         {{ range site.Menus.main }}
-          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
+          {{ if and $isServicesItem (gt (len $servicePages) 0) }}
+            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") }}
+            <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
+              <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
+                {{ .Name }}
+                <span class="nav-caret" aria-hidden="true"></span>
+              </a>
+              <div class="nav-submenu">
+                {{ range $servicePages }}
+                  <a class="nav-sublink {{ if eq $cur.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else }}
+            <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         {{ end }}
         {{ $langDropdown | safeHTML }}
       {{ end }}
