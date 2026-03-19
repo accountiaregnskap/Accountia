@@ -483,8 +483,17 @@ strong {
 /* ===== DESKTOP MENU ===== */
 @media (min-width: 821px) {
   .nav-group {
-    padding-bottom: 14px;
-    margin-bottom: -14px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-group::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 16px;
   }
 
   .nav {
@@ -534,7 +543,7 @@ strong {
 
   .nav-submenu {
     position: absolute;
-    top: calc(100% - 2px);
+    top: calc(100% + 12px);
     left: 0;
     min-width: 220px;
     padding: 10px 0;
