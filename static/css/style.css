@@ -596,7 +596,7 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-submenu {
     position: absolute;
-    top: calc(100% - 26px);
+    top: calc(100% - 8px);
     right: 0;
     left: auto;
     min-width: 260px;
@@ -607,10 +607,10 @@ strong {
   html[lang="ar"][dir="rtl"] .nav-submenu::before {
     content: "";
     position: absolute;
-    top: -26px;
+    top: -14px;
     right: 0;
     width: 100%;
-    height: 26px;
+    height: 14px;
   }
 
   .nav-subtoggle-btn {
