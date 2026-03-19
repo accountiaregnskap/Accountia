@@ -561,7 +561,9 @@ strong {
   }
 
   .nav-group:hover .nav-submenu,
-  .nav-group:focus-within .nav-submenu {
+  .nav-group:focus-within .nav-submenu,
+  .nav-submenu:hover,
+  .nav-submenu:focus-within {
     display: block;
   }
 
@@ -594,10 +596,19 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-submenu {
     position: fixed;
-    top: 88px;
+    top: 76px;
     right: 220px;
     left: auto;
     min-width: 260px;
+  }
+
+  html[lang="ar"][dir="rtl"] .nav-submenu::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: 0;
+    width: 100%;
+    height: 18px;
   }
 
   .nav-subtoggle-btn {
