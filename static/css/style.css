@@ -159,7 +159,7 @@ strong {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 50000;
   background: #fff;
   isolation: isolate;
   border-bottom: 1px solid var(--line);
@@ -488,7 +488,7 @@ strong {
   }
 
   .nav {
-    z-index: 10000;
+    z-index: 50010;
     display: flex;
     gap: var(--space-lg);
     flex-wrap: wrap;
@@ -498,7 +498,7 @@ strong {
     background: none;
     border: none;
     padding: 0;
-    z-index: 10000;
+    z-index: 50010;
     box-shadow: none;
     animation: slideInLeft 0.5s ease-out;
     height: 100%;
@@ -523,14 +523,12 @@ strong {
   }
 
   .nav-group:hover .nav-submenu,
-  .nav-group:focus-within .nav-submenu,
-  .nav-group.is-active .nav-submenu {
+  .nav-group:focus-within .nav-submenu {
     display: block;
   }
 
   .nav-group:hover .nav-caret,
-  .nav-group:focus-within .nav-caret,
-  .nav-group.is-active .nav-caret {
+  .nav-group:focus-within .nav-caret {
     transform: rotate(225deg) translateY(-1px);
   }
 
@@ -544,7 +542,7 @@ strong {
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 16px;
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
-    z-index: 20050;
+    z-index: 50020;
   }
 
   .nav-sublink {
