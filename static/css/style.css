@@ -2199,3 +2199,31 @@ html[dir="rtl"], html[dir="rtl"] body{
   color: #fff;
   background: var(--accent-dark);
 }
+
+@media (min-width: 821px){
+  html[lang="ar"][dir="rtl"] .nav-group{
+    position: relative !important;
+  }
+
+  html[lang="ar"][dir="rtl"] #nav-subtoggle-services-ar ~ .nav-submenu,
+  html[lang="ar"][dir="rtl"] #nav-subtoggle-about-ar ~ .nav-submenu{
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    right: 0 !important;
+    left: auto !important;
+    margin-top: 0 !important;
+    min-width: 260px !important;
+    z-index: 65000 !important;
+    text-align: right !important;
+  }
+
+  html[lang="ar"][dir="rtl"] #nav-subtoggle-services-ar ~ .nav-submenu::before,
+  html[lang="ar"][dir="rtl"] #nav-subtoggle-about-ar ~ .nav-submenu::before{
+    content: "" !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 10px !important;
+  }
+}
