@@ -30,28 +30,23 @@
       {{/*
         RTL (Arabic) desired behavior:
         - Language selector on the far right
-        - Then Forside, Tjenester, Om oss, Kontakt, Personvern, Priser (reading right-to-left)
-        Achieve this by rendering the language dropdown first for Arabic,
-        and keeping menu items in their natural order.
+        - Then menu items in their natural order (reading right-to-left)
       */}}
-
-      {{/* Language dropdown: go to the same page in the chosen language when possible */}}
-      {{ $cur := . }}
-      {{ $home := site.Home }}
-      {{ $homeLinks := dict }}
-      {{ range $home.AllTranslations }}
-        {{ $homeLinks = merge $homeLinks (dict .Lang .RelPermalink) }}
-      {{ end }}
-      {{ $homeLinks = merge $homeLinks (dict $home.Lang $home.RelPermalink) }}
 
       {{/* Language dropdown component */}}
       {{ $langDropdown := partial "lang-dropdown.html" . }}
       {{ $servicePages := slice }}
+      {{ $aboutPages := slice }}
+
       {{ if eq site.Language.Lang "no" }}
         {{ $servicePages = slice
           (dict "title" "Regnskap" "url" "/tjenester/regnskap/")
           (dict "title" "Lønn" "url" "/tjenester/lonn/")
           (dict "title" "Outsourcing" "url" "/tjenester/outsourcing/")
+        }}
+        {{ $aboutPages = slice
+          (dict "title" "Hvem er vi" "url" "/om-oss/#who-we-are")
+          (dict "title" "Hvorfor velger kunder oss" "url" "/om-oss/#why-choose-us")
         }}
       {{ else if eq site.Language.Lang "en" }}
         {{ $servicePages = slice
@@ -59,11 +54,19 @@
           (dict "title" "Payroll" "url" "/en/services/payroll/")
           (dict "title" "Outsourcing" "url" "/en/services/outsourcing/")
         }}
+        {{ $aboutPages = slice
+          (dict "title" "Who we are" "url" "/en/about/#who-we-are")
+          (dict "title" "Why clients choose us" "url" "/en/about/#why-choose-us")
+        }}
       {{ else if eq site.Language.Lang "es" }}
         {{ $servicePages = slice
           (dict "title" "Contabilidad" "url" "/es/services/contabilidad/")
           (dict "title" "Nómina" "url" "/es/services/nomina/")
           (dict "title" "Outsourcing" "url" "/es/services/outsourcing/")
+        }}
+        {{ $aboutPages = slice
+          (dict "title" "Quiénes somos" "url" "/es/about/#who-we-are")
+          (dict "title" "Por qué nos eligen" "url" "/es/about/#why-choose-us")
         }}
       {{ else if eq site.Language.Lang "ar" }}
         {{ $servicePages = slice
@@ -71,25 +74,46 @@
           (dict "title" "الرواتب" "url" "/ar/services/payroll/")
           (dict "title" "الاستعانة بمصادر خارجية" "url" "/ar/services/outsourcing/")
         }}
+        {{ $aboutPages = slice
+          (dict "title" "من نحن" "url" "/ar/about/#who-we-are")
+          (dict "title" "لماذا يختارنا العملاء" "url" "/ar/about/#why-choose-us")
+        }}
       {{ end }}
 
       {{ if eq site.Language.Lang "ar" }}
         {{ $langDropdown | safeHTML }}
         {{ range site.Menus.main }}
           {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
+          {{ $isAboutItem := or (eq .URL "/om-oss/") (eq .URL "/en/about/") (eq .URL "/es/about/") (eq .URL "/ar/about/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
-              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-{{ site.Language.Lang }}">
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-services-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-                <label class="nav-subtoggle-btn" for="nav-subtoggle-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-services-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
                   <span class="nav-caret" aria-hidden="true"></span>
                 </label>
               </div>
               <div class="nav-submenu">
                 {{ range $servicePages }}
                   <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else if and $isAboutItem (gt (len $aboutPages) 0) }}
+            {{ $isAboutActive := or ($.IsMenuCurrent "main" .) (in $cur.RelPermalink "/om-oss/") (in $cur.RelPermalink "/about/") }}
+            <div class="nav-group {{ if $isAboutActive }}is-active{{ end }}">
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-about-{{ site.Language.Lang }}">
+              <div class="nav-parent-row">
+                <a class="nav-link nav-parent {{ if $isAboutActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-about-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                  <span class="nav-caret" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="nav-submenu">
+                {{ range $aboutPages }}
+                  <a class="nav-sublink" href="{{ .url }}">{{ .title }}</a>
                 {{ end }}
               </div>
             </div>
@@ -100,19 +124,36 @@
       {{ else }}
         {{ range site.Menus.main }}
           {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
+          {{ $isAboutItem := or (eq .URL "/om-oss/") (eq .URL "/en/about/") (eq .URL "/es/about/") (eq .URL "/ar/about/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
-              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-{{ site.Language.Lang }}">
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-services-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-                <label class="nav-subtoggle-btn" for="nav-subtoggle-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-services-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
                   <span class="nav-caret" aria-hidden="true"></span>
                 </label>
               </div>
               <div class="nav-submenu">
                 {{ range $servicePages }}
                   <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else if and $isAboutItem (gt (len $aboutPages) 0) }}
+            {{ $isAboutActive := or ($.IsMenuCurrent "main" .) (in $cur.RelPermalink "/om-oss/") (in $cur.RelPermalink "/about/") }}
+            <div class="nav-group {{ if $isAboutActive }}is-active{{ end }}">
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-about-{{ site.Language.Lang }}">
+              <div class="nav-parent-row">
+                <a class="nav-link nav-parent {{ if $isAboutActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-about-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                  <span class="nav-caret" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="nav-submenu">
+                {{ range $aboutPages }}
+                  <a class="nav-sublink" href="{{ .url }}">{{ .title }}</a>
                 {{ end }}
               </div>
             </div>

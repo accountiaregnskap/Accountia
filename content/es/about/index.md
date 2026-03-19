@@ -4,6 +4,7 @@ bg: "/images/hero.jpg"
 lead: "Un equipo pequeño con estándares altos — estructura, calidad y seguimiento cercano."
 ---
 
+{{< anchor_point id="why-choose-us" >}}
 {{< value_cards
 title="¿Por qué nos eligen los clientes?"
 lead="Cuando los clientes nos comparan con otras firmas contables, suelen destacar lo siguiente:"
@@ -15,6 +16,7 @@ c5i="chart" c5t="Asesoría que aporta valor" c5d="Usamos los números activament
 c6i="clock" c6t="Disponibilidad" c6d="Respuestas rápidas, aclaraciones claras y seguimiento cuando lo necesitas."
 >}}
 
+{{< anchor_point id="who-we-are" >}}
 {{< about_split name="Ayham Layous" role="Director general" image="/images/ayham.jpg" >}}
 Soy el director general y contador público autorizado, con un máster en economía y contabilidad, y una sólida experiencia en contabilidad, gestión financiera y asesoría. Tengo un enfoque analítico y estructurado, y me importa que la contabilidad aporte valor: no solo cumplir requisitos, sino servir como una herramienta activa de gestión.
 

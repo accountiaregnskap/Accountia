@@ -4,6 +4,7 @@ bg: "/images/hero.jpg"
 lead: "A small team with high standards — structure, quality, and close follow-up."
 ---
 
+{{< anchor_point id="why-choose-us" >}}
 {{< value_cards
 title="Why do clients choose us?"
 lead="When clients compare us with other accounting firms, they often highlight:"
@@ -15,6 +16,7 @@ c5i="chart" c5t="Advisory that adds value" c5d="We use the numbers actively to s
 c6i="clock" c6t="Availability" c6d="Fast responses, clear clarifications, and consistent follow-up."
 >}}
 
+{{< anchor_point id="who-we-are" >}}
 {{< about_split name="Ayham Layous" role="Managing Director" image="/images/ayham.jpg" >}}
 I am the Managing Director and a state-authorized accountant with a master’s degree in Economics and Accounting, and solid experience in accounting, financial management, and advisory services. I work in an analytical and structured way, and I focus on accounting that creates real value — not just compliance, but a practical management tool for better control and decision-making.
 

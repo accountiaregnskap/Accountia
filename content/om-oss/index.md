@@ -4,6 +4,7 @@ bg: "/images/hero.jpg"
 lead: "Et lite team med høy standard — struktur, kvalitet og tett oppfølging."
 ---
 
+{{< anchor_point id="why-choose-us" >}}
 {{< value_cards
 title="Hvorfor velger kunder oss?"
 lead="Når kunder sammenligner oss med andre regnskapsfirmaer, fremhever de ofte følgende:"
@@ -15,6 +16,7 @@ c5i="chart" c5t="Rådgivning som gir verdi" c5d="Vi bruker tallene aktivt for be
 c6i="clock" c6t="Tilgjengelighet" c6d="Raske svar, tydelige avklaringer og oppfølging når du trenger det."
 >}}
 
+{{< anchor_point id="who-we-are" >}}
 {{< about_split name="Ayham Layous" role="Daglig leder" image="/images/ayham.jpg" >}}
 Jeg er daglig leder og statsautorisert regnskapsfører med mastergrad i økonomi og regnskap, og solid erfaring innen regnskap, økonomistyring og rådgivning. Jeg har en analytisk og strukturert tilnærming til faget, og er opptatt av at regnskapet skal gi merverdi – ikke bare oppfylle krav, men fungere som et aktivt styringsverktøy for virksomheten.
 
