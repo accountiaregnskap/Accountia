@@ -1,0 +1,21 @@
+<section class="service-steps-modern">
+  <div class="service-steps-head">
+    <span class="service-steps-tag">{{ .Get "tag" }}</span>
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="service-steps-grid">
+    {{ range $n := (slice 1 2 3 4) }}
+      {{ $tt := printf "s%dt" $n }}
+      {{ $dt := printf "s%dd" $n }}
+      <article class="service-step-card">
+        <div class="service-step-no">{{ printf "%02d" $n }}</div>
+        <div class="service-step-copy">
+          <h3>{{ $.Get $tt }}</h3>
+          <p>{{ $.Get $dt }}</p>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>

@@ -6,24 +6,25 @@ url: "/tjenester/lonn/"
 lead: "Lønn som er presis, forutsigbar og trygg for både ansatte og bedrift."
 ---
 
-{{< value_cards
-  title="Dette får du med lønnstjenesten"
-  lead="Vi sørger for at lønnskjøringen følger riktige rutiner, riktige frister og riktig rapportering hver måned."
-  c1i="clock" c1t="Lønnskjøring til rett tid" c1d="Vi håndterer lønn fast og strukturert, slik at ansatte får riktig utbetaling til avtalt tid."
-  c2i="shield" c2t="Rapportering og kontroll" c2d="A-melding, feriepenger, trekk og avvik følges opp med god kvalitet og tydelige rutiner."
-  c3i="chip" c3t="Rutiner som passer bedriften" c3d="Vi tilpasser lønnsarbeidet til bemanning, arbeidsforhold og systemene du bruker."
-  c4i="chart" c4t="God oversikt" c4d="Du får orden i lønnsgrunnlag, historikk og dokumentasjon når du trenger det."
-  c5i="target" c5t="Mindre risiko" c5d="Vi reduserer risikoen for feil ved å ha kontroll på frister, satser og oppfølging."
-  c6i="handshake" c6t="Fast kontaktperson" c6d="Du får en fast person å kontakte ved spørsmål om lønn, ansatte og rapportering."
+{{< service_bento
+  variant="line"
+  tag="Lønn"
+  title="En lønnsprosess med faste rutiner og mindre stress"
+  lead="Vi sørger for at lønn, rapportering og oppfølging håndteres riktig hver måned, slik at du slipper unødvendig usikkerhet."
+  c1k="Tid" c1t="Lønnskjøring til avtalt tidspunkt" c1d="Vi følger en fast plan for lønnskjøring, slik at ansatte får riktig utbetaling til rett tid."
+  c2k="Trygghet" c2t="Rapportering uten unødvendige feil" c2d="A-melding, feriepenger, trekk og justeringer håndteres med kontroll og ryddig dokumentasjon."
+  c3k="Tilpasning" c3t="Rutiner som passer bemanning og drift" c3d="Vi tilpasser lønnsarbeidet til antall ansatte, arbeidsforhold og hvordan bedriften faktisk jobber."
+  c4k="Oversikt" c4t="Bedre kontroll på grunnlag og historikk" c4d="Du får orden i lønnsgrunnlag, endringer og dokumentasjon når du trenger innsyn og avklaring."
 >}}
 
-{{< process_steps
-  title="Slik jobber vi med lønn"
-  lead="En fast prosess gjør lønnsarbeidet enklere, tryggere og mer forutsigbart."
-  s1i="target" s1t="Kartlegging av behov" s1d="Vi ser på antall ansatte, lønnsrutiner, frister og hvilke systemer dere bruker i dag."
-  s2i="chip" s2t="Oppsett og struktur" s2d="Vi avklarer grunnlag, tilganger og rutiner for å sikre en ryddig lønnsprosess."
-  s3i="clock" s3t="Løpende lønnskjøring" s3d="Vi håndterer lønn, rapportering og nødvendige kontroller etter avtalt plan."
-  s4i="handshake" s4t="Oppfølging ved endringer" s4d="Ved nye ansatte, sykefravær eller andre endringer får du rask avklaring og praktisk hjelp."
+{{< service_steps_modern
+  tag="Flyt"
+  title="Slik holder vi lønnsarbeidet under kontroll"
+  lead="Vi bygger en lønnsprosess som er enkel å følge og lett å justere når det skjer endringer."
+  s1t="Gjennomgang av dagens rutiner" s1d="Vi ser på ansatte, lønnsgrunnlag, frister og systemene dere bruker i dag."
+  s2t="Etablering av fast struktur" s2d="Vi avklarer ansvar, tilganger og hvordan informasjon skal leveres inn hver periode."
+  s3t="Løpende lønn og rapportering" s3d="Vi håndterer selve lønnskjøringen, nødvendige kontroller og rapporteringen etter avtalt plan."
+  s4t="Støtte når noe endrer seg" s4d="Ved nyansettelser, sykefravær eller andre endringer får du rask avklaring og praktisk hjelp."
 >}}
 
 {{< services_faq

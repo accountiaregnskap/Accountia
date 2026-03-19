@@ -1,0 +1,20 @@
+<section class="service-bento service-bento--{{ .Get "variant" | default "soft" }}">
+  <div class="service-bento-head">
+    <span class="service-bento-tag">{{ .Get "tag" }}</span>
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "lead" }}</p>
+  </div>
+
+  <div class="service-bento-grid">
+    {{ range $n := (slice 1 2 3 4) }}
+      {{ $kt := printf "c%dk" $n }}
+      {{ $tt := printf "c%dt" $n }}
+      {{ $dt := printf "c%dd" $n }}
+      <article class="service-bento-card">
+        {{ with ($.Get $kt) }}<span class="service-bento-key">{{ . }}</span>{{ end }}
+        <h3>{{ $.Get $tt }}</h3>
+        <p>{{ $.Get $dt }}</p>
+      </article>
+    {{ end }}
+  </div>
+</section>

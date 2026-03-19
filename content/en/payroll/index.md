@@ -6,24 +6,25 @@ url: "/en/services/payroll/"
 lead: "Payroll that is accurate, predictable, and reliable for both your team and your business."
 ---
 
-{{< value_cards
-  title="What you get with the payroll service"
-  lead="We make sure payroll follows clear routines, correct deadlines, and proper reporting every month."
-  c1i="clock" c1t="Payroll on time" c1d="We handle payroll on a fixed schedule so employees receive the right payment when expected."
-  c2i="shield" c2t="Reporting and control" c2d="Payroll reporting, holiday pay, deductions, and deviations are followed up with solid routines."
-  c3i="chip" c3t="Setup that fits your business" c3d="We adapt the payroll process to your staffing, work patterns, and current systems."
-  c4i="chart" c4t="Better overview" c4d="You get order in payroll data, documentation, and history whenever you need it."
-  c5i="target" c5t="Reduced risk" c5d="We reduce the risk of errors by keeping control of deadlines, rates, and follow-up."
-  c6i="handshake" c6t="Dedicated contact person" c6d="You get one fixed contact for payroll questions, employee changes, and reporting."
+{{< service_bento
+  variant="line"
+  tag="Payroll"
+  title="A payroll process with fixed routines and less friction"
+  lead="We make sure payroll, reporting, and follow-up are handled correctly every month, so you avoid unnecessary uncertainty."
+  c1k="Timing" c1t="Payroll delivered on schedule" c1d="We follow a fixed payroll rhythm so employees receive the correct payment at the expected time."
+  c2k="Reliability" c2t="Reporting without avoidable errors" c2d="Payroll submissions, holiday pay, deductions, and adjustments are handled with control and clear documentation."
+  c3k="Fit" c3t="Routines matched to your business" c3d="We adapt the payroll process to your staffing, work patterns, and the systems you already use."
+  c4k="Overview" c4t="Better control of data and history" c4d="You get clearer structure in payroll basis, changes, and documentation whenever you need insight."
 >}}
 
-{{< process_steps
-  title="How we work with payroll"
-  lead="A clear process makes payroll easier to manage, safer to run, and more predictable over time."
-  s1i="target" s1t="Needs review" s1d="We review employee count, routines, deadlines, and the systems you use today."
-  s2i="chip" s2t="Setup and structure" s2d="We clarify payroll basis, access, and routines to create a clean process."
-  s3i="clock" s3t="Ongoing payroll" s3d="We handle payroll, reporting, and required controls according to the agreed plan."
-  s4i="handshake" s4t="Support when things change" s4d="When staffing or payroll conditions change, you get quick clarification and practical help."
+{{< service_steps_modern
+  tag="Flow"
+  title="How we keep payroll under control"
+  lead="We build a payroll process that is simple to follow and easy to adjust when something changes."
+  s1t="Reviewing current routines" s1d="We look at employees, payroll basis, deadlines, and the systems you use today."
+  s2t="Establishing clear structure" s2d="We clarify responsibilities, access, and how information should be delivered each period."
+  s3t="Running payroll and reporting" s3d="We manage payroll, required controls, and reporting according to the agreed plan."
+  s4t="Support when conditions change" s4d="When staffing or payroll conditions change, you get quick clarification and practical help."
 >}}
 
 {{< services_faq
@@ -32,7 +33,7 @@ lead: "Payroll that is accurate, predictable, and reliable for both your team an
   q1t="Who is the payroll service for?" q1d="The service fits businesses that want reliable payroll, correct reporting, and less internal administration."
   q2t="Can you handle both a few and many employees?" q2d="Yes. We adapt the setup to your employee count and how complex the payroll process is."
   q3t="What happens when something changes during the month?" q3d="We follow up changes such as new hires, leave, sickness absence, and payroll adjustments."
-  q4t="Can you work with our existing accounting setup?" q4d="Yes. In many cases we can use your current systems, or help you set up a smoother flow between payroll and bookkeeping."
+  q4t="Can you work with our existing accounting setup?" q4d="Yes. In many cases we can use your current systems, or help you create a better flow between payroll and bookkeeping."
 >}}
 
 {{< cta_banner

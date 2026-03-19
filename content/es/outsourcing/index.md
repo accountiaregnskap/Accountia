@@ -6,31 +6,32 @@ url: "/es/services/outsourcing/"
 lead: "Outsourcing que libera tiempo, aporta estructura y simplifica el trabajo diario."
 ---
 
-{{< services_cards
-  title="Qué podemos asumir por ti"
-  lead="El outsourcing es una buena opción para empresas que quieren trasladar tareas administrativas a un socio fiable con rutinas claras."
-  c1i="handshake" c1t="Administración diaria" c1d="Asumimos determinadas tareas para que puedas dedicar más tiempo a la operación y al crecimiento."
-  c2i="chip" c2t="Mejor flujo de trabajo" c2d="Organizamos rutinas, documentación y seguimiento para que el trabajo sea más fluido."
-  c3i="clock" c3t="Menos tiempo interno" c3d="Evitas dedicar tiempo innecesario a tareas que pueden gestionarse externamente con eficiencia."
-  c4i="shield" c4t="Calidad estable" c4d="Trabajamos con estructura, control, documentación y entregas claras."
-  c5i="chart" c5t="Más visión general" c5d="Obtienes mejor seguimiento y una jornada más sencilla con menos asuntos pendientes."
-  c6i="target" c6t="Solución escalable" c6d="La solución puede adaptarse tanto a pequeñas empresas como a negocios en crecimiento."
+{{< service_bento
+  variant="calm"
+  tag="Outsourcing"
+  title="Cuando quieres mover tareas fuera, pero mantener el control"
+  lead="Ayudamos a empresas que quieren alivio en tareas administrativas y financieras sin perder visión general, claridad ni ritmo de trabajo."
+  c1k="Alivio" c1t="Más tiempo para operación y crecimiento" c1d="Asumimos tareas seleccionadas para que puedas centrarte más en clientes, dirección y desarrollo."
+  c2k="Estructura" c2t="Rutinas que funcionan en la práctica" c2d="Establecemos flujos de trabajo, puntos de contacto y documentación que hacen la colaboración más sencilla."
+  c3k="Escalabilidad" c3t="Una solución que puede crecer con la empresa" c3d="El servicio puede adaptarse tanto a negocios pequeños como a empresas en fuerte crecimiento."
+  c4k="Control" c4t="Responsabilidades claras y buen seguimiento" c4d="Siempre sabes qué se hace, cuándo se hace y quién lo sigue hasta el final."
 >}}
 
-{{< process_steps
-  title="Cómo trabajamos con outsourcing"
-  lead="Aclaramos responsabilidades, definimos estructura y hacemos que la colaboración funcione desde el primer día."
-  s1i="target" s1t="Definición de tareas" s1d="Revisamos qué tareas quieres externalizar y cómo debe repartirse la responsabilidad."
-  s2i="chip" s2t="Diseño de rutinas" s2d="Establecemos flujo de trabajo, puntos de contacto y documentación adaptados a tu empresa."
-  s3i="chart" s3t="Entrega continua" s3d="Hacemos seguimiento de las tareas acordadas de forma estructurada y te mantenemos informado."
-  s4i="handshake" s4t="Ajustes y evolución" s4d="Cuando cambian las necesidades, ajustamos el alcance y las rutinas para que la solución siga encajando."
+{{< service_steps_modern
+  tag="Colaboración"
+  title="Cómo construimos una solución de outsourcing"
+  lead="Partimos de tus necesidades y diseñamos una solución fácil de seguir, fácil de medir y fácil de ajustar."
+  s1t="Definición de tareas" s1d="Revisamos qué quieres externalizar y qué partes deben seguir dentro de la empresa."
+  s2t="Diseño del flujo de trabajo" s2d="Definimos responsabilidades, rutinas y cómo debe circular la información entre nosotros y tu negocio."
+  s3t="Entrega continua" s3d="Damos seguimiento a las tareas acordadas de forma estructurada y te mantenemos informado en el camino."
+  s4t="Ajuste posterior" s4d="Cuando cambian las necesidades, adaptamos el alcance para que la solución siga aportando valor y alivio."
 >}}
 
 {{< services_faq
   title="Preguntas frecuentes sobre outsourcing"
   lead="Lo más importante que conviene saber antes de externalizar tareas."
   q1t="¿Con qué tareas pueden ayudarnos?" q1d="Podemos asumir tareas administrativas y financieras seleccionadas, según tus necesidades, tu capacidad y tus rutinas actuales."
-  q2t="¿Es adecuado para empresas pequeñas?" q2d="Sí. El outsourcing puede ser especialmente útil para empresas pequeñas que quieren alivio sin ampliar funciones internas."
+  q2t="¿Es adecuado para empresas pequeñas?" q2d="Sí. Puede ser especialmente útil para empresas pequeñas que quieren alivio sin ampliar funciones internas."
   q3t="¿Cómo mantenemos el control?" q3d="Definimos claramente responsabilidades, informes y puntos de contacto para que siempre sepas qué se hace y cuándo."
   q4t="¿Se puede ampliar más adelante?" q4d="Sí. Podemos empezar con poco y ampliar la colaboración a medida que crezca la empresa o cambien las necesidades."
 >}}

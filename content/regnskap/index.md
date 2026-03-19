@@ -6,24 +6,25 @@ url: "/tjenester/regnskap/"
 lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
 ---
 
-{{< services_cards
-  title="Dette inngår i regnskapstjenesten"
-  lead="Vi tilpasser regnskapsleveransen til virksomheten din, slik at du får god kontroll i hverdagen og riktig rapportering gjennom året."
-  c1i="chart" c1t="Løpende bokføring" c1d="Bilag føres fortløpende med ryddige rutiner og tydelig dokumentasjon."
-  c2i="shield" c2t="Avstemming og kontroll" c2d="Vi følger opp kontoer, balanser og avvik slik at tallene blir pålitelige."
-  c3i="target" c3t="MVA og rapportering" c3d="Frister, innleveringer og rapportering håndteres korrekt og til rett tid."
-  c4i="clock" c4t="Månedsoversikt" c4d="Du får oppdaterte tall og korte oppsummeringer som gjør det lettere å styre virksomheten."
-  c5i="chip" c5t="Systemer og flyt" c5d="Vi tilpasser arbeidsflyten til systemene du bruker, eller hjelper deg å velge riktig løsning."
-  c6i="handshake" c6t="Fast kontaktperson" c6d="Du får en fast person å forholde deg til når du trenger avklaringer eller råd."
+{{< service_bento
+  variant="soft"
+  tag="Regnskap"
+  title="En regnskapsleveranse som er ryddig fra første bilag"
+  lead="Vi bygger regnskapsrutiner som gir deg kontroll i hverdagen og trygg rapportering gjennom hele året."
+  c1k="Kontroll" c1t="Løpende bokføring med struktur" c1d="Bilag føres fortløpende med ryddig dokumentasjon, faste rutiner og god flyt i arbeidet."
+  c2k="Presisjon" c2t="Avstemming som gjør tallene pålitelige" c2d="Vi følger opp kontoer, balanser og avvik slik at regnskapet gir et bedre beslutningsgrunnlag."
+  c3k="Oversikt" c3t="Rapportering du faktisk kan bruke" c3d="Du får oppdaterte tall og tydelige oppsummeringer som gjør det enklere å styre virksomheten."
+  c4k="Flyt" c4t="Systemer som passer måten du jobber på" c4d="Vi tilpasser oppsettet til systemene du bruker i dag, eller hjelper deg å velge en bedre løsning."
 >}}
 
-{{< process_steps
+{{< service_steps_modern
+  tag="Prosess"
   title="Slik jobber vi med regnskap"
-  lead="En tydelig prosess gjør overgangen enklere og den løpende leveransen mer forutsigbar."
-  s1i="target" s1t="Behov og kartlegging" s1d="Vi går gjennom virksomheten din, dagens rutiner og hva du trenger hjelp med."
-  s2i="chip" s2t="Oppsett og overgang" s2d="Vi etablerer struktur, avklarer tilgang og sørger for en ryddig oppstart."
-  s3i="chart" s3t="Løpende føring" s3d="Vi bokfører, avstemmer og følger opp rapporteringen etter avtalt leveranse."
-  s4i="handshake" s4t="Oppfølging og innsikt" s4d="Du får oppfølging, forklaring på tallene og råd når det er behov for det."
+  lead="Vi holder prosessen enkel, tydelig og forutsigbar fra oppstart til løpende oppfølging."
+  s1t="Kartlegging av behov" s1d="Vi går gjennom virksomheten din, dagens rutiner og hva du ønsker bedre kontroll på."
+  s2t="Oppsett og overgang" s2d="Vi etablerer struktur, avklarer tilgang og sørger for en ryddig oppstart uten unødvendig støy."
+  s3t="Løpende føring og rapportering" s3d="Vi bokfører, avstemmer og følger opp rapporteringen etter avtalt leveranse og faste frister."
+  s4t="Oppfølging og innsikt" s4d="Du får forklaring på tallene, praktiske råd og en fast kontaktperson når du trenger det."
 >}}
 
 {{< services_faq
