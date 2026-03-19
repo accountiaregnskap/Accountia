@@ -58,11 +58,33 @@
       {{ if eq site.Language.Lang "ar" }}
         {{ $langDropdown | safeHTML }}
         {{ range site.Menus.main }}
-          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ if .HasChildren }}
+            <div class="nav-group">
+              <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              <div class="nav-submenu">
+                {{ range .Children }}
+                  <a class="nav-sublink" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else }}
+            <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         {{ end }}
       {{ else }}
         {{ range site.Menus.main }}
-          <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ if .HasChildren }}
+            <div class="nav-group">
+              <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              <div class="nav-submenu">
+                {{ range .Children }}
+                  <a class="nav-sublink" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ else }}
+            <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         {{ end }}
         {{ $langDropdown | safeHTML }}
       {{ end }}

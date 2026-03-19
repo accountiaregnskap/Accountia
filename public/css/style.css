@@ -285,6 +285,19 @@ strong {
   color: #fff;
 }
 
+.nav-group{
+  position: relative;
+}
+
+.nav-submenu{
+  display:none;
+}
+
+.nav-sublink{
+  text-decoration:none;
+  color:var(--text);
+}
+
 /* ===== MOBILE MENU ===== */
 .nav-toggle {
   position: absolute !important;
@@ -419,6 +432,23 @@ strong {
   }
 
   .lang-link{margin-left:0;}
+
+  .nav-group{
+    display:block;
+  }
+
+  .nav-submenu{
+    display:block;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-sublink{
+    display:block;
+    padding: 10px var(--space-lg) 10px calc(var(--space-lg) + 18px);
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
 }
 
 /* ===== DESKTOP MENU ===== */
@@ -442,6 +472,39 @@ strong {
 
   .nav-toggle-btn {
     display: none;
+  }
+
+  .nav-group:hover .nav-submenu,
+  .nav-group:focus-within .nav-submenu{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .nav-submenu{
+    position:absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 220px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.10);
+    border-radius:14px;
+    box-shadow:0 14px 34px rgba(0,0,0,0.10);
+    padding:8px;
+    z-index:10002;
+  }
+
+  .nav-sublink{
+    display:block;
+    padding:10px 12px;
+    border-radius:10px;
+    color:var(--text);
+    font-size:14px;
+    white-space:nowrap;
+  }
+
+  .nav-sublink:hover{
+    background:rgba(212,165,116,0.12);
+    color:var(--accent-dark);
   }
 
   .header-inner {
@@ -1641,6 +1704,30 @@ html[dir="rtl"] .footer-grid {
    Services page (modern, but different from the front page)
    ========================== */
 .svc-wrap{ margin: 28px 0; }
+.svc-shortcuts{ max-width:1100px; margin: 0 auto; padding: 18px 0 6px; }
+.svc-shortcuts-head{ max-width: 760px; margin-bottom: 18px; }
+.svc-shortcuts-head p{ margin:0; opacity:.85; }
+.svc-shortcuts-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.svc-shortcut-card{
+  display:block;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:16px;
+  padding:16px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.svc-shortcut-card:hover{
+  transform: translateY(-2px);
+  box-shadow:0 14px 34px rgba(0,0,0,0.08);
+}
+.svc-shortcut-icon{ width:34px; height:34px; margin:0 0 10px; }
+.svc-shortcut-card h3{ margin:0 0 8px; font-size:18px; color:var(--text); }
+.svc-shortcut-card p{ margin:0; color:var(--text-secondary); }
 .svc-head{ margin-bottom: 14px; }
 .svc-head h2{ margin:0 0 8px; }
 .svc-head p{ margin:0; color: var(--text-secondary); max-width: 72ch; }
@@ -1677,6 +1764,7 @@ html[dir="rtl"] .footer-grid {
 .svc-faq-a{ margin-top: 10px; color: var(--text-secondary); }
 
 @media (max-width: 900px){
+  .svc-shortcuts-grid{ grid-template-columns:1fr; }
   .svc-grid{ grid-template-columns: 1fr; }
 }
 

@@ -42,7 +42,28 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
       [[languages.no.menu.main]]
         name = "Tjenester"
         url = "/tjenester/"
+        identifier = "services"
         weight = 2
+      [[languages.no.menu.main]]
+        name = "Regnskap"
+        url = "/tjenester/#regnskap"
+        parent = "services"
+        weight = 1
+      [[languages.no.menu.main]]
+        name = "Lønn"
+        url = "/tjenester/#lonn"
+        parent = "services"
+        weight = 2
+      [[languages.no.menu.main]]
+        name = "Outsourcing"
+        url = "/tjenester/#outsourcing"
+        parent = "services"
+        weight = 3
+      [[languages.no.menu.main]]
+        name = "Rådgivning"
+        url = "/tjenester/#radgivning"
+        parent = "services"
+        weight = 4
       [[languages.no.menu.main]]
         name = "Om oss"
         url = "/om-oss/"
@@ -83,7 +104,28 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
       [[languages.en.menu.main]]
         name = "Services"
         url = "/en/services/"
+        identifier = "services"
         weight = 2
+      [[languages.en.menu.main]]
+        name = "Bookkeeping"
+        url = "/en/services/#bookkeeping"
+        parent = "services"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Payroll"
+        url = "/en/services/#payroll"
+        parent = "services"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Outsourcing"
+        url = "/en/services/#outsourcing"
+        parent = "services"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Advisory"
+        url = "/en/services/#advisory"
+        parent = "services"
+        weight = 4
       [[languages.en.menu.main]]
         name = "About"
         url = "/en/about/"
@@ -126,7 +168,28 @@ weight = 1
 [[languages.es.menu.main]]
 name = "Servicios"
 url = "/es/services/"
+identifier = "services"
 weight = 2
+[[languages.es.menu.main]]
+name = "Contabilidad"
+url = "/es/services/#contabilidad"
+parent = "services"
+weight = 1
+[[languages.es.menu.main]]
+name = "Nómina"
+url = "/es/services/#nomina"
+parent = "services"
+weight = 2
+[[languages.es.menu.main]]
+name = "Outsourcing"
+url = "/es/services/#outsourcing"
+parent = "services"
+weight = 3
+[[languages.es.menu.main]]
+name = "Asesoría"
+url = "/es/services/#asesoria"
+parent = "services"
+weight = 4
 [[languages.es.menu.main]]
 name = "Sobre nosotros"
 url = "/es/about/"
@@ -169,7 +232,28 @@ weight = 1
 [[languages.ar.menu.main]]
 name = "الخدمات"
 url = "/ar/services/"
+identifier = "services"
 weight = 2
+[[languages.ar.menu.main]]
+name = "المحاسبة"
+url = "/ar/services/#accounting"
+parent = "services"
+weight = 1
+[[languages.ar.menu.main]]
+name = "الرواتب"
+url = "/ar/services/#payroll"
+parent = "services"
+weight = 2
+[[languages.ar.menu.main]]
+name = "Outsourcing"
+url = "/ar/services/#outsourcing"
+parent = "services"
+weight = 3
+[[languages.ar.menu.main]]
+name = "الاستشارات"
+url = "/ar/services/#advisory"
+parent = "services"
+weight = 4
 [[languages.ar.menu.main]]
 name = "من نحن"
 url = "/ar/about/"

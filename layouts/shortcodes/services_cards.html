@@ -9,7 +9,8 @@
       {{ $ti := printf "c%dt" $n }}
       {{ $di := printf "c%dd" $n }}
       {{ $ii := printf "c%di" $n }}
-      <div class="svc-card">
+      {{ $id := printf "c%did" $n }}
+      <div class="svc-card"{{ with ($.Get $id) }} id="{{ . }}"{{ end }}>
         {{ with ($.Get $ii) }}<img class="svc-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
         <h3>{{ $.Get $ti }}</h3>
         <p>{{ $.Get $di }}</p>
