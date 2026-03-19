@@ -80,10 +80,13 @@
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
-              <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
-                {{ .Name }}
-                <span class="nav-caret" aria-hidden="true"></span>
-              </a>
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-{{ site.Language.Lang }}">
+              <div class="nav-parent-row">
+                <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                  <span class="nav-caret" aria-hidden="true"></span>
+                </label>
+              </div>
               <div class="nav-submenu">
                 {{ range $servicePages }}
                   <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>
@@ -100,10 +103,13 @@
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
-              <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
-                {{ .Name }}
-                <span class="nav-caret" aria-hidden="true"></span>
-              </a>
+              <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-{{ site.Language.Lang }}">
+              <div class="nav-parent-row">
+                <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                <label class="nav-subtoggle-btn" for="nav-subtoggle-{{ site.Language.Lang }}" aria-label="{{ .Name }}">
+                  <span class="nav-caret" aria-hidden="true"></span>
+                </label>
+              </div>
               <div class="nav-submenu">
                 {{ range $servicePages }}
                   <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>

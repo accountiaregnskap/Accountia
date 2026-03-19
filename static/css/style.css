@@ -290,9 +290,8 @@ strong {
 }
 
 .nav-parent {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
+  flex: 1 1 auto;
 }
 
 .nav-caret {
@@ -302,6 +301,24 @@ strong {
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg) translateY(-1px);
   transition: transform 0.2s ease;
+}
+
+.nav-parent-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-subtoggle {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.nav-subtoggle-btn {
+  display: none;
 }
 
 .nav-submenu {
@@ -462,9 +479,35 @@ strong {
   }
 
   .nav-submenu {
-    display: block;
+    display: none;
     padding: 0 0 var(--space-sm);
     background: #fff;
+  }
+
+  .nav-parent-row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .nav-parent-row .nav-parent {
+    border-bottom: none;
+  }
+
+  .nav-subtoggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+  }
+
+  .nav-subtoggle:checked + .nav-parent-row .nav-caret {
+    transform: rotate(225deg) translateY(-1px);
+  }
+
+  .nav-subtoggle:checked ~ .nav-submenu {
+    display: block;
   }
 
   .nav-sublink {
@@ -482,20 +525,6 @@ strong {
 
 /* ===== DESKTOP MENU ===== */
 @media (min-width: 821px) {
-  .nav-group {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .nav-group::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: 16px;
-  }
-
   .nav {
     z-index: 50010;
     display: flex;
@@ -543,7 +572,7 @@ strong {
 
   .nav-submenu {
     position: absolute;
-    top: calc(100% + 12px);
+    top: 100%;
     left: 0;
     min-width: 220px;
     padding: 10px 0;
@@ -566,6 +595,10 @@ strong {
   html[lang="ar"][dir="rtl"] .nav-submenu {
     right: 0;
     left: auto;
+  }
+
+  .nav-subtoggle-btn {
+    display: none;
   }
 
   h1 {
