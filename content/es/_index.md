@@ -2,7 +2,7 @@
 title: "Accountia"
 hero_title: "Contabilidad que te da control."
 hero_lead: "Accountia ayuda a pequeñas y medianas empresas con contabilidad, nóminas, IVA, cierre anual y asesoría — con sistemas modernos y un seguimiento claro."
-hero_cta_primary_label: "Contáctanos"
+hero_cta_primary_label: "Solicitar oferta"
 hero_cta_primary_url: "/es/contact/"
 hero_cta_secondary_label: "Ver servicios"
 hero_cta_secondary_url: "/es/services/"

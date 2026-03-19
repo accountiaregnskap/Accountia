@@ -2,7 +2,7 @@
 title: "Accountia"
 hero_title: "محاسبة تمنحك السيطرة."
 hero_lead: "تساعد Accountia الشركات الصغيرة والمتوسطة في المحاسبة والرواتب وضريبة القيمة المضافة والإقفال السنوي والاستشارات — عبر أنظمة حديثة ومتابعة واضحة."
-hero_cta_primary_label: "تواصل معنا"
+hero_cta_primary_label: "احصل على عرض"
 hero_cta_primary_url: "/ar/contact/"
 hero_cta_secondary_label: "عرض الخدمات"
 hero_cta_secondary_url: "/ar/services/"

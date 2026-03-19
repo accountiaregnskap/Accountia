@@ -2,7 +2,7 @@
 title: "Accountia"
 hero_title: "Accounting that gives you control."
 hero_lead: "Accountia helps small and mid-sized businesses with bookkeeping, payroll, VAT, annual reporting and advisory — using modern systems and clear follow-up."
-hero_cta_primary_label: "Contact us"
+hero_cta_primary_label: "Get a quote"
 hero_cta_primary_url: "/en/contact/"
 hero_cta_secondary_label: "View services"
 hero_cta_secondary_url: "/en/services/"

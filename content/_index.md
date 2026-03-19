@@ -2,7 +2,7 @@
 title: "Accountia"
 hero_title: "Regnskap som gir deg kontroll."
 hero_lead: "Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør og rådgivning – med moderne systemer og tydelig oppfølging."
-hero_cta_primary_label: "Kontakt oss"
+hero_cta_primary_label: "Få tilbud"
 hero_cta_primary_url: "/kontakt/"
 hero_cta_secondary_label: "Se tjenester"
 hero_cta_secondary_url: "/tjenester/"
