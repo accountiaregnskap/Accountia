@@ -595,11 +595,12 @@ strong {
   }
 
   html[lang="ar"][dir="rtl"] .nav-submenu {
-    position: fixed;
-    top: 76px;
-    right: 220px;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
     left: auto;
     min-width: 260px;
+    text-align: right;
   }
 
   html[lang="ar"][dir="rtl"] .nav-submenu::before {
@@ -1314,6 +1315,14 @@ address {
   .value-wrap{ grid-template-columns: 1fr; padding: 28px 0 6px; }
   .value-grid{ grid-template-columns: 1fr; }
   .value-title{ font-size: 26px; }
+}
+
+.anchor-point{
+  display:block;
+  position:relative;
+  top:-110px;
+  height:0;
+  visibility:hidden;
 }
 
 /* ===== MODERN HOME SECTIONS ===== */

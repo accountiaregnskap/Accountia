@@ -16,6 +16,17 @@ c5i="chart" c5t="Asesoría que aporta valor" c5d="Usamos los números activament
 c6i="clock" c6t="Disponibilidad" c6d="Respuestas rápidas, aclaraciones claras y seguimiento cuando lo necesitas."
 >}}
 
+{{< service_bento
+  variant="soft"
+  tag="Colaboración"
+  title="Qué puedes esperar al trabajar con nosotros"
+  lead="Queremos que la colaboración se sienta ordenada, cercana y realmente útil en la práctica. Por eso trabajamos con rutinas claras, seguimiento constante y soluciones adaptadas a tu empresa."
+  c1k="Contacto" c1t="Una persona de contacto clara" c1d="Debes saber siempre con quién hablas y recibir respuestas rápidas y directas cuando surjan dudas."
+  c2k="Estructura" c2t="Rutinas que aportan calma y visión" c2d="Creamos una configuración que hace más fácil el día a día, con plazos claros, mejor control y seguimiento continuo."
+  c3k="Sistemas" c3t="Herramientas digitales que realmente funcionan" c3d="Utilizamos soluciones modernas que mejoran el flujo de documentación, los informes y la cooperación."
+  c4k="Valor" c4t="Más que informes" c4d="La meta es que los números sean útiles en la práctica, para darte más visión y decisiones más seguras."
+>}}
+
 {{< anchor_point id="who-we-are" >}}
 {{< about_split name="Ayham Layous" role="Director general" image="/images/ayham.jpg" >}}
 Soy el director general y contador público autorizado, con un máster en economía y contabilidad, y una sólida experiencia en contabilidad, gestión financiera y asesoría. Tengo un enfoque analítico y estructurado, y me importa que la contabilidad aporte valor: no solo cumplir requisitos, sino servir como una herramienta activa de gestión.
