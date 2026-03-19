@@ -1,17 +1,10 @@
 {{/*
   Language dropdown (details/summary) used in the header.
-  Tries to link to the current page translation if it exists, otherwise to the language home.
+  Always prefers the current page translation when it exists, otherwise
+  falls back to the language home page.
 */}}
 
 {{ $cur := . }}
-{{ $home := site.Home }}
-
-{{ $homeLinks := dict }}
-{{ range $home.AllTranslations }}
-  {{ $homeLinks = merge $homeLinks (dict .Lang .RelPermalink) }}
-{{ end }}
-{{ $homeLinks = merge $homeLinks (dict $home.Lang $home.RelPermalink) }}
-
 {{ $langNames := dict "no" "Norsk" "en" "English" "es" "Español" "ar" "العربية" }}
 
 <div class="lang-dd">
@@ -20,11 +13,23 @@
     <div class="lang-dd-menu">
       {{ range site.Languages }}
         {{ $lang := .Lang }}
-        {{ $url := (index $homeLinks $lang) }}
-        {{ range $cur.AllTranslations }}
-          {{ if eq .Lang $lang }}{{ $url = .RelPermalink }}{{ end }}
+        {{ $url := "/" }}
+        {{ if eq $cur.Lang $lang }}
+          {{ $url = $cur.RelPermalink }}
+        {{ else }}
+          {{ range $cur.AllTranslations }}
+            {{ if eq .Lang $lang }}
+              {{ $url = .RelPermalink }}
+            {{ end }}
+          {{ end }}
         {{ end }}
-        {{ if eq $cur.Lang $lang }}{{ $url = $cur.RelPermalink }}{{ end }}
+        {{ if eq $url "/" }}
+          {{ range site.Sites }}
+            {{ if eq .Language.Lang $lang }}
+              {{ $url = .Home.RelPermalink }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
         <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ index $langNames $lang | default (upper $lang) }}</a>
       {{ end }}
     </div>
