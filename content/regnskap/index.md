@@ -29,13 +29,24 @@ lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
 
 {{< service_bento
   variant="line"
-  tag="MVA og årsoppgjør"
-  title="Vi følger opp frister, rapportering og avslutning gjennom hele året"
-  lead="Regnskapssiden dekker også MVA og årsoppgjør, slik at du får en samlet leveranse med bedre flyt og mindre risiko for forsinkelser."
-  c1k="MVA" c1t="Terminer og innsending til rett tid" c1d="Vi følger opp grunnlaget, avklarer spørsmål og sørger for at MVA-rapporteringen blir levert innen gjeldende frister."
-  c2k="Avklaring" c2t="Ryddig grunnlag før innlevering" c2d="Bilag, kontoer og avstemminger gjennomgås slik at rapporteringen bygger på oppdaterte og pålitelige tall."
-  c3k="Årsoppgjør" c3t="Planlagt avslutning med tydelig fremdrift" c3d="Vi legger en strukturert plan for årsavslutningen og holder oversikt over dokumentasjon, frister og nødvendige avklaringer."
-  c4k="Samarbeid" c4t="Bedre flyt mellom drift og avslutning" c4d="Når løpende regnskap, MVA og årsoppgjør sees i sammenheng, blir prosessen enklere og mer forutsigbar for deg."
+  tag="MVA"
+  title="MVA-rapportering med kontroll på grunnlag, frister og innlevering"
+  lead="MVA er en viktig del av regnskapsarbeidet, og det krever at tallene er oppdaterte, grunnlaget er ryddig og fristene holdes. Vi sørger for at prosessen er tydelig og trygg gjennom hele terminen."
+  c1k="Grunnlag" c1t="Bilag og føring må være oppdatert" c1d="Vi følger opp føringen fortløpende slik at MVA-rapporteringen bygger på oppdaterte transaksjoner og et mest mulig korrekt grunnlag."
+  c2k="Kontroll" c2t="Avklaringer før innsending" c2d="Vi går gjennom poster, balanser og eventuelle spørsmål før rapporten sendes inn, slik at feil og unødvendige avvik reduseres."
+  c3k="Frister" c3t="Levering til riktig tid" c3d="Vi holder oversikt over terminene og sørger for at rapporteringen blir håndtert innen gjeldende frister."
+  c4k="Oversikt" c4t="Bedre forståelse av hva som rapporteres" c4d="Du får en tydeligere oversikt over hva som ligger bak rapporteringen og hva som påvirker tallene fra termin til termin."
+>}}
+
+{{< service_bento
+  variant="soft"
+  tag="Årsoppgjør"
+  title="Årsoppgjør som planlegges godt og gjennomføres ryddig"
+  lead="Årsoppgjøret blir enklere når det løpende regnskapet er strukturert og avklaringene tas underveis. Vi hjelper deg med en ryddig avslutning, tydelig fremdrift og god oversikt over hva som må være på plass."
+  c1k="Plan" c1t="Tidlig forberedelse gir bedre flyt" c1d="Vi ser på dokumentasjon, avstemminger og åpne punkter i god tid, slik at avslutningen ikke blir unødvendig hektisk."
+  c2k="Struktur" c2t="Klare steg gjennom avslutningen" c2d="Vi jobber systematisk gjennom nødvendige avklaringer og holder kontroll på hva som er gjort og hva som gjenstår."
+  c3k="Samarbeid" c3t="Tett oppfølging når vi trenger svar" c3d="Vi sier tydelig fra hvis det mangler dokumentasjon eller beslutninger, slik at prosessen kan gå videre uten unødvendige stopp."
+  c4k="Trygghet" c4t="En mer forutsigbar avslutning av året" c4d="Når regnskap, MVA og årsoppgjør sees i sammenheng, blir hele leveransen mer stabil, ryddig og enklere å følge for deg som kunde."
 >}}
 
 {{< services_faq
