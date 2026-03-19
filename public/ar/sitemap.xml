@@ -102,6 +102,43 @@
                 href="https://acountia.no/ar/prices/"
                 />
   </url><url>
+    <loc>https://acountia.no/ar/services/outsourcing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/en/services/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/es/services/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/tjenester/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/ar/services/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://acountia.no/en/services/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://acountia.no/es/services/outsourcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://acountia.no/ar/services/outsourcing/"
+                />
+  </url><url>
     <loc>https://acountia.no/ar/services/</loc>
     <xhtml:link
                 rel="alternate"
@@ -134,6 +171,80 @@
                 rel="alternate"
                 hreflang="ar"
                 href="https://acountia.no/ar/privacy/"
+                />
+  </url><url>
+    <loc>https://acountia.no/ar/services/payroll/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/tjenester/lonn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/es/services/nomina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/en/services/payroll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/ar/services/payroll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://acountia.no/en/services/payroll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://acountia.no/es/services/nomina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://acountia.no/ar/services/payroll/"
+                />
+  </url><url>
+    <loc>https://acountia.no/ar/services/accounting/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/en/services/bookkeeping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/es/services/contabilidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/tjenester/regnskap/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://acountia.no/ar/services/accounting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://acountia.no/en/services/bookkeeping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://acountia.no/es/services/contabilidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://acountia.no/ar/services/accounting/"
                 />
   </url><url>
     <loc>https://acountia.no/ar/about/</loc>

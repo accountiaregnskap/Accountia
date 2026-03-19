@@ -12,14 +12,9 @@
 
 <header class="site-header">
   <div class="header-inner">
-
-
     <a class="brand brand-stack brand-image" href="{{ "/" | relLangURL }}" aria-label="Accountia">
-      
       <img class="brand-img" src="{{ "images/accountia_logo_horizontal.png" | relURL }}" alt="Accountia Regnskap">
-
     </a>
-
 
     <!-- Mobil meny-toggle -->
     <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ i18n "open_menu" }}">
@@ -49,28 +44,33 @@
       {{ end }}
       {{ $homeLinks = merge $homeLinks (dict $home.Lang $home.RelPermalink) }}
 
-      {{/* Pretty, native language names in the dropdown */}}
-      {{ $langNames := dict "no" "Norsk" "en" "English" "es" "Español" "ar" "العربية" }}
-
       {{/* Language dropdown component */}}
       {{ $langDropdown := partial "lang-dropdown.html" . }}
       {{ $servicePages := slice }}
       {{ if eq site.Language.Lang "no" }}
-        {{ with site.GetPage "/tjenester/regnskap" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/tjenester/lonn" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/tjenester/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ $servicePages = slice
+          (dict "title" "Regnskap" "url" "/tjenester/regnskap/")
+          (dict "title" "Lønn" "url" "/tjenester/lonn/")
+          (dict "title" "Outsourcing" "url" "/tjenester/outsourcing/")
+        }}
       {{ else if eq site.Language.Lang "en" }}
-        {{ with site.GetPage "/en/services/bookkeeping" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/en/services/payroll" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/en/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ $servicePages = slice
+          (dict "title" "Bookkeeping" "url" "/en/services/bookkeeping/")
+          (dict "title" "Payroll" "url" "/en/services/payroll/")
+          (dict "title" "Outsourcing" "url" "/en/services/outsourcing/")
+        }}
       {{ else if eq site.Language.Lang "es" }}
-        {{ with site.GetPage "/es/services/contabilidad" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/es/services/nomina" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/es/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ $servicePages = slice
+          (dict "title" "Contabilidad" "url" "/es/services/contabilidad/")
+          (dict "title" "Nómina" "url" "/es/services/nomina/")
+          (dict "title" "Outsourcing" "url" "/es/services/outsourcing/")
+        }}
       {{ else if eq site.Language.Lang "ar" }}
-        {{ with site.GetPage "/ar/services/accounting" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/ar/services/payroll" }}{{ $servicePages = $servicePages | append . }}{{ end }}
-        {{ with site.GetPage "/ar/services/outsourcing" }}{{ $servicePages = $servicePages | append . }}{{ end }}
+        {{ $servicePages = slice
+          (dict "title" "المحاسبة" "url" "/ar/services/accounting/")
+          (dict "title" "الرواتب" "url" "/ar/services/payroll/")
+          (dict "title" "الاستعانة بمصادر خارجية" "url" "/ar/services/outsourcing/")
+        }}
       {{ end }}
 
       {{ if eq site.Language.Lang "ar" }}
@@ -78,7 +78,7 @@
         {{ range site.Menus.main }}
           {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
-            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") }}
+            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
               <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
                 {{ .Name }}
@@ -86,7 +86,7 @@
               </a>
               <div class="nav-submenu">
                 {{ range $servicePages }}
-                  <a class="nav-sublink {{ if eq $cur.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>
                 {{ end }}
               </div>
             </div>
@@ -98,7 +98,7 @@
         {{ range site.Menus.main }}
           {{ $isServicesItem := or (eq .URL "/tjenester/") (eq .URL "/en/services/") (eq .URL "/es/services/") (eq .URL "/ar/services/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
-            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") }}
+            {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
             <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
               <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">
                 {{ .Name }}
@@ -106,7 +106,7 @@
               </a>
               <div class="nav-submenu">
                 {{ range $servicePages }}
-                  <a class="nav-sublink {{ if eq $cur.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <a class="nav-sublink {{ if eq $cur.RelPermalink .url }}active{{ end }}" href="{{ .url }}">{{ .title }}</a>
                 {{ end }}
               </div>
             </div>

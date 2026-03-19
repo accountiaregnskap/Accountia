@@ -8,11 +8,32 @@
     <language>es</language>
     <atom:link href="https://acountia.no/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Contabilidad</title>
+      <link>https://acountia.no/es/services/contabilidad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://acountia.no/es/services/contabilidad/</guid>
+      <description>&lt;p&gt;Contenido proximamente.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Contacto</title>
       <link>https://acountia.no/es/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://acountia.no/es/contact/</guid>
       <description>&lt;p&gt;A continuación encontrarás el formulario de contacto y la información de contacto.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nomina</title>
+      <link>https://acountia.no/es/services/nomina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://acountia.no/es/services/nomina/</guid>
+      <description>&lt;p&gt;Contenido proximamente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Outsourcing</title>
+      <link>https://acountia.no/es/services/outsourcing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://acountia.no/es/services/outsourcing/</guid>
+      <description>&lt;p&gt;Contenido proximamente.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Precios</title>
