@@ -1,11 +1,17 @@
 {{/*
   Language dropdown (details/summary) used in the header.
-  Always prefers the current page translation when it exists, otherwise
-  falls back to the language home page.
+  For the three service pages, use explicit cross-language mappings.
+  Otherwise prefer current page translation, then fall back to language home.
 */}}
 
 {{ $cur := . }}
 {{ $langNames := dict "no" "Norsk" "en" "English" "es" "Español" "ar" "العربية" }}
+{{ $serviceTranslations := dict
+  "service-bookkeeping" (dict "no" "/tjenester/regnskap/" "en" "/en/services/bookkeeping/" "es" "/es/services/contabilidad/" "ar" "/ar/services/accounting/")
+  "service-payroll" (dict "no" "/tjenester/lonn/" "en" "/en/services/payroll/" "es" "/es/services/nomina/" "ar" "/ar/services/payroll/")
+  "service-outsourcing" (dict "no" "/tjenester/outsourcing/" "en" "/en/services/outsourcing/" "es" "/es/services/outsourcing/" "ar" "/ar/services/outsourcing/")
+}}
+{{ $serviceKey := $cur.Params.translationKey | default "" }}
 
 <div class="lang-dd">
   <details>
@@ -14,21 +20,27 @@
       {{ range site.Languages }}
         {{ $lang := .Lang }}
         {{ $url := "/" }}
-        {{ if eq $cur.Lang $lang }}
-          {{ $url = $cur.RelPermalink }}
-        {{ else }}
-          {{ range $cur.AllTranslations }}
-            {{ if eq .Lang $lang }}
-              {{ $url = .RelPermalink }}
-            {{ end }}
+        {{ if and $serviceKey (isset $serviceTranslations $serviceKey) }}
+          {{ with index $serviceTranslations $serviceKey }}
+            {{ $url = index . $lang | default "/" }}
           {{ end }}
-        {{ end }}
-        {{ if eq $url "/" }}
+        {{ else }}
+          {{ $targetPage := site.Home }}
           {{ range site.Sites }}
             {{ if eq .Language.Lang $lang }}
-              {{ $url = .Home.RelPermalink }}
+              {{ $targetPage = .Home }}
             {{ end }}
           {{ end }}
+          {{ if eq $cur.Lang $lang }}
+            {{ $targetPage = $cur }}
+          {{ else }}
+            {{ range $cur.AllTranslations }}
+              {{ if eq .Lang $lang }}
+                {{ $targetPage = . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ $url = $targetPage.RelPermalink }}
         {{ end }}
         <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ index $langNames $lang | default (upper $lang) }}</a>
       {{ end }}
