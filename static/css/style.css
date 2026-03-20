@@ -596,6 +596,8 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-group {
     position: relative;
+    padding-bottom: 18px;
+    margin-bottom: -18px;
   }
 
   html[lang="ar"][dir="rtl"] .nav-parent-row {
@@ -605,10 +607,11 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-submenu {
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: calc(100% - 8px);
+    right: 50%;
     left: auto;
-    margin-top: 6px;
+    transform: translateX(50%);
+    margin-top: 0;
     min-width: 260px;
     text-align: right;
     z-index: 60010;
