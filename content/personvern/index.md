@@ -30,9 +30,6 @@ d6="Du kan be om innsyn, retting eller sletting av personopplysninger når som h
   c4k="Trygghet" c4t="Klare rammer i hele kundeforholdet" c4d="Vi ønsker at håndteringen av personopplysninger skal være forståelig, forutsigbar og trygg gjennom hele samarbeidet."
 >}}
 
-### Kontakt
-Spørsmål om personvern? Ta kontakt via kontaktskjemaet på nettsiden.
-
 {{< cta_banner
   title="Har du spørsmål om personvern?"
   lead="Send oss en melding via kontaktskjemaet, så følger vi opp henvendelsen din så raskt som mulig."

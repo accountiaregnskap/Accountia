@@ -30,9 +30,6 @@ d6="Tienes derecho a acceder, corregir o eliminar datos, y a oponerte al tratami
   c4k="Confianza" c4t="Un marco claro durante toda la colaboración" c4d="Queremos que el tratamiento de los datos personales sea comprensible, previsible y seguro durante toda la relación con el cliente."
 >}}
 
-### Contacto
-Si tienes preguntas sobre privacidad, puedes escribirnos mediante el formulario de contacto.
-
 {{< cta_banner
   title="¿Tienes preguntas sobre privacidad?"
   lead="Envíanos un mensaje a través del formulario de contacto y te responderemos lo antes posible."

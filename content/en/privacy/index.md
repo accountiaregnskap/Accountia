@@ -30,9 +30,6 @@ d6="You may request access, correction or deletion of your personal data at any 
   c4k="Confidence" c4t="Clear boundaries throughout the relationship" c4d="We want the handling of personal data to be understandable, predictable and safe throughout the cooperation."
 >}}
 
-### Contact
-For privacy-related questions, please contact us via the website contact form.
-
 {{< cta_banner
   title="Do you have privacy-related questions?"
   lead="Send us a message through the contact form and we will follow up your request as quickly as possible."
