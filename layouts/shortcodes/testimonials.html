@@ -10,8 +10,19 @@
     {{ range $items }}
       {{ $t := trim . " " }}
       {{ if $t }}
+        {{ $parts := split $t "::" }}
+        {{ $name := "" }}
+        {{ $quote := $t }}
+        {{ if ge (len $parts) 2 }}
+          {{ $name = trim (index $parts 0) " " }}
+          {{ $quote = trim (index $parts 1) " " }}
+        {{ end }}
         <div class="testi-card">
-          <p class="testi-quote">“{{ $t }}”</p>
+          <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+          <p class="testi-quote">"{{ $quote }}"</p>
+          {{ with $name }}
+            <p class="testi-name">{{ . }}</p>
+          {{ end }}
         </div>
       {{ end }}
     {{ end }}

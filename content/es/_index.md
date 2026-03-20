@@ -50,8 +50,8 @@ items="Autónomos, Sociedades, Consultores, Oficios, E-commerce, Transporte, Sal
 
 {{< testimonials
 title="Por qué los clientes eligen Accountia"
-lead="En resumen: calidad, respuesta rápida y una configuración que funciona en la práctica."
-items="Proceso claro y plazos fijos — menos sorpresas.||Respuestas rápidas y comunicación directa.||Reportes que facilitan gestionar el negocio."
+lead="Opiniones reales de clientes que trabajan con Accountia en su día a día."
+items="Damas Food AS::Estamos muy satisfechos con la colaboración con Accountia Regnskap. Seguimiento profesional, respuestas rápidas y buen control de nuestras finanzas. Explican todo de forma sencilla y hacen que la contabilidad sea mucho más clara. Recomendado para cualquiera que quiera un contable seguro y estructurado.||Toscana Pizza og Grill::Una oficina contable profesional con soluciones modernas y seguimiento personal. Nos sentimos muy bien atendidos.||Itachino AS::Buen servicio y muy buena comunicación. Nuestra contabilidad se ha vuelto mucho más estructurada desde que empezamos a colaborar con Accountia."
 >}}
 
 

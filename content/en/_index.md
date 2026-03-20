@@ -50,8 +50,8 @@ items="Sole proprietors, Limited companies, Consultants, Trades, E-commerce, Tra
 
 {{< testimonials
 title="Why clients choose Accountia"
-lead="In short: quality delivery, fast replies and a setup that works in real life."
-items="Clear process and fixed deadlines – fewer surprises.||Fast responses and straight communication.||Reports that make it easier to manage the business."
+lead="Real feedback from clients who work with Accountia in their daily operations."
+items="Damas Food AS::We are very pleased with our collaboration with Accountia Regnskap. Professional follow-up, quick responses, and strong control of our finances. They explain things clearly and make accounting much easier to understand. Recommended to anyone looking for a reliable and structured accounting partner.||Toscana Pizza og Grill::A professional accounting office with modern solutions and personal follow-up. We feel very well taken care of.||Itachino AS::Good service and very good communication. Our accounting has become much more structured since we started working with Accountia."
 >}}
 
 
