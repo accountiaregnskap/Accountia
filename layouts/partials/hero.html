@@ -17,26 +17,6 @@
           <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
           <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
         </div>
-
-        <div class="home-hero-trust" aria-label="Accountia highlights">
-          {{ if eq .Lang "en" }}
-            <span>Bookkeeping, payroll and VAT</span>
-            <span>Modern systems</span>
-            <span>Clear follow-up</span>
-          {{ else if eq .Lang "es" }}
-            <span>Contabilidad, nomina e IVA</span>
-            <span>Sistemas modernos</span>
-            <span>Seguimiento claro</span>
-          {{ else if eq .Lang "ar" }}
-            <span>المحاسبة والرواتب وضريبة القيمة المضافة</span>
-            <span>أنظمة حديثة</span>
-            <span>متابعة واضحة</span>
-          {{ else }}
-            <span>Regnskap, lonn og MVA</span>
-            <span>Moderne systemer</span>
-            <span>Tydelig oppfolging</span>
-          {{ end }}
-        </div>
       </div>
 
     </div>
