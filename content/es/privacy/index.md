@@ -18,3 +18,24 @@ d5="Solo compartimos datos con proveedores necesarios (por ejemplo, sistemas de 
 t6="✅ Tus derechos"
 d6="Tienes derecho a acceder, corregir o eliminar datos, y a oponerte al tratamiento cuando corresponda."
 >}}
+
+{{< service_bento
+  variant="soft"
+  tag="Privacidad"
+  title="Cómo trabajamos la privacidad en la práctica"
+  lead="Para nosotros, la privacidad significa responsabilidad clara, sistemas adecuados y una gestión ordenada de la información durante toda la relación con el cliente."
+  c1k="Responsabilidad" c1t="Roles y rutinas claras" c1d="Trabajamos con estructura, control de acceso y gestión ordenada de la información para tratar los datos personales de forma segura."
+  c2k="Sistemas" c2t="Herramientas adecuadas para cada tarea" c2d="Utilizamos soluciones que apoyan la documentación segura, la colaboración y el seguimiento dentro de los servicios que prestamos."
+  c3k="Acceso" c3t="Contacto sencillo si tienes preguntas" c3d="Si quieres saber cómo se tratan los datos, o deseas acceso, corrección o aclaraciones, puedes contactarnos fácilmente."
+  c4k="Confianza" c4t="Un marco claro durante toda la colaboración" c4d="Queremos que el tratamiento de los datos personales sea comprensible, previsible y seguro durante toda la relación con el cliente."
+>}}
+
+### Contacto
+Si tienes preguntas sobre privacidad, puedes escribirnos mediante el formulario de contacto.
+
+{{< cta_banner
+  title="¿Tienes preguntas sobre privacidad?"
+  lead="Envíanos un mensaje a través del formulario de contacto y te responderemos lo antes posible."
+  btn_label="Contáctanos"
+  btn_url="/es/contact/#contact-form"
+>}}

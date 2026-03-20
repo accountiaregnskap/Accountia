@@ -3712,3 +3712,298 @@ html[dir="rtl"], html[dir="rtl"] body{
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== PREMIUM INNER PAGES ===== */
+.page-hero{
+  min-height: 430px;
+  background-position: center 22%;
+}
+
+.page-hero .hero-overlay{
+  background:
+    radial-gradient(circle at 18% 18%, rgba(212,165,116,0.16), transparent 28%),
+    linear-gradient(102deg, rgba(10,19,35,0.82), rgba(10,19,35,0.52) 48%, rgba(10,19,35,0.18));
+}
+
+.page-hero-inner{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 112px 32px 56px;
+}
+
+.page-hero .hero-content{
+  max-width: 760px;
+}
+
+.page-hero h1{
+  white-space: normal;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+  font-size: clamp(2.9rem, 5vw, 5rem);
+  text-shadow: 0 14px 32px rgba(0,0,0,0.22);
+}
+
+.page-hero p{
+  max-width: 58ch;
+  font-size: clamp(1rem, 1.28vw, 1.16rem);
+  line-height: 1.8;
+  color: rgba(255,255,255,0.92);
+}
+
+.page-main{
+  position: relative;
+}
+
+.page-content{
+  position: relative;
+  z-index: 1;
+}
+
+.page-content .service-bento,
+.page-content .service-steps-modern,
+.page-content .svc-faq,
+.page-content .cta-banner{
+  margin: 34px 0;
+}
+
+.page-content .service-bento,
+.page-content .service-steps-modern,
+.page-content .svc-faq,
+.page-content .privacy-wrap,
+.page-content .cta-banner,
+.page-content .ac-calc{
+  opacity: 0;
+  transform: translateY(26px);
+  filter: blur(8px);
+  animation: homeSectionReveal .78s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+.page-content .service-bento{ animation-delay: .06s; }
+.page-content .service-steps-modern{ animation-delay: .14s; }
+.page-content .svc-faq{ animation-delay: .22s; }
+.page-content .privacy-wrap{ animation-delay: .08s; }
+.page-content .ac-calc{ animation-delay: .12s; }
+.page-content .cta-banner{ animation-delay: .28s; }
+
+.page-content .service-bento-head,
+.page-content .service-steps-head,
+.page-content .svc-faq-head{
+  max-width: 74ch;
+  margin-bottom: 20px;
+}
+
+.page-content .service-bento-head h2,
+.page-content .service-steps-head h2,
+.page-content .svc-faq-head h2{
+  font-size: clamp(1.95rem, 3vw, 3rem);
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.page-content .service-bento-head p,
+.page-content .service-steps-head p,
+.page-content .svc-faq-head p{
+  color: #5f6975;
+  line-height: 1.8;
+}
+
+.page-content .service-bento-tag,
+.page-content .service-steps-tag{
+  padding: 8px 12px;
+  background: rgba(212,165,116,0.16);
+  color: #b98542;
+}
+
+.page-content .service-bento-grid,
+.page-content .service-steps-grid{
+  gap: 18px;
+}
+
+.page-content .service-bento-card,
+.page-content .service-step-card{
+  border-radius: 22px;
+  border: 1px solid rgba(18,32,51,0.06);
+  box-shadow: 0 18px 40px rgba(15,23,42,0.07);
+}
+
+.page-content .service-bento-card{
+  min-height: 220px;
+  padding: 28px 24px;
+}
+
+.page-content .service-step-card{
+  min-height: 200px;
+  padding: 28px 24px;
+}
+
+.page-content .service-bento-card h3,
+.page-content .service-step-card h3{
+  font-size: 1.3rem;
+  line-height: 1.18;
+}
+
+.page-content .service-bento-card p,
+.page-content .service-step-card p{
+  color: #5f6975;
+  line-height: 1.78;
+}
+
+.page-content .svc-faq{
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(18,32,51,0.06);
+  box-shadow: 0 16px 34px rgba(15,23,42,0.05);
+}
+
+.page-content .svc-faq-list{
+  display: grid;
+  gap: 14px;
+}
+
+.page-content .svc-faq-item{
+  border: 1px solid rgba(18,32,51,0.08);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.84);
+  padding: 0 18px;
+}
+
+.page-content .svc-faq-q{
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 0;
+  font-weight: 700;
+  color: #122033;
+}
+
+.page-content .svc-faq-q::-webkit-details-marker{
+  display: none;
+}
+
+.page-content .svc-faq-a{
+  padding: 0 0 18px;
+  color: #5f6975;
+  line-height: 1.8;
+}
+
+.page-content .cta-banner{
+  margin-top: 42px;
+}
+
+.page-content .contact-section{
+  margin-top: 18px;
+  padding: 32px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.90), rgba(247,241,233,0.92));
+  border: 1px solid rgba(18,32,51,0.06);
+  box-shadow: 0 22px 44px rgba(15,23,42,0.08);
+}
+
+.page-content .contact-grid{
+  gap: 20px;
+}
+
+.page-content .contact-card{
+  border-radius: 22px;
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(18,32,51,0.06);
+  box-shadow: 0 14px 28px rgba(15,23,42,0.05);
+}
+
+.page-content .contact-title{
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  letter-spacing: -0.04em;
+}
+
+.page-content .contact-intro,
+.page-content .contact-value,
+.page-content .contact-row{
+  color: #5f6975;
+}
+
+.page-content .social-btn{
+  border-radius: 14px;
+}
+
+.page-content .ac-calc{
+  margin-top: 22px;
+  padding: 26px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(247,241,233,0.92));
+  border: 1px solid rgba(18,32,51,0.06);
+  box-shadow: 0 22px 46px rgba(15,23,42,0.08);
+}
+
+.page-content .ac-calc-advisory{
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(212,165,116,0.10);
+  color: #5f6975;
+}
+
+.page-content .ac-calc-grid{
+  gap: 20px;
+}
+
+.page-content .ac-calc-card{
+  border-radius: 20px;
+  border: 1px solid rgba(18,32,51,0.08);
+  box-shadow: 0 12px 24px rgba(15,23,42,0.04);
+}
+
+.page-content .ac-calc-title{
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+}
+
+html[dir="rtl"] .page-content .service-bento-head,
+html[dir="rtl"] .page-content .service-steps-head,
+html[dir="rtl"] .page-content .svc-faq-head,
+html[dir="rtl"] .page-content .privacy-page-content,
+html[dir="rtl"] .page-content .contact-section{
+  text-align: right;
+}
+
+@media (max-width: 980px){
+  .page-hero-inner{
+    padding: 84px 20px 42px;
+  }
+
+  .page-content .contact-section,
+  .page-content .svc-faq,
+  .page-content .ac-calc{
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 680px){
+  .page-hero{
+    min-height: 360px;
+    background-position: center 26%;
+  }
+
+  .page-hero-inner{
+    padding: 74px 16px 34px;
+  }
+
+  .page-content .service-bento-card,
+  .page-content .service-step-card{
+    min-height: auto;
+    padding: 22px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .page-content .service-bento,
+  .page-content .service-steps-modern,
+  .page-content .svc-faq,
+  .page-content .privacy-wrap,
+  .page-content .cta-banner,
+  .page-content .ac-calc{
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
