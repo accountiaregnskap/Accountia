@@ -2211,7 +2211,7 @@ html[dir="rtl"], html[dir="rtl"] body{
   html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu,
   html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu{
     position: fixed !important;
-    top: 108px !important;
+    top: 92px !important;
     left: auto !important;
     margin-top: 0 !important;
     min-width: 260px !important;
@@ -2220,20 +2220,20 @@ html[dir="rtl"], html[dir="rtl"] body{
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu{
-    right: clamp(260px, 18vw, 360px) !important;
+    right: clamp(300px, 19vw, 390px) !important;
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu{
-    right: clamp(700px, 40vw, 820px) !important;
+    right: clamp(760px, 43vw, 900px) !important;
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu::before,
   html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu::before{
     content: "" !important;
     position: absolute !important;
-    top: -42px !important;
+    top: -56px !important;
     right: 0 !important;
     width: 100% !important;
-    height: 42px !important;
+    height: 56px !important;
   }
 }
