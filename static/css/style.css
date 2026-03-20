@@ -160,7 +160,7 @@ strong {
   position: sticky;
   top: 0;
   z-index: 50000;
-  background: #f2e3d0;
+  background: #fbf4ea;
   isolation: isolate;
   border-bottom: 1px solid var(--line);
   transition: all 0.3s ease;
@@ -1345,24 +1345,34 @@ address {
   gap: 16px;
 }
 .value-card{
-  background: #fff;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,247,242,0.98));
   isolation: isolate;
   border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 16px 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  border-radius: 20px;
+  padding: 20px 20px 18px;
+  box-shadow: 0 14px 34px rgba(15,23,42,0.08);
   opacity: 0;
   transform: translateY(22px);
   animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
+.value-card::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:4px;
+  border-radius:20px 0 0 20px;
+  background:linear-gradient(180deg, rgba(212,165,116,0.95), rgba(212,165,116,0.25));
+}
 .value-icon{
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   margin: 0 0 14px;
-  padding: 8px;
-  border-radius: 12px;
-  background: rgba(212,165,116,0.1);
-  opacity: 0.72;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(212,165,116,0.16);
+  background: rgba(212,165,116,0.10);
+  opacity: 0.58;
   transform: scale(0.9);
   animation: iconReveal 0.6s ease-out forwards;
   animation-delay: 0.18s;
@@ -1392,28 +1402,30 @@ address {
 
 .process-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 .process-card{
-  background:#fff;
+  position:relative;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,246,240,0.98));
   border:1px solid rgba(0,0,0,0.08);
-  border-radius:16px;
-  padding:16px;
-  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+  border-radius:20px;
+  padding:22px 18px 18px;
+  box-shadow:0 14px 34px rgba(15,23,42,0.08);
   opacity: 0;
   transform: translateY(22px);
   animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
-.process-icon{
-  width:30px;
-  height:30px;
-  margin:0 0 14px;
-  padding:8px;
-  border-radius:12px;
-  background: rgba(212,165,116,0.1);
-  opacity: 0.72;
-  transform: scale(0.9);
-  animation: iconReveal 0.6s ease-out forwards;
-  animation-delay: 0.2s;
+.process-card::before{
+  content:"";
+  position:absolute;
+  top:18px;
+  left:18px;
+  width:44px;
+  height:3px;
+  border-radius:999px;
+  background:linear-gradient(90deg, rgba(212,165,116,0.95), rgba(212,165,116,0.22));
 }
-.process-card h3{ margin:0 0 6px; font-size:16px; }
+.process-icon{
+  display:none;
+}
+.process-card h3{ margin:16px 0 6px; font-size:16px; }
 .process-card p{ margin:0; font-size:14px; opacity:.85; line-height:1.5; }
 
 .value-card:nth-child(1),
@@ -1444,7 +1456,7 @@ address {
     transform: scale(0.86);
   }
   to {
-    opacity: 0.72;
+    opacity: 0.58;
     transform: scale(1);
   }
 }
