@@ -17,27 +17,86 @@
           <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
           <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
         </div>
+
+        <div class="home-hero-trust" aria-label="Accountia highlights">
+          {{ if eq .Lang "en" }}
+            <span>Bookkeeping, payroll and VAT</span>
+            <span>Modern systems</span>
+            <span>Clear follow-up</span>
+          {{ else if eq .Lang "es" }}
+            <span>Contabilidad, nomina e IVA</span>
+            <span>Sistemas modernos</span>
+            <span>Seguimiento claro</span>
+          {{ else if eq .Lang "ar" }}
+            <span>المحاسبة والرواتب وضريبة القيمة المضافة</span>
+            <span>أنظمة حديثة</span>
+            <span>متابعة واضحة</span>
+          {{ else }}
+            <span>Regnskap, lonn og MVA</span>
+            <span>Moderne systemer</span>
+            <span>Tydelig oppfolging</span>
+          {{ end }}
+        </div>
       </div>
 
-      <aside class="home-hero-panel" aria-label="Accountia focus areas">
-        <div class="home-hero-panel-surface">
-          <div class="hero-cards">
-          {{ with .Params.hero_cards }}
-            {{ range . }}
-              {{ if .url }}
-                <a class="mini-card" href="{{ .url }}"><strong>{{ .title }}</strong><span>{{ .text }}</span></a>
-              {{ else }}
-                <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
-              {{ end }}
-            {{ end }}
-          {{ else }}
-            <div class="mini-card"><strong>Lonn & A-melding</strong><span>Trygg og korrekt lonnskjoring</span></div>
-            <div class="mini-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
-            <div class="mini-card"><strong>Arsoppgjor</strong><span>God plan, ryddig prosess</span></div>
-          {{ end }}
+      <aside class="home-hero-accent" aria-hidden="true">
+        <div class="home-hero-accent-surface">
+          <div class="home-hero-accent-mark"></div>
+          <div class="home-hero-accent-lines">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </aside>
+    </div>
+  </div>
+</section>
+
+<section class="home-service-strip" aria-label="Accountia services">
+  <div class="container home-service-strip-inner">
+    {{ if eq .Lang "en" }}
+      <div class="home-service-strip-head">
+        <p class="home-service-strip-kicker">Services</p>
+        <h2>What we help you with</h2>
+      </div>
+    {{ else if eq .Lang "es" }}
+      <div class="home-service-strip-head">
+        <p class="home-service-strip-kicker">Servicios</p>
+        <h2>En que podemos ayudarte</h2>
+      </div>
+    {{ else if eq .Lang "ar" }}
+      <div class="home-service-strip-head">
+        <p class="home-service-strip-kicker">الخدمات</p>
+        <h2>كيف نساعدك</h2>
+      </div>
+    {{ else }}
+      <div class="home-service-strip-head">
+        <p class="home-service-strip-kicker">Tjenester</p>
+        <h2>Dette hjelper vi deg med</h2>
+      </div>
+    {{ end }}
+
+    <div class="home-service-strip-grid">
+      {{ with .Params.hero_cards }}
+        {{ range . }}
+          {{ if .url }}
+            <a class="home-service-card" href="{{ .url }}">
+              <strong>{{ .title }}</strong>
+              <span>{{ .text }}</span>
+            </a>
+          {{ else }}
+            <div class="home-service-card">
+              <strong>{{ .title }}</strong>
+              <span>{{ .text }}</span>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        <div class="home-service-card"><strong>Lonn & A-melding</strong><span>Trygg og korrekt lonnskjoring</span></div>
+        <div class="home-service-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
+        <div class="home-service-card"><strong>Arsoppgjor</strong><span>God plan, ryddig prosess</span></div>
+      {{ end }}
     </div>
   </div>
 </section>
