@@ -2694,13 +2694,13 @@ html[dir="rtl"], html[dir="rtl"] body{
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255,255,255,0.24), transparent 28%),
-    linear-gradient(110deg, rgba(7,19,37,0.68) 0%, rgba(7,19,37,0.44) 34%, rgba(7,19,37,0.18) 62%, rgba(7,19,37,0.06) 100%);
+    radial-gradient(circle at 18% 18%, rgba(255,255,255,0.18), transparent 26%),
+    linear-gradient(105deg, rgba(8,18,34,0.84) 0%, rgba(8,18,34,0.66) 36%, rgba(8,18,34,0.34) 62%, rgba(8,18,34,0.18) 100%);
   z-index: 0;
 }
 
 .home-hero .hero-overlay{
-  background: linear-gradient(180deg, rgba(9,18,33,0.10) 0%, rgba(9,18,33,0.14) 100%);
+  background: linear-gradient(180deg, rgba(9,18,33,0.08) 0%, rgba(9,18,33,0.18) 100%);
   z-index: 0;
 }
 
@@ -2721,12 +2721,12 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 .home-hero-copy{
   max-width: 720px;
-  padding: 40px 40px 34px;
-  border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
-  border: 1px solid rgba(255,255,255,0.14);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 30px 70px rgba(8,15,29,0.16);
+  padding: 44px 42px 36px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(11,22,39,0.72), rgba(11,22,39,0.56));
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 34px 74px rgba(8,15,29,0.22);
   opacity: 0;
   transform: translateY(52px) scale(0.985);
   filter: blur(14px);
@@ -2735,17 +2735,19 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 .home-hero-copy h1{
   max-width: 760px;
-  font-size: clamp(3rem, 6vw, 5.7rem);
-  line-height: 0.96;
+  font-size: clamp(3rem, 5.6vw, 5.2rem);
+  line-height: 0.98;
   letter-spacing: -0.05em;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  text-shadow: 0 10px 28px rgba(0,0,0,0.18);
 }
 
 .home-hero-copy p{
-  max-width: 660px;
-  font-size: clamp(1.03rem, 1.45vw, 1.28rem);
-  line-height: 1.65;
-  color: rgba(255,255,255,0.92);
+  max-width: 620px;
+  font-size: clamp(1rem, 1.3vw, 1.16rem);
+  line-height: 1.75;
+  color: rgba(255,255,255,0.88);
+  text-shadow: 0 8px 18px rgba(0,0,0,0.16);
 }
 
 .home-hero .hero-actions{
@@ -2755,14 +2757,14 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 .home-hero .hero-actions .btn{
   min-width: 194px;
-  border-radius: 16px;
-  box-shadow: 0 18px 40px rgba(15,23,42,0.12);
+  border-radius: 14px;
+  box-shadow: 0 18px 34px rgba(15,23,42,0.16);
 }
 
 .home-hero .hero-actions .btn-ghost{
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.26);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(6px);
 }
 
 .home-hero-panel{
@@ -2773,12 +2775,12 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 .home-hero-panel-surface{
   width: 100%;
-  padding: 18px;
-  border-radius: 28px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.90), rgba(249,244,236,0.85));
-  border: 1px solid rgba(255,255,255,0.62);
-  box-shadow: 0 30px 70px rgba(8,15,29,0.14);
-  backdrop-filter: blur(14px);
+  padding: 14px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(248,243,235,0.92));
+  border: 1px solid rgba(255,255,255,0.74);
+  box-shadow: 0 24px 54px rgba(8,15,29,0.12);
+  backdrop-filter: blur(8px);
   opacity: 0;
   transform: translateY(56px) scale(0.985);
   filter: blur(16px);
@@ -2793,12 +2795,12 @@ html[dir="rtl"], html[dir="rtl"] body{
 .home-hero .mini-card{
   display: grid;
   gap: 8px;
-  min-height: 120px;
-  padding: 22px 22px 20px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.72);
-  border: 1px solid rgba(212,165,116,0.18);
-  box-shadow: 0 14px 28px rgba(15,23,42,0.05);
+  min-height: 108px;
+  padding: 18px 18px 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(18,32,51,0.07);
+  box-shadow: 0 10px 24px rgba(15,23,42,0.05);
   transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
   opacity: 0;
   transform: translateY(34px) scale(0.985);
@@ -2812,25 +2814,26 @@ html[dir="rtl"], html[dir="rtl"] body{
 
 .home-hero .mini-card::before{
   content: "";
-  width: 48px;
-  height: 3px;
+  width: 42px;
+  height: 2px;
   border-radius: 999px;
   background: linear-gradient(90deg, #d3a262, #f0d4a8);
 }
 
 .home-hero .mini-card:hover{
-  transform: translateY(-4px);
-  border-color: rgba(212,165,116,0.32);
-  box-shadow: 0 22px 38px rgba(15,23,42,0.10);
+  transform: translateY(-3px);
+  border-color: rgba(212,165,116,0.26);
+  box-shadow: 0 18px 32px rgba(15,23,42,0.08);
 }
 
 .home-hero .mini-card strong{
-  font-size: 1.12rem;
+  font-size: 1.04rem;
   color: #122033;
 }
 
 .home-hero .mini-card span{
-  line-height: 1.6;
+  line-height: 1.55;
+  font-size: 0.96rem;
   color: #5f6b7a;
 }
 
