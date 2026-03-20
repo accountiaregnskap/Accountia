@@ -1,37 +1,43 @@
-<section class="hero" style="--bg:url('/images/hero.jpg');">
+<section class="hero home-hero" style="--bg:url('/images/hero.jpg');">
   <div class="hero-overlay"></div>
   <div class="hero-inner">
-    <div class="hero-content">
-      <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}Regnskap som gir deg kontroll.{{ end }}</h1>
-      <p>
-        {{ with .Params.hero_lead }}
-          {{ . }}
-        {{ else }}
-          Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør
-          og rådgivning – med moderne systemer og tydelig oppfølging.
-        {{ end }}
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
-        <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
-      </div>
-
-      <div class="hero-cards">
-        {{ with .Params.hero_cards }}
-          {{ range . }}
-            {{ if .url }}
-              <a class="mini-card" href="{{ .url }}"><strong>{{ .title }}</strong><span>{{ .text }}</span></a>
-            {{ else }}
-              <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
-            {{ end }}
+    <div class="home-hero-grid">
+      <div class="hero-content home-hero-copy">
+        <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}Regnskap som gir deg kontroll.{{ end }}</h1>
+        <p>
+          {{ with .Params.hero_lead }}
+            {{ . }}
+          {{ else }}
+            Accountia hjelper sma og mellomstore bedrifter med regnskapsforing, lonn, MVA, arsoppgjor
+            og radgivning - med moderne systemer og tydelig oppfolging.
           {{ end }}
-        {{ else }}
-          <div class="mini-card"><strong>Lønn & A-melding</strong><span>Trygg og korrekt lønnskjøring</span></div>
-          <div class="mini-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
-          <div class="mini-card"><strong>Årsoppgjør</strong><span>God plan, ryddig prosess</span></div>
-        {{ end }}
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
+          <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
+        </div>
       </div>
+
+      <aside class="home-hero-panel" aria-label="Accountia focus areas">
+        <div class="home-hero-panel-surface">
+          <div class="hero-cards">
+          {{ with .Params.hero_cards }}
+            {{ range . }}
+              {{ if .url }}
+                <a class="mini-card" href="{{ .url }}"><strong>{{ .title }}</strong><span>{{ .text }}</span></a>
+              {{ else }}
+                <div class="mini-card"><strong>{{ .title }}</strong><span>{{ .text }}</span></div>
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            <div class="mini-card"><strong>Lonn & A-melding</strong><span>Trygg og korrekt lonnskjoring</span></div>
+            <div class="mini-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
+            <div class="mini-card"><strong>Arsoppgjor</strong><span>God plan, ryddig prosess</span></div>
+          {{ end }}
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
