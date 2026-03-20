@@ -87,7 +87,7 @@
           {{ $isAboutItem := or (eq .URL "/om-oss/") (eq .URL "/en/about/") (eq .URL "/es/about/") (eq .URL "/ar/about/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
-            <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
+            <div class="nav-group nav-group--services {{ if $isServicesActive }}is-active{{ end }}">
               <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-services-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
@@ -103,7 +103,7 @@
             </div>
           {{ else if and $isAboutItem (gt (len $aboutPages) 0) }}
             {{ $isAboutActive := or ($.IsMenuCurrent "main" .) (in $cur.RelPermalink "/om-oss/") (in $cur.RelPermalink "/about/") }}
-            <div class="nav-group {{ if $isAboutActive }}is-active{{ end }}">
+            <div class="nav-group nav-group--about {{ if $isAboutActive }}is-active{{ end }}">
               <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-about-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isAboutActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
@@ -127,7 +127,7 @@
           {{ $isAboutItem := or (eq .URL "/om-oss/") (eq .URL "/en/about/") (eq .URL "/es/about/") (eq .URL "/ar/about/") }}
           {{ if and $isServicesItem (gt (len $servicePages) 0) }}
             {{ $isServicesActive := or ($.IsMenuCurrent "main" .) (eq $cur.Section "tjenester") (eq $cur.Section "services") (in $cur.RelPermalink "/tjenester/") (in $cur.RelPermalink "/services/") }}
-            <div class="nav-group {{ if $isServicesActive }}is-active{{ end }}">
+            <div class="nav-group nav-group--services {{ if $isServicesActive }}is-active{{ end }}">
               <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-services-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isServicesActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
@@ -143,7 +143,7 @@
             </div>
           {{ else if and $isAboutItem (gt (len $aboutPages) 0) }}
             {{ $isAboutActive := or ($.IsMenuCurrent "main" .) (in $cur.RelPermalink "/om-oss/") (in $cur.RelPermalink "/about/") }}
-            <div class="nav-group {{ if $isAboutActive }}is-active{{ end }}">
+            <div class="nav-group nav-group--about {{ if $isAboutActive }}is-active{{ end }}">
               <input class="nav-subtoggle" type="checkbox" id="nav-subtoggle-about-{{ site.Language.Lang }}">
               <div class="nav-parent-row">
                 <a class="nav-link nav-parent {{ if $isAboutActive }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>

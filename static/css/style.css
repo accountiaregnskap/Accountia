@@ -2235,4 +2235,20 @@ html[dir="rtl"], html[dir="rtl"] body{
     width: 100% !important;
     height: 8px !important;
   }
+
+  html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu{
+    position: fixed !important;
+    top: 74px !important;
+    right: clamp(260px, 18vw, 360px) !important;
+    left: auto !important;
+    margin-top: 0 !important;
+  }
+
+  html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu{
+    position: fixed !important;
+    top: 74px !important;
+    right: clamp(700px, 40vw, 820px) !important;
+    left: auto !important;
+    margin-top: 0 !important;
+  }
 }
