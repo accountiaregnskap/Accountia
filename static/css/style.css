@@ -56,7 +56,7 @@ html, body {
 body {
   font-family: var(--font-sans);
   color: var(--text);
-  background: #f2e3d0;
+  background: #f8efe4;
   isolation: isolate;
   line-height: 1.6;
   font-size: 16px;
@@ -1356,10 +1356,13 @@ address {
   animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
 .value-icon{
-  width: 40px;
-  height: 40px;
-  margin: 0 0 10px;
-  opacity: 0.9;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 14px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(212,165,116,0.1);
+  opacity: 0.72;
   transform: scale(0.9);
   animation: iconReveal 0.6s ease-out forwards;
   animation-delay: 0.18s;
@@ -1399,9 +1402,13 @@ address {
   animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
 .process-icon{
-  width:36px;
-  height:36px;
-  margin:0 0 10px;
+  width:30px;
+  height:30px;
+  margin:0 0 14px;
+  padding:8px;
+  border-radius:12px;
+  background: rgba(212,165,116,0.1);
+  opacity: 0.72;
   transform: scale(0.9);
   animation: iconReveal 0.6s ease-out forwards;
   animation-delay: 0.2s;
@@ -1437,7 +1444,7 @@ address {
     transform: scale(0.86);
   }
   to {
-    opacity: 0.9;
+    opacity: 0.72;
     transform: scale(1);
   }
 }
