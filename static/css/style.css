@@ -2201,24 +2201,17 @@ html[dir="rtl"], html[dir="rtl"] body{
 }
 
 @media (min-width: 821px){
-  html[lang="ar"][dir="rtl"] .nav-group{
-    position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-    height: 100% !important;
-  }
-
+  html[lang="ar"][dir="rtl"] .nav-group,
   html[lang="ar"][dir="rtl"] .nav-parent-row{
-    display: flex !important;
-    align-items: center !important;
-    height: 100% !important;
+    position: static !important;
+    z-index: auto !important;
+    height: auto !important;
   }
 
-  html[lang="ar"][dir="rtl"] #nav-subtoggle-services-ar ~ .nav-submenu,
-  html[lang="ar"][dir="rtl"] #nav-subtoggle-about-ar ~ .nav-submenu{
-    position: absolute !important;
-    top: calc(100% - 6px) !important;
-    right: 0 !important;
+  html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu,
+  html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu{
+    position: fixed !important;
+    top: 108px !important;
     left: auto !important;
     margin-top: 0 !important;
     min-width: 260px !important;
@@ -2226,29 +2219,21 @@ html[dir="rtl"], html[dir="rtl"] body{
     text-align: right !important;
   }
 
-  html[lang="ar"][dir="rtl"] #nav-subtoggle-services-ar ~ .nav-submenu::before,
-  html[lang="ar"][dir="rtl"] #nav-subtoggle-about-ar ~ .nav-submenu::before{
-    content: "" !important;
-    position: absolute !important;
-    top: -8px !important;
-    right: 0 !important;
-    width: 100% !important;
-    height: 8px !important;
-  }
-
   html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu{
-    position: fixed !important;
-    top: 74px !important;
     right: clamp(260px, 18vw, 360px) !important;
-    left: auto !important;
-    margin-top: 0 !important;
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu{
-    position: fixed !important;
-    top: 74px !important;
     right: clamp(700px, 40vw, 820px) !important;
-    left: auto !important;
-    margin-top: 0 !important;
+  }
+
+  html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu::before,
+  html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu::before{
+    content: "" !important;
+    position: absolute !important;
+    top: -42px !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 42px !important;
   }
 }
