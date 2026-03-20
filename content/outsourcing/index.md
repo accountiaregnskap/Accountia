@@ -39,6 +39,6 @@ lead: "Outsourcing som frigjør tid, gir struktur og gjør hverdagen enklere."
 {{< cta_banner
   title="Vil du frigjøre tid og få mer struktur i hverdagen?"
   lead="Fortell oss hvilke oppgaver du ønsker hjelp med, så foreslår vi en outsourcing-løsning som passer virksomheten din."
-  btn_label="Kontakt oss"
-  btn_url="/kontakt/"
+  btn_label="Gratis pristilbud"
+  btn_url="/kontakt/#contact-form"
 >}}

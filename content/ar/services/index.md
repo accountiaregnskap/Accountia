@@ -41,6 +41,6 @@ Tripletex و PowerOffice و UniMicro و Fiken وغيرها. نختار معك م
 {{< cta_banner
   title="هل تريد عرض سعر واضح؟"
   lead="اكتب لنا نبذة قصيرة عن نشاطك، وسنقترح إعدادًا وسعرًا مناسبين."
-  btn_label="اتصل بنا"
-  btn_url="/ar/contact/"
+  btn_label="عرض سعر مجاني"
+  btn_url="/ar/contact/#contact-form"
 >}}

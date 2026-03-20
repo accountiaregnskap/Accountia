@@ -39,6 +39,6 @@ lead: "Payroll that is accurate, predictable, and reliable for both your team an
 {{< cta_banner
   title="Do you want a safer and simpler payroll process?"
   lead="Send us a few lines about your company, and we will suggest a solution that fits your employee count, routines, and needs."
-  btn_label="Contact us"
-  btn_url="/en/contact/"
+  btn_label="Free quote"
+  btn_url="/en/contact/#contact-form"
 >}}

@@ -66,6 +66,6 @@ We work with systems such as Tripletex, PowerOffice, UniMicro, and Fiken. The go
 {{< cta_banner
   title="Do you want a bookkeeping setup that fits your business?"
   lead="Send us a few lines about your company, and we will suggest a structure that gives you better control and a smoother everyday workflow."
-  btn_label="Contact us"
-  btn_url="/en/contact/"
+  btn_label="Free quote"
+  btn_url="/en/contact/#contact-form"
 >}}

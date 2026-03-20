@@ -66,6 +66,6 @@ Vi jobber blant annet med Tripletex, PowerOffice, UniMicro og Fiken. Målet er �
 {{< cta_banner
   title="Vil du ha en regnskapsløsning som passer virksomheten din?"
   lead="Send oss noen linjer om bedriften din, så foreslår vi et oppsett som gir deg god kontroll og en ryddig hverdag."
-  btn_label="Kontakt oss"
-  btn_url="/kontakt/"
+  btn_label="Gratis pristilbud"
+  btn_url="/kontakt/#contact-form"
 >}}

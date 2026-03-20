@@ -42,6 +42,6 @@ Tripletex, PowerOffice, UniMicro, Fiken m.fl. Vi tilpasser systemvalg og oppsett
 {{< cta_banner
   title="Vil du ha et konkret tilbud?"
   lead="Send oss noen linjer om virksomheten din, så kommer vi tilbake med forslag til oppsett og pris."
-  btn_label="Kontakt oss"
-  btn_url="/kontakt/"
+  btn_label="Gratis pristilbud"
+  btn_url="/kontakt/#contact-form"
 >}}

@@ -41,6 +41,6 @@ Tripletex, PowerOffice, UniMicro, Fiken and more. We adapt system selection and 
 {{< cta_banner
   title="Want a concrete quote?"
   lead="Send us a few lines about your business and we’ll suggest a setup and a price."
-  btn_label="Contact us"
-  btn_url="/en/contact/"
+  btn_label="Free quote"
+  btn_url="/en/contact/#contact-form"
 >}}

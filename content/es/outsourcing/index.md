@@ -39,6 +39,6 @@ lead: "Outsourcing que libera tiempo, aporta estructura y simplifica el trabajo 
 {{< cta_banner
   title="¿Quieres liberar tiempo y ganar más estructura?"
   lead="Cuéntanos qué tareas quieres delegar y te propondremos una solución de outsourcing adaptada a tu empresa."
-  btn_label="Contáctanos"
-  btn_url="/es/contact/"
+  btn_label="Cotización gratuita"
+  btn_url="/es/contact/#contact-form"
 >}}

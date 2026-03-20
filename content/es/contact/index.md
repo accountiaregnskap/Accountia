@@ -1,6 +1,6 @@
 ---
 title: "Contacto"
-lead: "Contáctanos para una charla sin compromiso: respondemos durante el horario laboral."
+lead: "Contáctanos para una charla sin compromiso o una cotización gratuita: respondemos durante el horario laboral."
 bg: "/images/hero.jpg"
 ---
 

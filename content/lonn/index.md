@@ -39,6 +39,6 @@ lead: "Lønn som er presis, forutsigbar og trygg for både ansatte og bedrift."
 {{< cta_banner
   title="Vil du ha en tryggere og enklere lønnsprosess?"
   lead="Send oss noen linjer om bedriften din, så foreslår vi en løsning som passer antall ansatte, rutiner og behov."
-  btn_label="Kontakt oss"
-  btn_url="/kontakt/"
+  btn_label="Gratis pristilbud"
+  btn_url="/kontakt/#contact-form"
 >}}

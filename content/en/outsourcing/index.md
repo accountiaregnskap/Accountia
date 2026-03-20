@@ -39,6 +39,6 @@ lead: "Outsourcing that frees up time, creates structure, and makes everyday ope
 {{< cta_banner
   title="Do you want to free up time and gain more structure?"
   lead="Tell us which tasks you want help with, and we will suggest an outsourcing setup that fits your business."
-  btn_label="Contact us"
-  btn_url="/en/contact/"
+  btn_label="Free quote"
+  btn_url="/en/contact/#contact-form"
 >}}

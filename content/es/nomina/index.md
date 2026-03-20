@@ -39,6 +39,6 @@ lead: "Nómina precisa, predecible y segura tanto para la empresa como para los 
 {{< cta_banner
   title="¿Quieres un proceso de nómina más seguro y sencillo?"
   lead="Cuéntanos un poco sobre tu empresa y te propondremos una solución adaptada a tu plantilla, tus rutinas y tus necesidades."
-  btn_label="Contáctanos"
-  btn_url="/es/contact/"
+  btn_label="Cotización gratuita"
+  btn_url="/es/contact/#contact-form"
 >}}

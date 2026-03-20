@@ -2059,6 +2059,7 @@ html[dir="rtl"] .footer-grid {
 /* Contact page layout (restores proper form styling) */
 .contact-section{
   padding: 24px 0 40px;
+  scroll-margin-top: 140px;
 }
 .contact-grid{
   display: grid;

@@ -39,6 +39,6 @@ lead: "حل Outsourcing يوفر الوقت، وينظم العمل، ويجعل
 {{< cta_banner
   title="هل تريد توفير الوقت والحصول على هيكل أوضح؟"
   lead="أخبرنا بالمهام التي تريد إسنادها، وسنقترح لك حل Outsourcing مناسبًا لطبيعة شركتك."
-  btn_label="اتصل بنا"
-  btn_url="/ar/contact/"
+  btn_label="عرض سعر مجاني"
+  btn_url="/ar/contact/#contact-form"
 >}}

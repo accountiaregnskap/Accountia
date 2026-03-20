@@ -41,6 +41,6 @@ Tripletex, PowerOffice, UniMicro, Fiken y más. Adaptamos la selección y config
 {{< cta_banner
   title="¿Quieres una oferta concreta?"
   lead="Escríbenos unas líneas sobre tu empresa y te sugerimos una configuración y un precio."
-  btn_label="Contacta con nosotros"
-  btn_url="/es/contact/"
+  btn_label="Cotización gratuita"
+  btn_url="/es/contact/#contact-form"
 >}}

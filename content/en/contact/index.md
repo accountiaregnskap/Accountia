@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-lead: "Get in touch for a no-obligation chat — we reply during business hours."
+lead: "Get in touch for a no-obligation chat or a free quote — we reply during business hours."
 bg: "/images/hero.jpg"
 ---
 

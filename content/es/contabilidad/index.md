@@ -66,6 +66,6 @@ Trabajamos con sistemas como Tripletex, PowerOffice, UniMicro y Fiken. El objeti
 {{< cta_banner
   title="¿Quieres una solución contable adaptada a tu empresa?"
   lead="Escríbenos unas líneas sobre tu negocio y te propondremos una estructura que te dé más control y una gestión diaria más fluida."
-  btn_label="Contáctanos"
-  btn_url="/es/contact/"
+  btn_label="Cotización gratuita"
+  btn_url="/es/contact/#contact-form"
 >}}

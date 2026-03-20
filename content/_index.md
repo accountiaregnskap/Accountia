@@ -2,8 +2,8 @@
 title: "Accountia"
 hero_title: "Regnskap som gir deg kontroll."
 hero_lead: "Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør og rådgivning – med moderne systemer og tydelig oppfølging."
-hero_cta_primary_label: "Få tilbud"
-hero_cta_primary_url: "/kontakt/"
+hero_cta_primary_label: "Gratis pristilbud"
+hero_cta_primary_url: "/kontakt/#contact-form"
 hero_cta_secondary_label: "Se tjenester"
 hero_cta_secondary_url: "/tjenester/"
 hero_cards:
@@ -58,6 +58,6 @@ items="Ryddig prosess og faste frister – vi slipper overraskelser.||Rask respo
 {{< cta_banner
 title="Klar for bedre kontroll?"
 lead="Send oss en melding – så ser vi hva som passer for din bedrift."
-btn_label="Kontakt oss"
-btn_url="/kontakt/"
+btn_label="Gratis pristilbud"
+btn_url="/kontakt/#contact-form"
 >}}
