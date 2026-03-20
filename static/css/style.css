@@ -56,7 +56,7 @@ html, body {
 body {
   font-family: var(--font-sans);
   color: var(--text);
-  background: #fff;
+  background: #f2e3d0;
   isolation: isolate;
   line-height: 1.6;
   font-size: 16px;
@@ -160,7 +160,7 @@ strong {
   position: sticky;
   top: 0;
   z-index: 50000;
-  background: #fff;
+  background: #f2e3d0;
   isolation: isolate;
   border-bottom: 1px solid var(--line);
   transition: all 0.3s ease;
@@ -1351,12 +1351,18 @@ address {
   border-radius: 16px;
   padding: 16px 16px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  opacity: 0;
+  transform: translateY(22px);
+  animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
 .value-icon{
   width: 40px;
   height: 40px;
   margin: 0 0 10px;
   opacity: 0.9;
+  transform: scale(0.9);
+  animation: iconReveal 0.6s ease-out forwards;
+  animation-delay: 0.18s;
 }
 .value-card h3{ margin:0 0 6px; font-size: 16px; }
 .value-card p{ margin:0; font-size: 14px; opacity:0.85; line-height:1.5; }
@@ -1388,10 +1394,64 @@ address {
   border-radius:16px;
   padding:16px;
   box-shadow:0 10px 24px rgba(0,0,0,0.06);
+  opacity: 0;
+  transform: translateY(22px);
+  animation: cardReveal 0.75s cubic-bezier(.22,1,.36,1) forwards;
 }
-.process-icon{ width:36px; height:36px; margin:0 0 10px; }
+.process-icon{
+  width:36px;
+  height:36px;
+  margin:0 0 10px;
+  transform: scale(0.9);
+  animation: iconReveal 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
 .process-card h3{ margin:0 0 6px; font-size:16px; }
 .process-card p{ margin:0; font-size:14px; opacity:.85; line-height:1.5; }
+
+.value-card:nth-child(1),
+.process-card:nth-child(1){ animation-delay: 0.06s; }
+.value-card:nth-child(2),
+.process-card:nth-child(2){ animation-delay: 0.14s; }
+.value-card:nth-child(3),
+.process-card:nth-child(3){ animation-delay: 0.22s; }
+.value-card:nth-child(4),
+.process-card:nth-child(4){ animation-delay: 0.3s; }
+.value-card:nth-child(5){ animation-delay: 0.38s; }
+.value-card:nth-child(6){ animation-delay: 0.46s; }
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.86);
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .value-card,
+  .process-card,
+  .value-icon,
+  .process-icon {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 
 .pills-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
 .pill{
