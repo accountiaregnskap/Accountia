@@ -1196,7 +1196,7 @@ address {
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--services .nav-submenu {
-    right: clamp(360px, 21vw, 470px) !important;
+    right: clamp(300px, 17vw, 390px) !important;
   }
 
   html[lang="ar"][dir="rtl"] .nav-group--about .nav-submenu {
