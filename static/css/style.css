@@ -596,8 +596,6 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-group {
     position: relative;
-    padding-bottom: 18px;
-    margin-bottom: -18px;
   }
 
   html[lang="ar"][dir="rtl"] .nav-parent-row {
@@ -607,7 +605,7 @@ strong {
 
   html[lang="ar"][dir="rtl"] .nav-submenu {
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 22px);
     right: 50%;
     left: auto;
     transform: translateX(50%);
@@ -620,10 +618,10 @@ strong {
   html[lang="ar"][dir="rtl"] .nav-submenu::before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -30px;
     right: 0;
     width: 100%;
-    height: 24px;
+    height: 30px;
   }
 
   .nav-subtoggle-btn {
