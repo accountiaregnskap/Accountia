@@ -4240,13 +4240,18 @@ html[lang="ar"] .home-main .value-card{
 }
 
 html[lang="ar"] .home-hero-copy{
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
 }
 
-html[lang="ar"] .home-service-strip-head{
-  max-width: 360px;
-  margin: 0 auto 28px 0;
+html[lang="ar"] .home-service-strip-head,
+html[lang="ar"] .home-main .value-left{
+  text-align: right;
+}
+
+html[lang="ar"] .home-service-card,
+html[lang="ar"] .home-main .value-card{
   text-align: right;
 }
 
@@ -4256,20 +4261,9 @@ html[lang="ar"] .home-main .value-grid{
   direction: ltr !important;
 }
 
-html[lang="ar"] .home-main .value-left{
-  grid-column: 1 !important;
-  justify-self: start;
-  align-self: start;
-}
-
-html[lang="ar"] .home-main .value-grid{
-  grid-column: 2 !important;
-}
-
-html[lang="ar"] .home-service-card,
-html[lang="ar"] .home-main .value-card,
-html[lang="ar"] .home-main .value-left{
-  text-align: right;
+html[lang="ar"] .home-service-card *,
+html[lang="ar"] .home-main .value-left *,
+html[lang="ar"] .home-main .value-card *{
   direction: rtl;
 }
 
