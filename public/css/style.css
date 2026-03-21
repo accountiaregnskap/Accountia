@@ -4243,6 +4243,7 @@ html[dir="rtl"] .page-content .contact-section{
 /* ===== Arabic Homepage Mirror Layout ===== */
 html[lang="ar"] .home-hero-grid--rtl{
   width: 100% !important;
+  direction: rtl !important;
   justify-content: end !important;
   justify-items: end !important;
 }
@@ -4273,6 +4274,14 @@ html[lang="ar"] .home-hero-copy--rtl .hero-actions{
   flex-direction: row-reverse !important;
 }
 
+html[lang="ar"] .home-service-strip--rtl,
+html[lang="ar"] .rtl-home-value,
+html[lang="ar"] .rtl-home-process,
+html[lang="ar"] .rtl-home-pills,
+html[lang="ar"] .rtl-home-testi{
+  direction: rtl !important;
+}
+
 html[lang="ar"] .home-service-strip-head--rtl{
   margin-left: auto !important;
   margin-right: 0 !important;
@@ -4289,9 +4298,6 @@ html[lang="ar"] .home-service-strip-inner--rtl{
 }
 
 html[lang="ar"] .home-service-strip-grid--rtl{
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 18px !important;
   direction: rtl !important;
 }
 
@@ -4300,18 +4306,7 @@ html[lang="ar"] .home-service-card--rtl{
   direction: rtl !important;
 }
 
-html[lang="ar"] .rtl-home-value{
-  grid-template-columns: minmax(260px, 310px) minmax(0, 1fr) !important;
-  gap: 30px !important;
-  align-items: start !important;
-}
-
 html[lang="ar"] .rtl-home-value-left{
-  grid-column: 2 !important;
-  grid-row: 1 !important;
-  justify-self: end !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
   text-align: right !important;
 }
 
@@ -4319,12 +4314,6 @@ html[lang="ar"] .rtl-home-value-left h2,
 html[lang="ar"] .rtl-home-value-left p{
   max-width: 100% !important;
   text-align: right !important;
-}
-
-html[lang="ar"] .rtl-home-value-grid{
-  grid-column: 1 !important;
-  grid-row: 1 !important;
-  direction: rtl !important;
 }
 
 html[lang="ar"] .rtl-home-value-card,
@@ -4336,21 +4325,14 @@ html[lang="ar"] .rtl-home-pill{
 }
 
 html[lang="ar"] .rtl-home-process-head,
-html[lang="ar"] .rtl-home-pills-head{
-  margin-left: auto !important;
-  margin-right: 0 !important;
+html[lang="ar"] .rtl-home-pills-head,
+html[lang="ar"] .rtl-home-testi-head{
   text-align: right !important;
 }
 
 html[lang="ar"] .rtl-home-process-grid,
 html[lang="ar"] .rtl-home-pills-row{
   direction: rtl !important;
-}
-
-html[lang="ar"] .rtl-home-process-head,
-html[lang="ar"] .rtl-home-pills-head,
-html[lang="ar"] .rtl-home-testi-head{
-  max-width: 680px !important;
 }
 
 html[lang="ar"] .rtl-home-process-head *,
@@ -4361,23 +4343,19 @@ html[lang="ar"] .home-service-card--rtl *{
   direction: rtl !important;
 }
 
-html[lang="ar"] .rtl-home-testi{
-  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr) !important;
-  gap: 26px !important;
-  align-items: start !important;
-}
-
 html[lang="ar"] .rtl-home-testi-head{
-  grid-column: 2 !important;
-  grid-row: 1 !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
   text-align: right !important;
 }
 
+html[lang="ar"] .rtl-home-value-grid,
 html[lang="ar"] .rtl-home-testi-grid{
-  grid-column: 1 !important;
-  grid-row: 1 !important;
+  direction: rtl !important;
+}
+
+html[lang="ar"] .rtl-home-process-card,
+html[lang="ar"] .rtl-home-pill,
+html[lang="ar"] .rtl-home-testi-card{
+  text-align: right !important;
   direction: rtl !important;
 }
 
@@ -4407,5 +4385,6 @@ html[lang="ar"] .rtl-home-testi-grid{
   html[lang="ar"] .rtl-home-testi-head,
   html[lang="ar"] .rtl-home-testi-grid{
     grid-column: auto !important;
+    grid-row: auto !important;
   }
 }
