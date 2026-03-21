@@ -19,7 +19,7 @@ hero_cards:
 ---
 
 {{< value_cards
-title="Et moderne regnskapsbyrå – bygget for kontroll"
+title="Et moderne regnskapsbyrå bygget for kontroll"
 lead="Vi kombinerer gode rutiner, moderne systemer og tett oppfølging – slik at du får riktig rapportering og full oversikt."
 c1i="shield" c1t="Trygghet" c1d="Kvalitetssikrede leveranser og tydelig ansvar."
 c2i="clock" c2t="Forutsigbarhet" c2d="Faste frister og proaktiv oppfølging."

@@ -19,7 +19,7 @@ hero_cards:
 ---
 
 {{< value_cards
-title="Modern accounting – built for control"
+title="Modern accounting built for control"
 lead="We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility."
 c1i="shield" c1t="Reliability" c1d="Quality‑assured deliveries and clear ownership."
 c2i="clock" c2t="Predictability" c2d="Clear deadlines and proactive follow‑up."

@@ -19,7 +19,7 @@ hero_cards:
 ---
 
 {{< value_cards
-title="Contabilidad moderna — para tener control"
+title="Contabilidad moderna para tener control"
 lead="Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y visibilidad total."
 c1i="shield" c1t="Seguridad" c1d="Entregas con control de calidad y responsabilidad clara."
 c2i="clock" c2t="Previsibilidad" c2d="Plazos claros y seguimiento proactivo."
