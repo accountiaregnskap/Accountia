@@ -49,6 +49,63 @@
 
     <div class="home-service-strip-grid{{ if eq .Lang "ar" }} home-service-strip-grid--rtl{{ end }}">
       {{ with .Params.hero_cards }}
+        {{ if eq $.Lang "ar" }}
+          {{ $cards := . }}
+          {{ if ge (len $cards) 3 }}
+            {{ $card2 := index $cards 2 }}
+            {{ if $card2.url }}
+              <a class="home-service-card home-service-card--rtl" href="{{ $card2.url }}">
+                <strong>{{ $card2.title }}</strong>
+                <span>{{ $card2.text }}</span>
+              </a>
+            {{ else }}
+              <div class="home-service-card home-service-card--rtl">
+                <strong>{{ $card2.title }}</strong>
+                <span>{{ $card2.text }}</span>
+              </div>
+            {{ end }}
+
+            {{ $card1 := index $cards 1 }}
+            {{ if $card1.url }}
+              <a class="home-service-card home-service-card--rtl" href="{{ $card1.url }}">
+                <strong>{{ $card1.title }}</strong>
+                <span>{{ $card1.text }}</span>
+              </a>
+            {{ else }}
+              <div class="home-service-card home-service-card--rtl">
+                <strong>{{ $card1.title }}</strong>
+                <span>{{ $card1.text }}</span>
+              </div>
+            {{ end }}
+
+            {{ $card0 := index $cards 0 }}
+            {{ if $card0.url }}
+              <a class="home-service-card home-service-card--rtl" href="{{ $card0.url }}">
+                <strong>{{ $card0.title }}</strong>
+                <span>{{ $card0.text }}</span>
+              </a>
+            {{ else }}
+              <div class="home-service-card home-service-card--rtl">
+                <strong>{{ $card0.title }}</strong>
+                <span>{{ $card0.text }}</span>
+              </div>
+            {{ end }}
+          {{ else }}
+            {{ range . }}
+              {{ if .url }}
+                <a class="home-service-card home-service-card--rtl" href="{{ .url }}">
+                  <strong>{{ .title }}</strong>
+                  <span>{{ .text }}</span>
+                </a>
+              {{ else }}
+                <div class="home-service-card home-service-card--rtl">
+                  <strong>{{ .title }}</strong>
+                  <span>{{ .text }}</span>
+                </div>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
         {{ range . }}
           {{ if .url }}
             <a class="home-service-card{{ if eq $.Lang "ar" }} home-service-card--rtl{{ end }}" href="{{ .url }}">
@@ -61,6 +118,7 @@
               <span>{{ .text }}</span>
             </div>
           {{ end }}
+        {{ end }}
         {{ end }}
       {{ else }}
         <div class="home-service-card"><strong>Lonn & A-melding</strong><span>Trygg og korrekt lonnskjoring</span></div>
