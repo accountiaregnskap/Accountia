@@ -4242,9 +4242,7 @@ html[dir="rtl"] .page-content .contact-section{
 
 /* ===== Arabic Homepage Mirror Layout ===== */
 html[lang="ar"] .home-hero-grid--rtl{
-  width: min(100%, 700px) !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
+  width: 100% !important;
   justify-content: end !important;
   justify-items: end !important;
 }
@@ -4255,8 +4253,7 @@ html[lang="ar"] .home-hero .hero-inner{
 }
 
 html[lang="ar"] .home-hero-copy--rtl{
-  width: 100% !important;
-  max-width: 620px !important;
+  width: min(100%, 760px) !important;
   margin-left: auto !important;
   margin-right: 0 !important;
   justify-self: end !important;
@@ -4286,7 +4283,15 @@ html[lang="ar"] .home-service-strip-head--rtl{
   margin-bottom: 24px !important;
 }
 
+html[lang="ar"] .home-service-strip-inner--rtl{
+  max-width: 1180px !important;
+  padding: 0 0 8px !important;
+}
+
 html[lang="ar"] .home-service-strip-grid--rtl{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
   direction: rtl !important;
 }
 
@@ -4296,8 +4301,9 @@ html[lang="ar"] .home-service-card--rtl{
 }
 
 html[lang="ar"] .rtl-home-value{
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 310px) !important;
-  direction: ltr !important;
+  grid-template-columns: minmax(260px, 310px) minmax(0, 1fr) !important;
+  gap: 30px !important;
+  align-items: start !important;
 }
 
 html[lang="ar"] .rtl-home-value-left{
@@ -4341,6 +4347,12 @@ html[lang="ar"] .rtl-home-pills-row{
   direction: rtl !important;
 }
 
+html[lang="ar"] .rtl-home-process-head,
+html[lang="ar"] .rtl-home-pills-head,
+html[lang="ar"] .rtl-home-testi-head{
+  max-width: 680px !important;
+}
+
 html[lang="ar"] .rtl-home-process-head *,
 html[lang="ar"] .rtl-home-pills-head *,
 html[lang="ar"] .rtl-home-testi-head *,
@@ -4350,8 +4362,9 @@ html[lang="ar"] .home-service-card--rtl *{
 }
 
 html[lang="ar"] .rtl-home-testi{
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px) !important;
-  direction: ltr !important;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr) !important;
+  gap: 26px !important;
+  align-items: start !important;
 }
 
 html[lang="ar"] .rtl-home-testi-head{
@@ -4381,7 +4394,7 @@ html[lang="ar"] .rtl-home-testi-grid{
   html[lang="ar"] .home-hero-copy--rtl{
     width: 100% !important;
     max-width: 100% !important;
-    transform: none;
+    transform: none !important;
   }
 
   html[lang="ar"] .rtl-home-value,
