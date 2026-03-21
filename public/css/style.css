@@ -4286,6 +4286,7 @@ html[lang="ar"] .rtl-home-value{
 
 html[lang="ar"] .rtl-home-value-left{
   grid-column: 2 !important;
+  grid-row: 1 !important;
   justify-self: end !important;
   margin-left: auto !important;
   margin-right: 0 !important;
@@ -4300,6 +4301,7 @@ html[lang="ar"] .rtl-home-value-left p{
 
 html[lang="ar"] .rtl-home-value-grid{
   grid-column: 1 !important;
+  grid-row: 1 !important;
   direction: rtl !important;
 }
 
@@ -4338,6 +4340,7 @@ html[lang="ar"] .rtl-home-testi{
 
 html[lang="ar"] .rtl-home-testi-head{
   grid-column: 2 !important;
+  grid-row: 1 !important;
   margin-left: auto !important;
   margin-right: 0 !important;
   text-align: right !important;
@@ -4345,7 +4348,16 @@ html[lang="ar"] .rtl-home-testi-head{
 
 html[lang="ar"] .rtl-home-testi-grid{
   grid-column: 1 !important;
+  grid-row: 1 !important;
   direction: rtl !important;
+}
+
+html[lang="ar"] .home-service-strip-inner--rtl{
+  direction: rtl !important;
+}
+
+html[lang="ar"] .home-service-strip-head--rtl{
+  width: min(100%, 360px) !important;
 }
 
 @media (max-width: 980px){
