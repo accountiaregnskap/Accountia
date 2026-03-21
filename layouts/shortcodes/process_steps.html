@@ -1,15 +1,15 @@
-<section class="process-wrap">
-  <div class="process-head">
+<section class="process-wrap{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-process{{ end }}">
+  <div class="process-head{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-process-head{{ end }}">
     <h2>{{ .Get "title" }}</h2>
     <p>{{ .Get "lead" }}</p>
   </div>
 
-  <div class="process-grid">
+  <div class="process-grid{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-process-grid{{ end }}">
     {{ range $i, $n := (slice 1 2 3 4) }}
       {{ $ti := printf "s%dt" $n }}
       {{ $di := printf "s%dd" $n }}
       {{ $ii := printf "s%di" $n }}
-      <div class="process-card">
+      <div class="process-card{{ if and $.Page.IsHome (eq $.Page.Lang "ar") }} rtl-home-process-card{{ end }}">
         {{ with ($.Get $ii) }}<img class="process-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
         <h3>{{ $.Get $ti }}</h3>
         <p>{{ $.Get $di }}</p>

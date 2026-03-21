@@ -4366,3 +4366,111 @@ html[lang="ar"] .home-main .pills-head *,
 html[lang="ar"] .home-service-card *{
   direction: rtl;
 }
+
+/* ===== Arabic Homepage Mirror Layout ===== */
+html[lang="ar"] .home-hero-grid--rtl{
+  justify-content: end !important;
+}
+
+html[lang="ar"] .home-hero-copy--rtl{
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  justify-self: end !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .home-hero-copy--rtl h1,
+html[lang="ar"] .home-hero-copy--rtl p{
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .home-hero-copy--rtl .hero-actions{
+  justify-content: flex-end !important;
+  flex-direction: row-reverse !important;
+}
+
+html[lang="ar"] .home-service-strip-head--rtl{
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .home-service-strip-grid--rtl{
+  direction: rtl !important;
+}
+
+html[lang="ar"] .home-service-card--rtl{
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+html[lang="ar"] .rtl-home-value{
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 450px) !important;
+  direction: ltr !important;
+}
+
+html[lang="ar"] .rtl-home-value-left{
+  grid-column: 2 !important;
+  justify-self: end !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .rtl-home-value-grid{
+  grid-column: 1 !important;
+  direction: rtl !important;
+}
+
+html[lang="ar"] .rtl-home-value-card,
+html[lang="ar"] .rtl-home-process-card,
+html[lang="ar"] .rtl-home-testi-card,
+html[lang="ar"] .rtl-home-pill{
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+html[lang="ar"] .rtl-home-process-head,
+html[lang="ar"] .rtl-home-pills-head{
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .rtl-home-process-grid,
+html[lang="ar"] .rtl-home-pills-row{
+  direction: rtl !important;
+}
+
+html[lang="ar"] .rtl-home-testi{
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px) !important;
+  direction: ltr !important;
+}
+
+html[lang="ar"] .rtl-home-testi-head{
+  grid-column: 2 !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .rtl-home-testi-grid{
+  grid-column: 1 !important;
+  direction: rtl !important;
+}
+
+@media (max-width: 980px){
+  html[lang="ar"] .rtl-home-value,
+  html[lang="ar"] .rtl-home-testi{
+    grid-template-columns: 1fr !important;
+  }
+
+  html[lang="ar"] .rtl-home-value-left,
+  html[lang="ar"] .rtl-home-value-grid,
+  html[lang="ar"] .rtl-home-testi-head,
+  html[lang="ar"] .rtl-home-testi-grid{
+    grid-column: auto !important;
+  }
+}

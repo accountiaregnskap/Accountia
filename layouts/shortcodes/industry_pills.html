@@ -1,15 +1,15 @@
 {{ $items := split (.Get "items") "," }}
 
-<section class="pills-wrap">
-  <div class="pills-head">
+<section class="pills-wrap{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-pills{{ end }}">
+  <div class="pills-head{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-pills-head{{ end }}">
     <h2>{{ .Get "title" }}</h2>
     <p>{{ .Get "lead" }}</p>
   </div>
 
-  <div class="pills-row">
+  <div class="pills-row{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-pills-row{{ end }}">
     {{ range $items }}
       {{ $t := trim . " " }}
-      {{ if $t }}<span class="pill">{{ $t }}</span>{{ end }}
+      {{ if $t }}<span class="pill{{ if and $.Page.IsHome (eq $.Page.Lang "ar") }} rtl-home-pill{{ end }}">{{ $t }}</span>{{ end }}
     {{ end }}
   </div>
 </section>

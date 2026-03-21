@@ -1,12 +1,12 @@
 {{ $items := split (.Get "items") "||" }}
 
-<section class="testi-wrap">
-  <div class="testi-head">
+<section class="testi-wrap{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-testi{{ end }}">
+  <div class="testi-head{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-testi-head{{ end }}">
     <h2>{{ .Get "title" }}</h2>
     <p>{{ .Get "lead" }}</p>
   </div>
 
-  <div class="testi-grid">
+  <div class="testi-grid{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-testi-grid{{ end }}">
     {{ range $items }}
       {{ $t := trim . " " }}
       {{ if $t }}
@@ -17,7 +17,7 @@
           {{ $name = trim (index $parts 0) " " }}
           {{ $quote = trim (index $parts 1) " " }}
         {{ end }}
-        <div class="testi-card">
+        <div class="testi-card{{ if and $.Page.IsHome (eq $.Page.Lang "ar") }} rtl-home-testi-card{{ end }}">
           <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="testi-quote">"{{ $quote }}"</p>
           {{ with $name }}

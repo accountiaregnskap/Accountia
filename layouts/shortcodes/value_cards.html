@@ -1,37 +1,37 @@
-<section class="value-wrap">
-  <div class="value-left">
+<section class="value-wrap{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value{{ end }}">
+  <div class="value-left{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-left{{ end }}">
     <h2 class="value-title">{{ .Get "title" }}</h2>
     <p class="value-lead">{{ .Get "lead" }}</p>
   </div>
 
-  <div class="value-grid">
+  <div class="value-grid{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-grid{{ end }}">
     {{/* Card 1 */}}
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c1i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c1t" }}</h3>
       <p>{{ .Get "c1d" }}</p>
     </div>
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c2i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c2t" }}</h3>
       <p>{{ .Get "c2d" }}</p>
     </div>
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c3i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c3t" }}</h3>
       <p>{{ .Get "c3d" }}</p>
     </div>
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c4i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c4t" }}</h3>
       <p>{{ .Get "c4d" }}</p>
     </div>
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c5i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c5t" }}</h3>
       <p>{{ .Get "c5d" }}</p>
     </div>
-    <div class="value-card">
+    <div class="value-card{{ if and .Page.IsHome (eq .Page.Lang "ar") }} rtl-home-value-card{{ end }}">
       {{ with (.Get "c6i") }}<img class="value-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
       <h3>{{ .Get "c6t" }}</h3>
       <p>{{ .Get "c6d" }}</p>
