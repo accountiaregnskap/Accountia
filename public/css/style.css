@@ -4248,7 +4248,7 @@ html[lang="ar"] .home-hero-copy{
 html[lang="ar"] .home-service-strip-grid,
 html[lang="ar"] .home-main .value-wrap,
 html[lang="ar"] .home-main .value-grid{
-  direction: ltr !important;
+  direction: rtl !important;
 }
 
 html[lang="ar"] .home-service-strip-head{
@@ -4258,18 +4258,12 @@ html[lang="ar"] .home-service-strip-head{
 }
 
 html[lang="ar"] .home-main .value-left{
-  grid-column: 2;
-  justify-self: end;
   text-align: right;
 }
 
 html[lang="ar"] .home-main .value-left h2,
 html[lang="ar"] .home-main .value-left p{
   max-width: 100%;
-}
-
-html[lang="ar"] .home-main .value-grid{
-  grid-column: 1;
 }
 
 html[lang="ar"] .home-service-card,
