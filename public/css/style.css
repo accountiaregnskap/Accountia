@@ -4373,7 +4373,7 @@ html[lang="ar"] .rtl-home-testi-card::after{
 }
 
 html[lang="ar"] .rtl-home-testi-card .testi-stars{
-  text-align: left !important;
+  text-align: right !important;
 }
 
 @media (max-width: 980px){
