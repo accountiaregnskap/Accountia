@@ -1,6 +1,6 @@
 ---
 title: "Precios"
-lead: "Precios bajos basados en calidad, sin cargos ocultos. Nos encargamos del cambio de proveedor completamente gratis."
+lead: "Ofrecemos propuestas claras y adaptadas, con un inicio tranquilo y un proceso fácil de entender."
 bg: "/images/hero.jpg"
 ---
 
@@ -8,26 +8,40 @@ bg: "/images/hero.jpg"
   variant="soft"
   tag="Precios"
   title="Un modelo de precios fácil de entender"
-  lead="Queremos que sepas qué pagas, qué influye en el precio y cómo adaptamos la solución a tu empresa."
-  c1k="Mensual" c1t="Cuota fija según el alcance" c1d="El precio se ajusta según el tipo de empresa, volumen de comprobantes, IVA y empleados para que la solución se adapte a la realidad del negocio."
-  c2k="Anual" c2t="Extras anuales claros" c2d="Los servicios anuales, como la declaración o los estados financieros, se muestran por separado para darte una visión completa."
-  c3k="Cambio" c3t="Cambio a Accountia sin coste" c3d="Nos encargamos de toda la transición sin coste adicional y organizamos un inicio claro y ordenado."
-  c4k="Diálogo" c4t="Presupuesto adaptado si hace falta" c4d="La calculadora te da una buena estimación, y después podemos preparar una propuesta más precisa según tus necesidades."
+  lead="Queremos que la conversación sobre precio sea clara, transparente y ajustada a la forma real en que trabaja tu empresa."
+  c1k="Alcance" c1t="Adaptado a tu empresa" c1d="Miramos cómo está organizado el negocio, qué sistemas utilizáis y qué nivel de seguimiento necesitáis."
+  c2k="Claridad" c2t="Qué incluye la propuesta" c2d="Queremos que entiendas qué forma parte de la entrega continua, qué asumimos nosotros y cómo se estructura la colaboración."
+  c3k="Cambio" c3t="Transición ordenada a Accountia" c3d="Planificamos el inicio contigo y hacemos que el cambio sea claro, tranquilo y fácil de seguir."
+  c4k="Diálogo" c4t="Propuesta explicada con claridad" c4d="Te enviamos una propuesta concreta y explicamos el planteamiento, las responsabilidades y la forma de trabajar."
 >}}
 
-# Calculadora de precios
+## Cómo preparamos una propuesta
 
-Elige las opciones a continuación para obtener una estimación del **precio mensual fijo**, los **cargos anuales** y el **coste anual total**.
+Una buena propuesta no se basa solo en una cifra. Empieza por entender cómo funciona tu empresa y qué apoyo necesita realmente.
 
-{{< pricing_calculator >}}
+Cuando preparamos una propuesta, solemos analizar:
+
+- cómo se lleva la contabilidad hoy
+- qué sistemas y rutinas ya utilizáis
+- qué nivel de seguimiento queréis tener
+- si necesitáis apoyo con nómina, IVA, reporting o asesoría
+- cómo crear una solución que funcione bien a largo plazo
+
+El objetivo es darte una propuesta clara y útil, en lugar de encajar tu empresa en un paquete estándar que no refleje la realidad.
+
+## Qué puedes esperar de nosotros
+
+Valoramos una comunicación clara desde el primer contacto. Queremos que entiendas cómo pensamos, qué recomendamos y cómo estructuraríamos la colaboración.
+
+También queremos que el inicio resulte sencillo. Por eso te acompañamos durante el proceso, resolvemos dudas y hacemos que la transición sea previsible.
 
 {{< services_faq
   title="Preguntas frecuentes sobre precios y cambio"
   lead="Información clara antes de solicitar una propuesta."
-  q1t="¿Los precios de la calculadora son definitivos?" q1d="No. La calculadora ofrece una estimación orientativa basada en paquetes estándar. El precio final siempre se adapta al alcance, los sistemas y las necesidades."
-  q2t="¿Qué incluye la cuota fija?" q2d="La cuota fija cubre la entrega periódica según las opciones elegidas en la calculadora. Los extras anuales se muestran aparte para mantener la transparencia."
-  q3t="¿Tiene coste cambiar de asesor contable?" q3d="No. Nos encargamos del proceso de cambio de forma gratuita y planificamos la transición contigo."
-  q4t="¿Podemos recibir un presupuesto más concreto?" q4d="Sí. Envíanos algunos datos sobre tu empresa y prepararemos una propuesta adaptada a tu actividad y forma de trabajo."
+  q1t="¿Cómo recibimos una propuesta?" q1d="Envíanos algunos datos sobre tu empresa y revisaremos vuestras necesidades, vuestro funcionamiento y el nivel de seguimiento deseado antes de preparar una propuesta clara."
+  q2t="¿Qué influye en la propuesta?" q2d="Depende del flujo de trabajo, los sistemas, las tareas, las necesidades de reporting y el tipo de apoyo diario que queréis de nosotros."
+  q3t="¿Tiene coste cambiar de asesor contable?" q3d="No. Planificamos la transición contigo y hacemos que el inicio sea ordenado y seguro."
+  q4t="¿Se puede adaptar la propuesta?" q4d="Sí. Ajustamos la propuesta a vuestra empresa y explicamos qué incluye, para que encaje con vuestra forma real de trabajar."
 >}}
 
 {{< cta_banner
