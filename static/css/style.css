@@ -4359,6 +4359,20 @@ html[lang="ar"] .rtl-home-testi-card{
   direction: rtl !important;
 }
 
+html[lang="ar"] .rtl-home-testi-card::before{
+  right: auto !important;
+  left: 24px !important;
+}
+
+html[lang="ar"] .rtl-home-testi-card::after{
+  inset: 0 0 auto auto !important;
+  background: linear-gradient(270deg, rgba(212,165,116,0.9), rgba(18,32,51,0.12)) !important;
+}
+
+html[lang="ar"] .rtl-home-testi-card .testi-stars{
+  text-align: left !important;
+}
+
 @media (max-width: 980px){
   html[lang="ar"] .home-hero .hero-inner{
     padding-right: 20px !important;
