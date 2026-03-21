@@ -4280,27 +4280,13 @@ html[lang="ar"] .home-service-strip-head--rtl{
   margin-left: auto !important;
   margin-right: 0 !important;
   text-align: right !important;
-}
-
-html[lang="ar"] .home-service-strip-inner--rtl{
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 310px) !important;
-  gap: 30px !important;
-  align-items: start !important;
-}
-
-html[lang="ar"] .home-service-strip-head--rtl{
-  grid-column: 2 !important;
-  grid-row: 1 !important;
-  justify-self: end !important;
-  width: 100% !important;
-  max-width: 280px !important;
-  margin-bottom: 0 !important;
+  display: block !important;
+  width: min(100%, 360px) !important;
+  max-width: 360px !important;
+  margin-bottom: 24px !important;
 }
 
 html[lang="ar"] .home-service-strip-grid--rtl{
-  grid-column: 1 !important;
-  grid-row: 1 !important;
   direction: rtl !important;
 }
 
@@ -4382,26 +4368,7 @@ html[lang="ar"] .rtl-home-testi-grid{
   direction: rtl !important;
 }
 
-html[lang="ar"] .home-service-strip-inner--rtl{
-  direction: rtl !important;
-}
-
-html[lang="ar"] .home-service-strip-head--rtl{
-  width: min(100%, 360px) !important;
-}
-
 @media (max-width: 980px){
-  html[lang="ar"] .home-service-strip-inner--rtl{
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-  }
-
-  html[lang="ar"] .home-service-strip-head--rtl,
-  html[lang="ar"] .home-service-strip-grid--rtl{
-    grid-column: auto !important;
-    grid-row: auto !important;
-  }
-
   html[lang="ar"] .home-hero .hero-inner{
     padding-right: 20px !important;
     padding-left: 20px !important;
