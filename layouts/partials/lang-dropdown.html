@@ -11,6 +11,13 @@
   "service-payroll" (dict "no" "/tjenester/lonn/" "en" "/en/services/payroll/" "es" "/es/services/nomina/" "ar" "/ar/services/payroll/")
   "service-outsourcing" (dict "no" "/tjenester/outsourcing/" "en" "/en/services/outsourcing/" "es" "/es/services/outsourcing/" "ar" "/ar/services/outsourcing/")
 }}
+{{ $pageTranslations := dict
+  "/kontakt/" (dict "no" "/kontakt/" "en" "/en/contact/" "es" "/es/contact/" "ar" "/ar/contact/")
+  "/en/contact/" (dict "no" "/kontakt/" "en" "/en/contact/" "es" "/es/contact/" "ar" "/ar/contact/")
+  "/en/kontakt/" (dict "no" "/kontakt/" "en" "/en/contact/" "es" "/es/contact/" "ar" "/ar/contact/")
+  "/es/contact/" (dict "no" "/kontakt/" "en" "/en/contact/" "es" "/es/contact/" "ar" "/ar/contact/")
+  "/ar/contact/" (dict "no" "/kontakt/" "en" "/en/contact/" "es" "/es/contact/" "ar" "/ar/contact/")
+}}
 {{ $serviceKey := $cur.Params.translationKey | default "" }}
 
 <div class="lang-dd">
@@ -20,7 +27,11 @@
       {{ range site.Languages }}
         {{ $lang := .Lang }}
         {{ $url := "/" }}
-        {{ if and $serviceKey (isset $serviceTranslations $serviceKey) }}
+        {{ if isset $pageTranslations $cur.RelPermalink }}
+          {{ with index $pageTranslations $cur.RelPermalink }}
+            {{ $url = index . $lang | default "/" }}
+          {{ end }}
+        {{ else if and $serviceKey (isset $serviceTranslations $serviceKey) }}
           {{ with index $serviceTranslations $serviceKey }}
             {{ $url = index . $lang | default "/" }}
           {{ end }}
