@@ -1,14 +1,15 @@
 {{ define "main" }}
   {{ $isPrivacy := or (eq .RelPermalink "/personvern/") (or (eq .RelPermalink "/en/privacy/") (or (eq .RelPermalink "/es/privacy/") (eq .RelPermalink "/ar/privacy/"))) }}
+  {{ $isContact := or (eq .RelPermalink "/kontakt/") (or (eq .RelPermalink "/en/contact/") (or (eq .RelPermalink "/es/contact/") (or (eq .RelPermalink "/ar/contact/") (eq .RelPermalink "/en/kontakt/")))) }}
   {{ partial "page-hero.html" . }}
   <main class="section page-main{{ if $isPrivacy }} privacy-page-main{{ end }}">
     <div class="container">
+      {{ if $isContact }}
+        {{ partial "contact-form.html" . }}
+      {{ end }}
       <div class="page-content{{ if $isPrivacy }} privacy-page-content{{ end }}">
         {{ .Content }}
       </div>
-      {{ if or (eq .RelPermalink "/kontakt/") (or (eq .RelPermalink "/en/contact/") (or (eq .RelPermalink "/es/contact/") (or (eq .RelPermalink "/ar/contact/") (eq .RelPermalink "/en/kontakt/")))) }}
-        {{ partial "contact-form.html" . }}
-      {{ end }}
     </div>
   </main>
 {{ end }}
