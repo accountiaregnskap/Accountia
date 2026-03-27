@@ -4304,6 +4304,29 @@ html[lang="ar"] .home-service-strip-grid--rtl{
   direction: rtl !important;
 }
 
+/* ===== Hero image focus: keep embedded logo visible ===== */
+.home-hero,
+.page-hero{
+  background-position: 74% 34% !important;
+}
+
+html[lang="ar"] .home-hero,
+html[lang="ar"] .page-hero{
+  background-position: 26% 34% !important;
+}
+
+@media (max-width: 900px){
+  .home-hero,
+  .page-hero{
+    background-position: 68% 26% !important;
+  }
+
+  html[lang="ar"] .home-hero,
+  html[lang="ar"] .page-hero{
+    background-position: 32% 26% !important;
+  }
+}
+
 html[lang="ar"] .home-service-card--rtl{
   text-align: right !important;
   direction: rtl !important;
