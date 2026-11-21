@@ -10,6 +10,9 @@ other = "Ver reseñas en Google"
 [welcome_services]
 other = "En qué podemos ayudarte"
 
+[agent_disclosure]
+other = "Un servicio externo procesa las respuestas de IA. Usa el formulario para consultas sobre tu cuenta."
+
 [studio_kicker]
 other = "Asesoría contable autorizada en Knarvik"
 

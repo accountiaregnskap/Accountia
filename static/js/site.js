@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = help.querySelector(".customer-chat-form");
   const log = help.querySelector(".customer-chat-log");
   const input = form.elements.question;
+  const send = form.querySelector("button");
+  const endpoint = help.dataset.agentEndpoint;
   const { questions, unknown, contact, contactUrl } = JSON.parse(help.querySelector(".customer-chat-topics").textContent);
 
   function normalize(value) {
@@ -101,17 +103,41 @@ document.addEventListener("DOMContentLoaded", () => {
     log.append(message);
   }
 
+  async function askAgent(question) {
+    if (!endpoint) return null;
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ lang: document.documentElement.lang, question }),
+        signal: AbortSignal.timeout(14000)
+      });
+      if (!response.ok) return null;
+      const data = await response.json();
+      return typeof data?.answer === "string" && data.answer.trim() ? data.answer : null;
+    } catch {
+      return null;
+    }
+  }
+
   form.hidden = false;
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const question = input.value.trim();
-    if (!question) return;
+    if (!question || send.disabled) return;
     const result = findAnswer(question);
     log.hidden = false;
     addMessage(question, "customer-chat-user");
-    addMessage(result?.answer || unknown, "customer-chat-answer", result ? result.url : contactUrl, result ? result.link : contact);
+    input.value = "";
+    if (endpoint) {
+      send.disabled = true;
+      form.setAttribute("aria-busy", "true");
+    }
+    const answer = await askAgent(question);
+    send.disabled = false;
+    form.removeAttribute("aria-busy");
+    addMessage(answer || result?.answer || unknown, "customer-chat-answer", result?.url || contactUrl, result ? result.link : contact);
     while (log.children.length > 12) log.firstElementChild.remove();
     log.scrollTop = log.scrollHeight;
-    input.value = "";
   });
 });

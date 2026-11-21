@@ -1,5 +1,5 @@
 {{ with index site.Data.customer_help .Lang }}
-  <details class="customer-help">
+  <details class="customer-help"{{ with site.Params.assistantEndpoint }} data-agent-endpoint="{{ . }}"{{ end }}>
     <summary class="customer-help-toggle"><span aria-hidden="true"></span>{{ .label }}</summary>
     <section class="customer-help-panel" aria-labelledby="customer-help-title">
       <div class="customer-help-header">
@@ -12,6 +12,7 @@
         <input name="question" aria-label="{{ .placeholder }}" placeholder="{{ .placeholder }}" maxlength="300" autocomplete="off" required>
         <button type="submit">{{ .send }}</button>
       </form>
+      {{ with site.Params.assistantEndpoint }}<p class="customer-chat-disclosure">{{ i18n "agent_disclosure" }}</p>{{ end }}
       <div class="customer-help-questions">
         {{ range first 3 .questions }}
           <details name="accountia-help-topic">
