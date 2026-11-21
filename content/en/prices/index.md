@@ -1,7 +1,7 @@
 ---
 title: "Pricing"
 translationKey: "site-prices"
-lead: "We provide clear, tailored quotes with a calm and transparent onboarding process."
+lead: "Your quote depends on the work you want us to handle, transaction volume and how much support you need."
 bg: "/images/hero.jpg"
 ---
 

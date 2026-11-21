@@ -1,6 +1,32 @@
 // Close the mobile menu and language dropdown when navigating.
 // Helps avoid the "curtain/drawer" staying open after switching language on some browsers.
 document.addEventListener("DOMContentLoaded", () => {
+  const guide = document.querySelector(".service-guide");
+  if (guide) {
+    const toolbar = guide.querySelector(".guide-choices");
+    const choices = Array.from(toolbar.querySelectorAll("button"));
+    const results = Array.from(guide.querySelectorAll(".guide-result"));
+    function select(index) {
+      choices.forEach((choice, position) => {
+        choice.setAttribute("aria-pressed", String(index === position));
+        results[position].hidden = index !== position;
+      });
+    }
+    choices.forEach((choice, index) => choice.addEventListener("click", () => select(index)));
+    select(0);
+    toolbar.hidden = false;
+  }
+
+  const contactData = document.querySelector(".guide-contact-data");
+  const message = document.getElementById("message");
+  if (contactData && message && !message.value) {
+    const selected = new URLSearchParams(location.search).get("behov");
+    const match = JSON.parse(contactData.textContent).find(({ id }) => id === selected);
+    if (match) message.value = match.message;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.getElementById("nav-toggle");
   const langDetails = document.querySelector(".lang-dd details");
 
@@ -64,6 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return value.toLocaleLowerCase()
       .normalize("NFD")
       .replace(/\p{M}/gu, "")
+      .replace(/æ/g, "ae")
+      .replace(/ø/g, "o")
+      .replace(/ى/g, "ي")
+      .replace(/(^|\s)و(?=ال\p{L}{3,})/gu, "$1و ")
       .replace(/[^\p{L}\p{N}]+/gu, " ")
       .trim();
   }
@@ -73,14 +103,29 @@ document.addEventListener("DOMContentLoaded", () => {
     terms: (topic.keywords || []).map(normalize).filter(Boolean)
   }));
 
-  function findAnswer(query) {
-    const normalized = " " + normalize(query) + " ";
+  function nearMatch(word, term) {
+    if (word.length < 5 || term.length < 5 || Math.abs(word.length - term.length) > 1) return false;
+    let offset = 0;
+    while (word[offset] === term[offset] && offset < word.length) offset++;
+    if (word.length === term.length) {
+      return word.slice(offset + 1) === term.slice(offset + 1) ||
+        (word[offset] === term[offset + 1] && word[offset + 1] === term[offset] &&
+          word.slice(offset + 2) === term.slice(offset + 2));
+    }
+    const [longer, shorter] = word.length > term.length ? [word, term] : [term, word];
+    return longer.slice(offset + 1) === shorter.slice(offset);
+  }
+
+  function findAnswer(segment) {
+    const normalized = " " + segment + " ";
+    const words = segment.split(" ");
     let best = null;
     let bestScore = 0;
     for (const { topic, terms } of topics) {
       let score = 0;
       for (const term of terms) {
-        if (normalized.includes(" " + term + " ")) score += term.includes(" ") ? 3 : 1;
+        if (normalized.includes(" " + term + " ")) score = Math.max(score, term.includes(" ") ? 5 : 3);
+        else if (!term.includes(" ") && words.some((word) => nearMatch(word, term))) score = Math.max(score, 1);
       }
       if (score > bestScore) {
         best = topic;
@@ -88,6 +133,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
     return best;
+  }
+
+  function findAnswers(query) {
+    const normalized = normalize(query);
+    const byPart = normalized.split(/\s+(?:og|samt|and|y|و)\s+/u).map(findAnswer).filter(Boolean);
+    const answers = [...new Set(byPart)];
+    if (answers.length > 1) return answers.slice(0, 2);
+    const main = findAnswer(normalized);
+    return main ? [main] : [];
   }
 
   function addMessage(text, cssClass, url, label) {
@@ -125,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     const question = input.value.trim();
     if (!question || send.disabled) return;
-    const result = findAnswer(question);
+    const results = findAnswers(question);
     log.hidden = false;
     addMessage(question, "customer-chat-user");
     input.value = "";
@@ -136,7 +190,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const answer = await askAgent(question);
     send.disabled = false;
     form.removeAttribute("aria-busy");
-    addMessage(answer || result?.answer || unknown, "customer-chat-answer", result?.url || contactUrl, result ? result.link : contact);
+    if (answer) {
+      addMessage(answer, "customer-chat-answer", contactUrl, contact);
+    } else if (results.length) {
+      results.forEach(({ answer: text, url, link }) => addMessage(text, "customer-chat-answer", url, link));
+    } else {
+      addMessage(unknown, "customer-chat-answer", contactUrl, contact);
+    }
     while (log.children.length > 12) log.firstElementChild.remove();
     log.scrollTop = log.scrollHeight;
   });

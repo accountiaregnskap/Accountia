@@ -1,36 +1,23 @@
 ---
 title: "Accountia"
-hero_title: "Contabilidad que te da control."
-hero_lead: "Accountia ayuda a pequeñas y medianas empresas con contabilidad, nóminas, IVA, cierre anual y asesoría — con sistemas modernos y un seguimiento claro."
-hero_cta_primary_label: "Cotización gratuita"
+hero_title: "Cuentas claras. Personas de confianza."
+hero_lead: "Contabilidad y nóminas para pequeñas y medianas empresas. Tendrás una persona de contacto que conoce tu negocio y te explica las cifras."
+hero_cta_primary_label: "Solicitar presupuesto"
 hero_cta_primary_url: "/es/contact/#contact-form"
-hero_cta_secondary_label: "Ver servicios"
-hero_cta_secondary_url: "/es/services/"
 hero_cards:
-  - title: "Contabilidad"
-    icon: "chart"
-    text: "Contabilidad, IVA y cierre anual"
+  - title: "Contabilidad y cierre anual"
+    photo: "accountia-samarbeid.jpg"
+    text: "Llevamos la contabilidad y nos ocupamos del IVA y del cierre anual."
     url: "/es/services/contabilidad/"
   - title: "Nóminas y declaraciones"
-    icon: "clock"
-    text: "Gestión de nóminas y presentación de informes"
+    photo: "accountia-lonn.jpg"
+    text: "Gestionamos tus nóminas y presentamos las declaraciones correspondientes."
     url: "/es/services/nomina/"
-  - title: "Externalización"
-    icon: "handshake"
-    text: "Apoyo para tu departamento financiero"
+  - title: "Apoyo a tu departamento financiero"
+    photo: "accountia-bedrift.jpg"
+    text: "Delega las tareas que necesites, desde la facturación hasta los informes."
     url: "/es/services/outsourcing/"
 ---
-
-{{< value_cards
-title="Contabilidad moderna para tener control"
-lead="Combinamos rutinas sólidas, sistemas modernos y seguimiento cercano — para que tengas reportes correctos y visibilidad total."
-c1i="shield" c1t="Seguridad" c1d="Entregas con control de calidad y responsabilidad clara."
-c2i="clock" c2t="Previsibilidad" c2d="Plazos claros y seguimiento proactivo."
-c3i="chart" c3t="Información" c3d="Reportes que apoyan decisiones — no solo números."
-c4i="chip" c4t="Sistemas inteligentes" c4d="Trabajamos con Tripletex, PowerOffice, UniMicro, Fiken y más."
-c5i="handshake" c5t="Disponibilidad" c5d="Respuesta rápida y acompañamiento continuo."
-c6i="target" c6t="Enfoque en crecimiento" c6d="Asesoría que impulsa rentabilidad y crecimiento."
->}}
 
 {{< process_steps
 title="Cómo trabajamos — simple y predecible"
@@ -59,6 +46,6 @@ items="Damas Food AS::Estamos muy satisfechos con la colaboración con Accountia
 {{< cta_banner
 title="¿Listo para tener más control?"
 lead="Envíanos un mensaje y te proponemos la mejor configuración para tu empresa."
-btn_label="Cotización gratuita"
+btn_label="Solicitar presupuesto"
 btn_url="/es/contact/#contact-form"
 >}}

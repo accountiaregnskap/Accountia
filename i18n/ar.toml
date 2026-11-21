@@ -1,3 +1,18 @@
+[quote_label]
+other = "اطلب عرض سعر"
+
+[footer_navigation]
+other = "روابط الموقع"
+
+[primary_navigation]
+other = "القائمة الرئيسية"
+
+[skip_content]
+other = "انتقل إلى المحتوى"
+
+[guide_title]
+other = "اعثر على الدعم المناسب"
+
 [lang_label]
 other = "اللغة"
 
@@ -8,13 +23,13 @@ other = "المدير العام ومحاسب معتمد"
 other = "اطّلع على المراجعات على Google"
 
 [welcome_services]
-other = "كيف يمكننا مساعدتك؟"
+other = "تعرّف على خدماتنا"
 
 [agent_disclosure]
 other = "تُعالَج ردود الذكاء الاصطناعي عبر خدمة خارجية. استخدم نموذج التواصل للمعلومات المتعلقة بحسابك."
 
 [studio_kicker]
-other = "مكتب محاسبة معتمد في كنارفيك"
+other = "مكتب محاسبة في كنارفيك يخدم شركات في أنحاء النرويج"
 
 [studio_story_title]
 other = "مسؤول تواصل يعرف شركتك"
@@ -61,8 +76,11 @@ other = "رقم المؤسسة"
 [contact_info_title]
 other = "معلومات التواصل"
 
+[site_seo_title]
+other = "مكتب محاسبة في كنارفيك | Accountia"
+
 [contact_form_title]
-other = "محادثة دون التزام"
+other = "أرسل لنا رسالة"
 
 [contact_form_intro]
 other = "أرسل لنا رسالة لمحادثة دون التزام أو لطلب عرض سعر مجاني. سنرد عليك بأسرع ما يمكن خلال ساعات العمل."

@@ -2,7 +2,7 @@
 title: "الخدمات"
 translationKey: "site-services"
 bg: "/images/hero.jpg"
-lead: "خدمات تمنحك السيطرة وتقارير صحيحة وإدارة أقل."
+lead: "من مسك الدفاتر إلى الرواتب والإقفال السنوي. اختر ما تحتاج إليه من دعم."
 ---
 
 {{< services_cards

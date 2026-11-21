@@ -63,6 +63,30 @@ answer = "Vi kan avlaste hele eller deler av økonomifunksjonen, avhengig av hva
 link = "Les om outsourcing"
 url = "/tjenester/outsourcing/"
 keywords = ["outsourcing","utkontraktering","økonomifunksjon","økonomifunksjonen","avlaste"]
+[[no.questions]]
+question = "Kan vi samarbeide digitalt?"
+answer = "Ja. Vi jobber digitalt med kunder i hele Norge. Du kan også avtale kontakt med kontoret vårt i Knarvik."
+link = "Kontakt oss"
+url = "/kontakt/"
+keywords = ["digitalt","digital","nettbasert","fjernmøte","hele norge","utenfor knarvik"]
+[[no.questions]]
+question = "Hva trenger dere for å komme i gang?"
+answer = "Fortell oss om selskapsformen, hvilke oppgaver du vil ha hjelp med, systemet du bruker og hvor mange ansatte dere har. Det gir oss et utgangspunkt for en samtale og et tilbud."
+link = "Finn riktig hjelp"
+url = "/#service-guide"
+keywords = ["oppstart","komme i gang","hva trenger dere","selskapsform","starte bedrift","ny bedrift","nyetablert"]
+[[no.questions]]
+question = "Kan dere hjelpe med fakturaer og purringer?"
+answer = "Ja. Fakturering og oppfølging av utestående kan inngå i oppdraget. Vi avtaler hvilke oppgaver du vil sette bort."
+link = "Se avlastning i økonomiarbeidet"
+url = "/tjenester/outsourcing/"
+keywords = ["faktura","fakturaer","fakturering","purring","purringer","utestaende","ubetalte fakturaer"]
+[[no.questions]]
+question = "Kan dere hjelpe med tolkning av rapporter?"
+answer = "Vi kan gå gjennom rapportene med deg, forklare hva tallene viser og snakke om hva du bør følge opp i virksomheten."
+link = "Les om regnskap"
+url = "/tjenester/regnskap/"
+keywords = ["rapport","rapporter","raadgivning","rådgivning","likviditet","budsjettering","budsjett"]
 
 [en]
 label = "Ask Accountia"
@@ -129,6 +153,30 @@ answer = "We can support part or all of your finance function, depending on what
 link = "Read about outsourcing"
 url = "/en/services/outsourcing/"
 keywords = ["outsourcing","outsource","finance function","external"]
+[[en.questions]]
+question = "Can we work together remotely?"
+answer = "Yes. We work digitally with businesses across Norway. You can also contact our office in Knarvik."
+link = "Contact us"
+url = "/en/contact/"
+keywords = ["remote","remotely","online","digital","across norway","outside knarvik"]
+[[en.questions]]
+question = "What do you need to get started?"
+answer = "Tell us your company type, which tasks you need help with, the software you use and how many employees you have. This gives us a starting point for a conversation and quote."
+link = "Find the right support"
+url = "/en/#service-guide"
+keywords = ["get started","getting started","start a business","new business","new company","onboarding"]
+[[en.questions]]
+question = "Do you handle invoices and payment reminders?"
+answer = "Yes. Invoicing and following up on outstanding payments can be part of the service. We agree which tasks you want us to take on."
+link = "Read about outsourcing"
+url = "/en/services/outsourcing/"
+keywords = ["invoice","invoices","invoicing","arrears","payment reminders","outstanding payments"]
+[[en.questions]]
+question = "Can you help me understand the reports?"
+answer = "We can go through your reports, explain what the figures show and discuss what to follow up in your business."
+link = "Read about bookkeeping"
+url = "/en/services/bookkeeping/"
+keywords = ["report","reports","advice","advisory","cash flow","budgeting","budget"]
 
 [es]
 label = "Pregunta a Accountia"
@@ -195,6 +243,30 @@ answer = "Podemos ocuparnos de toda o parte de tu función financiera según lo 
 link = "Información sobre externalización"
 url = "/es/services/outsourcing/"
 keywords = ["externalización","externalizar","outsourcing","departamento financiero"]
+[[es.questions]]
+question = "¿Podemos trabajar a distancia?"
+answer = "Sí. Trabajamos en línea con empresas de toda Noruega. También puedes contactar con nuestra oficina en Knarvik."
+link = "Contáctanos"
+url = "/es/contact/"
+keywords = ["distancia","remoto","digital","internet","en línea","toda noruega"]
+[[es.questions]]
+question = "¿Qué necesitan para empezar?"
+answer = "Cuéntanos qué tipo de empresa tienes, las tareas que necesitas delegar, el programa que usas y cuántos empleados tienes."
+link = "Encuentra la ayuda adecuada"
+url = "/es/#service-guide"
+keywords = ["empezar","inicio","crear una empresa","empresa nueva","qué necesitan","constituir"]
+[[es.questions]]
+question = "¿Gestionan facturas y recordatorios de pago?"
+answer = "Sí. La facturación y el seguimiento de cobros pueden formar parte del servicio. Acordamos qué tareas quieres delegar."
+link = "Infórmate sobre externalización"
+url = "/es/services/outsourcing/"
+keywords = ["factura","facturas","facturación","cobros","recordatorios de pago","facturas impagadas"]
+[[es.questions]]
+question = "¿Pueden ayudarme a interpretar informes?"
+answer = "Podemos revisar tus informes contigo, explicar qué muestran las cifras y hablar de los puntos a los que conviene dar seguimiento."
+link = "Información sobre contabilidad"
+url = "/es/services/contabilidad/"
+keywords = ["informe","informes","asesoria","asesoría","flujo de caja","liquidez"]
 
 [ar]
 label = "اسأل Accountia"
@@ -261,3 +333,27 @@ answer = "ندعم كامل المهام المالية أو جزءًا منها
 link = "اطّلع على خدمات الاستعانة بمصادر خارجية"
 url = "/ar/services/outsourcing/"
 keywords = ["استعانة","الاستعانة","مصادر خارجية","المهام المالية","تفويض"]
+[[ar.questions]]
+question = "هل يمكننا العمل عن بُعد؟"
+answer = "نعم. نعمل رقميًا مع شركات في أنحاء النرويج. يمكنك أيضًا التواصل مع مكتبنا في كنارفيك."
+link = "اتصل بنا"
+url = "/ar/contact/"
+keywords = ["عن بعد","رقميا","رقمي","الانترنت","النرويج كلها"]
+[[ar.questions]]
+question = "ما الذي تحتاجونه للبدء؟"
+answer = "أخبرنا بنوع الشركة والمهام التي تحتاج إلى مساعدة فيها والنظام الذي تستخدمه وعدد الموظفين. هذه المعلومات تساعدنا في تحديد الخطوة التالية."
+link = "اعثر على الدعم المناسب"
+url = "/ar/#service-guide"
+keywords = ["للبدء","البدء","مشروع جديد","شركة جديدة","تأسيس شركة","تاسيس شركة"]
+[[ar.questions]]
+question = "هل تتولون إصدار الفواتير ومتابعة المدفوعات؟"
+answer = "نعم. يمكن أن تشمل الخدمة إصدار الفواتير ومتابعة المدفوعات المستحقة. نتفق معك على المهام التي تريد تفويضها."
+link = "اطّلع على خدمات دعم القسم المالي"
+url = "/ar/services/outsourcing/"
+keywords = ["فواتير","الفواتير","فوترة","الفوترة","تذكير الدفع","تحصيل"]
+[[ar.questions]]
+question = "هل تساعدونني في فهم التقارير؟"
+answer = "يمكننا مراجعة التقارير معك وشرح ما تعنيه الأرقام ومناقشة الأمور التي تحتاج إلى متابعة في شركتك."
+link = "اطّلع على خدمات المحاسبة"
+url = "/ar/services/accounting/"
+keywords = ["تقارير مالية","فهم التقارير","الاستشارات","استشارات","سيولة","ميزانية"]

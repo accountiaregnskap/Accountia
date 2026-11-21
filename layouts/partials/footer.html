@@ -1,31 +1,38 @@
-<footer class="site-footer">
+{{ $pages := index site.Data.service_guide .Lang }}
+<footer class="site-footer editorial-footer">
   <div class="container footer-inner">
     <div>
-      <strong>{{ site.Params.siteName }}</strong><br>
-      {{ i18n "footer_orgnr" }}: {{ site.Params.orgnr }}<br>
-      <a href="https://maps.google.com/?q={{ site.Params.address }}" target="_blank">{{ site.Params.address }}</a>
+      <strong>{{ site.Params.siteName }}</strong>
+      <a href="https://maps.google.com/?q={{ site.Params.address }}">{{ site.Params.address }}</a><br>
+      {{ i18n "footer_orgnr" }} {{ site.Params.orgnr }}
     </div>
-
     <div>
-      <strong>{{ i18n "footer_contact" }}</strong><br>
-      {{ i18n "footer_phone" }}: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a><br>
-      {{ i18n "footer_email" }}: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
+      <strong>{{ i18n "footer_contact" }}</strong>
+      <a href="tel:+4748342461">{{ site.Params.phone }}</a><br>
+      <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
       {{ site.Params.openhours }}
-
       <div class="footer-social">
-        <a class="social-btn" href="https://www.linkedin.com/company/accountia-regnskap/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <img src="/images/icons/linkedin.svg" alt="" aria-hidden="true"> LinkedIn
+        <a class="social-btn" href="https://www.linkedin.com/company/accountia-regnskap/" aria-label="LinkedIn">
+          <img src="/images/icons/linkedin.svg" alt="" width="20" height="20">
         </a>
-        <a class="social-btn" href="https://www.facebook.com/share/19zMEBXbLv/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
-          <img src="/images/icons/facebook.svg" alt="" aria-hidden="true"> Facebook
+        <a class="social-btn" href="https://www.facebook.com/share/19zMEBXbLv/?mibextid=wwXIfr" aria-label="Facebook">
+          <img src="/images/icons/facebook.svg" alt="" width="20" height="20">
         </a>
-              <a class="social-btn" href="{{ site.Params.whatsapp | default "https://wa.me/4748342461" }}" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <img src="/images/icons/whatsapp.svg" alt="" aria-hidden="true"> WhatsApp
+        <a class="social-btn" href="{{ site.Params.whatsapp }}" aria-label="WhatsApp">
+          <img src="/images/icons/whatsapp.svg" alt="" width="20" height="20">
         </a>
-</div>
+      </div>
+    </div>
+    <div>
+      <strong>{{ i18n "footer_navigation" }}</strong>
+      <ul class="footer-pages">
+        {{ range site.Menus.main }}
+          {{ if and (ne .URL site.Home.RelPermalink) (ne .URL $pages.contact) }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
     </div>
   </div>
-  <div class="container footer-bottom">
-    © {{ now.Year }} {{ site.Params.siteName }}
-  </div>
+  <div class="container footer-bottom">© {{ now.Year }} {{ site.Params.siteName }}</div>
 </footer>

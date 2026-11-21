@@ -1,7 +1,7 @@
 ---
 title: "Precios"
 translationKey: "site-prices"
-lead: "Ofrecemos propuestas claras y adaptadas, con un inicio tranquilo y un proceso fácil de entender."
+lead: "El presupuesto depende de las tareas, el volumen de movimientos y el apoyo que necesites."
 bg: "/images/hero.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Contacto"
-lead: "Contáctanos para una charla sin compromiso o una cotización gratuita: respondemos durante el horario laboral."
+translationKey: "site-contact"
+lead: "Cuéntanos en qué podemos ayudarte. Respondemos en horario laboral."
 bg: "/images/hero.jpg"
 ---
 

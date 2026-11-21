@@ -1,7 +1,7 @@
 ---
 title: "Priser"
 translationKey: "site-prices"
-lead: "Vi gir tydelige og tilpassede pristilbud uten skjulte overraskelser, med en oppstart som er rolig og oversiktlig."
+lead: "Prisen avhenger av hvilke oppgaver vi tar hånd om, hvor mye som skal føres og hvor mye oppfølging du trenger."
 bg: "/images/hero.jpg"
 ---
 

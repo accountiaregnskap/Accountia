@@ -1,49 +1,20 @@
-<section class="welcome-hero">
-  <div class="container welcome-layout">
-      <div class="welcome-copy">
-        <p class="welcome-kicker">{{ i18n "studio_kicker" }}</p>
-        <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}Regnskap som gir deg kontroll.{{ end }}</h1>
-        <p>
-          {{ with .Params.hero_lead }}
-            {{ . }}
-          {{ else }}
-            Accountia hjelper sma og mellomstore bedrifter med regnskapsforing, lonn, MVA, arsoppgjor
-            og radgivning - med moderne systemer og tydelig oppfolging.
-          {{ end }}
-        </p>
-
-        <div class="welcome-actions">
-          <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
-          <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
-        </div>
-        <div class="welcome-trust">
-          <a class="welcome-reviews" href="{{ site.Params.googleReviews }}">
-            <span aria-hidden="true">★★★★★</span>
-            {{ i18n "google_reviews" }}
-          </a>
-        </div>
+<section class="front-intro">
+  <div class="container front-layout">
+    <div class="front-copy">
+      <p class="front-kicker">{{ i18n "studio_kicker" }}</p>
+      <h1>{{ .Params.hero_title }}</h1>
+      <p class="front-lead">{{ .Params.hero_lead }}</p>
+      <div class="front-actions">
+        <a class="action-main" href="{{ .Params.hero_cta_primary_url }}">{{ .Params.hero_cta_primary_label }} <span aria-hidden="true">→</span></a>
+        <a class="action-link" href="#service-guide">{{ i18n "guide_title" }} <span aria-hidden="true">↓</span></a>
       </div>
-      <figure class="welcome-photo">
-        <img src="/images/accountia-office-wide.jpg"
-             srcset="/images/accountia-office-compact.jpg 544w, /images/accountia-office-wide.jpg 1088w"
-             sizes="(max-width: 720px) calc(100vw - 32px), (max-width: 1120px) 44vw, 545px"
-             width="1088" height="1088" alt="Ayham Layous" fetchpriority="high">
-        <figcaption><strong><bdi>Ayham Layous</bdi></strong><span>{{ i18n "welcome_role" }}</span></figcaption>
-      </figure>
-  </div>
-</section>
-
-<section class="welcome-services" aria-labelledby="welcome-services-title">
-  <div class="container">
-    <h2 id="welcome-services-title">{{ i18n "welcome_services" }}</h2>
-    <div class="welcome-services-list">
-      {{ range $card := .Params.hero_cards }}
-        <a href="{{ $card.url }}">
-          {{ with $card.icon }}<img src="/images/icons/{{ . }}.svg" width="25" height="25" alt="">{{ end }}
-          <span><strong>{{ $card.title }}</strong><small>{{ $card.text }}</small></span>
-          <span class="service-arrow" aria-hidden="true">→</span>
-        </a>
-      {{ end }}
+      <a class="front-review" href="{{ site.Params.googleReviews }}">{{ i18n "google_reviews" }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="front-photo">
+      <img src="/images/accountia-skrivebord.jpg"
+           srcset="/images/accountia-skrivebord-mobil.jpg 630w, /images/accountia-skrivebord.jpg 1260w"
+           sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1260px) 47vw, 570px"
+           width="1260" height="840" alt="" fetchpriority="high">
     </div>
   </div>
 </section>

@@ -2,7 +2,7 @@
 title: "Services"
 translationKey: "site-services"
 bg: "/images/hero.jpg"
-lead: "Services that give you control, correct reporting, and less admin."
+lead: "From day-to-day bookkeeping to payroll and annual accounts. Choose the support you need."
 ---
 
 {{< services_cards

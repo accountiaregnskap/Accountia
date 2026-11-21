@@ -2,7 +2,7 @@
 title: "Om oss"
 translationKey: "site-about"
 bg: "/images/hero.jpg"
-lead: "Et lite team med høy standard — struktur, kvalitet og tett oppfølging."
+lead: "Bli kjent med regnskapsføreren og se hvordan vi følger opp bedriften din."
 ---
 
 {{< anchor_point id="why-choose-us" >}}

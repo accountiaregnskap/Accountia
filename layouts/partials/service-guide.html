@@ -1,0 +1,25 @@
+{{ with index site.Data.service_guide .Lang }}
+{{ $contact := .contact }}
+{{ $cta := .cta }}
+<section class="service-guide" id="service-guide" aria-labelledby="service-guide-title">
+  <div class="service-guide-photo">
+    <img src="/images/accountia-plan.jpg" width="960" height="640" alt="" loading="lazy" decoding="async">
+  </div>
+  <div class="service-guide-body">
+    <h2 id="service-guide-title">{{ i18n "guide_title" }}</h2>
+    <p>{{ .lead }}</p>
+    <div class="guide-choices" role="group" aria-label="{{ .label }}" hidden>
+      {{ range $index, $option := .cases }}
+        <button type="button" aria-controls="guide-{{ $option.id }}" aria-pressed="{{ eq $index 0 }}">{{ $option.choice }}</button>
+      {{ end }}
+    </div>
+    {{ range .cases }}
+      <div class="guide-result" id="guide-{{ .id }}" aria-live="polite">
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <a class="action-main" href="{{ printf "%s?behov=%s#contact-form" $contact .id }}">{{ $cta }} <span aria-hidden="true">→</span></a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
