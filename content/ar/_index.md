@@ -7,15 +7,15 @@ hero_cta_primary_url: "/ar/contact/#contact-form"
 hero_cta_secondary_label: "عرض الخدمات"
 hero_cta_secondary_url: "/ar/services/"
 hero_cards:
-  - title: "الرواتب و A‑melding"
-    text: "رواتب دقيقة وآمنة"
+  - title: "المحاسبة"
+    text: "مسك الدفاتر وضريبة القيمة المضافة والإقفال السنوي"
+    url: "/ar/services/accounting/"
+  - title: "الرواتب والتقارير"
+    text: "إدارة الرواتب وتقديم التقارير"
     url: "/ar/services/payroll/"
-  - title: "ضريبة القيمة المضافة"
-    text: "تقارير في الوقت المناسب"
-    url: "/ar/services/accounting/"
-  - title: "الإقفال السنوي"
-    text: "خطة واضحة وإجراءات منظمة"
-    url: "/ar/services/accounting/"
+  - title: "الاستعانة بمصادر خارجية"
+    text: "دعم للمهام المالية في شركتك"
+    url: "/ar/services/outsourcing/"
 ---
 
 {{< value_cards
@@ -28,8 +28,6 @@ c4i="chip" c4t="أنظمة أذكى" c4d="نعمل على Tripletex وPowerOffic
 c5i="handshake" c5t="سهولة التواصل" c5d="رد سريع وشريك يتابع معك باستمرار."
 c6i="target" c6t="تركيز على النمو" c6d="استشارات تدعم الربحية وتطوير العمل."
 >}}
-
-{{< image_slider >}}
 
 {{< process_steps
 title="كيف نعمل — بشكل بسيط وواضح"

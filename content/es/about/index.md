@@ -1,5 +1,6 @@
 ---
 title: "Sobre nosotros"
+translationKey: "site-about"
 bg: "/images/hero.jpg"
 lead: "Un equipo pequeño con estándares altos — estructura, calidad y seguimiento cercano."
 ---
@@ -28,7 +29,7 @@ c6i="clock" c6t="Disponibilidad" c6d="Respuestas rápidas, aclaraciones claras y
 >}}
 
 {{< anchor_point id="who-we-are" >}}
-{{< about_split name="Ayham Layous" role="Director general" image="/images/ayham.jpg" >}}
+{{< about_split name="Ayham Layous" role="Director general" image="/images/accountia-portrait.jpg" >}}
 Soy el director general y contador público autorizado, con un máster en economía y contabilidad, y una sólida experiencia en contabilidad, gestión financiera y asesoría. Tengo un enfoque analítico y estructurado, y me importa que la contabilidad aporte valor: no solo cumplir requisitos, sino servir como una herramienta activa de gestión.
 
 En mi trabajo priorizo la calidad, la precisión y la previsibilidad. Colaboro estrechamente con los clientes para asegurar una buena visión, una economía saludable y decisiones seguras. Soy conocido por ser accesible, claro y orientado a soluciones.

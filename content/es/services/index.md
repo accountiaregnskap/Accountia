@@ -1,5 +1,6 @@
 ---
 title: "Servicios"
+translationKey: "site-services"
 bg: "/images/hero.jpg"
 lead: "Servicios para tener control, informes correctos y menos administración."
 ---

@@ -1,0 +1,21 @@
+{{ with index site.Data.customer_help .Lang }}
+  <details class="customer-help">
+    <summary class="customer-help-toggle"><span aria-hidden="true"></span>{{ .label }}</summary>
+    <section class="customer-help-panel" aria-labelledby="customer-help-title">
+      <div class="customer-help-header">
+        <h2 id="customer-help-title">{{ .label }}</h2>
+        <button type="button" class="customer-help-close" aria-label="{{ .close }}" hidden>×</button>
+      </div>
+      <p>{{ .intro }}</p>
+      <div class="customer-help-questions">
+        {{ range .questions }}
+          <details name="accountia-help-topic">
+            <summary>{{ .question }}</summary>
+            <p>{{ .answer }}{{ if .url }} <a href="{{ .url }}">{{ .link }}</a>{{ end }}</p>
+          </details>
+        {{ end }}
+      </div>
+      <a class="customer-help-contact" href="{{ .contact_url }}">{{ .contact }}</a>
+    </section>
+  </details>
+{{ end }}

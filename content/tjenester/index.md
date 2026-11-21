@@ -1,5 +1,6 @@
 ---
 title: "Tjenester"
+translationKey: "site-services"
 bg: "/images/hero.jpg"
 lead: "Tjenester som gir kontroll, riktig rapportering og mindre administrasjon."
 ---

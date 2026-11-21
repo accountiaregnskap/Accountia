@@ -1,5 +1,6 @@
 ---
 title: "الخدمات"
+translationKey: "site-services"
 bg: "/images/hero.jpg"
 lead: "خدمات تمنحك السيطرة وتقارير صحيحة وإدارة أقل."
 ---

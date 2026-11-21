@@ -1,5 +1,6 @@
 ---
 title: "Precios"
+translationKey: "site-prices"
 lead: "Ofrecemos propuestas claras y adaptadas, con un inicio tranquilo y un proceso fácil de entender."
 bg: "/images/hero.jpg"
 ---

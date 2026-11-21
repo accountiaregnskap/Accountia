@@ -1,6 +1,15 @@
 [lang_label]
 other = "اللغة"
 
+[welcome_role]
+other = "المدير العام ومحاسب معتمد"
+
+[google_reviews]
+other = "اطّلع على المراجعات على Google"
+
+[welcome_services]
+other = "كيف يمكننا مساعدتك؟"
+
 [footer_contact]
 other = "اتصال"
 

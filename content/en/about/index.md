@@ -1,5 +1,6 @@
 ---
 title: "About"
+translationKey: "site-about"
 bg: "/images/hero.jpg"
 lead: "A small team with high standards — structure, quality, and close follow-up."
 ---
@@ -28,7 +29,7 @@ c6i="clock" c6t="Availability" c6d="Fast responses, clear clarifications, and co
 >}}
 
 {{< anchor_point id="who-we-are" >}}
-{{< about_split name="Ayham Layous" role="Managing Director" image="/images/ayham.jpg" >}}
+{{< about_split name="Ayham Layous" role="Managing Director" image="/images/accountia-portrait.jpg" >}}
 I am the Managing Director and a state-authorized accountant with a master’s degree in Economics and Accounting, and solid experience in accounting, financial management, and advisory services. I work in an analytical and structured way, and I focus on accounting that creates real value — not just compliance, but a practical management tool for better control and decision-making.
 
 Quality, accuracy, and predictability are central in everything I do. I work closely with clients to ensure clear oversight, healthy finances, and confident decisions, and I’m known for being accessible, direct, and solution-oriented.

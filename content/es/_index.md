@@ -7,15 +7,15 @@ hero_cta_primary_url: "/es/contact/#contact-form"
 hero_cta_secondary_label: "Ver servicios"
 hero_cta_secondary_url: "/es/services/"
 hero_cards:
-  - title: "Nómina y A‑melding"
-    text: "Nómina segura y correcta"
+  - title: "Contabilidad"
+    text: "Contabilidad, IVA y cierre anual"
+    url: "/es/services/contabilidad/"
+  - title: "Nóminas y declaraciones"
+    text: "Gestión de nóminas y presentación de informes"
     url: "/es/services/nomina/"
-  - title: "IVA"
-    text: "Reportes a tiempo"
-    url: "/es/services/contabilidad/"
-  - title: "Cierre anual"
-    text: "Buen plan, proceso ordenado"
-    url: "/es/services/contabilidad/"
+  - title: "Externalización"
+    text: "Apoyo para tu departamento financiero"
+    url: "/es/services/outsourcing/"
 ---
 
 {{< value_cards
@@ -28,8 +28,6 @@ c4i="chip" c4t="Sistemas inteligentes" c4d="Trabajamos con Tripletex, PowerOffic
 c5i="handshake" c5t="Disponibilidad" c5d="Respuesta rápida y acompañamiento continuo."
 c6i="target" c6t="Enfoque en crecimiento" c6d="Asesoría que impulsa rentabilidad y crecimiento."
 >}}
-
-{{< image_slider >}}
 
 {{< process_steps
 title="Cómo trabajamos — simple y predecible"

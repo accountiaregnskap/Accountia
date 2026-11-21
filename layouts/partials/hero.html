@@ -1,8 +1,6 @@
-<section class="hero home-hero" style="--bg:url('/images/hero.jpg');">
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <div class="home-hero-grid{{ if eq .Lang "ar" }} home-hero-grid--rtl{{ end }}">
-      <div class="hero-content home-hero-copy{{ if eq .Lang "ar" }} home-hero-copy--rtl{{ end }}">
+<section class="welcome-hero">
+  <div class="container welcome-layout">
+      <div class="welcome-copy">
         <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}Regnskap som gir deg kontroll.{{ end }}</h1>
         <p>
           {{ with .Params.hero_lead }}
@@ -13,59 +11,34 @@
           {{ end }}
         </p>
 
-        <div class="hero-actions">
+        <div class="welcome-actions">
           <a class="btn" href="{{ with .Params.hero_cta_primary_url }}{{ . }}{{ else }}/kontakt/{{ end }}">{{ with .Params.hero_cta_primary_label }}{{ . }}{{ else }}Kontakt oss{{ end }}</a>
           <a class="btn btn-ghost" href="{{ with .Params.hero_cta_secondary_url }}{{ . }}{{ else }}/tjenester/{{ end }}">{{ with .Params.hero_cta_secondary_label }}{{ . }}{{ else }}Se tjenester{{ end }}</a>
         </div>
+        <a class="welcome-reviews" href="{{ site.Params.googleReviews }}">
+          <span aria-hidden="true">★★★★★</span>
+          {{ i18n "google_reviews" }}
+        </a>
       </div>
-
-    </div>
+      <figure class="welcome-photo">
+        <img src="/images/accountia-office.jpg"
+             srcset="/images/accountia-office-small.jpg 540w, /images/accountia-office.jpg 960w"
+             sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1120px) 42vw, 480px"
+             width="960" height="960" alt="Ayham Layous" fetchpriority="high">
+        <figcaption><strong>Ayham Layous</strong><span>{{ i18n "welcome_role" }}</span></figcaption>
+      </figure>
   </div>
 </section>
 
-<section class="home-service-strip{{ if eq .Lang "ar" }} home-service-strip--rtl{{ end }}" aria-label="Accountia services">
-  <div class="container home-service-strip-inner{{ if eq .Lang "ar" }} home-service-strip-inner--rtl{{ end }}">
-    {{ if eq .Lang "en" }}
-      <div class="home-service-strip-head">
-        <p class="home-service-strip-kicker">Services</p>
-        <h2>What we help you with</h2>
-      </div>
-    {{ else if eq .Lang "es" }}
-      <div class="home-service-strip-head">
-        <p class="home-service-strip-kicker">Servicios</p>
-        <h2>En que podemos ayudarte</h2>
-      </div>
-    {{ else if eq .Lang "ar" }}
-      <div class="home-service-strip-head home-service-strip-head--rtl">
-        <p class="home-service-strip-kicker">الخدمات</p>
-        <h2>كيف نساعدك</h2>
-      </div>
-    {{ else }}
-      <div class="home-service-strip-head">
-        <p class="home-service-strip-kicker">Tjenester</p>
-        <h2>Dette hjelper vi deg med</h2>
-      </div>
-    {{ end }}
-
-    <div class="home-service-strip-grid{{ if eq .Lang "ar" }} home-service-strip-grid--rtl{{ end }}">
-      {{ with .Params.hero_cards }}
-        {{ range . }}
-          {{ if .url }}
-            <a class="home-service-card{{ if eq $.Lang "ar" }} home-service-card--rtl{{ end }}" href="{{ .url }}">
-              <strong>{{ .title }}</strong>
-              <span>{{ .text }}</span>
-            </a>
-          {{ else }}
-            <div class="home-service-card{{ if eq $.Lang "ar" }} home-service-card--rtl{{ end }}">
-              <strong>{{ .title }}</strong>
-              <span>{{ .text }}</span>
-            </div>
-          {{ end }}
-        {{ end }}
-      {{ else }}
-        <div class="home-service-card"><strong>Lonn & A-melding</strong><span>Trygg og korrekt lonnskjoring</span></div>
-        <div class="home-service-card"><strong>MVA</strong><span>Rapportering til riktig tid</span></div>
-        <div class="home-service-card"><strong>Arsoppgjor</strong><span>God plan, ryddig prosess</span></div>
+<section class="welcome-services" aria-labelledby="welcome-services-title">
+  <div class="container">
+    <h2 id="welcome-services-title">{{ i18n "welcome_services" }}</h2>
+    <div class="welcome-services-list">
+      {{ range .Params.hero_cards }}
+        <a href="{{ .url }}">
+          <span><strong>{{ .title }}</strong><small>{{ .text }}</small></span>
+          <span class="service-arrow" aria-hidden="true">→</span>
+        </a>
       {{ end }}
     </div>
   </div>

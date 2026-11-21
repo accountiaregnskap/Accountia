@@ -29,3 +29,27 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") closeAll();
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const help = document.querySelector(".customer-help");
+  if (!help) return;
+
+  const toggle = help.querySelector(".customer-help-toggle");
+  const closeButton = help.querySelector(".customer-help-close");
+  function closeHelp() {
+    help.open = false;
+    toggle.focus();
+  }
+
+  closeButton.hidden = false;
+  closeButton.addEventListener("click", closeHelp);
+  help.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && help.open) {
+      event.preventDefault();
+      closeHelp();
+    }
+  });
+  help.querySelector(".customer-help-contact").addEventListener("click", () => {
+    help.open = false;
+  });
+});
