@@ -2,7 +2,10 @@
   <div class="container front-layout">
     <div class="front-copy">
       <p class="front-kicker">{{ i18n "studio_kicker" }}</p>
-      <h1>{{ .Params.hero_title }}</h1>
+      <h1>
+        {{ $lines := split .Params.hero_title ". " }}
+        {{ range $index, $line := $lines }}<span>{{ $line }}{{ if lt (add $index 1) (len $lines) }}.{{ end }}</span>{{ " " }}{{ end }}
+      </h1>
       <p class="front-lead">{{ .Params.hero_lead }}</p>
       <div class="front-actions">
         <a class="action-main" href="{{ .Params.hero_cta_primary_url }}">{{ .Params.hero_cta_primary_label }} <span aria-hidden="true">→</span></a>
@@ -10,11 +13,12 @@
       </div>
       <a class="front-review" href="{{ site.Params.googleReviews }}">{{ i18n "google_reviews" }} <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="front-photo">
-      <img src="/images/accountia-skrivebord.jpg"
-           srcset="/images/accountia-skrivebord-mobil.jpg 630w, /images/accountia-skrivebord.jpg 1260w"
-           sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1260px) 47vw, 570px"
-           width="1260" height="840" alt="" fetchpriority="high">
-    </div>
+    <figure class="front-photo" data-reveal>
+      <img src="/images/accountia-office-wide.jpg"
+           srcset="/images/accountia-office-compact.jpg 544w, /images/accountia-office-wide.jpg 1088w"
+           sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1260px) 45vw, 508px"
+           width="1088" height="1088" alt="" fetchpriority="high">
+      <figcaption><strong><bdi>Ayham Layous</bdi></strong><span>{{ i18n "welcome_role" }}</span></figcaption>
+    </figure>
   </div>
 </section>

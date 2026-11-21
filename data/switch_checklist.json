@@ -1,0 +1,46 @@
+{
+  "no": {
+    "title": "Dette er nyttig å ha klart",
+    "intro": "Du kan ta den første praten før alt er klart. Bruk listen til å få oversikt over det du har.",
+    "items": [
+      "Gjeldende avtale og eventuell oppsigelsestid",
+      "Navnet på regnskaps- og lønnssystemet dere bruker",
+      "Oversikt over ansatte og frister som kommer snart"
+    ],
+    "count": "{done} av {total} klare",
+    "cta": "Snakk med oss om byttet"
+  },
+  "en": {
+    "title": "What to have ready",
+    "intro": "You can talk to us before you have everything ready. Use this checklist to see what you already have.",
+    "items": [
+      "Your current agreement and any notice period",
+      "The bookkeeping and payroll software you use",
+      "An overview of your employees and upcoming deadlines"
+    ],
+    "count": "{done} of {total} ready",
+    "cta": "Talk to us about switching"
+  },
+  "es": {
+    "title": "Qué conviene tener a mano",
+    "intro": "Puedes hablar con nosotros aunque todavía te falte algo. Usa esta lista para ver qué tienes preparado.",
+    "items": [
+      "El contrato actual y el plazo de preaviso, si lo hay",
+      "El programa que usas para contabilidad y nóminas",
+      "Una lista de empleados y de los próximos plazos"
+    ],
+    "count": "{done} de {total} preparados",
+    "cta": "Hablemos del traspaso"
+  },
+  "ar": {
+    "title": "ما الذي يُفضّل إعداده؟",
+    "intro": "يمكنك التواصل معنا قبل تجهيز كل شيء. استخدم القائمة لمعرفة ما لديك.",
+    "items": [
+      "العقد الحالي ومدة الإشعار إن وُجدت",
+      "اسم نظام المحاسبة والرواتب الذي تستخدمه",
+      "قائمة بالموظفين والمواعيد القريبة"
+    ],
+    "count": "{done} من {total} جاهزة",
+    "cta": "تواصل معنا بشأن الانتقال"
+  }
+}

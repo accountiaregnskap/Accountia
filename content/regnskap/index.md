@@ -28,6 +28,7 @@ lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
 >}}
 
 {{< service_bento
+  anchor="mva"
   variant="line"
   tag="MVA"
   title="MVA-rapportering med kontroll på grunnlag, frister og innlevering"
@@ -39,6 +40,7 @@ lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
 >}}
 
 {{< service_bento
+  anchor="arsoppgjor"
   variant="soft"
   tag="Årsoppgjør"
   title="Årsoppgjør som planlegges godt og gjennomføres ryddig"
@@ -48,6 +50,8 @@ lead: "Regnskap som gir deg oversikt, riktige tall og mindre administrasjon."
   c3k="Samarbeid" c3t="Tett oppfølging når vi trenger svar" c3d="Vi sier tydelig fra hvis det mangler dokumentasjon eller beslutninger, slik at prosessen kan gå videre uten unødvendige stopp."
   c4k="Trygghet" c4t="En mer forutsigbar avslutning av året" c4d="Når regnskap, MVA og årsoppgjør sees i sammenheng, blir hele leveransen mer stabil, ryddig og enklere å følge for deg som kunde."
 >}}
+
+{{< advisory_section >}}
 
 {{< services_faq
   title="Vanlige spørsmål om regnskap"

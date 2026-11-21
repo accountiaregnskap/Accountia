@@ -1,3 +1,12 @@
+[services_topics]
+other = "Find help with a specific task"
+
+[brand_description]
+other = "Accounting"
+
+[switch_accountant]
+other = "Switch accountants"
+
 [quote_label]
 other = "Request a quote"
 

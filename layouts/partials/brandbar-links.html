@@ -1,0 +1,11 @@
+{{ $links := index site.Data.service_guide .Lang }}
+{{ $current := .RelPermalink }}
+{{ range site.Menus.main }}
+  {{ if and (ne .URL site.Home.RelPermalink) (ne .URL $links.contact) (ne .URL $links.privacy) }}
+    <a class="brandbar-link" href="{{ .URL }}"{{ if eq .URL $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
+  {{ end }}
+{{ end }}
+<a class="brandbar-link" href="{{ $links.industry_url }}"{{ if eq $links.industry_url $current }} aria-current="page"{{ end }}>{{ (index site.Data.industry_directory .Lang).title }}</a>
+<a class="brandbar-link" href="{{ $links.switch_url }}"{{ if eq $links.switch_url $current }} aria-current="page"{{ end }}>{{ i18n "switch_accountant" }}</a>
+<a class="brandbar-contact" href="{{ $links.contact }}"{{ if eq $links.contact $current }} aria-current="page"{{ end }}>{{ i18n "footer_contact" }}</a>
+{{ partial "lang-dropdown.html" . }}

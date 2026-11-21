@@ -5,6 +5,15 @@ bg: "/images/hero.jpg"
 lead: "Conoce a tu contable y descubre cómo acompañamos a tu empresa."
 ---
 
+{{< anchor_point id="who-we-are" >}}
+{{< about_split name="Ayham Layous" role="Director general" image="/images/accountia-portrait-full.jpg" >}}
+Soy el director general y contador público autorizado, con un máster en economía y contabilidad, y una sólida experiencia en contabilidad, gestión financiera y asesoría. Tengo un enfoque analítico y estructurado, y me importa que la contabilidad aporte valor: no solo cumplir requisitos, sino servir como una herramienta activa de gestión.
+
+En mi trabajo priorizo la calidad, la precisión y la previsibilidad. Colaboro estrechamente con los clientes para asegurar una buena visión, una economía saludable y decisiones seguras. Soy conocido por ser accesible, claro y orientado a soluciones.
+
+Para mí, una buena contabilidad se basa en confianza, fortaleza profesional y una colaboración a largo plazo.
+{{< /about_split >}}
+
 {{< anchor_point id="why-choose-us" >}}
 {{< value_cards
 title="¿Por qué nos eligen los clientes?"
@@ -27,12 +36,3 @@ c6i="clock" c6t="Disponibilidad" c6d="Respuestas rápidas, aclaraciones claras y
   c3k="Sistemas" c3t="Herramientas digitales que realmente funcionan" c3d="Utilizamos soluciones modernas que mejoran el flujo de documentación, los informes y la cooperación."
   c4k="Valor" c4t="Más que informes" c4d="La meta es que los números sean útiles en la práctica, para darte más visión y decisiones más seguras."
 >}}
-
-{{< anchor_point id="who-we-are" >}}
-{{< about_split name="Ayham Layous" role="Director general" image="/images/accountia-portrait-full.jpg" >}}
-Soy el director general y contador público autorizado, con un máster en economía y contabilidad, y una sólida experiencia en contabilidad, gestión financiera y asesoría. Tengo un enfoque analítico y estructurado, y me importa que la contabilidad aporte valor: no solo cumplir requisitos, sino servir como una herramienta activa de gestión.
-
-En mi trabajo priorizo la calidad, la precisión y la previsibilidad. Colaboro estrechamente con los clientes para asegurar una buena visión, una economía saludable y decisiones seguras. Soy conocido por ser accesible, claro y orientado a soluciones.
-
-Para mí, una buena contabilidad se basa en confianza, fortaleza profesional y una colaboración a largo plazo.
-{{< /about_split >}}

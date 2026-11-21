@@ -1,4 +1,4 @@
-<section class="service-bento service-bento--{{ .Get "variant" | default "soft" }}">
+<section class="service-bento service-bento--{{ .Get "variant" | default "soft" }}"{{ with .Get "anchor" }} id="{{ . }}"{{ end }}>
   <div class="service-bento-head">
     <span class="service-bento-tag">{{ .Get "tag" }}</span>
     <h2>{{ .Get "title" }}</h2>

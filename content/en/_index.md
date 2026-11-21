@@ -6,15 +6,15 @@ hero_cta_primary_label: "Request a quote"
 hero_cta_primary_url: "/en/contact/#contact-form"
 hero_cards:
   - title: "Bookkeeping and annual accounts"
-    photo: "accountia-samarbeid.jpg"
+    photo: "accountia-regnskap-detalj.jpg"
     text: "We handle bookkeeping, VAT reports and year-end accounts."
     url: "/en/services/bookkeeping/"
   - title: "Payroll and reporting"
-    photo: "accountia-lonn.jpg"
+    photo: "accountia-butikk-detalj.jpg"
     text: "We run payroll and take care of routine reporting."
     url: "/en/services/payroll/"
   - title: "Support for your finance team"
-    photo: "accountia-bedrift.jpg"
+    photo: "accountia-bedrift-detalj.jpg"
     text: "Hand over the tasks you need help with, from invoicing to reporting."
     url: "/en/services/outsourcing/"
 ---
@@ -29,11 +29,7 @@ s4i="chart" s4t="Reporting & advice" s4d="You get insights, KPIs and recommendat
 >}}
 
 
-{{< industry_pills
-title="Who we help"
-lead="Small and mid-sized businesses that want control without stress."
-items="Sole proprietors, Limited companies, Consultants, Trades, E-commerce, Transport, Healthcare, Restaurants, Real estate"
->}}
+{{< industry_directory compact="true" >}}
 
 
 {{< testimonials

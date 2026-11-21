@@ -1,0 +1,9 @@
+{{ $contact := (index site.Data.service_guide .Page.Lang).contact }}
+{{ $cta := i18n "footer_contact" }}
+{{ with index site.Data.industry_directory .Page.Lang }}
+<section class="advisory-overview" id="radgivning">
+  <h2>{{ .advisoryTitle }}</h2>
+  <p>{{ .advisory }}</p>
+  <a class="action-main" href="{{ $contact }}#contact-form">{{ $cta }} <span aria-hidden="true">→</span></a>
+</section>
+{{ end }}

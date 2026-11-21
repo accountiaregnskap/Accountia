@@ -46,7 +46,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?{{ if eq .Lang "ar" }}family=Noto+Sans+Arabic:wght@400;500;600;700;800{{ else }}family=Fraunces:opsz,wght@9..144,500..800&amp;family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800{{ end }}&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family={{ if eq .Lang "ar" }}Noto+Sans+Arabic{{ else }}Inter{{ end }}:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 {{ $styles := resources.FromString "css/accountia.css" (delimit (slice (readFile "static/css/style.css") (readFile "static/css/modern.css") (readFile "static/css/studio.css") (readFile "static/css/editorial.css")) "\n") | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />

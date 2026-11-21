@@ -1,23 +1,20 @@
-{{ $case := index site.Data.service_guide .Lang }}
-{{ $current := .RelPermalink }}
 <a class="skip-content" href="#main-content">{{ i18n "skip_content" }}</a>
-<header class="site-header editorial-header">
-  <div class="header-inner">
-    <a class="brand brand-image" href="{{ "/" | relLangURL }}" aria-label="Accountia">
-      <img class="brand-img" src="/images/accountia_logo_horizontal.png" alt="Accountia Regnskap">
+<header class="brandbar">
+  <div class="brandbar-inner">
+    <a class="brandbar-logo" href="{{ "/" | relLangURL }}" aria-label="Accountia">
+      {{ partial "brandmark.html" . }}
     </a>
-    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="{{ i18n "open_menu" }}" aria-controls="primary-navigation">
-    <label class="nav-toggle-btn editorial-menu-button" for="nav-toggle">
-      <span aria-hidden="true">☰</span>{{ i18n "menu" }}
-    </label>
-    <nav class="nav" id="primary-navigation" aria-label="{{ i18n "primary_navigation" }}">
-      {{ range site.Menus.main }}
-        {{ if and (ne .URL site.Home.RelPermalink) (ne .URL $case.contact) (ne .URL $case.privacy) }}
-          <a class="nav-link" href="{{ .URL }}"{{ if eq .URL $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
-        {{ end }}
-      {{ end }}
-      {{ partial "lang-dropdown.html" . }}
-      <a class="nav-link editorial-contact" href="{{ $case.contact }}"{{ if eq $case.contact $current }} aria-current="page"{{ end }}>{{ i18n "footer_contact" }}</a>
+    <nav class="brandbar-nav brandbar-desktop" aria-label="{{ i18n "primary_navigation" }}">
+      {{ partial "brandbar-links.html" . }}
     </nav>
+    <details class="brandbar-menu">
+      <summary class="brandbar-trigger" aria-controls="primary-menu">
+        <span class="brandbar-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>{{ i18n "menu" }}</span>
+      </summary>
+      <nav class="brandbar-nav brandbar-drawer" id="primary-menu" aria-label="{{ i18n "primary_navigation" }}">
+        {{ partial "brandbar-links.html" . }}
+      </nav>
+    </details>
   </div>
 </header>

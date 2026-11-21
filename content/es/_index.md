@@ -6,15 +6,15 @@ hero_cta_primary_label: "Solicitar presupuesto"
 hero_cta_primary_url: "/es/contact/#contact-form"
 hero_cards:
   - title: "Contabilidad y cierre anual"
-    photo: "accountia-samarbeid.jpg"
+    photo: "accountia-regnskap-detalj.jpg"
     text: "Llevamos la contabilidad y nos ocupamos del IVA y del cierre anual."
     url: "/es/services/contabilidad/"
   - title: "Nóminas y declaraciones"
-    photo: "accountia-lonn.jpg"
+    photo: "accountia-butikk-detalj.jpg"
     text: "Gestionamos tus nóminas y presentamos las declaraciones correspondientes."
     url: "/es/services/nomina/"
   - title: "Apoyo a tu departamento financiero"
-    photo: "accountia-bedrift.jpg"
+    photo: "accountia-bedrift-detalj.jpg"
     text: "Delega las tareas que necesites, desde la facturación hasta los informes."
     url: "/es/services/outsourcing/"
 ---
@@ -29,11 +29,7 @@ s4i="chart" s4t="Reportes y asesoría" s4d="Obtienes información, KPIs y recome
 >}}
 
 
-{{< industry_pills
-title="A quién ayudamos"
-lead="Pequeñas y medianas empresas que quieren control sin estrés."
-items="Autónomos, Sociedades, Consultores, Oficios, E-commerce, Transporte, Salud, Restaurantes, Inmobiliario"
->}}
+{{< industry_directory compact="true" >}}
 
 
 {{< testimonials
