@@ -10,6 +10,24 @@ other = "اطّلع على المراجعات على Google"
 [welcome_services]
 other = "كيف يمكننا مساعدتك؟"
 
+[agent_disclosure]
+other = "تُعالَج ردود الذكاء الاصطناعي عبر خدمة خارجية. استخدم نموذج التواصل للمعلومات المتعلقة بحسابك."
+
+[studio_kicker]
+other = "مكتب محاسبة معتمد في كنارفيك"
+
+[studio_story_title]
+other = "مسؤول تواصل يعرف شركتك"
+
+[studio_story_text]
+other = "من بداية التعاون حتى الإقفال السنوي، نتابع المواعيد معك ونجيب عن أسئلتك طوال الطريق."
+
+[studio_story_url]
+other = "/ar/about/#who-we-are"
+
+[studio_story_link]
+other = "تعرّف على Accountia"
+
 [footer_contact]
 other = "اتصال"
 

@@ -1,3 +1,21 @@
+[agent_disclosure]
+other = "AI replies are processed by an external service. Use the contact form for details about your account."
+
+[studio_kicker]
+other = "Authorised accounting firm in Knarvik"
+
+[studio_story_title]
+other = "A dedicated contact who knows your business"
+
+[studio_story_text]
+other = "From onboarding to annual accounts, we keep you up to date on deadlines and answer questions along the way."
+
+[studio_story_url]
+other = "/en/about/#who-we-are"
+
+[studio_story_link]
+other = "Meet Accountia"
+
 [footer_contact]
 other = "Contact"
 
