@@ -1,5 +1,6 @@
 ---
 title: "Personvern"
+translationKey: "site-privacy"
 bg: "/images/hero.jpg"
 lead: "Hvordan vi håndterer personopplysninger, informasjonskapsler og sikkerhet — kort og tydelig."
 ---

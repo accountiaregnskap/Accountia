@@ -10,6 +10,15 @@ other = "E-post"
 [lang_label]
 other = "Språk"
 
+[welcome_role]
+other = "Daglig leder og statsautorisert regnskapsfører"
+
+[google_reviews]
+other = "Se anmeldelser på Google"
+
+[welcome_services]
+other = "Dette kan vi hjelpe med"
+
 [contact_info_title]
 other = "Kontaktinformasjon"
 

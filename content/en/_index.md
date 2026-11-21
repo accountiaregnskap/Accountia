@@ -7,15 +7,15 @@ hero_cta_primary_url: "/en/contact/#contact-form"
 hero_cta_secondary_label: "View services"
 hero_cta_secondary_url: "/en/services/"
 hero_cards:
-  - title: "Payroll"
+  - title: "Bookkeeping"
+    text: "Bookkeeping, VAT and annual reporting"
+    url: "/en/services/bookkeeping/"
+  - title: "Payroll and reporting"
     text: "Accurate payroll and reporting"
     url: "/en/services/payroll/"
-  - title: "VAT"
-    text: "On-time VAT handling"
-    url: "/en/services/bookkeeping/"
-  - title: "Annual reporting"
-    text: "Structured, predictable process"
-    url: "/en/services/bookkeeping/"
+  - title: "Outsourcing"
+    text: "Support for your finance function"
+    url: "/en/services/outsourcing/"
 ---
 
 {{< value_cards
@@ -28,8 +28,6 @@ c4i="chip" c4t="Smarter systems" c4d="We work in Tripletex, PowerOffice, UniMicr
 c5i="handshake" c5t="Availability" c5d="Fast responses and a partner who follows up."
 c6i="target" c6t="Growth focus" c6d="Advisory that supports profitability and growth."
 >}}
-
-{{< image_slider >}}
 
 {{< process_steps
 title="How we work – simple and predictable"

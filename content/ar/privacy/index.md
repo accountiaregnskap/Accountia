@@ -1,5 +1,6 @@
 ---
 title: "الخصوصية"
+translationKey: "site-privacy"
 bg: "/images/hero.jpg"
 lead: "كيف نتعامل مع البيانات الشخصية وملفات تعريف الارتباط والأمان — بوضوح وشفافية."
 ---

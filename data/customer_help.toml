@@ -1,0 +1,91 @@
+[no]
+label = "Spør Accountia"
+intro = "Velg et spørsmål for å få et raskt svar."
+close = "Lukk hjelpen"
+contact = "Kontakt oss"
+contact_url = "/kontakt/#contact-form"
+[[no.questions]]
+question = "Hvordan får jeg et pristilbud?"
+answer = "Fortell litt om bedriften og hva du trenger. Vi vurderer omfanget og gir deg et gratis, tilpasset pristilbud."
+link = "Les om priser"
+url = "/priser/"
+[[no.questions]]
+question = "Kan dere hjelpe meg å bytte regnskapsfører?"
+answer = "Ja. Vi planlegger overgangen med deg og avklarer hva som må overføres, ansvar og frister."
+[[no.questions]]
+question = "Hva kan dere hjelpe bedriften min med?"
+answer = "Vi hjelper med regnskap, lønn og A-melding, MVA, årsoppgjør og økonomisk rådgivning."
+link = "Se tjenester"
+url = "/tjenester/"
+[[no.questions]]
+question = "Hvilke språk finnes på nettsiden?"
+answer = "Nettsiden finnes på norsk, engelsk, spansk og arabisk. Bruk språkvelgeren i menyen."
+
+[en]
+label = "Ask Accountia"
+intro = "Choose a question for a quick answer."
+close = "Close help"
+contact = "Contact us"
+contact_url = "/en/contact/#contact-form"
+[[en.questions]]
+question = "How do I get a quote?"
+answer = "Tell us a little about your business and what you need. We’ll assess the scope and provide a free, tailored quote."
+link = "Read about pricing"
+url = "/en/prices/"
+[[en.questions]]
+question = "Can you help me switch accountants?"
+answer = "Yes. We’ll plan the transition with you and agree what needs to be transferred, responsibilities and deadlines."
+[[en.questions]]
+question = "What can you help my business with?"
+answer = "We help with bookkeeping, payroll and reporting, VAT, annual accounts and financial advice."
+link = "View services"
+url = "/en/services/"
+[[en.questions]]
+question = "Which languages is the website available in?"
+answer = "The website is available in Norwegian, English, Spanish and Arabic. Use the language selector in the menu."
+
+[es]
+label = "Pregunta a Accountia"
+intro = "Elige una pregunta para ver una respuesta rápida."
+close = "Cerrar ayuda"
+contact = "Contáctanos"
+contact_url = "/es/contact/#contact-form"
+[[es.questions]]
+question = "¿Cómo solicito un presupuesto?"
+answer = "Cuéntanos un poco sobre tu empresa y lo que necesitas. Evaluaremos el alcance y te daremos un presupuesto gratuito y personalizado."
+link = "Información sobre precios"
+url = "/es/prices/"
+[[es.questions]]
+question = "¿Pueden ayudarme a cambiar de contable?"
+answer = "Sí. Planificamos la transición contigo y acordamos qué hay que transferir, quién se encarga de cada tarea y qué plazos debemos cumplir."
+[[es.questions]]
+question = "¿En qué pueden ayudar a mi empresa?"
+answer = "Te ayudamos con la contabilidad, las nóminas y declaraciones, el IVA, el cierre anual y la asesoría financiera."
+link = "Ver servicios"
+url = "/es/services/"
+[[es.questions]]
+question = "¿En qué idiomas está disponible el sitio?"
+answer = "El sitio está disponible en noruego, inglés, español y árabe. Puedes cambiar de idioma desde el menú."
+
+[ar]
+label = "اسأل Accountia"
+intro = "اختر سؤالًا للحصول على إجابة سريعة."
+close = "إغلاق المساعدة"
+contact = "اتصل بنا"
+contact_url = "/ar/contact/#contact-form"
+[[ar.questions]]
+question = "كيف أحصل على عرض سعر؟"
+answer = "أخبرنا قليلًا عن شركتك والخدمات التي تحتاج إليها. نحدد نطاق العمل ونقدم لك عرض سعر مجانيًا يناسب احتياجاتك."
+link = "اطّلع على معلومات الأسعار"
+url = "/ar/prices/"
+[[ar.questions]]
+question = "هل تساعدونني في تغيير المحاسب؟"
+answer = "نعم. نخطط للانتقال معك ونوضح ما يجب نقله، ومن يتولى كل مهمة، والمواعيد التي يجب الالتزام بها."
+[[ar.questions]]
+question = "ما الخدمات التي تقدمونها لشركتي؟"
+answer = "نساعدك في مسك الدفاتر والرواتب والتقارير وضريبة القيمة المضافة والإقفال السنوي والاستشارات المالية."
+link = "اطّلع على الخدمات"
+url = "/ar/services/"
+[[ar.questions]]
+question = "ما اللغات التي يتوفر بها الموقع؟"
+answer = "يتوفر الموقع بالنرويجية والإنجليزية والإسبانية والعربية. يمكنك تغيير اللغة من القائمة."

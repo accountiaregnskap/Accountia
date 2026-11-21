@@ -1,6 +1,15 @@
 [lang_label]
 other = "Idioma"
 
+[welcome_role]
+other = "Director general y contable autorizado"
+
+[google_reviews]
+other = "Ver reseñas en Google"
+
+[welcome_services]
+other = "En qué podemos ayudarte"
+
 [footer_contact]
 other = "Contacto"
 

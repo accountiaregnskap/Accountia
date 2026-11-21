@@ -7,15 +7,15 @@ hero_cta_primary_url: "/kontakt/#contact-form"
 hero_cta_secondary_label: "Se tjenester"
 hero_cta_secondary_url: "/tjenester/"
 hero_cards:
-  - title: "Lønn & A-melding"
+  - title: "Regnskapsføring"
+    text: "Bokføring, MVA og årsoppgjør"
+    url: "/tjenester/regnskap/"
+  - title: "Lønn og A-melding"
     text: "Trygg og korrekt lønnskjøring"
     url: "/tjenester/lonn/"
-  - title: "MVA"
-    text: "Rapportering til riktig tid"
-    url: "/tjenester/regnskap/"
-  - title: "Årsoppgjør"
-    text: "God plan, ryddig prosess"
-    url: "/tjenester/regnskap/"
+  - title: "Outsourcing"
+    text: "Avlastning for økonomifunksjonen"
+    url: "/tjenester/outsourcing/"
 ---
 
 {{< value_cards
@@ -28,8 +28,6 @@ c4i="chip" c4t="Smartere systemer" c4d="Vi jobber i Tripletex, PowerOffice, UniM
 c5i="handshake" c5t="Tilgjengelighet" c5d="Du får raskt svar og en partner som følger opp."
 c6i="target" c6t="Vekstfokus" c6d="Rådgivning som støtter beslutninger og lønnsomhet."
 >}}
-
-{{< image_slider >}}
 
 {{< process_steps
 title="Slik jobber vi – enkelt og forutsigbart"

@@ -10,6 +10,15 @@ other = "Email"
 [lang_label]
 other = "Language"
 
+[welcome_role]
+other = "Managing director and authorised accountant"
+
+[google_reviews]
+other = "See reviews on Google"
+
+[welcome_services]
+other = "How we can help"
+
 [contact_info_title]
 other = "Contact information"
 

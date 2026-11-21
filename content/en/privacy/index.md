@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+translationKey: "site-privacy"
 bg: "/images/hero.jpg"
 lead: "How we handle personal data, cookies, and security — clear and transparent."
 ---
