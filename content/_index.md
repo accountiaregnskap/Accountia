@@ -19,9 +19,6 @@ hero_cards:
     url: "/tjenester/outsourcing/"
 ---
 
-{{< industry_directory compact="true" >}}
-
-
 {{< testimonials
 title="Derfor velger kunder Accountia"
 lead="Ekte tilbakemeldinger fra kunder som bruker Accountia i hverdagen."

@@ -2,8 +2,9 @@
 {{ $services := site.Home.Params.hero_cards }}
 {{ $cta := i18n "quote_label" }}
 {{ $compact := eq (.Get "compact") "true" }}
+{{ $ui := (index site.Data.catalog .Page.Lang).ui }}
 {{ with index site.Data.industry_directory .Page.Lang }}
-<section class="industry-directory{{ if $compact }} industry-teaser{{ end }}" aria-labelledby="industry-directory-title" data-reveal>
+<section class="industry-directory{{ if $compact }} industry-teaser{{ else }} accountia-catalog{{ end }}" aria-labelledby="industry-directory-title">
   <h2 id="industry-directory-title">{{ if $compact }}{{ .homeTitle }}{{ else }}{{ .sections }}{{ end }}</h2>
   <ul class="industry-jumps" role="list">
     {{ range .items }}
@@ -13,15 +14,17 @@
   {{ if $compact }}
     <a class="industry-all" href="{{ $page.industry_url }}">{{ .homeLink }} <span aria-hidden="true">→</span></a>
   {{ else }}
-    <div class="industry-grid">
+    {{ partial "catalog-controls.html" $ui }}
+    <div class="industry-grid catalog-grid">
       {{ range .items }}
       {{ $service := index $services (int .service) }}
-      <article class="industry-card" id="{{ .id }}">
+      <article class="industry-card" id="{{ .id }}" data-catalog-item>
         <img src="/images/icons/{{ .icon }}.svg" width="24" height="24" alt="">
         <h3>{{ .name }}</h3>
         <p>{{ .details }}</p>
         <ul><li>{{ .task1 }}</li><li>{{ .task2 }}</li></ul>
-        <a href="{{ $service.url }}">{{ $service.title }} <span aria-hidden="true">→</span></a>
+        {{ with site.GetPage (printf "/tema-%s" .id) }}<a href="{{ .RelPermalink }}" aria-label="{{ $ui.read }} {{ .Title }}">{{ $ui.read }}</a>{{ end }}
+        <a class="industry-service-link" href="{{ $service.url }}">{{ $service.title }}</a>
       </article>
       {{ end }}
     </div>

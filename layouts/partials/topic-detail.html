@@ -1,0 +1,69 @@
+{{ $id := .Params.accountia_topic }}
+{{ $locale := index site.Data.catalog .Lang }}
+{{ $ui := $locale.ui }}
+{{ $topic := index $locale.topics $id }}
+{{ $info := index site.Data.catalog_topics $id }}
+{{ $guide := index site.Data.service_guide .Lang }}
+{{ $industries := index site.Data.industry_directory .Lang }}
+{{ $indexTitle := cond $info.industry $industries.title $ui.services }}
+{{ $indexUrl := cond $info.industry $guide.industry_url $guide.services }}
+<article class="topic-page{{ if $info.industry }} topic-industry{{ end }}">
+  <header class="topic-hero">
+    <div class="container topic-hero-layout">
+      <div>
+        <a class="topic-parent" href="{{ $indexUrl }}">{{ $indexTitle }}</a>
+        <h1>{{ .Title }}</h1>
+        <p>{{ $topic.lead }}</p>
+        <a class="action-main" href="{{ $locale.ui.pricingUrl }}#quote-builder">{{ i18n "quote_label" }}</a>
+      </div>
+      <div class="topic-photo">
+        <img src="/images/{{ $info.photo }}" alt="" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </header>
+  <div class="container topic-body">
+    <nav class="topic-index" aria-label="{{ $ui.onPage }}">
+      <h2>{{ $ui.onPage }}</h2>
+      <ul role="list">
+        <li><a href="#arbeidsflyt">{{ $ui.tasks }}</a></li>
+        <li><a href="#eksempel">{{ $topic.exampleTitle }}</a></li>
+        <li><a href="#forberedelse">{{ $ui.prepare }}</a></li>
+        <li><a href="#sporsmal">{{ $ui.questions }}</a></li>
+      </ul>
+      <a class="topic-index-back" href="{{ $indexUrl }}">{{ $ui.back }}</a>
+    </nav>
+    <div class="topic-content">
+      <section id="arbeidsflyt" aria-labelledby="topic-work-title">
+        <h2 id="topic-work-title">{{ $ui.tasks }}</h2>
+        <div class="topic-tasks">
+          {{ range $topic.tasks }}
+          <div class="topic-task" data-reveal><h3>{{ index . 0 }}</h3><p>{{ index . 1 }}</p></div>
+          {{ end }}
+        </div>
+      </section>
+      <section class="topic-example" id="eksempel" aria-labelledby="topic-example-title" data-reveal>
+        <h2 id="topic-example-title">{{ $topic.exampleTitle }}</h2>
+        <p>{{ $topic.example }}</p>
+      </section>
+      <section class="topic-prepare" id="forberedelse" aria-labelledby="topic-prepare-title" data-reveal>
+        <h2 id="topic-prepare-title">{{ $ui.prepare }}</h2>
+        <ul>{{ range $topic.prepare }}<li>{{ . }}</li>{{ end }}</ul>
+      </section>
+      <section class="topic-questions" id="sporsmal" aria-labelledby="topic-question-title" data-reveal>
+        <h2 id="topic-question-title">{{ $ui.questions }}</h2>
+        {{ range $topic.faq }}
+        <details><summary>{{ index . 0 }}</summary><p>{{ index . 1 }}</p></details>
+        {{ end }}
+        {{ with $info.source }}<p><a href="{{ . }}">{{ index $ui.sources $id }}</a></p>{{ end }}
+      </section>
+      <section class="topic-related" aria-labelledby="topic-related-title">
+        <h2 id="topic-related-title">{{ $ui.related }}</h2>
+        <ul role="list">
+          {{ range $info.related }}
+          {{ with site.GetPage (printf "/tema-%s" .) }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+          {{ end }}
+        </ul>
+      </section>
+    </div>
+  </div>
+</article>

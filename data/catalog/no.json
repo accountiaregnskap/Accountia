@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "explore": "Utforsk tjenester og bransjer",
+    "exploreTitle": "Hva trenger bedriften din?",
+    "exploreIntro": "Finn hjelp til en bestemt oppgave, eller se hvordan vi kan jobbe med regnskapet i bransjen din.",
+    "services": "Tjenester",
+    "serviceIntro": "Se hva du kan få hjelp med, fra løpende bokføring til årsoppgjør og økonomiske beslutninger.",
+    "industryIntro": "Se vanlige oppgaver og praktiske eksempler for seks bransjer.",
+    "search": "Filtrer oversikten",
+    "placeholder": "Søk etter tema eller oppgave",
+    "view": "Visning",
+    "cards": "Kort",
+    "list": "Liste",
+    "count": "Viser {shown} av {total}",
+    "empty": "Ingen treff. Prøv et annet søkeord eller tøm søkefeltet.",
+    "read": "Les mer om",
+    "onPage": "På denne siden",
+    "tasks": "Dette kan vi hjelpe med",
+    "prepare": "Før første samtale",
+    "questions": "Vanlige spørsmål",
+    "back": "Til oversikten",
+    "related": "Relaterte temaer",
+    "pricingUrl": "/priser/",
+    "sources": {
+      "mva": "Veiledning om mva-meldingen hos Skatteetaten",
+      "arsoppgjor": "Veiledning om innsending hos Brønnøysundregistrene"
+    }
+  },
+  "topics": {
+    "mva": {
+      "lead": "Få oversikt over dokumentasjon, avgiftskoder og avstemminger før mva-meldingen gjøres klar.",
+      "tasks": [
+        [
+          "Gå gjennom salget",
+          "Vi ser på hva du selger og hvor salget registreres. Det er særlig nyttig når fakturaer, kassasalg og nettbetalinger går gjennom ulike systemer."
+        ],
+        [
+          "Kontrollere bilag og koder",
+          "Vi avklarer hvilke kjøp og salg som må undersøkes nærmere. Sammen får vi på plass en rutine for å hente inn bilag og håndtere kreditnotaer."
+        ],
+        [
+          "Følge opp meldingen",
+          "Vi sammenholder tallene i regnskapet med grunnlaget for meldingen og avklarer hvem som godkjenner og leverer."
+        ]
+      ],
+      "exampleTitle": "Når nettbutikken utbetaler mindre enn du solgte for",
+      "example": "En bankutbetaling kan samle flere kjøp, returer og gebyrer. Rapporten fra betalingsleverandøren gir oss grunnlaget for å forklare differansen og se hvilke poster som må sjekkes.",
+      "prepare": [
+        "Fortell hvilke salgskanaler du bruker og om du er registrert i Mva-registeret.",
+        "Finn fram en salgsrapport og et eksempel på et oppgjør. Vi avtaler sikker deling ved behov."
+      ],
+      "faq": [
+        [
+          "Kan dere hjelpe med et oppsett jeg allerede bruker?",
+          "Ja. Vi begynner med å se hvordan salg og kjøp bokføres i dag, og finner ut hvilke endringer som trengs."
+        ],
+        [
+          "Hva om jeg er usikker på en utenlandsk faktura?",
+          "Beskriv hva fakturaen gjelder og hvor leverandøren holder til. Vi går gjennom dokumentasjonen før vi vurderer hvordan kjøpet skal føres."
+        ]
+      ]
+    },
+    "arsoppgjor": {
+      "lead": "Få hjelp til å gjøre ferdig regnskapet, rydde i åpne poster og avklare hva som skal leveres for bedriften din.",
+      "tasks": [
+        [
+          "Avklare hva som gjenstår",
+          "Vi ser på selskapsform, regnskapsår og hva som allerede er ført. Deretter blir vi enige om hvilke avklaringer og rapporter som inngår."
+        ],
+        [
+          "Gå gjennom balansen",
+          "Vi avstemmer relevante poster. Det kan være bank, utestående fakturaer, lån, varelager eller utstyr bedriften eier."
+        ],
+        [
+          "Gjøre klart til gjennomgang",
+          "Vi forklarer de viktigste postene og ser sammen på hva som må godkjennes. Rollen til eier, styre og eventuell revisor avklares underveis."
+        ]
+      ],
+      "exampleTitle": "Når en sen desemberfaktura kommer i januar",
+      "example": "Datoen for betaling forteller ikke hele historien. Vi ser hva fakturaen gjelder, hvilken periode kostnaden hører til, og om den allerede er fanget opp ved avslutningen.",
+      "prepare": [
+        "Finn siste saldobalanse og en oversikt over endringer i året.",
+        "Noter hva som gjenstår, for eksempel en varetelling, låneoversikt eller fakturaer som må avklares."
+      ],
+      "faq": [
+        [
+          "Kan jeg få hjelp med bare årsoppgjøret?",
+          "Vi kan vurdere det etter å ha sett hvor oppdatert regnskapet er og hvilke dokumenter som finnes."
+        ],
+        [
+          "Hva skjer hvis regnskapet ikke er ferdig ført?",
+          "Vi går gjennom hva som mangler og avklarer eventuelt oppryddingsarbeid før vi avtaler omfanget."
+        ]
+      ]
+    },
+    "radgivning": {
+      "lead": "Bruk regnskapet til å planlegge neste steg, enten du starter bedrift, skal investere eller trenger bedre oversikt over kontantstrømmen.",
+      "tasks": [
+        [
+          "Velge system og rutiner",
+          "Vi ser på hvordan du fakturerer, tar betalt og dokumenterer kjøp. Da kan vi foreslå et oppsett som passer arbeidsflyten du faktisk har."
+        ],
+        [
+          "Sette opp et budsjett",
+          "Vi tar utgangspunkt i forventede inntekter, faste utgifter og når betalingene går ut og inn. Du ser hvilke antakelser som betyr mest."
+        ],
+        [
+          "Forstå hva som driver resultatet",
+          "Vi tar for oss tall du kan bruke i en beslutning, for eksempel utviklingen i marginer eller hvor mye som er bundet opp i ubetalte fakturaer."
+        ]
+      ],
+      "exampleTitle": "Har du råd til en større investering nå?",
+      "example": "Vi kan sette opp to scenarioer med ulike tidspunkt for kjøpet. Da ser du hvordan kontobeholdningen kan utvikle seg hvis salget blir lavere eller kundene betaler senere enn planlagt.",
+      "prepare": [
+        "Skriv ned hva du vil bestemme og når du må bestemme deg.",
+        "Ta med grove anslag for pris, inntekter og betalingsdatoer hvis du har dem."
+      ],
+      "faq": [
+        [
+          "Kan vi begynne med ett spørsmål?",
+          "Ja. Vi kan avgrense den første samtalen til én beslutning og avklare om du trenger videre hjelp."
+        ],
+        [
+          "Må bedriften være i drift?",
+          "Du kan ta kontakt i planleggingsfasen. Fortell hva du skal selge, hvordan du ser for deg betaling, og om du vil ha ansatte."
+        ]
+      ]
+    },
+    "servering": {
+      "lead": "Samle kasseoppgjør, kortbetalinger og lønnsgrunnlag i en rutine som passer skiftene og hverdagen på serveringsstedet.",
+      "tasks": [
+        [
+          "Avstemme kasse og bank",
+          "Vi går gjennom dagsoppgjør, terminalrapporter og innbetalinger. Hvis noen oppgjør kommer flere dager senere, knytter vi dem til riktig salgsgrunnlag."
+        ],
+        [
+          "Følge opp leveringskanaler",
+          "Vi ser på hvordan plattformoppgjør, rabatter og gebyrer fanges opp. Først da blir det mulig å skille salgsinntektene fra det som havner på konto."
+        ],
+        [
+          "Gjøre lønnsgrunnlaget komplett",
+          "Vi avklarer hvem som godkjenner timer, tillegg og andre opplysninger før lønnskjøringen."
+        ]
+      ],
+      "exampleTitle": "Full restaurant på lørdag, oppgjør på tirsdag",
+      "example": "Ved å sammenholde kasse- og terminalrapportene med bankoppgjøret kan vi skille vanlig forsinkelse fra en differanse som bør undersøkes.",
+      "prepare": [
+        "List kassasystem, betalingsleverandører og bestillingsplattformer.",
+        "Beskriv hvem som tar dagsoppgjøret og når timelistene blir godkjent."
+      ],
+      "faq": [
+        [
+          "Kan vi beholde kassasystemet?",
+          "Vi starter med rapportene systemet gir deg. Deretter avklarer vi om dagens oppsett gir grunnlaget vi trenger."
+        ],
+        [
+          "Hvordan følger dere opp differanser?",
+          "Vi viser hvilket oppgjør det gjelder og ber om den konkrete rapporten eller forklaringen som mangler."
+        ]
+      ]
+    },
+    "handverk": {
+      "lead": "Få oversikt over timer, materialer og fakturering når flere prosjekter pågår samtidig.",
+      "tasks": [
+        [
+          "Knytte kostnader til riktig jobb",
+          "Vi hjelper deg med en enkel rutine for å merke innkjøp og fakturaer med prosjekt. Det gjør det lettere å følge materialer og underleverandører."
+        ],
+        [
+          "Samle timegrunnlaget",
+          "Vi går gjennom hvordan timer blir registrert og godkjent. Grunnlaget kan brukes både til lønn og til å følge opp fortjenesten på prosjektet."
+        ],
+        [
+          "Følge opp fakturering og betaling",
+          "Vi avklarer hvordan tilbud, endringer og fakturapunkter følges opp, og hva som skal sjekkes før neste faktura går ut."
+        ]
+      ],
+      "exampleTitle": "Én leverandørfaktura gjelder to byggeplasser",
+      "example": "Når innkjøpene merkes med prosjekt, kan kostnadene fordeles før rapporten lages. Da blir det lettere å forklare hvorfor én jobb bruker mer av budsjettet enn planlagt.",
+      "prepare": [
+        "Beskriv hvordan dere registrerer timer, innkjøp og tilleggsarbeid.",
+        "Velg én vanlig jobb vi kan bruke som eksempel på oppsett og fakturering."
+      ],
+      "faq": [
+        [
+          "Må vi begynne med et nytt system?",
+          "Vi ser først på hva verktøyene dere allerede bruker kan gjøre. En tydeligere rutine kan være nok."
+        ],
+        [
+          "Kan små oppdrag også følges opp per jobb?",
+          "Ja. Vi kan tilpasse detaljnivået til hvilke tall du trenger for å følge opp arbeidet."
+        ]
+      ]
+    },
+    "netthandel": {
+      "lead": "Knytt bestillinger, gebyrer, returer og oppgjør sammen, slik at du kan følge salget på tvers av kanaler.",
+      "tasks": [
+        [
+          "Kartlegge pengestrømmen",
+          "Vi ser hvor kundene handler, hvilke løsninger som tar betalt, og når hver leverandør betaler ut til bank."
+        ],
+        [
+          "Avstemme oppgjørsrapporter",
+          "Vi sammenholder salget med returer, kanselleringer, frakt og gebyrer. Da har vi et bedre utgangspunkt når netto utbetaling avviker fra brutto salg."
+        ],
+        [
+          "Følge opp vareflyt og dokumentasjon",
+          "Vi avklarer hvilke rapporter du har for varekjøp, varelager og eventuelt salg til utlandet, og hvilke kontroller som er relevante for oppsettet ditt."
+        ]
+      ],
+      "exampleTitle": "Returen kommer i en annen måned enn bestillingen",
+      "example": "Vi bruker ordrenummer og oppgjørsrapport til å finne igjen returen og knytte den til riktig salg. Da slipper du å lete gjennom bankinnbetalinger alene.",
+      "prepare": [
+        "List nettbutikker, markedsplasser og betalingsløsninger.",
+        "Finn fram en rapport som viser både salg, returer og gebyrer."
+      ],
+      "faq": [
+        [
+          "Kan dere jobbe med flere butikker?",
+          "Vi kan vurdere det når vi har sett rapportene for hver kanal og hvordan de samles i regnskapet."
+        ],
+        [
+          "Hva med salg til utlandet?",
+          "Fortell hvor kundene holder til og hvordan varene sendes. Vi går gjennom hvilke spørsmål om dokumentasjon og avgift som må avklares."
+        ]
+      ]
+    },
+    "konsulent": {
+      "lead": "Hold oversikt over fakturerbar tid, oppdragskostnader og innbetalinger med en rutine som tar lite tid fra kundearbeidet.",
+      "tasks": [
+        [
+          "Fakturere på riktig grunnlag",
+          "Vi avklarer hvordan timer, milepæler og faste honorarer blir til fakturaer. Du får en arbeidsdeling mellom det du godkjenner og det vi følger opp."
+        ],
+        [
+          "Koble utlegg til oppdrag",
+          "Vi går gjennom hvordan reiser, innkjøp og abonnementer dokumenteres, og hvordan kostnader som skal viderefaktureres fanges opp."
+        ],
+        [
+          "Planlegge med varierende inntekt",
+          "Vi kan bruke forventede betalingsdatoer og faste kostnader for å få bedre oversikt mellom oppdragene."
+        ]
+      ],
+      "exampleTitle": "Oppdraget er ferdig, men siste faktura er ikke sendt",
+      "example": "En enkel gjennomgang av ferdige milepæler og fakturalisten viser hva som fortsatt skal faktureres. Det gjør også kontantstrømmen lettere å planlegge.",
+      "prepare": [
+        "Beskriv hvordan du tar betalt og hvor ofte du fakturerer.",
+        "Noter hvilke kostnader du vanligvis legger ut for på vegne av kundene."
+      ],
+      "faq": [
+        [
+          "Kan dere hjelpe et enkeltpersonforetak?",
+          "Ja. Vi tilpasser omfanget til hvor mange oppdrag du har, hvordan du fakturerer og hvilke oppgaver du vil gjøre selv."
+        ],
+        [
+          "Kan jeg fakturere selv?",
+          "Ja. Vi avtaler hvem som gjør hvilke oppgaver, og hvordan fakturaer og innbetalinger følges opp."
+        ]
+      ]
+    },
+    "transport": {
+      "lead": "Følg opp inntekter, sjåførgrunnlag og driftskostnader for kjøretøyene med en samlet rutine.",
+      "tasks": [
+        [
+          "Kontrollere oppgjør",
+          "Vi går gjennom hvordan oppdrag og avregninger blir til faktura og innbetaling, særlig hvis du får oppgjør fra flere kunder eller plattformer."
+        ],
+        [
+          "Sortere løpende kostnader",
+          "Vi avklarer hvordan drivstoff, bompasseringer, leasing og vedlikehold kan merkes, for eksempel per bil hvis det gir nyttig styringsinformasjon."
+        ],
+        [
+          "Få oversikt før neste investering",
+          "Med oversikt over de største utgiftene kan du lettere sammenligne kostnader og vurdere hva et bytte av kjøretøy betyr for likviditeten."
+        ]
+      ],
+      "exampleTitle": "Hvilken bil koster mest å holde i drift?",
+      "example": "Hvis bilagene knyttes til riktig bil, kan vi sammenligne de løpende kostnadene og finne postene som forklarer forskjellen.",
+      "prepare": [
+        "Lag en liste over kjøretøy og hvordan de er finansiert.",
+        "Beskriv hvordan oppdrag, lønn og reisekostnader registreres i dag."
+      ],
+      "faq": [
+        [
+          "Kan rapportene deles per bil?",
+          "Vi avtaler om det er nyttig og hvordan inntekter og kostnader kan merkes på en konsekvent måte."
+        ],
+        [
+          "Kan dere hjelpe med både regnskap og lønn?",
+          "Ja. Vi avklarer hva du trenger, hvilket grunnlag dere har og hvem som godkjenner det før lønnskjøring."
+        ]
+      ]
+    },
+    "eiendom": {
+      "lead": "Hold orden på leieinntekter, driftskostnader og vedlikehold, enten du følger opp én enhet eller flere.",
+      "tasks": [
+        [
+          "Avstemme avtaler og innbetalinger",
+          "Vi bruker avtalt leie og informasjon om endringer for å følge opp innbetalinger, restanser og avvik."
+        ],
+        [
+          "Skille utgiftene i driften",
+          "Vi avklarer hvordan felleskostnader, forsikring og vedlikehold merkes, slik at du ser hva som tilhører hver eiendom."
+        ],
+        [
+          "Samle grunnlaget før årsoppgjøret",
+          "Vi går gjennom relevante avtaler og dokumenter for lån, større arbeid og vederlag, og avklarer hvilke forhold som må vurderes."
+        ]
+      ],
+      "exampleTitle": "Et større arbeid gjelder to utleieenheter",
+      "example": "Når oppdraget er beskrevet og fakturaen fordelt, er det enklere å følge kostnader på hver enhet og dokumentere vurderingene ved årsoppgjøret.",
+      "prepare": [
+        "Skriv ned hva du leier ut og hva slags leieavtaler du har.",
+        "Beskriv hvordan du følger leieinnbetalinger og felleskostnader i dag."
+      ],
+      "faq": [
+        [
+          "Kan rapportene deles per eiendom?",
+          "Ja, vi kan vurdere et oppsett per eiendom eller enhet hvis inntekter og kostnader kan identifiseres."
+        ],
+        [
+          "Hvordan håndterer vi en stor oppussing?",
+          "Forklar hva som er gjort og ta vare på spesifiserte fakturaer. Vi gjennomgår hva som må avklares for regnskapet."
+        ]
+      ]
+    }
+  }
+}
