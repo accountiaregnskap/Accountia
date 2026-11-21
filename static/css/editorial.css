@@ -80,6 +80,7 @@ html[dir="rtl"] .visual-service-copy { padding: 17px 17px 18px 41px; }
 .visual-service-title { font-size: 1.04rem; font-weight: 800; line-height: 1.33; }
 .visual-service-lead { font-size: .875rem; line-height: 1.48; color: #40556a; }
 .visual-service-arrow { position: absolute; inset-inline-end: 15px; inset-block-start: 14px; color: #744e17; }
+html[dir="rtl"] :is(.visual-service-arrow,.action-main > span) { transform: scaleX(-1); }
 
 .service-guide {
   display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); align-items: center;
