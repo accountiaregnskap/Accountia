@@ -1,9 +1,0 @@
-{{ $links := index site.Data.service_guide .Lang }}
-{{ $industries := index site.Data.industry_directory .Lang }}
-<nav class="home-index" aria-label="{{ i18n "guide_title" }}">
-  <div class="container home-index-links">
-    <a href="{{ $links.industry_url }}">{{ $industries.title }}<span aria-hidden="true"></span></a>
-    <a href="{{ $links.switch_url }}">{{ i18n "switch_accountant" }}<span aria-hidden="true"></span></a>
-    <a href="{{ $links.contact }}#contact-form">{{ i18n "footer_contact" }}<span aria-hidden="true"></span></a>
-  </div>
-</nav>

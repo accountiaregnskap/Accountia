@@ -6,6 +6,7 @@
 {{ $year := (site.GetPage "/tema-arsoppgjor").RelPermalink }}
 {{ $advice := (site.GetPage "/tema-radgivning").RelPermalink }}
 {{ $links := slice $book $payroll $vat $year $backOffice $advice }}
+{{ $photos := slice (index $services 0).photo (index $services 1).photo "accountia-planlegging.jpg" "accountia-plan.jpg" (index $services 2).photo "accountia-samarbeid.jpg" }}
 {{ $ui := (index site.Data.catalog .Page.Lang).ui }}
 <section class="svc-wrap accountia-catalog" aria-labelledby="service-catalog-title">
   <div class="svc-head">
@@ -20,6 +21,7 @@
       {{ $di := printf "c%dd" $n }}
       {{ $ii := printf "c%di" $n }}
       <a class="svc-card service-topic-link" data-catalog-item href="{{ index $links $i }}">
+        <span class="catalog-card-photo"><img src="/images/{{ index $photos $i }}" width="840" height="560" alt="" loading="lazy" decoding="async"></span>
         {{ with ($.Get $ii) }}<img class="svc-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
         <h3>{{ $.Get $ti }}</h3>
         <p>{{ $.Get $di }}</p>

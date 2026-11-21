@@ -19,6 +19,8 @@
       {{ range .items }}
       {{ $service := index $services (int .service) }}
       <article class="industry-card" id="{{ .id }}" data-catalog-item>
+        {{ $details := index site.Data.catalog_topics .id }}
+        <div class="catalog-card-photo"><img src="/images/{{ $details.photo }}" width="840" height="560" alt="" loading="lazy" decoding="async"></div>
         <img src="/images/icons/{{ .icon }}.svg" width="24" height="24" alt="">
         <h3>{{ .name }}</h3>
         <p>{{ .details }}</p>

@@ -3,6 +3,10 @@
   {{ if eq .url $.RelPermalink }}{{ $photo = .photo }}{{ end }}
 {{ end }}
 {{ $key := .Params.translationKey }}
+{{ if not $photo }}
+  {{ $overviewPhotos := dict "site-services" "accountia-regnskap-detalj.jpg" "site-industry" "accountia-transport.jpg" "site-prices" "accountia-plan.jpg" "site-contact" "accountia-samarbeid.jpg" }}
+  {{ if $key }}{{ $photo = index $overviewPhotos $key | default "" }}{{ end }}
+{{ end }}
 {{ $catalog := or (eq $key "site-services") (eq $key "site-industry") }}
 {{ $contact := or (eq $key "site-prices") (eq $key "site-contact") }}
 <section class="title-band{{ if $photo }} title-band--photo{{ end }}{{ if $catalog }} title-band--directory{{ end }}{{ if $contact }} title-band--inquiry{{ end }}">
@@ -12,7 +16,7 @@
       {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
     </div>
     {{ with $photo }}
-      <div class="title-band-media"><img src="/images/{{ . }}" width="840" height="560" alt="" decoding="async"></div>
+      <div class="title-band-media"><img src="/images/{{ . }}" width="840" height="560" alt="" decoding="async" fetchpriority="high"></div>
     {{ end }}
   </div>
 </section>
