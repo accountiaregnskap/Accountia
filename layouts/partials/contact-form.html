@@ -63,6 +63,7 @@
         <label for="message">{{ i18n "form_message" }}</label>
         <textarea id="message" name="message" rows="6" placeholder="{{ i18n "form_message_ph" }}" required></textarea>
         {{ with index site.Data.service_guide .Lang }}<script type="application/json" class="guide-contact-data">{{ .cases | jsonify | safeJS }}</script>{{ end }}
+        {{ with index site.Data.quote_builder .Lang }}<script type="application/json" class="quote-data">{{ . | jsonify | safeJS }}</script>{{ end }}
 
         <button type="submit" class="btn btn-primary">{{ i18n "form_send" }}</button>
       </form>

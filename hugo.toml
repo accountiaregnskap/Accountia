@@ -77,7 +77,7 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
 
     [languages.no.menu]
       [[languages.no.menu.main]]
-        name = "Forside"
+        name = "Hjem"
         url = "/"
         weight = 1
       [[languages.no.menu.main]]

@@ -3,7 +3,7 @@ title: "Accountia"
 hero_title: "أرقام تفهمها. أشخاص تعرفهم."
 hero_lead: "محاسبة ورواتب للشركات الصغيرة والمتوسطة. تتعامل مع محاسب يعرف شركتك ويشرح لك الأرقام بوضوح."
 hero_cta_primary_label: "اطلب عرض سعر"
-hero_cta_primary_url: "/ar/contact/#contact-form"
+hero_cta_primary_url: "/ar/prices/#quote-builder"
 hero_cards:
   - title: "المحاسبة والإقفال السنوي"
     photo: "accountia-regnskap-detalj.jpg"
@@ -18,16 +18,6 @@ hero_cards:
     text: "فوّض المهام التي تحتاج إلى دعم فيها، من الفوترة إلى إعداد التقارير."
     url: "/ar/services/outsourcing/"
 ---
-
-{{< process_steps
-title="كيف نعمل — بشكل بسيط وواضح"
-lead="ستحصل على مسؤول اتصال ثابت، مواعيد واضحة، وإعداد يناسب نشاطك."
-s1i="target" s1t="جلسة البداية" s1d="نحدد احتياجاتك والأنظمة والمواعيد — ونضع خطة عمل واضحة."
-s2i="chip" s2t="الإعداد" s2d="نجهز دليل الحسابات والإجراءات والتكاملات والصلاحيات."
-s3i="clock" s3t="متابعة شهرية" s3d="نقوم بالتسجيل والمطابقة والمتابعة — شهرًا بشهر."
-s4i="chart" s4t="تقارير ونصائح" s4d="تحصل على مؤشرات ونصائح عملية لدعم قراراتك."
->}}
-
 
 {{< industry_directory compact="true" >}}
 

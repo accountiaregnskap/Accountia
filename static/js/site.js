@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const contactData = document.querySelector(".guide-contact-data");
   const message = document.getElementById("message");
-  if (contactData && message && !message.value) {
-    const selected = new URLSearchParams(location.search).get("behov");
+  const params = new URLSearchParams(location.search);
+  if (contactData && message && !message.value && params.get("tilbud") !== "1") {
+    const selected = params.get("behov");
     const match = JSON.parse(contactData.textContent).find(({ id }) => id === selected);
     if (match) message.value = match.message;
   }
@@ -39,6 +40,79 @@ document.addEventListener("DOMContentLoaded", () => {
     checklist.addEventListener("change", updateCount);
     updateCount();
     bar.hidden = false;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const month = document.querySelector(".working-month");
+  if (!month) return;
+
+  const controls = month.querySelector(".month-controls");
+  const buttons = Array.from(controls.querySelectorAll("button"));
+  const panels = Array.from(month.querySelectorAll(".month-panel"));
+  function showStep(active) {
+    buttons.forEach((button, index) => {
+      button.setAttribute("aria-pressed", String(index === active));
+      panels[index].hidden = index !== active;
+    });
+    controls.style.setProperty("--month-progress", (active + 1) / buttons.length);
+  }
+
+  buttons.forEach((button, index) => button.addEventListener("click", () => showStep(index)));
+  showStep(0);
+  controls.hidden = false;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const data = document.querySelector(".quote-data");
+  if (!data) return;
+  const quote = JSON.parse(data.textContent);
+  const makeRows = (params) => {
+    const rows = [];
+    for (const field of quote.fields) {
+      const option = field.options.find(({ id }) => id === params.get(field.name));
+      if (option) rows.push([field.label, option.label]);
+    }
+
+    const requested = params.getAll("tjeneste");
+    const services = quote.options.filter(({ id }) => requested.includes(id)).map(({ label }) => label);
+    if (services.length) {
+      const list = new Intl.ListFormat(document.documentElement.lang).format(services);
+      rows.push([quote.servicesLabel, list]);
+    }
+    return rows;
+  };
+
+  const form = document.querySelector(".quote-form");
+  if (form) {
+    const empty = form.querySelector(".quote-empty");
+    const list = form.querySelector("dl");
+    function updateSummary() {
+      const rows = makeRows(new FormData(form));
+      const details = rows.map(([label, value]) => {
+        const row = document.createElement("div");
+        const term = document.createElement("dt");
+        const definition = document.createElement("dd");
+        term.textContent = label;
+        definition.textContent = value;
+        row.append(term, definition);
+        return row;
+      });
+      list.replaceChildren(...details);
+      empty.hidden = details.length !== 0;
+      list.hidden = details.length === 0;
+    }
+    form.addEventListener("change", updateSummary);
+    window.addEventListener("pageshow", updateSummary);
+    updateSummary();
+    form.hidden = false;
+  }
+
+  const message = document.querySelector(".contact-form textarea[name='message']");
+  const params = new URLSearchParams(location.search);
+  if (message && !message.value && params.get("tilbud") === "1") {
+    const rows = makeRows(params);
+    message.value = [quote.message, ...rows.map(([label, value]) => `${label}: ${value}`)].join("\n");
   }
 });
 

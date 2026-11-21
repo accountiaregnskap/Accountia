@@ -1,0 +1,106 @@
+{
+  "no": {
+    "title": "En måned med Accountia",
+    "lead": "Se hvordan vi kan samarbeide fra første bilag til ferdig rapport.",
+    "example": "For eksempel:",
+    "services": "Se alle tjenester",
+    "steps": [
+      {
+        "label": "Bilag og dokumentasjon",
+        "title": "Du leverer bilag underveis",
+        "text": "Vi blir enige om hvor du sender kvitteringer, fakturaer og andre bilag. Da vet både du og vi hvor dokumentasjonen ligger når et kjøp eller en betaling må sjekkes.",
+        "example": "Har du lagt ut for et innkjøp? Send kvitteringen og skriv kort hva kjøpet gjaldt."
+      },
+      {
+        "label": "Bokføring og avstemming",
+        "title": "Vi sjekker at tallene stemmer",
+        "text": "Vi bokfører bilagene og sammenholder posteringene med blant annet bank og betalinger. Mangler det dokumentasjon, følger vi opp med en konkret forespørsel.",
+        "example": "Vi kan finne fakturaen en innbetaling gjelder, eller spørre deg om en betaling vi ikke finner bilag til."
+      },
+      {
+        "label": "Rapporter og oppfølging",
+        "title": "Du får oversikt før neste måned",
+        "text": "Vi går gjennom hvordan bedriften ligger an, i tråd med rapporteringen vi har avtalt. Du kan spørre den faste kontaktpersonen din om tall som skiller seg ut.",
+        "example": "Hvis salget øker samtidig som det blir mindre på konto, kan vi se på hvilke inn- og utbetalinger som forklarer forskjellen."
+      }
+    ]
+  },
+  "en": {
+    "title": "A month with Accountia",
+    "lead": "See how we can work together from the first receipt to the finished report.",
+    "example": "For example:",
+    "services": "Explore all services",
+    "steps": [
+      {
+        "label": "Receipts and records",
+        "title": "You send records as you go",
+        "text": "We agree on where to send receipts, invoices and other records. Everyone knows where to look when a purchase or payment needs checking.",
+        "example": "Paid for a business purchase yourself? Send the receipt with a short note about the expense."
+      },
+      {
+        "label": "Bookkeeping and reconciliation",
+        "title": "We check that the numbers match",
+        "text": "We record the documents and reconcile the entries against sources such as bank statements and payments. If a record is missing, we ask for the specific item we need.",
+        "example": "We can match a payment to its invoice or ask you for the receipt behind an unfamiliar transaction."
+      },
+      {
+        "label": "Reports and follow-up",
+        "title": "You can see how the business is doing",
+        "text": "We review how the business is doing in line with the reporting we agreed on. You can ask your regular contact about any figures that stand out.",
+        "example": "If sales rise while cash falls, we can look at which incoming and outgoing payments explain the difference."
+      }
+    ]
+  },
+  "es": {
+    "title": "Un mes con Accountia",
+    "lead": "Así podemos colaborar desde el primer justificante hasta el informe.",
+    "example": "Por ejemplo:",
+    "services": "Ver todos los servicios",
+    "steps": [
+      {
+        "label": "Justificantes y facturas",
+        "title": "Nos envías los documentos al día",
+        "text": "Acordamos dónde enviar los recibos, las facturas y otros justificantes. Así todos sabemos dónde encontrar la documentación cuando hay que revisar un gasto o un pago.",
+        "example": "Si adelantaste dinero para una compra de la empresa, envíanos el recibo e indica brevemente de qué se trataba."
+      },
+      {
+        "label": "Registro y conciliación",
+        "title": "Comprobamos que las cifras cuadren",
+        "text": "Registramos los justificantes y contrastamos los apuntes con los movimientos bancarios y los pagos. Si falta documentación, te indicamos cuál necesitamos.",
+        "example": "Podemos vincular un cobro con su factura o pedirte el justificante de un cargo que no tenemos identificado."
+      },
+      {
+        "label": "Informes y seguimiento",
+        "title": "Ves cómo va el negocio",
+        "text": "Revisamos la evolución de la empresa según los informes que hayamos acordado. Puedes preguntar a tu persona de contacto por las cifras que te llamen la atención.",
+        "example": "Si suben las ventas y baja el saldo de la cuenta, podemos revisar qué cobros y pagos explican la diferencia."
+      }
+    ]
+  },
+  "ar": {
+    "title": "شهر مع Accountia",
+    "lead": "تعرّف على طريقة تعاوننا، من إرسال أول إيصال إلى مراجعة التقرير.",
+    "example": "على سبيل المثال:",
+    "services": "اطّلع على جميع الخدمات",
+    "steps": [
+      {
+        "label": "المستندات والفواتير",
+        "title": "ترسل المستندات أولًا بأول",
+        "text": "نتفق على مكان إرسال الإيصالات والفواتير والمستندات الأخرى، حتى يسهل على الجميع الرجوع إليها عند مراجعة عملية شراء أو دفعة.",
+        "example": "إذا دفعت من مالك الخاص مقابل مشتريات للشركة، أرسل الإيصال واكتب وصفًا موجزًا للمشتريات."
+      },
+      {
+        "label": "مسك الدفاتر والمطابقة",
+        "title": "نتحقق من تطابق الأرقام",
+        "text": "نسجّل المستندات ونطابق القيود مع كشوف الحساب البنكي والمدفوعات. وإذا نقص مستند، نوضح لك ما نحتاج إليه.",
+        "example": "يمكننا مطابقة دفعة واردة مع فاتورتها أو أن نطلب منك مستندًا لدفعة لا نجد لها إيصالًا."
+      },
+      {
+        "label": "التقارير والمتابعة",
+        "title": "تتكوّن لديك صورة أوضح عن أداء شركتك",
+        "text": "نراجع أداء الشركة بحسب التقارير التي اتفقنا عليها. يمكنك سؤال مسؤول التواصل معك عن الأرقام التي لفتت انتباهك.",
+        "example": "إذا زادت المبيعات وانخفض رصيد الحساب، يمكننا مراجعة المقبوضات والمدفوعات لمعرفة سبب الفرق."
+      }
+    ]
+  }
+}
