@@ -18,12 +18,52 @@ address = "Kvernhusmyrane 1, 5914 Isdalstø"
 orgnr = "936 229 239"
 openhours = "Åpent 08:00–16:00 (man–fre)"
 
+[[module.mounts]]
+  source = "content"
+  target = "content"
+  files = ["! ar/**", "! en/**", "! es/**"]
+  [module.mounts.sites.matrix]
+    languages = ["no"]
+
+[[module.mounts]]
+  source = "content/en"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["en"]
+
+[[module.mounts]]
+  source = "content/es"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["es"]
+
+[[module.mounts]]
+  source = "content/ar"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["ar"]
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
+
+[[module.mounts]]
+  source = "i18n"
+  target = "i18n"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
 [languages]
 
   [languages.no]
     languageName = "Norsk"
     weight = 1
-    contentDir = "content"
     [languages.no.params]
       siteName = "Accountia"
       description = "Regnskapstjenester og økonomisk rådgivning for bedrifter. Effektivt, trygt og tilgjengelig."
@@ -64,7 +104,6 @@ openhours = "Åpent 08:00–16:00 (man–fre)"
   [languages.en]
     languageName = "English"
     weight = 2
-    contentDir = "content/en"
     [languages.en.params]
       siteName = "Accountia"
       description = "Accounting services and financial advisory for businesses. Efficient, reliable, and accessible."
@@ -107,7 +146,6 @@ disableKinds = ["taxonomy", "term"]
 [languages.es]
 languageName = "Español"
 weight = 3
-contentDir = "content/es"
 
 [languages.es.params]
   siteName = "Accountia"
@@ -149,7 +187,6 @@ weight = 6
 languageDirection = "rtl"
 languageName = "العربية"
 weight = 4
-contentDir = "content/ar"
 
 [languages.ar.params]
   siteName = "Accountia"
