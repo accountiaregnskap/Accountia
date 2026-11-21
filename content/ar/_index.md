@@ -6,15 +6,15 @@ hero_cta_primary_label: "اطلب عرض سعر"
 hero_cta_primary_url: "/ar/contact/#contact-form"
 hero_cards:
   - title: "المحاسبة والإقفال السنوي"
-    photo: "accountia-samarbeid.jpg"
+    photo: "accountia-regnskap-detalj.jpg"
     text: "نساعدك في مسك الدفاتر وتقارير ضريبة القيمة المضافة والإقفال السنوي."
     url: "/ar/services/accounting/"
   - title: "الرواتب والتقارير"
-    photo: "accountia-lonn.jpg"
+    photo: "accountia-butikk-detalj.jpg"
     text: "نتولى إعداد الرواتب ومتابعة التقارير الدورية."
     url: "/ar/services/payroll/"
   - title: "دعم القسم المالي"
-    photo: "accountia-bedrift.jpg"
+    photo: "accountia-bedrift-detalj.jpg"
     text: "فوّض المهام التي تحتاج إلى دعم فيها، من الفوترة إلى إعداد التقارير."
     url: "/ar/services/outsourcing/"
 ---
@@ -29,11 +29,7 @@ s4i="chart" s4t="تقارير ونصائح" s4d="تحصل على مؤشرات و
 >}}
 
 
-{{< industry_pills
-title="لمن نقدم خدماتنا"
-lead="للشركات الصغيرة والمتوسطة التي تريد وضوحًا وسيطرة دون ضغط."
-items="مؤسسة فردية, شركات, استشارات, مقاولات, تجارة إلكترونية, نقل, قطاع صحي, مطاعم, عقارات"
->}}
+{{< industry_directory compact="true" >}}
 
 
 {{< testimonials

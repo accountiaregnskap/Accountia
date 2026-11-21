@@ -6,15 +6,15 @@ hero_cta_primary_label: "Be om pristilbud"
 hero_cta_primary_url: "/kontakt/#contact-form"
 hero_cards:
   - title: "Regnskap og årsoppgjør"
-    photo: "accountia-samarbeid.jpg"
+    photo: "accountia-regnskap-detalj.jpg"
     text: "Vi fører regnskapet, følger opp MVA og gjør klart årsoppgjøret."
     url: "/tjenester/regnskap/"
   - title: "Lønn og A-melding"
-    photo: "accountia-lonn.jpg"
+    photo: "accountia-butikk-detalj.jpg"
     text: "Vi kjører lønn og følger opp rapporteringen."
     url: "/tjenester/lonn/"
   - title: "Avlastning i økonomiarbeidet"
-    photo: "accountia-bedrift.jpg"
+    photo: "accountia-bedrift-detalj.jpg"
     text: "Sett bort det du trenger, fra fakturering til løpende rapportering."
     url: "/tjenester/outsourcing/"
 ---
@@ -29,11 +29,7 @@ s4i="chart" s4t="Rapporter og råd" s4d="Du får innsikt, nøkkeltall og anbefal
 >}}
 
 
-{{< industry_pills
-title="Hvem vi hjelper"
-lead="Små og mellomstore virksomheter som vil ha kontroll uten stress."
-items="ENK, AS, Konsulent, Håndverker, Netthandel, Transport, Helse, Restauranter, Eiendom"
->}}
+{{< industry_directory compact="true" >}}
 
 
 {{< testimonials

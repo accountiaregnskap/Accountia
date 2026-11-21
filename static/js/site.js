@@ -1,5 +1,3 @@
-// Close the mobile menu and language dropdown when navigating.
-// Helps avoid the "curtain/drawer" staying open after switching language on some browsers.
 document.addEventListener("DOMContentLoaded", () => {
   const guide = document.querySelector(".service-guide");
   if (guide) {
@@ -13,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     choices.forEach((choice, index) => choice.addEventListener("click", () => select(index)));
-    select(0);
+    const requested = new URLSearchParams(location.search).get("behov");
+    const index = results.findIndex((result) => result.id === "guide-" + requested);
+    select(Math.max(0, index));
     toolbar.hidden = false;
   }
 
@@ -24,36 +24,64 @@ document.addEventListener("DOMContentLoaded", () => {
     const match = JSON.parse(contactData.textContent).find(({ id }) => id === selected);
     if (match) message.value = match.message;
   }
+
+  const checklist = document.querySelector(".switch-checklist");
+  if (checklist) {
+    const choices = Array.from(checklist.querySelectorAll('input[type="checkbox"]'));
+    const bar = checklist.querySelector(".switch-progress");
+    const progress = bar.querySelector("progress");
+    const output = bar.querySelector("output");
+    function updateCount() {
+      const done = choices.filter((choice) => choice.checked).length;
+      progress.value = done;
+      output.textContent = bar.dataset.count.replace("{done}", done).replace("{total}", choices.length);
+    }
+    checklist.addEventListener("change", updateCount);
+    updateCount();
+    bar.hidden = false;
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const navToggle = document.getElementById("nav-toggle");
-  const langDetails = document.querySelector(".lang-dd details");
-
-  const closeAll = () => {
-    if (navToggle) navToggle.checked = false;
-    if (langDetails) langDetails.removeAttribute("open");
-  };
-
-  document.querySelectorAll(".nav a, .lang-dd a").forEach((a) => {
-    a.addEventListener("click", () => {
-      // close immediately before navigation
-      closeAll();
+  const header = document.querySelector(".brandbar");
+  if (!header) return;
+  const menus = Array.from(header.querySelectorAll("details")).reverse();
+  const closeOutside = ({ target }) => {
+    menus.forEach((menu) => {
+      if (menu.open && !menu.contains(target)) menu.open = false;
     });
+  };
+  document.addEventListener("pointerdown", closeOutside);
+  document.addEventListener("focusin", closeOutside);
+  header.addEventListener("click", (event) => {
+    if (event.target.closest("a")) menus.forEach((menu) => { menu.open = false; });
   });
+  header.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const open = menus.find((menu) => menu.open && menu.contains(event.target));
+    if (!open) return;
+    event.preventDefault();
+    open.open = false;
+    open.querySelector("summary").focus();
+  });
+  matchMedia("(min-width: 1061px)").addEventListener("change", () => {
+    menus.forEach((menu) => { menu.open = false; });
+  });
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) menus.forEach((menu) => { menu.open = false; });
+  });
+});
 
-  // Close dropdown if user clicks outside
-  document.addEventListener("click", (e) => {
-    if (!langDetails) return;
-    if (!langDetails.contains(e.target)) {
-      langDetails.removeAttribute("open");
+document.addEventListener("DOMContentLoaded", () => {
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("motion-in");
+      observer.unobserve(entry.target);
     }
-  });
-
-  // Close dropdown on Escape
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeAll();
-  });
+  }, { threshold: 0.04 });
+  document.querySelectorAll("[data-reveal]").forEach((section) => observer.observe(section));
 });
 
 document.addEventListener("DOMContentLoaded", () => {

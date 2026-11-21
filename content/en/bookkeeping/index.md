@@ -28,6 +28,7 @@ lead: "Bookkeeping that gives you control, reliable numbers, and less admin."
 >}}
 
 {{< service_bento
+  anchor="mva"
   variant="line"
   tag="VAT"
   title="VAT reporting with control of the basis, deadlines, and filing"
@@ -39,6 +40,7 @@ lead: "Bookkeeping that gives you control, reliable numbers, and less admin."
 >}}
 
 {{< service_bento
+  anchor="arsoppgjor"
   variant="soft"
   tag="Annual accounts"
   title="Year-end work that is planned well and completed in a structured way"
@@ -48,6 +50,8 @@ lead: "Bookkeeping that gives you control, reliable numbers, and less admin."
   c3k="Follow-up" c3t="Close cooperation when answers are needed" c3d="We clearly communicate if documentation or decisions are missing, so the process can move forward without unnecessary stops."
   c4k="Confidence" c4t="A more predictable year-end closing" c4d="When bookkeeping, VAT, and annual accounts are managed together, the full delivery becomes more stable, cleaner, and easier for your business to follow."
 >}}
+
+{{< advisory_section >}}
 
 {{< services_faq
   title="Common questions about bookkeeping"

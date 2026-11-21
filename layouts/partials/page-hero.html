@@ -1,12 +1,15 @@
-{{ $hasPhoto := eq .Params.translationKey "site-services" }}
-<section class="title-band{{ if $hasPhoto }} title-band--photo{{ end }}">
+{{ $photo := "" }}
+{{ range site.Home.Params.hero_cards }}
+  {{ if eq .url $.RelPermalink }}{{ $photo = .photo }}{{ end }}
+{{ end }}
+<section class="title-band{{ if $photo }} title-band--photo{{ end }}">
   <div class="container">
     <div>
       <h1>{{ .Title }}</h1>
       {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
     </div>
-    {{ if $hasPhoto }}
-      <img src="/images/accountia-bedrift.jpg" width="840" height="560" alt="" decoding="async">
+    {{ with $photo }}
+      <img src="/images/{{ . }}" width="840" height="560" alt="" decoding="async">
     {{ end }}
   </div>
 </section>

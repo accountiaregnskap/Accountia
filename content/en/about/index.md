@@ -5,6 +5,15 @@ bg: "/images/hero.jpg"
 lead: "Meet your accountant and learn how we work with your business."
 ---
 
+{{< anchor_point id="who-we-are" >}}
+{{< about_split name="Ayham Layous" role="Managing Director" image="/images/accountia-portrait-full.jpg" >}}
+I am the Managing Director and a state-authorized accountant with a master’s degree in Economics and Accounting, and solid experience in accounting, financial management, and advisory services. I work in an analytical and structured way, and I focus on accounting that creates real value — not just compliance, but a practical management tool for better control and decision-making.
+
+Quality, accuracy, and predictability are central in everything I do. I work closely with clients to ensure clear oversight, healthy finances, and confident decisions, and I’m known for being accessible, direct, and solution-oriented.
+
+To me, great accounting is about trust, professional strength, and long-term collaboration.
+{{< /about_split >}}
+
 {{< anchor_point id="why-choose-us" >}}
 {{< value_cards
 title="Why do clients choose us?"
@@ -27,12 +36,3 @@ c6i="clock" c6t="Availability" c6d="Fast responses, clear clarifications, and co
   c3k="Systems" c3t="Digital tools that actually work" c3d="We use modern solutions that improve documentation flow, reporting, and cooperation."
   c4k="Value" c4t="More than reporting" c4d="The goal is for the numbers to be useful in practice, giving you better insight and more confident decisions."
 >}}
-
-{{< anchor_point id="who-we-are" >}}
-{{< about_split name="Ayham Layous" role="Managing Director" image="/images/accountia-portrait-full.jpg" >}}
-I am the Managing Director and a state-authorized accountant with a master’s degree in Economics and Accounting, and solid experience in accounting, financial management, and advisory services. I work in an analytical and structured way, and I focus on accounting that creates real value — not just compliance, but a practical management tool for better control and decision-making.
-
-Quality, accuracy, and predictability are central in everything I do. I work closely with clients to ensure clear oversight, healthy finances, and confident decisions, and I’m known for being accessible, direct, and solution-oriented.
-
-To me, great accounting is about trust, professional strength, and long-term collaboration.
-{{< /about_split >}}

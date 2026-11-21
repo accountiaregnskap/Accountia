@@ -1,0 +1,258 @@
+{
+  "no": {
+    "title": "Bransjer",
+    "homeTitle": "Regnskap i din bransje",
+    "homeLink": "Les om bransjene",
+    "sections": "Gå til en bransje",
+    "advisoryTitle": "Rådgivning og oppstart",
+    "advisory": "Vi kan gå gjennom tallene med deg, snakke om likviditet og budsjett, og hjelpe deg med å velge system og rutiner ved oppstart.",
+    "items": [
+      {
+        "id": "servering",
+        "icon": "clock",
+        "name": "Restaurant og kafé",
+        "details": "Få oversikt over dagsoppgjør, bilag og lønn når det skjer mye i driften.",
+        "task1": "Dagsoppgjør og betalinger",
+        "task2": "Lønn og A-melding",
+        "service": 1
+      },
+      {
+        "id": "handverk",
+        "icon": "target",
+        "name": "Håndverk og bygg",
+        "details": "Hold orden på dokumentasjon og kostnader når flere jobber pågår samtidig.",
+        "task1": "Bilag og leverandørfakturaer",
+        "task2": "Lønn og rapportering",
+        "service": 0
+      },
+      {
+        "id": "netthandel",
+        "icon": "chip",
+        "name": "Netthandel",
+        "details": "Samle salget fra nettbutikken og få en tydeligere oversikt over oppgjør og gebyrer.",
+        "task1": "Oppgjør fra betalingsløsninger",
+        "task2": "Fakturaer, returer og rapporter",
+        "service": 2
+      },
+      {
+        "id": "konsulent",
+        "icon": "chart",
+        "name": "Konsulenter",
+        "details": "Bruk mindre tid på administrasjon og få bedre oversikt over fakturering og utgifter.",
+        "task1": "Fakturering og bokføring",
+        "task2": "MVA og årsoppgjør",
+        "service": 0
+      },
+      {
+        "id": "transport",
+        "icon": "shield",
+        "name": "Transport",
+        "details": "Hold orden på lønn, leverandørbilag og kostnader knyttet til kjøretøy.",
+        "task1": "Lønn og A-melding",
+        "task2": "Bilag og løpende rapportering",
+        "service": 1
+      },
+      {
+        "id": "eiendom",
+        "icon": "handshake",
+        "name": "Eiendom og utleie",
+        "details": "Få en samlet oversikt over inntekter, fakturaer og kostnader knyttet til driften.",
+        "task1": "Leieinntekter og løpende bokføring",
+        "task2": "Rapporter og årsoppgjør",
+        "service": 0
+      }
+    ]
+  },
+  "en": {
+    "title": "Industries",
+    "homeTitle": "Accounting for your industry",
+    "homeLink": "Explore the industries",
+    "sections": "Jump to an industry",
+    "advisoryTitle": "Advice and setup",
+    "advisory": "We can go through your figures with you, discuss cash flow and budgets, and help you choose software and routines when you get started.",
+    "items": [
+      {
+        "id": "servering",
+        "icon": "clock",
+        "name": "Restaurants and cafés",
+        "details": "Keep track of daily takings, receipts and payroll while you manage a busy service.",
+        "task1": "Daily takings and payments",
+        "task2": "Payroll and A-melding",
+        "service": 1
+      },
+      {
+        "id": "handverk",
+        "icon": "target",
+        "name": "Trades and construction",
+        "details": "Keep documents and costs organised when several jobs are running at once.",
+        "task1": "Receipts and supplier invoices",
+        "task2": "Payroll and reporting",
+        "service": 0
+      },
+      {
+        "id": "netthandel",
+        "icon": "chip",
+        "name": "Online retail",
+        "details": "Bring online sales together and get a clearer view of settlements and fees.",
+        "task1": "Payment provider settlements",
+        "task2": "Invoices, returns and reports",
+        "service": 2
+      },
+      {
+        "id": "konsulent",
+        "icon": "chart",
+        "name": "Consultants",
+        "details": "Spend less time on admin and see where you stand on invoicing and expenses.",
+        "task1": "Invoicing and bookkeeping",
+        "task2": "VAT and annual accounts",
+        "service": 0
+      },
+      {
+        "id": "transport",
+        "icon": "shield",
+        "name": "Transport",
+        "details": "Keep on top of payroll, supplier records and vehicle-related costs.",
+        "task1": "Payroll and A-melding",
+        "task2": "Receipts and regular reporting",
+        "service": 1
+      },
+      {
+        "id": "eiendom",
+        "icon": "handshake",
+        "name": "Property and rental",
+        "details": "Get a complete view of income, invoices and running costs.",
+        "task1": "Rental income and bookkeeping",
+        "task2": "Reports and annual accounts",
+        "service": 0
+      }
+    ]
+  },
+  "es": {
+    "title": "Sectores",
+    "homeTitle": "Contabilidad para tu sector",
+    "homeLink": "Explora los sectores",
+    "sections": "Ir a un sector",
+    "advisoryTitle": "Asesoría y puesta en marcha",
+    "advisory": "Podemos revisar tus cifras, hablar de liquidez y presupuestos y ayudarte a elegir el programa y las rutinas iniciales.",
+    "items": [
+      {
+        "id": "servering",
+        "icon": "clock",
+        "name": "Restaurantes y cafeterías",
+        "details": "Lleva un control de los cierres de caja, los justificantes y las nóminas en días de mucho trabajo.",
+        "task1": "Cierres de caja y pagos",
+        "task2": "Nóminas y A-melding",
+        "service": 1
+      },
+      {
+        "id": "handverk",
+        "icon": "target",
+        "name": "Oficios y construcción",
+        "details": "Organiza documentos y gastos cuando llevas varios trabajos a la vez.",
+        "task1": "Justificantes y facturas de proveedores",
+        "task2": "Nóminas e informes",
+        "service": 0
+      },
+      {
+        "id": "netthandel",
+        "icon": "chip",
+        "name": "Comercio electrónico",
+        "details": "Reúne las ventas de tu tienda y ten una visión clara de liquidaciones y comisiones.",
+        "task1": "Liquidaciones de plataformas de pago",
+        "task2": "Facturas, devoluciones e informes",
+        "service": 2
+      },
+      {
+        "id": "konsulent",
+        "icon": "chart",
+        "name": "Consultoría",
+        "details": "Dedica menos tiempo a la administración y controla mejor tus facturas y gastos.",
+        "task1": "Facturación y contabilidad",
+        "task2": "IVA y cierre anual",
+        "service": 0
+      },
+      {
+        "id": "transport",
+        "icon": "shield",
+        "name": "Transporte",
+        "details": "Ten al día las nóminas, las facturas de proveedores y los gastos de vehículos.",
+        "task1": "Nóminas y A-melding",
+        "task2": "Justificantes e informes periódicos",
+        "service": 1
+      },
+      {
+        "id": "eiendom",
+        "icon": "handshake",
+        "name": "Inmuebles y alquiler",
+        "details": "Consulta en un solo lugar los ingresos, las facturas y los gastos de gestión.",
+        "task1": "Ingresos por alquiler y contabilidad",
+        "task2": "Informes y cierre anual",
+        "service": 0
+      }
+    ]
+  },
+  "ar": {
+    "title": "القطاعات",
+    "homeTitle": "محاسبة تناسب قطاعك",
+    "homeLink": "استعرض القطاعات",
+    "sections": "انتقل إلى أحد القطاعات",
+    "advisoryTitle": "الاستشارات وبدء العمل",
+    "advisory": "يمكننا مراجعة الأرقام معك ومناقشة السيولة والميزانية ومساعدتك في اختيار النظام وإجراءات العمل عند البدء.",
+    "items": [
+      {
+        "id": "servering",
+        "icon": "clock",
+        "name": "المطاعم والمقاهي",
+        "details": "تابع تسويات المبيعات اليومية والمستندات والرواتب حتى في أيام العمل المزدحمة.",
+        "task1": "المبيعات والمدفوعات اليومية",
+        "task2": "الرواتب وتقارير A-melding",
+        "service": 1
+      },
+      {
+        "id": "handverk",
+        "icon": "target",
+        "name": "البناء والحِرَف",
+        "details": "نظّم المستندات والتكاليف عند العمل على عدة مشاريع في وقت واحد.",
+        "task1": "المستندات وفواتير الموردين",
+        "task2": "الرواتب والتقارير",
+        "service": 0
+      },
+      {
+        "id": "netthandel",
+        "icon": "chip",
+        "name": "التجارة الإلكترونية",
+        "details": "اجمع بيانات المبيعات لتوضيح تسويات المدفوعات والرسوم.",
+        "task1": "تسويات منصات الدفع",
+        "task2": "الفواتير والمرتجعات والتقارير",
+        "service": 2
+      },
+      {
+        "id": "konsulent",
+        "icon": "chart",
+        "name": "الاستشارات",
+        "details": "خفّف العمل الإداري وتابع الفواتير والمصروفات بوضوح.",
+        "task1": "الفوترة ومسك الدفاتر",
+        "task2": "ضريبة القيمة المضافة والإقفال السنوي",
+        "service": 0
+      },
+      {
+        "id": "transport",
+        "icon": "shield",
+        "name": "النقل",
+        "details": "تابع الرواتب وفواتير الموردين والتكاليف المرتبطة بالمركبات.",
+        "task1": "الرواتب وتقارير A-melding",
+        "task2": "المستندات والتقارير الدورية",
+        "service": 1
+      },
+      {
+        "id": "eiendom",
+        "icon": "handshake",
+        "name": "العقارات والتأجير",
+        "details": "اجمع الإيرادات والفواتير وتكاليف التشغيل في نظرة واحدة.",
+        "task1": "إيرادات الإيجار ومسك الدفاتر",
+        "task2": "التقارير والإقفال السنوي",
+        "service": 0
+      }
+    ]
+  }
+}

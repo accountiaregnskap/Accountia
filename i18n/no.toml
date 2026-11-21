@@ -1,3 +1,12 @@
+[services_topics]
+other = "Finn hjelp til en bestemt oppgave"
+
+[brand_description]
+other = "Regnskap"
+
+[switch_accountant]
+other = "Bytte byrå"
+
 [quote_label]
 other = "Be om pristilbud"
 

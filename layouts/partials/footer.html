@@ -2,7 +2,7 @@
 <footer class="site-footer editorial-footer">
   <div class="container footer-inner">
     <div>
-      <strong>{{ site.Params.siteName }}</strong>
+      <a class="brandbar-logo footer-brand" href="{{ "/" | relLangURL }}" aria-label="Accountia">{{ partial "brandmark.html" . }}</a>
       <a href="https://maps.google.com/?q={{ site.Params.address }}">{{ site.Params.address }}</a><br>
       {{ i18n "footer_orgnr" }} {{ site.Params.orgnr }}
     </div>
@@ -31,6 +31,8 @@
             <li><a href="{{ .URL }}">{{ .Name }}</a></li>
           {{ end }}
         {{ end }}
+        <li><a href="{{ $pages.industry_url }}">{{ (index site.Data.industry_directory .Lang).title }}</a></li>
+        <li><a href="{{ $pages.switch_url }}">{{ i18n "switch_accountant" }}</a></li>
       </ul>
     </div>
   </div>

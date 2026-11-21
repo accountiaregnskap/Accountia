@@ -1,0 +1,20 @@
+{{ $contact := (index site.Data.service_guide .Page.Lang).contact }}
+{{ with index site.Data.switch_checklist .Page.Lang }}
+<section class="switch-checklist" data-reveal>
+  <div class="switch-checklist-copy">
+    <h2 id="switch-checklist-title">{{ .title }}</h2>
+    <p>{{ .intro }}</p>
+    <fieldset aria-labelledby="switch-checklist-title">
+      {{ range .items }}
+      <label class="switch-checklist-item"><input type="checkbox"><span>{{ . }}</span></label>
+      {{ end }}
+    </fieldset>
+    <div class="switch-progress" data-count="{{ .count }}" hidden>
+      <progress aria-labelledby="switch-checklist-title" max="{{ len .items }}" value="0"></progress>
+      <output aria-live="polite"></output>
+    </div>
+    <a class="action-main" href="{{ $contact }}?behov=bytte#contact-form">{{ .cta }} <span aria-hidden="true">→</span></a>
+  </div>
+  <img src="/images/accountia-planlegging.jpg" width="840" height="560" loading="lazy" decoding="async" alt="">
+</section>
+{{ end }}

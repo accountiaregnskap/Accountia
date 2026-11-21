@@ -1,0 +1,31 @@
+{{ $page := index site.Data.service_guide .Page.Lang }}
+{{ $services := site.Home.Params.hero_cards }}
+{{ $cta := i18n "quote_label" }}
+{{ $compact := eq (.Get "compact") "true" }}
+{{ with index site.Data.industry_directory .Page.Lang }}
+<section class="industry-directory{{ if $compact }} industry-teaser{{ end }}" aria-labelledby="industry-directory-title" data-reveal>
+  <h2 id="industry-directory-title">{{ if $compact }}{{ .homeTitle }}{{ else }}{{ .sections }}{{ end }}</h2>
+  <ul class="industry-jumps" role="list">
+    {{ range .items }}
+    <li><a href="{{ if $compact }}{{ $page.industry_url }}{{ end }}#{{ .id }}"><img src="/images/icons/{{ .icon }}.svg" width="20" height="20" alt="">{{ .name }}</a></li>
+    {{ end }}
+  </ul>
+  {{ if $compact }}
+    <a class="industry-all" href="{{ $page.industry_url }}">{{ .homeLink }} <span aria-hidden="true">→</span></a>
+  {{ else }}
+    <div class="industry-grid">
+      {{ range .items }}
+      {{ $service := index $services (int .service) }}
+      <article class="industry-card" id="{{ .id }}">
+        <img src="/images/icons/{{ .icon }}.svg" width="24" height="24" alt="">
+        <h3>{{ .name }}</h3>
+        <p>{{ .details }}</p>
+        <ul><li>{{ .task1 }}</li><li>{{ .task2 }}</li></ul>
+        <a href="{{ $service.url }}">{{ $service.title }} <span aria-hidden="true">→</span></a>
+      </article>
+      {{ end }}
+    </div>
+    <a class="action-main" href="{{ $page.contact }}#contact-form">{{ $cta }} <span aria-hidden="true">→</span></a>
+  {{ end }}
+</section>
+{{ end }}

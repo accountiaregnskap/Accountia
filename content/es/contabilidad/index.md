@@ -28,6 +28,7 @@ lead: "Contabilidad que te da control, cifras fiables y menos administración."
 >}}
 
 {{< service_bento
+  anchor="mva"
   variant="line"
   tag="IVA"
   title="Gestión del IVA con control del soporte, los plazos y la presentación"
@@ -39,6 +40,7 @@ lead: "Contabilidad que te da control, cifras fiables y menos administración."
 >}}
 
 {{< service_bento
+  anchor="arsoppgjor"
   variant="soft"
   tag="Cierre anual"
   title="Cierre anual bien planificado y ejecutado con orden"
@@ -48,6 +50,8 @@ lead: "Contabilidad que te da control, cifras fiables y menos administración."
   c3k="Seguimiento" c3t="Cooperación cercana cuando se necesitan respuestas" c3d="Te avisamos claramente si falta documentación o decisiones, para que el proceso continúe sin interrupciones innecesarias."
   c4k="Seguridad" c4t="Un cierre del año más previsible" c4d="Cuando la contabilidad, el IVA y el cierre anual se gestionan juntos, toda la entrega resulta más estable, ordenada y fácil de seguir para tu empresa."
 >}}
+
+{{< advisory_section >}}
 
 {{< services_faq
   title="Preguntas frecuentes sobre contabilidad"

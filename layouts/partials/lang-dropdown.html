@@ -20,10 +20,9 @@
 }}
 {{ $serviceKey := $cur.Params.translationKey | default "" }}
 
-<div class="lang-dd">
-  <details>
-    <summary>{{ i18n "lang_label" }}: {{ index $langNames site.Language.Lang | default (upper site.Language.Lang) }}</summary>
-    <div class="lang-dd-menu">
+<details class="brandbar-language">
+    <summary class="brandbar-language-trigger"><span>{{ i18n "lang_label" }} <bdi>{{ index $langNames site.Language.Lang }}</bdi></span><span class="brandbar-chevron" aria-hidden="true"></span></summary>
+    <div class="brandbar-language-options">
       {{ range site.Languages }}
         {{ $lang := .Lang }}
         {{ $url := "/" }}
@@ -53,8 +52,7 @@
           {{ end }}
           {{ $url = $targetPage.RelPermalink }}
         {{ end }}
-        <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}" lang="{{ $lang }}" hreflang="{{ $lang }}"{{ if eq site.Language.Lang $lang }} aria-current="true"{{ end }}>{{ index $langNames $lang | default (upper $lang) }}</a>
+        <a href="{{ $url }}" lang="{{ $lang }}" hreflang="{{ $lang }}"{{ if eq site.Language.Lang $lang }} aria-current="true"{{ end }}><bdi>{{ index $langNames $lang }}</bdi></a>
       {{ end }}
     </div>
-  </details>
-</div>
+</details>

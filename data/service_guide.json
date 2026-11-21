@@ -28,7 +28,9 @@
         "description": "Vi går gjennom antall ansatte, lønnsrutiner og hvilke rapporter dere trenger.",
         "message": "Hei! Jeg trenger hjelp med lønnskjøring og A-melding."
       }
-    ]
+    ],
+    "switch_url": "/bytte-regnskapsforer/",
+    "industry_url": "/bransjer/"
   },
   "en": {
     "contact": "/en/contact/",
@@ -59,7 +61,9 @@
         "description": "We review your headcount, pay routines and reporting needs.",
         "message": "Hello! I’d like help with payroll and A-melding reporting."
       }
-    ]
+    ],
+    "switch_url": "/en/switch-accountants/",
+    "industry_url": "/en/industries/"
   },
   "es": {
     "contact": "/es/contact/",
@@ -90,7 +94,9 @@
         "description": "Revisamos el número de empleados, el proceso de nómina y las declaraciones que necesitas.",
         "message": "¡Hola! Necesito ayuda con las nóminas y las declaraciones A-melding."
       }
-    ]
+    ],
+    "switch_url": "/es/cambiar-asesoria/",
+    "industry_url": "/es/sectores/"
   },
   "ar": {
     "contact": "/ar/contact/",
@@ -121,6 +127,8 @@
         "description": "نراجع عدد الموظفين وإجراءات الرواتب والتقارير التي تحتاج إليها.",
         "message": "مرحبًا! أحتاج إلى مساعدة في الرواتب وتقارير A-melding."
       }
-    ]
+    ],
+    "switch_url": "/ar/switch-accountants/",
+    "industry_url": "/ar/industries/"
   }
 }

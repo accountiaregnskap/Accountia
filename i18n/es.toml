@@ -1,3 +1,12 @@
+[services_topics]
+other = "Encuentra ayuda para una tarea concreta"
+
+[brand_description]
+other = "Contabilidad"
+
+[switch_accountant]
+other = "Cambiar de asesoría"
+
 [quote_label]
 other = "Solicitar presupuesto"
 
