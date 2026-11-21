@@ -60,7 +60,7 @@ keywords = ["system","systemer","regnskapssystem","tripletex","poweroffice","uni
 [[no.questions]]
 question = "Kan dere overta økonomifunksjonen?"
 answer = "Vi kan avlaste hele eller deler av økonomifunksjonen, avhengig av hva bedriften trenger."
-link = "Les om outsourcing"
+link = "Les om avlastning i økonomiarbeidet"
 url = "/tjenester/outsourcing/"
 keywords = ["outsourcing","utkontraktering","økonomifunksjon","økonomifunksjonen","avlaste"]
 [[no.questions]]
@@ -150,7 +150,7 @@ keywords = ["software","systems","system","tripletex","poweroffice","unimicro","
 [[en.questions]]
 question = "Can you take over our finance function?"
 answer = "We can support part or all of your finance function, depending on what your business needs."
-link = "Read about outsourcing"
+link = "Read about day-to-day finance support"
 url = "/en/services/outsourcing/"
 keywords = ["outsourcing","outsource","finance function","external"]
 [[en.questions]]
@@ -168,7 +168,7 @@ keywords = ["get started","getting started","start a business","new business","n
 [[en.questions]]
 question = "Do you handle invoices and payment reminders?"
 answer = "Yes. Invoicing and following up on outstanding payments can be part of the service. We agree which tasks you want us to take on."
-link = "Read about outsourcing"
+link = "Read about day-to-day finance support"
 url = "/en/services/outsourcing/"
 keywords = ["invoice","invoices","invoicing","arrears","payment reminders","outstanding payments"]
 [[en.questions]]

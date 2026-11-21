@@ -32,7 +32,7 @@ html[dir="rtl"] .front-intro { background: radial-gradient(ellipse at 15% 40%, #
 .front-kicker { color: var(--brass-dark); font-weight: 750; }
 .front-copy h1 {
   color: var(--ink-deep);
-  font-size: clamp(2.7rem,5.45vw,5.6rem);
+  font-size: clamp(2.7rem,4.95vw,5.3rem);
   line-height: 1.04;
 }
 .front-copy h1 span:nth-child(2) { color: #2c5272; }
@@ -168,6 +168,9 @@ html[dir="rtl"] :is(.title-band,.topic-hero)::before { transform: scaleX(-1); }
 }
 .catalog-grid .svc-icon { transition: transform .32s var(--ease-press); }
 .catalog-grid .svc-card:hover .svc-icon { transform: scale(1.14); }
+.editorial-footer .footer-pages a { min-height: 44px; }
+.topic-questions summary, .svc-faq-item summary { border-radius: 9px; }
+.topic-questions summary:hover, .svc-faq-item summary:hover { background: #e9f0f6; }
 
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
@@ -187,15 +190,19 @@ html[dir="rtl"] :is(.title-band,.topic-hero)::before { transform: scaleX(-1); }
   .featured-dots button::before {
     transition: width .29s var(--ease-press), background-color .22s ease, border-color .22s ease;
   }
+  .topic-questions details[open] > p, .svc-faq-item[open] > .svc-faq-a { animation: answer-arrive .35s var(--ease-press) both; }
+  @keyframes answer-arrive { from { opacity: .5; translate: 0 8px; } }
   :is(.brandbar-nav > a,.brandbar summary,.action-main,.action-link,.btn,.featured-controls button,
       .guide-choices button,.month-button,.catalog-view button,.topic-related a,.explore-links a,.industry-jumps a,
-      .quote-choices label,.customer-help-toggle,.customer-chat-form button,.customer-help-close) {
+      .quote-choices label,.customer-help-toggle,.customer-chat-form button,.customer-help-close,
+      .topic-questions summary,.svc-faq-item summary,.switch-checklist-item) {
     transition: translate .24s var(--ease-press), background-color .22s ease, color .22s ease, border-color .22s ease,
       box-shadow .24s var(--ease-press);
   }
   :is(.brandbar-nav > a,.brandbar summary,.action-main,.action-link,.btn,.featured-controls button,
       .guide-choices button,.month-button,.catalog-view button,.topic-related a,.explore-links a,.industry-jumps a,
-      .quote-choices label,.customer-help-toggle,.customer-chat-form button,.customer-help-close):active { translate: 0 2px; }
+      .quote-choices label,.customer-help-toggle,.customer-chat-form button,.customer-help-close,
+      .topic-questions summary,.svc-faq-item summary,.switch-checklist-item):active { translate: 0 2px; }
   @media (hover:hover) {
     :is(.action-main,.action-link,.btn,.featured-directions button,.guide-choices button,.month-button,
         .catalog-view button,.topic-related a,.explore-links a,.industry-jumps a,.quote-choices label,.customer-help-toggle,
