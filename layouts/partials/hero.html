@@ -9,7 +9,7 @@
       <p class="front-lead">{{ .Params.hero_lead }}</p>
       <div class="front-actions">
         <a class="action-main" href="{{ .Params.hero_cta_primary_url }}">{{ .Params.hero_cta_primary_label }}</a>
-        <a class="action-link" href="#service-guide">{{ i18n "guide_title" }}</a>
+        <a class="action-link" href="#explore-accountia">{{ (index site.Data.catalog .Lang).ui.explore }}</a>
       </div>
       <a class="front-review" href="{{ site.Params.googleReviews }}">{{ i18n "google_reviews" }} <span aria-hidden="true">↗</span></a>
     </div>

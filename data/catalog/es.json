@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "explore": "Explora servicios y sectores",
+    "exploreTitle": "¿Qué necesita tu empresa?",
+    "exploreIntro": "Encuentra ayuda para una tarea concreta o descubre cómo podemos llevar la contabilidad en tu sector.",
+    "services": "Servicios",
+    "serviceIntro": "Desde la contabilidad del día a día hasta el cierre anual y la toma de decisiones financieras.",
+    "industryIntro": "Descubre las tareas habituales y ejemplos prácticos de seis sectores.",
+    "search": "Filtrar el directorio",
+    "placeholder": "Busca un tema o una tarea",
+    "view": "Vista",
+    "cards": "Tarjetas",
+    "list": "Lista",
+    "count": "Se muestran {shown} de {total}",
+    "empty": "Sin resultados. Prueba otra palabra o borra la búsqueda.",
+    "read": "Leer más sobre",
+    "onPage": "En esta página",
+    "tasks": "Cómo podemos ayudarte",
+    "prepare": "Antes de hablar con nosotros",
+    "questions": "Preguntas frecuentes",
+    "back": "Volver al directorio",
+    "related": "Temas relacionados",
+    "pricingUrl": "/es/prices/",
+    "sources": {
+      "mva": "Guía de la administración tributaria noruega sobre la declaración de IVA",
+      "arsoppgjor": "Guía de presentación del Registro de Brønnøysund"
+    }
+  },
+  "topics": {
+    "mva": {
+      "lead": "Reúne los registros de ventas y compras y revisa las partidas pendientes antes de preparar la declaración de IVA en Noruega.",
+      "tasks": [
+        [
+          "Revisar los canales de venta",
+          "Vemos qué vendes y cómo se registra, sobre todo si las facturas, las ventas en caja y los cobros en línea pasan por sistemas distintos."
+        ],
+        [
+          "Comprobar justificantes y códigos",
+          "Identificamos las operaciones que necesitan revisión. Acordamos una rutina para encontrar justificantes pendientes y gestionar abonos."
+        ],
+        [
+          "Preparar la declaración",
+          "Contrastamos la declaración con los libros contables y acordamos quién la revisa, aprueba y presenta."
+        ]
+      ],
+      "exampleTitle": "El pago de la tienda es menor que el total vendido",
+      "example": "Un solo abono puede agrupar ventas, devoluciones y comisiones. El informe de la plataforma ayuda a explicar la diferencia y encontrar las partidas que deben revisarse.",
+      "prepare": [
+        "Enumera tus canales de venta e indica si estás registrado a efectos de IVA en Noruega.",
+        "Ten a mano un informe de ventas y un ejemplo de liquidación. Si hace falta, acordaremos cómo compartirlos de forma segura."
+      ],
+      "faq": [
+        [
+          "¿Podemos seguir con el sistema actual?",
+          "Sí. Primero revisamos cómo registras hoy las compras y las ventas y qué ajustes pueden hacer falta."
+        ],
+        [
+          "¿Y si tengo dudas sobre una factura extranjera?",
+          "Indícanos a qué corresponde y dónde está el proveedor. Revisaremos la documentación antes de valorar cómo registrarla."
+        ]
+      ]
+    },
+    "arsoppgjor": {
+      "lead": "Recibe ayuda para cerrar los libros, resolver las partidas pendientes y aclarar qué tiene que presentar tu empresa.",
+      "tasks": [
+        [
+          "Identificar lo que queda pendiente",
+          "Revisamos la forma jurídica, el ejercicio y el trabajo ya realizado. Después acordamos qué aclaraciones e informes hacen falta."
+        ],
+        [
+          "Conciliar las partidas del balance",
+          "Según la actividad, podemos revisar saldos bancarios, facturas pendientes, préstamos, existencias y equipos."
+        ],
+        [
+          "Preparar la revisión",
+          "Explicamos las cifras principales y aclaramos qué debe aprobarse y qué corresponde a la dirección, al consejo o al auditor."
+        ]
+      ],
+      "exampleTitle": "Una factura de diciembre llega en enero",
+      "example": "Comprobamos a qué se refiere la factura, a qué periodo corresponde el gasto y si ya se tuvo en cuenta al hacer el cierre.",
+      "prepare": [
+        "Localiza el balance de comprobación más reciente y anota los principales cambios del año.",
+        "Haz una lista de los documentos pendientes, como inventarios, extractos de préstamos o facturas por revisar."
+      ],
+      "faq": [
+        [
+          "¿Podéis ayudarme solo con el cierre?",
+          "Podemos valorarlo al ver si los libros están al día y qué documentación hay disponible."
+        ],
+        [
+          "¿Qué pasa si la contabilidad está incompleta?",
+          "Revisamos lo que falta y acordamos el trabajo adicional antes de definir el alcance."
+        ]
+      ]
+    },
+    "radgivning": {
+      "lead": "Usa las cifras para decidir el próximo paso, al iniciar un negocio, planear una inversión o revisar la tesorería.",
+      "tasks": [
+        [
+          "Elegir herramientas y rutinas",
+          "Vemos cómo facturas, cobras y documentas las compras. Así podemos plantear un sistema acorde con tu forma de trabajar."
+        ],
+        [
+          "Preparar un presupuesto",
+          "Partimos de los ingresos previstos, los gastos recurrentes y las fechas de pago para identificar las estimaciones más importantes."
+        ],
+        [
+          "Entender los resultados",
+          "Revisamos cifras útiles para decidir, como los márgenes o el importe pendiente de cobro de tus facturas."
+        ]
+      ],
+      "exampleTitle": "¿Es el momento adecuado para invertir?",
+      "example": "Comparamos dos fechas posibles de compra y observamos cómo cambiaría el saldo si las ventas se reducen o si los clientes tardan más en pagar.",
+      "prepare": [
+        "Anota qué decisión necesitas tomar y en qué fecha.",
+        "Trae estimaciones de precios, ingresos y fechas de pago si las tienes."
+      ],
+      "faq": [
+        [
+          "¿Podemos empezar con una sola pregunta?",
+          "Sí. Podemos centrar la primera conversación en una decisión y valorar si conviene seguir trabajando juntos."
+        ],
+        [
+          "¿Puedo contactar antes de iniciar la actividad?",
+          "Sí. Dinos qué venderás, cómo piensas cobrar y si prevés contratar a alguien."
+        ]
+      ]
+    },
+    "servering": {
+      "lead": "Reúne los cierres de caja, los pagos con tarjeta y los datos de nómina en una rutina que encaje con los turnos del local.",
+      "tasks": [
+        [
+          "Conciliar la caja con el banco",
+          "Comparamos los informes de caja y del terminal con los abonos bancarios y vinculamos los ingresos tardíos al día de las ventas."
+        ],
+        [
+          "Revisar las liquidaciones de reparto",
+          "Vemos cómo se reflejan los pedidos, descuentos y comisiones para distinguir los ingresos de lo que llega al banco."
+        ],
+        [
+          "Preparar los datos de nómina",
+          "Acordamos quién aprueba las horas, los complementos y los demás datos antes de cada pago."
+        ]
+      ],
+      "exampleTitle": "Las ventas del sábado se abonan el martes",
+      "example": "Los informes de caja y de tarjeta nos permiten vincular el abono con las ventas y ver si hay alguna diferencia que revisar.",
+      "prepare": [
+        "Enumera los sistemas de caja, proveedores de pago y plataformas de pedidos.",
+        "Indica quién cierra caja y cómo se aprueban las horas."
+      ],
+      "faq": [
+        [
+          "¿Podemos conservar el sistema de caja?",
+          "Primero comprobamos si los informes del sistema actual contienen la información necesaria."
+        ],
+        [
+          "¿Cómo investigáis una diferencia?",
+          "Identificamos la liquidación en cuestión e indicamos qué informe o explicación falta."
+        ]
+      ]
+    },
+    "handverk": {
+      "lead": "Controla las horas, los materiales y la facturación cuando hay varios proyectos en marcha.",
+      "tasks": [
+        [
+          "Asignar gastos a cada obra",
+          "Te ayudamos a vincular compras y facturas de proveedores al proyecto correspondiente para seguir el coste de materiales y subcontratas."
+        ],
+        [
+          "Reunir las horas aprobadas",
+          "Revisamos quién registra y aprueba las horas para que sirvan tanto para nóminas como para el seguimiento de cada proyecto."
+        ],
+        [
+          "Seguir el calendario de facturación",
+          "Acordamos cómo se registran los cambios, las fases terminadas y las fechas de facturación."
+        ]
+      ],
+      "exampleTitle": "Una factura de proveedor incluye dos obras",
+      "example": "Las referencias de proyecto permiten repartir los gastos antes de preparar el informe e identificar qué obra está consumiendo más presupuesto.",
+      "prepare": [
+        "Describe cómo registras las horas, las compras y los trabajos adicionales.",
+        "Elige un encargo habitual que podamos usar como ejemplo."
+      ],
+      "faq": [
+        [
+          "¿Hace falta cambiar de programa?",
+          "Empezamos con lo que ya usas. A veces basta con definir una rutina más clara."
+        ],
+        [
+          "¿Se pueden seguir los encargos pequeños?",
+          "Sí. Ajustamos el nivel de detalle a los datos que necesitas consultar."
+        ]
+      ]
+    },
+    "netthandel": {
+      "lead": "Conecta pedidos, comisiones, devoluciones y abonos para seguir las ventas de todos tus canales.",
+      "tasks": [
+        [
+          "Trazar el recorrido del dinero",
+          "Identificamos dónde compran los clientes, qué plataformas procesan el pago y cuándo se abona en el banco."
+        ],
+        [
+          "Conciliar las liquidaciones",
+          "Comparamos ventas, devoluciones, cancelaciones, envíos y comisiones para explicar las diferencias entre el abono y las ventas brutas."
+        ],
+        [
+          "Revisar existencias y documentación",
+          "Vemos qué informes puedes sacar sobre compras, inventario y ventas al extranjero y acordamos las comprobaciones necesarias."
+        ]
+      ],
+      "exampleTitle": "La devolución se registra un mes después del pedido",
+      "example": "Con el número de pedido y la liquidación podemos vincular la devolución con la venta original sin depender solo del extracto bancario.",
+      "prepare": [
+        "Enumera tiendas, plataformas y proveedores de pago.",
+        "Busca un informe que muestre ventas, devoluciones y comisiones."
+      ],
+      "faq": [
+        [
+          "¿Podéis trabajar con varias tiendas?",
+          "Podemos valorarlo cuando veamos los informes de cada canal y cómo llegan a tus libros."
+        ],
+        [
+          "¿Qué pasa si vendo en el extranjero?",
+          "Dinos dónde están los clientes y cómo envías los productos. Revisaremos qué cuestiones de facturación e IVA deben aclararse."
+        ]
+      ]
+    },
+    "konsulent": {
+      "lead": "Sigue las horas facturables, los gastos de clientes y los cobros sin restar tiempo a los encargos.",
+      "tasks": [
+        [
+          "Convertir el trabajo en facturas",
+          "Vemos cómo pasan las horas, fases o tarifas fijas a las facturas y aclaramos quién aprueba y revisa cada paso."
+        ],
+        [
+          "Registrar los gastos de cada encargo",
+          "Revisamos cómo documentas viajes, compras y suscripciones e identificas los gastos que se repercuten al cliente."
+        ],
+        [
+          "Planificar con ingresos variables",
+          "Usamos las fechas previstas de cobro y los gastos recurrentes para planificar las semanas entre proyectos."
+        ]
+      ],
+      "exampleTitle": "El trabajo está terminado y queda la última factura",
+      "example": "Comparar las fases completadas con las facturas emitidas muestra qué queda por facturar y aclara cuándo se podría cobrar.",
+      "prepare": [
+        "Indica cómo cobras a tus clientes y con qué frecuencia facturas.",
+        "Anota qué gastos sueles adelantar por cuenta del cliente."
+      ],
+      "faq": [
+        [
+          "¿Ayudáis a empresas individuales?",
+          "Sí. Acordamos el alcance según tus encargos, cómo facturas y qué tareas quieres seguir haciendo tú."
+        ],
+        [
+          "¿Puedo seguir enviando las facturas?",
+          "Sí. Acordamos cómo repartir la facturación y el seguimiento de cobros."
+        ]
+      ]
+    },
+    "transport": {
+      "lead": "Organiza los cobros de los servicios, los datos de nómina y los gastos de tus vehículos.",
+      "tasks": [
+        [
+          "Comprobar los cobros por servicio",
+          "Vemos cómo los servicios realizados pasan a las facturas y a los abonos, sobre todo si trabajas con varios clientes o plataformas."
+        ],
+        [
+          "Separar gastos de explotación",
+          "Acordamos cómo registrar combustible, peajes, renting o mantenimiento. Podemos valorar un desglose por vehículo."
+        ],
+        [
+          "Preparar el cambio de un vehículo",
+          "Con los principales costes identificados, es más fácil comparar opciones y calcular cómo afectaría la compra a la tesorería."
+        ]
+      ],
+      "exampleTitle": "¿Qué vehículo cuesta más mantener en circulación?",
+      "example": "Al relacionar cada justificante con su vehículo, podemos comparar los gastos y ver a qué se deben las diferencias.",
+      "prepare": [
+        "Enumera tus vehículos y cómo se financian.",
+        "Describe cómo registras los servicios, las nóminas y los gastos de viaje."
+      ],
+      "faq": [
+        [
+          "¿Puedo tener un informe por vehículo?",
+          "Podemos valorarlo si se pueden asignar los ingresos y gastos de forma coherente."
+        ],
+        [
+          "¿Podéis ayudar con la contabilidad y las nóminas?",
+          "Sí. Acordamos qué necesitas, qué datos hay disponibles y quién los aprueba."
+        ]
+      ]
+    },
+    "eiendom": {
+      "lead": "Sigue los ingresos de alquiler, los gastos corrientes y el mantenimiento de una o varias unidades.",
+      "tasks": [
+        [
+          "Vincular contratos y cobros",
+          "Contrastamos los importes acordados y sus cambios con los abonos para detectar retrasos o diferencias."
+        ],
+        [
+          "Ordenar los gastos por inmueble",
+          "Vemos cómo identificar suministros, seguros y mantenimiento para saber qué corresponde a cada unidad."
+        ],
+        [
+          "Preparar el cierre del ejercicio",
+          "Revisamos contratos, préstamos y obras relevantes para aclarar qué documentación hace falta."
+        ]
+      ],
+      "exampleTitle": "Una obra de mantenimiento afecta a dos unidades",
+      "example": "Una descripción clara de la obra y una factura desglosada facilitan el seguimiento de los gastos de cada unidad y la explicación de las cifras del cierre.",
+      "prepare": [
+        "Enumera los inmuebles que alquilas y los tipos de contrato.",
+        "Describe cómo controlas los cobros y los gastos comunes."
+      ],
+      "faq": [
+        [
+          "¿Puedo recibir informes separados por inmueble?",
+          "Podemos valorarlo si los cobros y gastos se pueden identificar por unidad o inmueble."
+        ],
+        [
+          "¿Qué documentación guardo para una reforma importante?",
+          "Guarda las facturas desglosadas y una descripción de la obra. Revisaremos los aspectos que deben aclararse para la contabilidad."
+        ]
+      ]
+    }
+  }
+}

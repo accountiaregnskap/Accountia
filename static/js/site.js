@@ -1,4 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.querySelector(".accountia-catalog");
+  if (!catalog) return;
+
+  const controls = catalog.querySelector(".catalog-controls");
+  const search = controls.querySelector('input[type="search"]');
+  const views = Array.from(controls.querySelectorAll("button"));
+  const entries = Array.from(catalog.querySelectorAll("[data-catalog-item]"));
+  const count = catalog.querySelector(".catalog-count");
+  const empty = catalog.querySelector(".catalog-empty");
+  const normalize = (value) => value.toLocaleLowerCase().normalize("NFKD").replace(/\p{Mark}/gu, "");
+  const names = entries.map(entry => normalize(entry.textContent));
+
+  function filter() {
+    const words = normalize(search.value).trim().split(/\s+/);
+    let visible = 0;
+    entries.forEach((entry, index) => {
+      const match = words.every(word => names[index].includes(word));
+      entry.hidden = !match;
+      if (match) visible++;
+    });
+    count.textContent = count.dataset.count.replace("{shown}", visible).replace("{total}", entries.length);
+    empty.hidden = visible !== 0;
+  }
+
+  search.addEventListener("input", filter);
+  search.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    event.preventDefault();
+  });
+  views.forEach(button => button.addEventListener("click", () => {
+    catalog.dataset.layout = button.dataset.view;
+    views.forEach(option => option.setAttribute("aria-pressed", String(option === button)));
+  }));
+  catalog.querySelector(".industry-jumps")?.addEventListener("click", (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
+    const item = document.getElementById(link.hash.slice(1));
+    if (!item?.hidden) return;
+    search.value = "";
+    filter();
+  });
+  window.addEventListener("pageshow", filter);
+  filter();
+  count.hidden = false;
+  controls.hidden = false;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const guide = document.querySelector(".service-guide");
   if (guide) {
     const toolbar = guide.querySelector(".guide-choices");

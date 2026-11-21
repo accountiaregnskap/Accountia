@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "explore": "Explore services and industries",
+    "exploreTitle": "What does your business need?",
+    "exploreIntro": "Find help with a specific task or see how we can handle accounting in your industry.",
+    "services": "Services",
+    "serviceIntro": "See where we can help, from day-to-day bookkeeping to annual accounts and financial decisions.",
+    "industryIntro": "Explore common tasks and practical examples from six industries.",
+    "search": "Filter the directory",
+    "placeholder": "Search by topic or task",
+    "view": "View",
+    "cards": "Cards",
+    "list": "List",
+    "count": "Showing {shown} of {total}",
+    "empty": "No matches. Try another term or clear the search.",
+    "read": "Read more about",
+    "onPage": "On this page",
+    "tasks": "How we can help",
+    "prepare": "Before our first conversation",
+    "questions": "Common questions",
+    "back": "Back to the directory",
+    "related": "Related topics",
+    "pricingUrl": "/en/prices/",
+    "sources": {
+      "mva": "Norwegian Tax Administration guidance on VAT returns",
+      "arsoppgjor": "Filing guidance from the Brønnøysund Register Centre"
+    }
+  },
+  "topics": {
+    "mva": {
+      "lead": "Bring sales records, VAT codes and reconciliations together before preparing your Norwegian VAT return.",
+      "tasks": [
+        [
+          "Review your sales channels",
+          "We look at what you sell and where it is recorded, especially when invoices, point-of-sale transactions and online payments pass through different systems."
+        ],
+        [
+          "Check records and codes",
+          "We identify purchases and sales that need a closer look and agree how to collect missing documents and handle credit notes."
+        ],
+        [
+          "Prepare for filing",
+          "We reconcile the return against the bookkeeping and agree who will review, approve and file it."
+        ]
+      ],
+      "exampleTitle": "The store payout is lower than the sales total",
+      "example": "A single payout can bundle purchases, refunds and fees. The payment provider’s report helps us explain the difference and spot entries that need checking.",
+      "prepare": [
+        "List your sales channels and say whether you’re registered for Norwegian VAT.",
+        "Find one sales report and a sample payout report. We’ll agree how to share them securely if needed."
+      ],
+      "faq": [
+        [
+          "Can you work with our existing setup?",
+          "Yes. We start by checking how you record purchases and sales today and what needs to change."
+        ],
+        [
+          "What if I’m unsure about an invoice from abroad?",
+          "Tell us what the invoice covers and where the supplier is based. We’ll review the details before assessing how to record it."
+        ]
+      ]
+    },
+    "arsoppgjor": {
+      "lead": "Get help closing the books, resolving outstanding items and working out what needs to be filed for your business.",
+      "tasks": [
+        [
+          "Review what’s left",
+          "We check your business structure, period and the work already done. Then we agree on the outstanding items and reports."
+        ],
+        [
+          "Reconcile balance sheet items",
+          "Depending on the business, we can review bank balances, unpaid invoices, loans, inventory and business equipment."
+        ],
+        [
+          "Prepare for review",
+          "We explain major figures and identify what needs approval. We clarify responsibilities with you, the board and any auditor."
+        ]
+      ],
+      "exampleTitle": "A December invoice arrives in January",
+      "example": "We check what the invoice covers, which period the expense relates to and whether it has already been included in the close.",
+      "prepare": [
+        "Find the latest trial balance and list major changes during the year.",
+        "Make a note of any inventory counts, loan statements or invoices still to be checked."
+      ],
+      "faq": [
+        [
+          "Can I ask for year-end help only?",
+          "We can assess that once we know how up-to-date the books are and what records are available."
+        ],
+        [
+          "What if our bookkeeping is unfinished?",
+          "We check what is missing and agree on any additional work before settling the scope."
+        ]
+      ]
+    },
+    "radgivning": {
+      "lead": "Use your accounts to make the next decision, whether you’re starting a business, considering an investment or looking at cash flow.",
+      "tasks": [
+        [
+          "Choose tools and routines",
+          "We look at how you invoice, accept payments and keep purchase records, then review options that fit your workflow."
+        ],
+        [
+          "Build a working budget",
+          "We use expected revenue, recurring costs and payment dates to identify which assumptions matter most."
+        ],
+        [
+          "Understand what drives the figures",
+          "We can review margins or the amount tied up in unpaid invoices when those figures matter to the decision you’re making."
+        ]
+      ],
+      "exampleTitle": "Is this the right time for a large investment?",
+      "example": "We can compare two purchase dates and see how cash might change if sales are lower or customers pay later than planned.",
+      "prepare": [
+        "Write down the decision you need to make and when.",
+        "Bring rough estimates for the price, income and payment dates if available."
+      ],
+      "faq": [
+        [
+          "Can we start with one question?",
+          "Yes. We can focus the first conversation on one decision and see if further work makes sense."
+        ],
+        [
+          "Can I talk to you before starting a business?",
+          "Yes. Tell us what you plan to sell, how customers will pay and whether you expect to employ anyone."
+        ]
+      ]
+    },
+    "servering": {
+      "lead": "Bring daily sales reports, card payouts and payroll records into a routine that fits a busy venue.",
+      "tasks": [
+        [
+          "Match takings and deposits",
+          "We compare till and card terminal reports with bank deposits and tie delayed payouts back to their sales."
+        ],
+        [
+          "Track delivery platform settlements",
+          "We look at how orders, discounts, refunds and fees show up so you can separate sales from cash deposited."
+        ],
+        [
+          "Gather payroll inputs",
+          "We agree on who approves hours, allowances and other payroll details before each pay run."
+        ]
+      ],
+      "exampleTitle": "A busy Saturday shows up in the bank on Tuesday",
+      "example": "The till and terminal reports give us a way to match that later deposit and spot any difference worth investigating.",
+      "prepare": [
+        "List your tills, payment providers and ordering platforms.",
+        "Tell us who closes the till and how timesheets are approved."
+      ],
+      "faq": [
+        [
+          "Can we keep our till system?",
+          "We start with the reports from your current system and check whether they give us the information we need."
+        ],
+        [
+          "How will you follow up a mismatch?",
+          "We identify the settlement and tell you which report or explanation is missing."
+        ]
+      ]
+    },
+    "handverk": {
+      "lead": "Track time, materials and invoices when several jobs are running at once.",
+      "tasks": [
+        [
+          "Assign costs to each job",
+          "We help you label purchases and supplier invoices by project so you can follow material and subcontractor costs."
+        ],
+        [
+          "Collect approved hours",
+          "We review who logs and approves hours so the same records can support payroll and project reporting."
+        ],
+        [
+          "Follow the invoicing schedule",
+          "We agree how changes, completion stages and invoice dates are recorded and checked."
+        ]
+      ],
+      "exampleTitle": "One supplier invoice covers two sites",
+      "example": "If purchases carry a project reference, we can split the costs before reporting. This makes it easier to see which job is using more of its budget.",
+      "prepare": [
+        "Describe how you track hours, purchases and additional work.",
+        "Pick a typical job to use as an example."
+      ],
+      "faq": [
+        [
+          "Do we have to change software?",
+          "We look at what your existing tools can do first. You may just need a clearer routine."
+        ],
+        [
+          "Can we track small jobs too?",
+          "Yes. We can adapt the level of detail to the information you actually use."
+        ]
+      ]
+    },
+    "netthandel": {
+      "lead": "Connect orders, fees, refunds and payouts so you can follow sales across channels.",
+      "tasks": [
+        [
+          "Map the payment flow",
+          "We identify where people buy, which providers handle payment and when the money reaches your bank."
+        ],
+        [
+          "Reconcile settlement reports",
+          "We compare sales with refunds, cancellations, shipping and fees to explain why a payout differs from gross sales."
+        ],
+        [
+          "Review stock and records",
+          "We look at what reports are available for purchases, inventory and any overseas sales, then agree on checks that fit the business."
+        ]
+      ],
+      "exampleTitle": "A return appears in a different month from the order",
+      "example": "The order reference and settlement report help us tie the refund to the original sale without relying on the bank entry alone.",
+      "prepare": [
+        "List your shops, marketplaces and payment providers.",
+        "Find a report showing sales, refunds and fees together."
+      ],
+      "faq": [
+        [
+          "Can you work with several shops?",
+          "We can assess that after seeing each shop’s reports and how they reach your bookkeeping."
+        ],
+        [
+          "What about selling abroad?",
+          "Tell us where customers are based and how goods are shipped. We’ll identify which records and VAT questions to look at."
+        ]
+      ]
+    },
+    "konsulent": {
+      "lead": "Keep track of billable time, client expenses and payments without taking too much time away from client work.",
+      "tasks": [
+        [
+          "Turn work into invoices",
+          "We trace hours, project milestones or fixed fees to invoices and agree on who approves and checks each step."
+        ],
+        [
+          "Record project expenses",
+          "We review how travel, purchases and subscriptions are documented, and how you identify expenses to recharge."
+        ],
+        [
+          "Plan for uneven income",
+          "We can use expected payment dates and regular costs to plan for quieter periods between projects."
+        ]
+      ],
+      "exampleTitle": "The work is finished but the final invoice is outstanding",
+      "example": "A quick comparison of completed milestones and invoices shows what is still due to be billed and gives you a clearer cash forecast.",
+      "prepare": [
+        "Describe how you charge clients and how often you invoice.",
+        "Note which costs you tend to pay on a client’s behalf."
+      ],
+      "faq": [
+        [
+          "Can you help a sole proprietor?",
+          "Yes. We agree on the scope based on your projects, billing routines and the tasks you want to keep."
+        ],
+        [
+          "Can I send the invoices myself?",
+          "Yes. We can agree who handles invoicing and how you’d like us to follow up payments."
+        ]
+      ]
+    },
+    "transport": {
+      "lead": "Manage payments for jobs, payroll records and the costs of running your vehicles.",
+      "tasks": [
+        [
+          "Check settlements against completed jobs",
+          "We look at how jobs turn into invoices and payouts, particularly if you work with several customers or platforms."
+        ],
+        [
+          "Track operating costs",
+          "We agree how to record fuel, tolls, leases and maintenance, for example by vehicle when that helps you manage the fleet."
+        ],
+        [
+          "Plan for a vehicle change",
+          "Identifying the largest recurring costs makes it easier to compare vehicles and estimate the cash impact of a replacement."
+        ]
+      ],
+      "exampleTitle": "Which vehicle costs most to run?",
+      "example": "If records are tagged consistently, we can compare ongoing costs and see what explains the difference.",
+      "prepare": [
+        "List your vehicles and how they’re financed.",
+        "Describe how you record jobs, wages and travel expenses."
+      ],
+      "faq": [
+        [
+          "Can reporting be split by vehicle?",
+          "We review whether this is useful and whether the income and costs can be assigned consistently."
+        ],
+        [
+          "Can you help with bookkeeping and payroll?",
+          "Yes. We agree what help you need, what records are available and who approves them before payday."
+        ]
+      ]
+    },
+    "eiendom": {
+      "lead": "Follow rental income, operating bills and maintenance across one or several units.",
+      "tasks": [
+        [
+          "Match rent agreements with receipts",
+          "We use agreed rents and amendments to follow payments, arrears and any differences."
+        ],
+        [
+          "Assign costs to properties",
+          "We review how service charges, insurance and maintenance can be coded so you see which property they relate to."
+        ],
+        [
+          "Prepare for year-end",
+          "We review relevant agreements, loans and larger works so the items that need assessment are documented."
+        ]
+      ],
+      "exampleTitle": "One maintenance job covers two units",
+      "example": "A clear description and a breakdown of the invoice make it easier to follow costs for each unit and explain the year-end figures.",
+      "prepare": [
+        "List the properties or units you rent out and the kinds of leases you have.",
+        "Describe how you currently track rent and service charges."
+      ],
+      "faq": [
+        [
+          "Can we get separate reports for each property?",
+          "We can assess this if the income and costs can be identified by property or unit."
+        ],
+        [
+          "What should I keep for a large refurbishment?",
+          "Keep itemised invoices and a description of the work. We can review which accounting points need to be resolved."
+        ]
+      ]
+    }
+  }
+}

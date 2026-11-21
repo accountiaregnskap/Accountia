@@ -2,19 +2,24 @@
 {{ $book := (index $services 0).url }}
 {{ $payroll := (index $services 1).url }}
 {{ $backOffice := (index $services 2).url }}
-{{ $links := slice $book $payroll (print $book "#mva") (print $book "#arsoppgjor") $backOffice (print $book "#radgivning") }}
-<section class="svc-wrap" data-reveal>
+{{ $vat := (site.GetPage "/tema-mva").RelPermalink }}
+{{ $year := (site.GetPage "/tema-arsoppgjor").RelPermalink }}
+{{ $advice := (site.GetPage "/tema-radgivning").RelPermalink }}
+{{ $links := slice $book $payroll $vat $year $backOffice $advice }}
+{{ $ui := (index site.Data.catalog .Page.Lang).ui }}
+<section class="svc-wrap accountia-catalog" aria-labelledby="service-catalog-title">
   <div class="svc-head">
-    <h2>{{ i18n "services_topics" }}</h2>
+    <h2 id="service-catalog-title">{{ i18n "services_topics" }}</h2>
     <p>{{ .Get "lead" }}</p>
   </div>
 
-  <div class="svc-grid">
+  {{ partial "catalog-controls.html" $ui }}
+  <div class="svc-grid catalog-grid">
     {{ range $i, $n := (slice 1 2 3 4 5 6) }}
       {{ $ti := printf "c%dt" $n }}
       {{ $di := printf "c%dd" $n }}
       {{ $ii := printf "c%di" $n }}
-      <a class="svc-card service-topic-link" href="{{ index $links $i }}">
+      <a class="svc-card service-topic-link" data-catalog-item href="{{ index $links $i }}">
         {{ with ($.Get $ii) }}<img class="svc-icon" src="/images/icons/{{ . }}.svg" alt="" aria-hidden="true">{{ end }}
         <h3>{{ $.Get $ti }}</h3>
         <p>{{ $.Get $di }}</p>

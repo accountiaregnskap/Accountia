@@ -1,4 +1,7 @@
 {{ define "main" }}
+  {{ if .Params.accountia_topic }}
+    {{ partial "topic-detail.html" . }}
+  {{ else }}
   {{ $isPrivacy := or (eq .RelPermalink "/personvern/") (or (eq .RelPermalink "/en/privacy/") (or (eq .RelPermalink "/es/privacy/") (eq .RelPermalink "/ar/privacy/"))) }}
   {{ $isContact := or (eq .RelPermalink "/kontakt/") (or (eq .RelPermalink "/en/contact/") (or (eq .RelPermalink "/es/contact/") (or (eq .RelPermalink "/ar/contact/") (eq .RelPermalink "/en/kontakt/")))) }}
   {{ partial "page-hero.html" . }}
@@ -7,12 +10,10 @@
       {{ if $isContact }}
         {{ partial "contact-form.html" . }}
       {{ end }}
-      {{ if eq .Params.translationKey "site-services" }}
-        {{ partial "visual-services.html" . }}
-      {{ end }}
       <div class="page-content{{ if $isPrivacy }} privacy-page-content{{ end }}">
         {{ .Content }}
       </div>
     </div>
   </div>
+  {{ end }}
 {{ end }}

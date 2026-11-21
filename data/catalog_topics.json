@@ -1,0 +1,11 @@
+{
+  "mva": {"photo":"accountia-planlegging.jpg","industry":false,"related":["arsoppgjor","netthandel"],"source":"https://www.skatteetaten.no/bedrift-og-organisasjon/avgifter/mva/mva-melding"},
+  "arsoppgjor": {"photo":"accountia-plan.jpg","industry":false,"related":["mva","radgivning"],"source":"https://www.brreg.no/innsending-av-arsregnskap/"},
+  "radgivning": {"photo":"accountia-samarbeid.jpg","industry":false,"related":["arsoppgjor","konsulent"]},
+  "servering": {"photo":"accountia-lonn.jpg","industry":true,"related":["mva","netthandel"]},
+  "handverk": {"photo":"accountia-plan.jpg","industry":true,"related":["radgivning","transport"]},
+  "netthandel": {"photo":"accountia-butikk-detalj.jpg","industry":true,"related":["mva","radgivning"]},
+  "konsulent": {"photo":"accountia-regnskap-detalj.jpg","industry":true,"related":["radgivning","arsoppgjor"]},
+  "transport": {"photo":"accountia-planlegging.jpg","industry":true,"related":["radgivning","handverk"]},
+  "eiendom": {"photo":"accountia-bedrift-detalj.jpg","industry":true,"related":["arsoppgjor","mva"]}
+}
