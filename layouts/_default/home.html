@@ -1,12 +1,13 @@
 {{ define "main" }}
   {{ partial "hero.html" . }}
+  {{ partial "home-index.html" . }}
   {{ partial "featured-services.html" . }}
   <div class="section home-main">
     <div class="container home-shell">
       {{ partial "explore-accountia.html" . }}
+      {{ partial "studio-story.html" . }}
       {{ partial "working-month.html" . }}
       {{ partial "service-guide.html" . }}
-      {{ partial "studio-story.html" . }}
       {{ .Content }}
     </div>
   </div>

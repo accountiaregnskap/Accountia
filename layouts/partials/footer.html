@@ -1,8 +1,10 @@
 {{ $pages := index site.Data.service_guide .Lang }}
 <footer class="site-footer editorial-footer">
+  <div class="container footer-signature">
+    <a class="brandbar-logo footer-brand" href="{{ "/" | relLangURL }}" aria-label="Accountia">{{ partial "brandmark.html" . }}</a>
+  </div>
   <div class="container footer-inner">
     <div>
-      <a class="brandbar-logo footer-brand" href="{{ "/" | relLangURL }}" aria-label="Accountia">{{ partial "brandmark.html" . }}</a>
       <a href="https://maps.google.com/?q={{ site.Params.address }}">{{ site.Params.address }}</a><br>
       {{ i18n "footer_orgnr" }} {{ site.Params.orgnr }}
     </div>
