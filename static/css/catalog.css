@@ -1,3 +1,4 @@
+html[dir="rtl"] :is(.site-main,.topic-body) { overflow-x: clip; }
 .explore-accountia { width: 100%; scroll-margin-block-start: 92px; }
 .explore-accountia > header { margin-block-end: clamp(20px,4vw,36px); }
 .explore-accountia > header h2, .topic-content h2 {
