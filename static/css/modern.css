@@ -133,9 +133,12 @@ html[dir="rtl"] .service-arrow { transform: scaleX(-1); }
 .site-main .about-photo img { object-fit: cover; }
 .site-main .contact-form :is(input,textarea) { font-size: 16px; border-color: #aab0b7; }
 .site-footer { background: var(--ink-deep); color: #eff3f7; padding-bottom: 70px; }
-.site-footer :is(strong,.footer-bottom) { color: #eff3f7; }
+.site-footer :is(strong,.footer-bottom,.footer-inner > div) { color: #eff3f7; }
+.site-footer .footer-bottom { border-color: #38495d; }
 .site-footer a { color: #ffdb9e; }
+.site-footer a:hover { color: white; text-decoration: underline; }
 .site-footer .social-btn { color: var(--ink); }
+.site-footer .social-btn:hover { color: var(--ink); background: white; }
 
 .customer-help {
   position: fixed; inset-inline-end: clamp(12px,3vw,28px);
@@ -189,6 +192,7 @@ html[dir="rtl"] .service-arrow { transform: scaleX(-1); }
   .site-header .nav-toggle-btn { min-height: 44px; color: var(--ink); }
   .site-header .nav { background: var(--paper); max-height: 76dvh; overflow-y: auto; }
   .site-header .nav > a:is([href="/kontakt/"],[href$="/contact/"]) { margin-inline: 14px; }
+  .site-header .lang-dd-menu { position: static; box-shadow: none; margin-block-start: 6px; }
 }
 @media (max-width: 720px) {
   .welcome-layout { grid-template-columns: minmax(0,1fr); gap: 22px; }
