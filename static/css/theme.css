@@ -25,7 +25,7 @@ body { background: var(--paper); color: var(--ink); }
 .brandbar-inner { width: min(100%, 1320px); }
 .brandbar-logo { gap: 10px; }
 .brandmark-symbol { width: 47px; height: 47px; }
-.brandmark-name { font-family: Manrope, Inter, system-ui, sans-serif; font-size: 1.73rem; letter-spacing: -.068em; }
+.brandmark-name { font-family: Manrope, Inter, system-ui, sans-serif; font-size: 1.73rem; letter-spacing: -.054em; }
 .brandmark-description { color: #4d5e35; }
 .brandbar-contact, .brandbar-trigger { border-radius: 10px; }
 .brandbar-contact:hover { background: #35412b; }
@@ -67,7 +67,12 @@ body { background: var(--paper); color: var(--ink); }
   mask-image: radial-gradient(ellipse 72% 58% at 54% 50%, #000 54%, transparent 98%);
 }
 html[dir="rtl"] .front-art-frame { mask-image: radial-gradient(ellipse 72% 58% at 46% 50%, #000 54%, transparent 98%); }
-.front-art img { display: block; width: 100%; max-width: none; height: auto; }
+.front-art img {
+  display: block; width: 100%; max-width: none; height: auto;
+  mask-image: linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent),
+    linear-gradient(0deg,transparent,#000 12%,#000 88%,transparent);
+  mask-composite: intersect;
+}
 .home-index { background: var(--brass); border-block-end: 1px solid #b9cb8d; }
 .home-index-links {
   width: min(calc(100% - 2 * var(--site-gutter)), 1250px);
