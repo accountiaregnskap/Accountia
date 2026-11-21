@@ -58,9 +58,17 @@
       </section>
       <section class="topic-related" aria-labelledby="topic-related-title">
         <h2 id="topic-related-title">{{ $ui.related }}</h2>
-        <ul role="list">
+        <ul class="related-visuals" role="list">
           {{ range $info.related }}
-          {{ with site.GetPage (printf "/tema-%s" .) }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+          {{ $related := index site.Data.catalog_topics . }}
+          {{ with site.GetPage (printf "/tema-%s" .) }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              <span class="related-photo"><img src="/images/{{ $related.photo }}" width="840" height="560" alt="" loading="lazy" decoding="async"></span>
+              <span class="related-name">{{ .Title }}</span>
+            </a>
+          </li>
+          {{ end }}
           {{ end }}
         </ul>
       </section>

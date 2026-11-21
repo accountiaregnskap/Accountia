@@ -4,5 +4,5 @@ translationKey: topic-handverk
 accountia_topic: handverk
 url: /en/industries/trades-construction/
 description: "Track time, materials and invoices when several jobs are running at once."
-image: /images/accountia-plan.jpg
+image: /images/accountia-handverk.jpg
 ---

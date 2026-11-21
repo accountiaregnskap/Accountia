@@ -1,4 +1,6 @@
 <section class="front-intro">
+  {{ $navigation := index site.Data.service_guide .Lang }}
+  {{ $industry := (index site.Data.industry_directory .Lang).title }}
   <div class="container front-layout">
     <div class="front-copy">
       <p class="front-kicker">{{ i18n "studio_kicker" }}</p>
@@ -13,12 +15,21 @@
       </div>
       <a class="front-review" href="{{ site.Params.googleReviews }}">{{ i18n "google_reviews" }} <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="front-art" aria-hidden="true">
-      <div class="front-art-frame">
-        <img src="/images/accountia-papirform.jpg"
-             srcset="/images/accountia-papirform-720.jpg 720w, /images/accountia-papirform.jpg 1536w"
-             sizes="(max-width: 760px) 100vw, 60vw" width="1536" height="1024" alt="" fetchpriority="high">
-      </div>
+    <div class="front-gallery">
+      <a class="front-gallery-card front-gallery-person" href="{{ i18n "studio_story_url" }}">
+        <img src="/images/accountia-office-wide.jpg"
+             srcset="/images/accountia-office-compact.jpg 544w, /images/accountia-office-wide.jpg 1088w"
+             sizes="(max-width: 760px) calc(100vw - 32px), 44vw" width="1088" height="1088" alt="" fetchpriority="high">
+        <span>{{ i18n "studio_story_link" }}</span>
+      </a>
+      <a class="front-gallery-card front-gallery-service" href="{{ $navigation.services }}">
+        <img src="/images/accountia-planlegging.jpg" width="840" height="560" alt="" decoding="async">
+        <span>{{ (index site.Data.catalog .Lang).ui.services }}</span>
+      </a>
+      <a class="front-gallery-card front-gallery-industry" href="{{ $navigation.industry_url }}">
+        <img src="/images/accountia-handverk.jpg" width="1008" height="672" alt="" decoding="async">
+        <span>{{ $industry }}</span>
+      </a>
     </div>
   </div>
 </section>
