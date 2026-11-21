@@ -20,6 +20,7 @@ html[dir="rtl"] :is(.site-main,.topic-body) { overflow-x: clip; }
 .explore-layout h3 a:hover { text-decoration-thickness: .12em; }
 .explore-layout p { margin: 10px 0 15px; line-height: 1.58; }
 .explore-links, .explore-industries-list, .topic-index ul, .topic-related ul { list-style: none; padding: 0; margin: 0; }
+.explore-links li, .explore-industries-list li, .topic-related li { margin: 0; }
 .explore-links { display: flex; flex-wrap: wrap; gap: 8px; }
 .explore-links a, .topic-related a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 7px 12px; border-radius: 6px;
@@ -88,7 +89,8 @@ html[dir="rtl"] :is(.site-main,.topic-body) { overflow-x: clip; }
   color: inherit; font-size: clamp(2.04rem,5.3vw,4.8rem); line-height: 1.13; margin: 4px 0 0;
   letter-spacing: var(--display-tracking); text-wrap: balance;
 }
-.topic-hero p { line-height: 1.62; font-size: clamp(1rem,2vw,1.14rem); margin: 15px 0 22px; max-width: 57ch; }
+.topic-hero p { color: #e6edf5; line-height: 1.62; font-size: clamp(1rem,2vw,1.14rem); margin: 15px 0 22px; max-width: 57ch; }
+.topic-industry .topic-hero p { color: var(--text-secondary); }
 .topic-hero .action-main { background: var(--brass); color: var(--ink-deep); }
 .topic-hero .action-main:hover { background: #ffdda5; }
 .topic-industry .topic-hero .action-main { background: var(--ink-deep); color: white; }
