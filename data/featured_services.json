@@ -1,0 +1,42 @@
+{
+  "no": {
+    "browse": "Bla i tjenestene",
+    "title": "Regnskap, lønn og avlastning",
+    "next": "Neste",
+    "previous": "Forrige",
+    "choose": "Velg tjeneste",
+    "read": "Les om tjenesten",
+    "all": "Se alle tjenester",
+    "status": "Tjeneste {current} av {total}"
+  },
+  "en": {
+    "browse": "Browse our services",
+    "title": "Accounting, payroll and finance support",
+    "next": "Next",
+    "previous": "Previous",
+    "choose": "Choose a service",
+    "read": "Explore this service",
+    "all": "See all services",
+    "status": "Service {current} of {total}"
+  },
+  "es": {
+    "browse": "Explora los servicios",
+    "title": "Contabilidad, nóminas y apoyo financiero",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "choose": "Elige un servicio",
+    "read": "Ver este servicio",
+    "all": "Ver todos los servicios",
+    "status": "Servicio {current} de {total}"
+  },
+  "ar": {
+    "browse": "تصفّح خدماتنا",
+    "title": "المحاسبة والرواتب والدعم المالي",
+    "next": "التالي",
+    "previous": "السابق",
+    "choose": "اختر خدمة",
+    "read": "اطّلع على الخدمة",
+    "all": "اطّلع على جميع الخدمات",
+    "status": "الخدمة {current} من {total}"
+  }
+}

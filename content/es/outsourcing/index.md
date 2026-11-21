@@ -1,14 +1,14 @@
 ---
-title: "Outsourcing"
+title: "Apoyo en la gestión financiera"
 translationKey: "service-outsourcing"
 bg: "/images/hero.jpg"
 url: "/es/services/outsourcing/"
-lead: "Outsourcing que libera tiempo, aporta estructura y simplifica el trabajo diario."
+lead: "Elige qué tareas quieres delegar, desde la facturación y el seguimiento de cobros hasta los informes."
 ---
 
 {{< service_bento
   variant="calm"
-  tag="Outsourcing"
+  tag="Gestión financiera"
   title="Cuando quieres mover tareas fuera, pero mantener el control"
   lead="Ayudamos a empresas que quieren alivio en tareas administrativas y financieras sin perder visión general, claridad ni ritmo de trabajo."
   c1k="Alivio" c1t="Más tiempo para operación y crecimiento" c1d="Asumimos tareas seleccionadas para que puedas centrarte más en clientes, dirección y desarrollo."
@@ -19,7 +19,7 @@ lead: "Outsourcing que libera tiempo, aporta estructura y simplifica el trabajo 
 
 {{< service_steps_modern
   tag="Colaboración"
-  title="Cómo construimos una solución de outsourcing"
+  title="Cómo repartimos las tareas"
   lead="Partimos de tus necesidades y diseñamos una solución fácil de seguir, fácil de medir y fácil de ajustar."
   s1t="Definición de tareas" s1d="Revisamos qué quieres externalizar y qué partes deben seguir dentro de la empresa."
   s2t="Diseño del flujo de trabajo" s2d="Definimos responsabilidades, rutinas y cómo debe circular la información entre nosotros y tu negocio."
@@ -28,17 +28,17 @@ lead: "Outsourcing que libera tiempo, aporta estructura y simplifica el trabajo 
 >}}
 
 {{< services_faq
-  title="Preguntas frecuentes sobre outsourcing"
+  title="Preguntas frecuentes sobre la delegación de tareas"
   lead="Lo más importante que conviene saber antes de externalizar tareas."
   q1t="¿Con qué tareas pueden ayudarnos?" q1d="Podemos asumir tareas administrativas y financieras seleccionadas, según tus necesidades, tu capacidad y tus rutinas actuales."
-  q2t="¿Es adecuado para empresas pequeñas?" q2d="Sí. Puede ser especialmente útil para empresas pequeñas que quieren alivio sin ampliar funciones internas."
+  q2t="¿Es adecuado para empresas pequeñas?" q2d="Sí. Puedes delegar tareas concretas aunque no tengas un departamento financiero propio."
   q3t="¿Cómo mantenemos el control?" q3d="Definimos claramente responsabilidades, informes y puntos de contacto para que siempre sepas qué se hace y cuándo."
   q4t="¿Se puede ampliar más adelante?" q4d="Sí. Podemos empezar con poco y ampliar la colaboración a medida que crezca la empresa o cambien las necesidades."
 >}}
 
 {{< cta_banner
   title="¿Quieres liberar tiempo y ganar más estructura?"
-  lead="Cuéntanos qué tareas quieres delegar y te propondremos una solución de outsourcing adaptada a tu empresa."
+  lead="Cuéntanos qué tareas quieres delegar y te propondremos cómo repartir el trabajo."
   btn_label="Cotización gratuita"
   btn_url="/es/contact/#contact-form"
 >}}

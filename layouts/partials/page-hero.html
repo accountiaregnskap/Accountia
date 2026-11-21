@@ -2,14 +2,17 @@
 {{ range site.Home.Params.hero_cards }}
   {{ if eq .url $.RelPermalink }}{{ $photo = .photo }}{{ end }}
 {{ end }}
-<section class="title-band{{ if $photo }} title-band--photo{{ end }}">
+{{ $key := .Params.translationKey }}
+{{ $catalog := or (eq $key "site-services") (eq $key "site-industry") }}
+{{ $contact := or (eq $key "site-prices") (eq $key "site-contact") }}
+<section class="title-band{{ if $photo }} title-band--photo{{ end }}{{ if $catalog }} title-band--directory{{ end }}{{ if $contact }} title-band--inquiry{{ end }}">
   <div class="container">
-    <div>
+    <div class="title-band-copy">
       <h1>{{ .Title }}</h1>
       {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
     </div>
     {{ with $photo }}
-      <img src="/images/{{ . }}" width="840" height="560" alt="" decoding="async">
+      <div class="title-band-media"><img src="/images/{{ . }}" width="840" height="560" alt="" decoding="async"></div>
     {{ end }}
   </div>
 </section>

@@ -3,7 +3,7 @@ title: "الرواتب"
 translationKey: "service-payroll"
 bg: "/images/hero.jpg"
 url: "/ar/services/payroll/"
-lead: "رواتب دقيقة ومنظمة وآمنة للموظفين وللشركة."
+lead: "احصل على مساعدة في إعداد الرواتب وكشوفها وتقديم إقرار A-melding. نتفق معك على من يرسل بيانات الرواتب ومن يعتمدها."
 ---
 
 {{< service_bento
