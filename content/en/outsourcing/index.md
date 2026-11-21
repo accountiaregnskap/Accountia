@@ -1,14 +1,14 @@
 ---
-title: "Outsourcing"
+title: "Day-to-day finance support"
 translationKey: "service-outsourcing"
 bg: "/images/hero.jpg"
 url: "/en/services/outsourcing/"
-lead: "Outsourcing that frees up time, creates structure, and makes everyday operations easier."
+lead: "Choose the tasks you want us to handle, from invoicing and payment follow-up to reporting."
 ---
 
 {{< service_bento
   variant="calm"
-  tag="Outsourcing"
+  tag="Finance support"
   title="When you want to move tasks out, but keep control"
   lead="We support businesses that want relief from administrative and financial tasks without losing overview, clarity, or momentum."
   c1k="Relief" c1t="More time for operations and growth" c1d="We take responsibility for selected tasks so you can focus more on customers, leadership, and development."
@@ -19,7 +19,7 @@ lead: "Outsourcing that frees up time, creates structure, and makes everyday ope
 
 {{< service_steps_modern
   tag="Collaboration"
-  title="How we build an outsourcing setup"
+  title="How we divide the work"
   lead="We start with your needs and create a setup that is easy to follow, easy to measure, and easy to adjust."
   s1t="Clarifying the tasks" s1d="We review what you want to outsource and which parts should still stay internal."
   s2t="Establishing workflow" s2d="We define responsibility, routines, and how information should move between us and your business."
@@ -28,17 +28,17 @@ lead: "Outsourcing that frees up time, creates structure, and makes everyday ope
 >}}
 
 {{< services_faq
-  title="Common questions about outsourcing"
-  lead="The most important things to know before outsourcing tasks."
-  q1t="What can you help us with through outsourcing?" q1d="We can take responsibility for selected administrative and financial tasks, depending on your needs, capacity, and existing routines."
-  q2t="Is this suitable for small businesses?" q2d="Yes. Outsourcing can be especially useful for smaller businesses that want relief without building more internal functions."
+  title="Common questions about delegating finance tasks"
+  lead="What to know before delegating a task."
+  q1t="Which tasks can you take on?" q1d="We can help with invoicing, following up on unpaid invoices and reporting. We agree on which tasks to include."
+  q2t="Is this suitable for small businesses?" q2d="Yes. You can get help with specific tasks even if you don’t have a finance team."
   q3t="How do we keep control?" q3d="We clarify responsibility, reporting, and contact points so you always know what is being done and when."
   q4t="Can the solution be expanded later?" q4d="Yes. We can start small and expand the delivery as your business grows or your needs change."
 >}}
 
 {{< cta_banner
   title="Do you want to free up time and gain more structure?"
-  lead="Tell us which tasks you want help with, and we will suggest an outsourcing setup that fits your business."
+  lead="Tell us where you need help and we’ll suggest a way to share the work."
   btn_label="Free quote"
   btn_url="/en/contact/#contact-form"
 >}}

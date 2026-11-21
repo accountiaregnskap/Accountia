@@ -3,7 +3,7 @@ title: "Payroll"
 translationKey: "service-payroll"
 bg: "/images/hero.jpg"
 url: "/en/services/payroll/"
-lead: "Payroll that is accurate, predictable, and reliable for both your team and your business."
+lead: "Get help with payroll, payslips and A-melding reporting. We agree on who supplies and approves the payroll records."
 ---
 
 {{< service_bento

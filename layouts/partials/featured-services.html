@@ -1,0 +1,36 @@
+{{ $ui := index site.Data.featured_services .Lang }}
+{{ $links := index site.Data.service_guide .Lang }}
+<section class="featured-services" id="featured-services" aria-labelledby="featured-services-title" data-summary="{{ $ui.status }}">
+  <div class="container featured-shell">
+    <header class="featured-head">
+      <h2 id="featured-services-title">{{ $ui.title }}</h2>
+      <a href="{{ $links.services }}">{{ $ui.all }}</a>
+    </header>
+    <div class="featured-track" id="featured-track" role="group" aria-label="{{ $ui.browse }}">
+      {{ range $index, $card := .Params.hero_cards }}
+        <article class="featured-card" id="featured-{{ $index }}">
+          <div class="featured-copy">
+            <h3>{{ $card.title }}</h3>
+            <p>{{ $card.text }}</p>
+            <a class="action-main" href="{{ $card.url }}" aria-label="{{ $ui.read }} · {{ $card.title }}">{{ $ui.read }}</a>
+          </div>
+          <div class="featured-image">
+            <img src="/images/{{ $card.photo }}" width="840" height="560" alt="" loading="lazy" decoding="async">
+          </div>
+        </article>
+      {{ end }}
+    </div>
+    <div class="featured-controls" hidden>
+      <div class="featured-dots" role="group" aria-label="{{ $ui.choose }}">
+        {{ range $index, $card := .Params.hero_cards }}
+          <button type="button" data-slide="{{ $index }}" aria-label="{{ $card.title }}" aria-controls="featured-{{ $index }}"></button>
+        {{ end }}
+      </div>
+      <div class="featured-directions" role="group" aria-label="{{ $ui.browse }}">
+        <button type="button" data-direction="-1" aria-controls="featured-track">{{ $ui.previous }}</button>
+        <button type="button" data-direction="1" aria-controls="featured-track">{{ $ui.next }}</button>
+      </div>
+      <span class="featured-status" role="status"></span>
+    </div>
+  </div>
+</section>

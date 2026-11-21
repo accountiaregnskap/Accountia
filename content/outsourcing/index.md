@@ -1,14 +1,14 @@
 ---
-title: "Outsourcing"
+title: "Avlastning i økonomiarbeidet"
 translationKey: "service-outsourcing"
 bg: "/images/hero.jpg"
 url: "/tjenester/outsourcing/"
-lead: "Outsourcing som frigjør tid, gir struktur og gjør hverdagen enklere."
+lead: "Velg hvilke oppgaver du vil sette bort, fra fakturering og oppfølging av betalinger til rapportering."
 ---
 
 {{< service_bento
   variant="calm"
-  tag="Outsourcing"
+  tag="Økonomiarbeid"
   title="Når du vil flytte oppgaver ut, men beholde kontrollen"
   lead="Vi hjelper virksomheter som ønsker avlastning i administrative og økonomiske oppgaver uten å miste oversikt eller flyt."
   c1k="Avlastning" c1t="Mer tid til drift og vekst" c1d="Vi tar ansvar for utvalgte oppgaver slik at du kan bruke mer tid på kunder, ledelse og utvikling."
@@ -19,7 +19,7 @@ lead: "Outsourcing som frigjør tid, gir struktur og gjør hverdagen enklere."
 
 {{< service_steps_modern
   tag="Samarbeid"
-  title="Slik bygger vi en outsourcing-løsning"
+  title="Slik fordeler vi oppgavene"
   lead="Vi starter med behovene dine og setter opp en løsning som er enkel å følge, enkel å måle og enkel å justere."
   s1t="Avklaring av oppgaver" s1d="Vi går gjennom hva du ønsker å sette ut, og hvilke deler som fortsatt bør håndteres internt."
   s2t="Etablering av arbeidsflyt" s2d="Vi definerer ansvar, rutiner og hvordan informasjon skal flyte mellom oss og virksomheten din."
@@ -28,17 +28,17 @@ lead: "Outsourcing som frigjør tid, gir struktur og gjør hverdagen enklere."
 >}}
 
 {{< services_faq
-  title="Vanlige spørsmål om outsourcing"
+  title="Vanlige spørsmål om å sette bort oppgaver"
   lead="Det viktigste du bør vite før du setter ut oppgaver."
-  q1t="Hva kan dere hjelpe oss med gjennom outsourcing?" q1d="Vi kan ta ansvar for utvalgte administrative og økonomiske oppgaver, avhengig av behov, kapasitet og eksisterende rutiner."
-  q2t="Passer dette for små bedrifter?" q2d="Ja. Outsourcing kan være spesielt nyttig for mindre virksomheter som ønsker avlastning uten å bygge opp flere interne funksjoner."
+  q1t="Hvilke oppgaver kan dere ta?" q1d="Vi kan blant annet hjelpe med fakturering, oppfølging av ubetalte fakturaer og rapportering. Vi avtaler hva som inngår."
+  q2t="Passer dette for små bedrifter?" q2d="Ja. Du kan få hjelp med enkelte oppgaver selv om du ikke har en egen økonomiavdeling."
   q3t="Hvordan beholder vi kontrollen?" q3d="Vi avklarer ansvar, rapportering og kontaktpunkter tydelig, slik at du alltid vet hva som blir gjort og når."
   q4t="Kan løsningen utvides senere?" q4d="Ja. Vi kan starte i det små og utvide leveransen etter hvert som virksomheten vokser eller behovet endrer seg."
 >}}
 
 {{< cta_banner
   title="Vil du frigjøre tid og få mer struktur i hverdagen?"
-  lead="Fortell oss hvilke oppgaver du ønsker hjelp med, så foreslår vi en outsourcing-løsning som passer virksomheten din."
+  lead="Fortell hvilke oppgaver du vil ha hjelp med, så foreslår vi en arbeidsdeling."
   btn_label="Gratis pristilbud"
   btn_url="/kontakt/#contact-form"
 >}}

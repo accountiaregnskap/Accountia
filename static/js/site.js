@@ -1,4 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const featured = document.querySelector(".featured-services");
+  if (!featured) return;
+  const track = featured.querySelector(".featured-track");
+  const controls = featured.querySelector(".featured-controls");
+  const slides = Array.from(track.querySelectorAll(".featured-card"));
+  const dots = Array.from(controls.querySelectorAll("[data-slide]"));
+  const status = controls.querySelector(".featured-status");
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const rtl = getComputedStyle(track).direction === "rtl";
+  let active = -1;
+  let frame = 0;
+
+  function updateActive() {
+    frame = 0;
+    const index = Math.min(slides.length - 1, Math.round(Math.abs(track.scrollLeft) / track.clientWidth));
+    if (active === index || !Number.isFinite(index)) return;
+    active = index;
+    slides.forEach((slide, position) => {
+      const selected = position === active;
+      if (!selected && slide.contains(document.activeElement)) track.focus({ preventScroll: true });
+      slide.inert = !selected;
+      if (selected) dots[position].setAttribute("aria-current", "true");
+      else dots[position].removeAttribute("aria-current");
+    });
+    status.textContent = featured.dataset.summary.replace("{current}", active + 1).replace("{total}", slides.length);
+  }
+
+  function select(index) {
+    const item = (index + slides.length) % slides.length;
+    const left = (rtl ? -1 : 1) * item * track.clientWidth;
+    const wrap = index < 0 || index >= slides.length;
+    track.scrollTo({ left, behavior: reduceMotion.matches || wrap ? "instant" : "smooth" });
+  }
+
+  featured.classList.add("is-slider");
+  controls.hidden = false;
+  track.tabIndex = 0;
+  updateActive();
+  track.addEventListener("scroll", () => {
+    if (!frame) frame = requestAnimationFrame(updateActive);
+  }, { passive: true });
+  controls.addEventListener("click", (event) => {
+    const button = event.target.closest("button");
+    if (!button) return;
+    if (button.hasAttribute("data-slide")) select(Number(button.dataset.slide));
+    else select(active + Number(button.dataset.direction));
+  });
+  featured.addEventListener("keydown", (event) => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    const right = event.key === "ArrowRight";
+    select(active + (right === rtl ? -1 : 1));
+  });
+  if ("ResizeObserver" in window) {
+    const resize = new ResizeObserver(updateActive);
+    resize.observe(track);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.querySelector(".accountia-catalog");
   if (!catalog) return;
 

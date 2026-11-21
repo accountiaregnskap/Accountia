@@ -3,7 +3,7 @@ title: "Nómina"
 translationKey: "service-payroll"
 bg: "/images/hero.jpg"
 url: "/es/services/nomina/"
-lead: "Nómina precisa, predecible y segura tanto para la empresa como para los empleados."
+lead: "Recibe ayuda con el cálculo de nóminas, los recibos salariales y la declaración A-melding. Acordamos quién envía y aprueba los datos de nómina."
 ---
 
 {{< service_bento

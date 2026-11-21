@@ -3,7 +3,7 @@ title: "Lønn"
 translationKey: "service-payroll"
 bg: "/images/hero.jpg"
 url: "/tjenester/lonn/"
-lead: "Lønn som er presis, forutsigbar og trygg for både ansatte og bedrift."
+lead: "Få hjelp med lønnskjøring, lønnsslipper og A-melding. Vi avtaler hvem som sender inn og godkjenner lønnsgrunnlaget."
 ---
 
 {{< service_bento
