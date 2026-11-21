@@ -3,7 +3,7 @@ title: "Accountia"
 hero_title: "Cuentas claras. Personas de confianza."
 hero_lead: "Contabilidad y nóminas para pequeñas y medianas empresas. Tendrás una persona de contacto que conoce tu negocio y te explica las cifras."
 hero_cta_primary_label: "Solicitar presupuesto"
-hero_cta_primary_url: "/es/contact/#contact-form"
+hero_cta_primary_url: "/es/prices/#quote-builder"
 hero_cards:
   - title: "Contabilidad y cierre anual"
     photo: "accountia-regnskap-detalj.jpg"
@@ -18,16 +18,6 @@ hero_cards:
     text: "Delega las tareas que necesites, desde la facturación hasta los informes."
     url: "/es/services/outsourcing/"
 ---
-
-{{< process_steps
-title="Cómo trabajamos — simple y predecible"
-lead="Tendrás un contacto dedicado, plazos claros y una configuración adaptada a tu empresa."
-s1i="target" s1t="Inicio" s1d="Definimos necesidades, sistemas y plazos — y acordamos un plan claro."
-s2i="chip" s2t="Configuración" s2d="Configuramos cuentas, rutinas, integraciones y accesos."
-s3i="clock" s3t="Seguimiento" s3d="Registramos, conciliamos y hacemos seguimiento — mes a mes."
-s4i="chart" s4t="Reportes y asesoría" s4d="Obtienes información, KPIs y recomendaciones para decidir mejor."
->}}
-
 
 {{< industry_directory compact="true" >}}
 

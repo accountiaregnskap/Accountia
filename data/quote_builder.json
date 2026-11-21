@@ -1,0 +1,134 @@
+{
+  "no": {
+    "title": "Skreddersy prisforespørselen din",
+    "lead": "Velg det du vet om bedriften og oppgavene du vil ha hjelp med. Vi tar valgene med i et utkast som du kan redigere.",
+    "summary": "Dine valg",
+    "empty": "Velg noe som passer, eller gå rett til kontaktskjemaet.",
+    "unsure": "Usikker",
+    "services": "Hva trenger du hjelp med?",
+    "servicesLabel": "Ønskede tjenester",
+    "continue": "Gå til kontaktskjemaet",
+    "note": "Du kan se over meldingen før du sender den til oss.",
+    "message": "Hei! Jeg ønsker et pristilbud fra Accountia.",
+    "fields": [
+      { "name": "selskapsform", "label": "Selskapsform", "options": [
+        { "id": "as", "label": "Aksjeselskap (AS)" }, { "id": "enk", "label": "Enkeltpersonforetak (ENK)" }, { "id": "other", "label": "Annen selskapsform" }
+      ] },
+      { "name": "bilag", "label": "Bilag per måned, omtrent", "options": [
+        { "id": "0-20", "label": "0–20" }, { "id": "21-50", "label": "21–50" }, { "id": "51-100", "label": "51–100" }, { "id": "100-plus", "label": "Over 100" }
+      ] }
+    ],
+    "options": [
+      { "id": "accounting", "label": "Regnskap og MVA" },
+      { "id": "payroll", "label": "Lønn og A-melding" },
+      { "id": "annual", "label": "Årsoppgjør" },
+      { "id": "advice", "label": "Rådgivning" },
+      { "id": "outsourcing", "label": "Avlastning i økonomiarbeidet" }
+    ],
+    "factorsTitle": "Dette ser vi på før vi gir deg en pris",
+    "factors": [
+      { "title": "Mengde og systemer", "text": "Antall bilag gir en pekepinn. Vi ser også på om salget kommer fra ett system eller om oppgjør, returer og gebyrer må følges opp på tvers av flere løsninger." },
+      { "title": "Lønn og frister", "text": "Hvis du trenger lønnskjøring, er antall ansatte, hyppighet og variable timer eller utlegg nyttig informasjon." },
+      { "title": "Oppstart og løpende arbeid", "text": "Vi avklarer hva som trengs for å komme i gang, og hvilke oppgaver vi skal ta løpende. Det gjør tilbudet enklere å vurdere." }
+    ]
+  },
+  "en": {
+    "title": "Build your quote request",
+    "lead": "Tell us what you know about your business and choose the tasks you want help with. We’ll use your choices to draft a message you can edit.",
+    "summary": "Your choices",
+    "empty": "Make a selection or go straight to the contact form.",
+    "unsure": "Unsure",
+    "services": "What do you need help with?",
+    "servicesLabel": "Requested services",
+    "continue": "Go to the contact form",
+    "note": "You can review the message before you send it to us.",
+    "message": "Hello! I’d like a quote from Accountia.",
+    "fields": [
+      { "name": "selskapsform", "label": "Business structure", "options": [
+        { "id": "as", "label": "Limited company (AS)" }, { "id": "enk", "label": "Sole proprietorship (ENK)" }, { "id": "other", "label": "Other business structure" }
+      ] },
+      { "name": "bilag", "label": "Accounting records per month, roughly", "options": [
+        { "id": "0-20", "label": "0–20" }, { "id": "21-50", "label": "21–50" }, { "id": "51-100", "label": "51–100" }, { "id": "100-plus", "label": "Over 100" }
+      ] }
+    ],
+    "options": [
+      { "id": "accounting", "label": "Bookkeeping and VAT" },
+      { "id": "payroll", "label": "Payroll and A-melding reporting" },
+      { "id": "annual", "label": "Year-end accounts" },
+      { "id": "advice", "label": "Advisory" },
+      { "id": "outsourcing", "label": "Day-to-day finance support" }
+    ],
+    "factorsTitle": "What goes into your quote",
+    "factors": [
+      { "title": "Volume and systems", "text": "The number of records gives us a starting point. We also look at whether sales come from one system or whether we need to track payouts, returns and fees across several." },
+      { "title": "Payroll and deadlines", "text": "If you need payroll, it helps to know how many people you employ, how often you pay them and whether you have variable hours or expenses." },
+      { "title": "Setup and ongoing work", "text": "We clarify what needs to happen upfront and which tasks we’ll handle regularly. That makes the proposal easier to assess." }
+    ]
+  },
+  "es": {
+    "title": "Prepara tu solicitud de presupuesto",
+    "lead": "Indica lo que sepas de tu empresa y elige en qué tareas necesitas ayuda. Usaremos tus respuestas para redactar un mensaje que podrás editar.",
+    "summary": "Tus opciones",
+    "empty": "Elige alguna opción o ve directamente al formulario de contacto.",
+    "unsure": "No lo sé",
+    "services": "¿En qué necesitas ayuda?",
+    "servicesLabel": "Servicios solicitados",
+    "continue": "Ir al formulario de contacto",
+    "note": "Podrás revisar el mensaje antes de enviarlo.",
+    "message": "¡Hola! Quisiera solicitar un presupuesto a Accountia.",
+    "fields": [
+      { "name": "selskapsform", "label": "Forma jurídica", "options": [
+        { "id": "as", "label": "Sociedad limitada noruega (AS)" }, { "id": "enk", "label": "Empresa individual (ENK)" }, { "id": "other", "label": "Otra forma jurídica" }
+      ] },
+      { "name": "bilag", "label": "Justificantes al mes, aproximadamente", "options": [
+        { "id": "0-20", "label": "0–20" }, { "id": "21-50", "label": "21–50" }, { "id": "51-100", "label": "51–100" }, { "id": "100-plus", "label": "Más de 100" }
+      ] }
+    ],
+    "options": [
+      { "id": "accounting", "label": "Contabilidad e IVA" },
+      { "id": "payroll", "label": "Nóminas y declaración A-melding" },
+      { "id": "annual", "label": "Cierre contable anual" },
+      { "id": "advice", "label": "Asesoría" },
+      { "id": "outsourcing", "label": "Apoyo en la gestión financiera" }
+    ],
+    "factorsTitle": "Qué tenemos en cuenta al preparar el presupuesto",
+    "factors": [
+      { "title": "Volumen y sistemas", "text": "El número de justificantes es un punto de partida. También vemos si las ventas se gestionan en un único sistema o si los cobros, las devoluciones y las comisiones pasan por varios." },
+      { "title": "Nóminas y plazos", "text": "Si necesitas ayuda con las nóminas, nos sirve saber cuántos empleados tienes, con qué frecuencia cobran y si hay horas variables o gastos que reembolsar." },
+      { "title": "Puesta en marcha y trabajo habitual", "text": "Aclaramos qué hace falta para empezar y qué tareas haremos de forma periódica. Así podrás valorar mejor el presupuesto." }
+    ]
+  },
+  "ar": {
+    "title": "جهّز طلب عرض سعر",
+    "lead": "اختر ما تعرفه عن شركتك والمهام التي تحتاج فيها إلى المساعدة. سنستخدم اختياراتك لملء مسودة رسالة يمكنك تعديلها.",
+    "summary": "اختياراتك",
+    "empty": "اختر ما يناسبك أو انتقل مباشرة إلى نموذج التواصل.",
+    "unsure": "غير متأكد",
+    "services": "ما المهام التي تحتاج فيها إلى المساعدة؟",
+    "servicesLabel": "الخدمات المطلوبة",
+    "continue": "انتقل إلى نموذج التواصل",
+    "note": "يمكنك مراجعة الرسالة قبل إرسالها إلينا.",
+    "message": "مرحبًا! أودّ الحصول على عرض سعر من Accountia.",
+    "fields": [
+      { "name": "selskapsform", "label": "الشكل القانوني للشركة", "options": [
+        { "id": "as", "label": "شركة محدودة (AS)" }, { "id": "enk", "label": "مؤسسة فردية (ENK)" }, { "id": "other", "label": "شكل قانوني آخر" }
+      ] },
+      { "name": "bilag", "label": "عدد المستندات المحاسبية شهريًا، تقريبًا", "options": [
+        { "id": "0-20", "label": "0–20" }, { "id": "21-50", "label": "21–50" }, { "id": "51-100", "label": "51–100" }, { "id": "100-plus", "label": "أكثر من 100" }
+      ] }
+    ],
+    "options": [
+      { "id": "accounting", "label": "مسك الدفاتر وضريبة القيمة المضافة" },
+      { "id": "payroll", "label": "الرواتب وإقرار A-melding" },
+      { "id": "annual", "label": "إقفال الحسابات السنوية" },
+      { "id": "advice", "label": "الاستشارات" },
+      { "id": "outsourcing", "label": "المساعدة في المهام المالية اليومية" }
+    ],
+    "factorsTitle": "ما الذي نأخذه في الاعتبار عند إعداد عرض السعر؟",
+    "factors": [
+      { "title": "حجم العمل والأنظمة", "text": "عدد المستندات يعطينا فكرة أولية. ونراجع أيضًا ما إذا كانت المبيعات تدار بنظام واحد أم أن التسويات والمرتجعات والرسوم موزعة على عدة أنظمة." },
+      { "title": "الرواتب والمواعيد", "text": "إذا كنت تحتاج إلى إدارة الرواتب، يساعدنا معرفة عدد الموظفين ومواعيد صرف الرواتب وما إذا كانت هناك ساعات عمل متغيرة أو مصروفات تُرد إلى الموظفين." },
+      { "title": "البدء والعمل الدوري", "text": "نحدد معك ما يلزم للبدء والمهام التي سنتولاها بانتظام، حتى يسهل عليك تقييم العرض." }
+    ]
+  }
+}

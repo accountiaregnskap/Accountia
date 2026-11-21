@@ -1,0 +1,53 @@
+{{ $quote := index site.Data.quote_builder .Page.Lang }}
+{{ $links := index site.Data.service_guide .Page.Lang }}
+<section class="quote-builder" id="quote-builder" aria-labelledby="quote-builder-title">
+  <header class="quote-heading">
+    <h2 id="quote-builder-title">{{ $quote.title }}</h2>
+    <p>{{ $quote.lead }}</p>
+  </header>
+  <form class="quote-form" action="{{ $links.contact }}#contact-form" method="get" hidden>
+    <input type="hidden" name="tilbud" value="1">
+    <div class="quote-inputs">
+      <div class="quote-selects">
+        {{ range $quote.fields }}
+          <label>
+            <span>{{ .label }}</span>
+            <select name="{{ .name }}">
+              <option value="">{{ $quote.unsure }}</option>
+              {{ range .options }}
+                <option value="{{ .id }}">{{ .label }}</option>
+              {{ end }}
+            </select>
+          </label>
+        {{ end }}
+      </div>
+      <fieldset class="quote-services">
+        <legend>{{ $quote.services }}</legend>
+        <div class="quote-choices">
+          {{ range $quote.options }}
+            <label><input type="checkbox" name="tjeneste" value="{{ .id }}"><span>{{ .label }}</span></label>
+          {{ end }}
+        </div>
+      </fieldset>
+    </div>
+    <div class="quote-summary">
+      <h3>{{ $quote.summary }}</h3>
+      <div class="quote-summary-state" aria-live="polite" aria-atomic="true">
+        <p class="quote-empty">{{ $quote.empty }}</p>
+        <dl hidden></dl>
+      </div>
+      <button class="action-main" type="submit">{{ $quote.continue }}</button>
+      <p class="quote-note">{{ $quote.note }}</p>
+    </div>
+  </form>
+  <noscript><p><a class="action-main" href="{{ $links.contact }}#contact-form">{{ i18n "footer_contact" }}</a></p></noscript>
+  <script type="application/json" class="quote-data">{{ $quote | jsonify | safeJS }}</script>
+</section>
+<section class="quote-factors" aria-labelledby="quote-factors-title">
+  <h2 id="quote-factors-title">{{ $quote.factorsTitle }}</h2>
+  <div class="quote-factors-grid">
+    {{ range $quote.factors }}
+      <div><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+    {{ end }}
+  </div>
+</section>

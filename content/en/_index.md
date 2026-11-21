@@ -3,7 +3,7 @@ title: "Accountia"
 hero_title: "Numbers you understand. People you know."
 hero_lead: "Accounting and payroll for small and mid-sized businesses. You’ll work with a dedicated accountant who knows your business and explains the numbers as you go."
 hero_cta_primary_label: "Request a quote"
-hero_cta_primary_url: "/en/contact/#contact-form"
+hero_cta_primary_url: "/en/prices/#quote-builder"
 hero_cards:
   - title: "Bookkeeping and annual accounts"
     photo: "accountia-regnskap-detalj.jpg"
@@ -18,16 +18,6 @@ hero_cards:
     text: "Hand over the tasks you need help with, from invoicing to reporting."
     url: "/en/services/outsourcing/"
 ---
-
-{{< process_steps
-title="How we work – simple and predictable"
-lead="You get a dedicated contact person, clear deadlines, and a setup that fits your business."
-s1i="target" s1t="Kick-off" s1d="We map your needs, systems and deadlines – and define a clear plan."
-s2i="chip" s2t="Setup" s2d="We configure accounts, routines, integrations and access."
-s3i="clock" s3t="Ongoing follow-up" s3d="We bookkeep, reconcile and follow up – month by month."
-s4i="chart" s4t="Reporting & advice" s4d="You get insights, KPIs and recommendations that support decisions."
->}}
-
 
 {{< industry_directory compact="true" >}}
 

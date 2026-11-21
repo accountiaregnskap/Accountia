@@ -1,0 +1,30 @@
+{{ $month := index site.Data.working_month .Lang }}
+{{ $guide := index site.Data.service_guide .Lang }}
+{{ $photos := slice "accountia-plan.jpg" "accountia-regnskap-detalj.jpg" "accountia-samarbeid.jpg" }}
+<section class="working-month" aria-labelledby="working-month-title" data-reveal>
+  <div class="month-heading">
+    <h2 id="working-month-title">{{ $month.title }}</h2>
+    <p>{{ $month.lead }}</p>
+  </div>
+  <div class="month-controls" role="group" aria-labelledby="working-month-title" hidden>
+    {{ range $index, $step := $month.steps }}
+      <button type="button" class="month-button" aria-pressed="{{ eq $index 0 }}" aria-controls="month-step-{{ $index }}">{{ $step.label }}</button>
+    {{ end }}
+    <div class="month-track" aria-hidden="true"><span></span></div>
+  </div>
+  <div class="month-panels">
+    {{ range $index, $step := $month.steps }}
+      <div class="month-panel" id="month-step-{{ $index }}">
+        <div class="month-photo">
+          <img src="/images/{{ index $photos $index }}" alt="" loading="lazy" decoding="async">
+        </div>
+        <div class="month-copy">
+          <h3>{{ $step.title }}</h3>
+          <p>{{ $step.text }}</p>
+          <p class="month-example"><strong>{{ $month.example }}</strong> {{ $step.example }}</p>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <a class="month-link" href="{{ $guide.services }}">{{ $month.services }}</a>
+</section>

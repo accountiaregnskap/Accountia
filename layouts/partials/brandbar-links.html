@@ -1,7 +1,7 @@
 {{ $links := index site.Data.service_guide .Lang }}
 {{ $current := .RelPermalink }}
 {{ range site.Menus.main }}
-  {{ if and (ne .URL site.Home.RelPermalink) (ne .URL $links.contact) (ne .URL $links.privacy) }}
+  {{ if and (ne .URL $links.contact) (ne .URL $links.privacy) }}
     <a class="brandbar-link" href="{{ .URL }}"{{ if eq .URL $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
   {{ end }}
 {{ end }}
