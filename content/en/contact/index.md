@@ -1,6 +1,7 @@
 ---
 title: "Contact"
-lead: "Get in touch for a no-obligation chat or a free quote — we reply during business hours."
+translationKey: "site-contact"
+lead: "Tell us what you need help with. We reply during business hours."
 bg: "/images/hero.jpg"
 ---
 

@@ -1,0 +1,126 @@
+{
+  "no": {
+    "contact": "/kontakt/",
+    "privacy": "/personvern/",
+    "services": "/tjenester/",
+    "lead": "Velg det som passer. Du kan ta valget med deg videre til kontaktskjemaet.",
+    "label": "Velg situasjonen din",
+    "cta": "Be om pristilbud",
+    "cases": [
+      {
+        "id": "oppstart",
+        "choice": "Jeg starter bedrift",
+        "title": "Få regnskapet på plass fra start",
+        "description": "Vi kan hjelpe deg med valg av system, rutiner for bilag og hva som må være klart når du fakturerer.",
+        "message": "Hei! Jeg starter bedrift og vil ha hjelp til å sette opp regnskapet."
+      },
+      {
+        "id": "bytte",
+        "choice": "Jeg vil bytte byrå",
+        "title": "Bytt med en plan for overgangen",
+        "description": "Vi avklarer overtakelsesdato, tilganger og hva den nåværende regnskapsføreren må overføre.",
+        "message": "Hei! Jeg vurderer å bytte regnskapsfører og vil gjerne høre hvordan overgangen kan legges opp."
+      },
+      {
+        "id": "lonn",
+        "choice": "Jeg trenger hjelp med lønn",
+        "title": "Få hjelp med lønnskjøring og A-melding",
+        "description": "Vi går gjennom antall ansatte, lønnsrutiner og hvilke rapporter dere trenger.",
+        "message": "Hei! Jeg trenger hjelp med lønnskjøring og A-melding."
+      }
+    ]
+  },
+  "en": {
+    "contact": "/en/contact/",
+    "privacy": "/en/privacy/",
+    "services": "/en/services/",
+    "lead": "Choose the situation that fits. You can take your selection into the contact form.",
+    "label": "Choose your situation",
+    "cta": "Request a quote",
+    "cases": [
+      {
+        "id": "oppstart",
+        "choice": "I’m starting a business",
+        "title": "Set up your books from day one",
+        "description": "We can help with software, routines for receipts and what to have ready before you invoice.",
+        "message": "Hello! I’m starting a business and would like help setting up the bookkeeping."
+      },
+      {
+        "id": "bytte",
+        "choice": "I want to switch firms",
+        "title": "Plan your transition",
+        "description": "We agree on a handover date and identify the access and records your current accountant needs to transfer.",
+        "message": "Hello! I’m thinking about switching accountants and would like to discuss the handover."
+      },
+      {
+        "id": "lonn",
+        "choice": "I need payroll support",
+        "title": "Get help with payroll and reporting",
+        "description": "We review your headcount, pay routines and reporting needs.",
+        "message": "Hello! I’d like help with payroll and A-melding reporting."
+      }
+    ]
+  },
+  "es": {
+    "contact": "/es/contact/",
+    "privacy": "/es/privacy/",
+    "services": "/es/services/",
+    "lead": "Elige tu situación. Puedes llevar tu selección al formulario de contacto.",
+    "label": "Elige tu situación",
+    "cta": "Solicitar presupuesto",
+    "cases": [
+      {
+        "id": "oppstart",
+        "choice": "Estoy creando una empresa",
+        "title": "Organiza tus cuentas desde el inicio",
+        "description": "Te ayudamos a elegir el programa de contabilidad y a organizar los justificantes y la facturación.",
+        "message": "¡Hola! Estoy creando una empresa y me gustaría recibir ayuda para organizar la contabilidad."
+      },
+      {
+        "id": "bytte",
+        "choice": "Quiero cambiar de asesoría",
+        "title": "Planifica el traspaso",
+        "description": "Acordamos la fecha de traspaso, los accesos y la documentación que debe entregar tu asesoría actual.",
+        "message": "¡Hola! Estoy pensando en cambiar de asesoría y me gustaría hablar del traspaso."
+      },
+      {
+        "id": "lonn",
+        "choice": "Necesito ayuda con las nóminas",
+        "title": "Recibe ayuda con las nóminas y las declaraciones",
+        "description": "Revisamos el número de empleados, el proceso de nómina y las declaraciones que necesitas.",
+        "message": "¡Hola! Necesito ayuda con las nóminas y las declaraciones A-melding."
+      }
+    ]
+  },
+  "ar": {
+    "contact": "/ar/contact/",
+    "privacy": "/ar/privacy/",
+    "services": "/ar/services/",
+    "lead": "اختر ما يناسب وضعك. يمكنك نقل اختيارك إلى نموذج التواصل.",
+    "label": "اختر وضع شركتك",
+    "cta": "اطلب عرض سعر",
+    "cases": [
+      {
+        "id": "oppstart",
+        "choice": "أبدأ مشروعًا جديدًا",
+        "title": "رتّب حساباتك منذ البداية",
+        "description": "نساعدك في اختيار النظام وتنظيم المستندات والاستعداد لإصدار الفواتير.",
+        "message": "مرحبًا! أبدأ مشروعًا جديدًا وأحتاج إلى مساعدة في إعداد المحاسبة."
+      },
+      {
+        "id": "bytte",
+        "choice": "أريد تغيير مكتب المحاسبة",
+        "title": "خطّط لانتقال منظم",
+        "description": "نتفق على موعد النقل والصلاحيات والمستندات التي يسلّمها المحاسب الحالي.",
+        "message": "مرحبًا! أفكر في تغيير مكتب المحاسبة وأرغب في معرفة خطوات الانتقال."
+      },
+      {
+        "id": "lonn",
+        "choice": "أحتاج إلى مساعدة في الرواتب",
+        "title": "احصل على دعم في الرواتب والتقارير",
+        "description": "نراجع عدد الموظفين وإجراءات الرواتب والتقارير التي تحتاج إليها.",
+        "message": "مرحبًا! أحتاج إلى مساعدة في الرواتب وتقارير A-melding."
+      }
+    ]
+  }
+}

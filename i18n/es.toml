@@ -1,3 +1,18 @@
+[quote_label]
+other = "Solicitar presupuesto"
+
+[footer_navigation]
+other = "¿Qué necesita tu empresa?"
+
+[primary_navigation]
+other = "Menú principal"
+
+[skip_content]
+other = "Saltar al contenido"
+
+[guide_title]
+other = "Encuentra la ayuda adecuada"
+
 [lang_label]
 other = "Idioma"
 
@@ -8,13 +23,13 @@ other = "Director general y contable autorizado"
 other = "Ver reseñas en Google"
 
 [welcome_services]
-other = "En qué podemos ayudarte"
+other = "Explora nuestros servicios"
 
 [agent_disclosure]
 other = "Un servicio externo procesa las respuestas de IA. Usa el formulario para consultas sobre tu cuenta."
 
 [studio_kicker]
-other = "Asesoría contable autorizada en Knarvik"
+other = "Asesoría contable en Knarvik para empresas de toda Noruega"
 
 [studio_story_title]
 other = "Una persona de contacto que conoce tu empresa"
@@ -46,8 +61,11 @@ other = "Horario"
 [contact_info_title]
 other = "Información de contacto"
 
+[site_seo_title]
+other = "Asesoría contable en Knarvik | Accountia"
+
 [contact_form_title]
-other = "Conversación sin compromiso"
+other = "Envíanos un mensaje"
 
 [contact_form_intro]
 other = "Envíanos un mensaje para una conversación sin compromiso o para recibir una cotización gratuita. Responderemos lo antes posible durante el horario laboral."

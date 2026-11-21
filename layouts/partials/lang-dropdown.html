@@ -53,7 +53,7 @@
           {{ end }}
           {{ $url = $targetPage.RelPermalink }}
         {{ end }}
-        <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}">{{ index $langNames $lang | default (upper $lang) }}</a>
+        <a class="lang-item {{ if eq site.Language.Lang $lang }}active{{ end }}" href="{{ $url }}" lang="{{ $lang }}" hreflang="{{ $lang }}"{{ if eq site.Language.Lang $lang }} aria-current="true"{{ end }}>{{ index $langNames $lang | default (upper $lang) }}</a>
       {{ end }}
     </div>
   </details>

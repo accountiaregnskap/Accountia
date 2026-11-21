@@ -1,36 +1,23 @@
 ---
 title: "Accountia"
-hero_title: "محاسبة تمنحك السيطرة."
-hero_lead: "تساعد Accountia الشركات الصغيرة والمتوسطة في المحاسبة والرواتب وضريبة القيمة المضافة والإقفال السنوي والاستشارات — عبر أنظمة حديثة ومتابعة واضحة."
-hero_cta_primary_label: "عرض سعر مجاني"
+hero_title: "أرقام تفهمها. أشخاص تعرفهم."
+hero_lead: "محاسبة ورواتب للشركات الصغيرة والمتوسطة. تتعامل مع محاسب يعرف شركتك ويشرح لك الأرقام بوضوح."
+hero_cta_primary_label: "اطلب عرض سعر"
 hero_cta_primary_url: "/ar/contact/#contact-form"
-hero_cta_secondary_label: "عرض الخدمات"
-hero_cta_secondary_url: "/ar/services/"
 hero_cards:
-  - title: "المحاسبة"
-    icon: "chart"
-    text: "مسك الدفاتر وضريبة القيمة المضافة والإقفال السنوي"
+  - title: "المحاسبة والإقفال السنوي"
+    photo: "accountia-samarbeid.jpg"
+    text: "نساعدك في مسك الدفاتر وتقارير ضريبة القيمة المضافة والإقفال السنوي."
     url: "/ar/services/accounting/"
   - title: "الرواتب والتقارير"
-    icon: "clock"
-    text: "إدارة الرواتب وتقديم التقارير"
+    photo: "accountia-lonn.jpg"
+    text: "نتولى إعداد الرواتب ومتابعة التقارير الدورية."
     url: "/ar/services/payroll/"
-  - title: "الاستعانة بمصادر خارجية"
-    icon: "handshake"
-    text: "دعم للمهام المالية في شركتك"
+  - title: "دعم القسم المالي"
+    photo: "accountia-bedrift.jpg"
+    text: "فوّض المهام التي تحتاج إلى دعم فيها، من الفوترة إلى إعداد التقارير."
     url: "/ar/services/outsourcing/"
 ---
-
-{{< value_cards
-title="محاسبة حديثة لتكون على اطلاع دائم"
-lead="نجمع بين إجراءات واضحة وأنظمة حديثة ومتابعة مستمرة — لتضمن تقارير صحيحة ورؤية كاملة."
-c1i="shield" c1t="موثوقية" c1d="تسليمات مُراجَعة بجودة عالية ومسؤولية واضحة."
-c2i="clock" c2t="وضوح وتخطيط" c2d="مواعيد ثابتة ومتابعة استباقية."
-c3i="chart" c3t="رؤية وبيانات" c3d="تقارير تساعدك على اتخاذ القرار — وليس أرقامًا فقط."
-c4i="chip" c4t="أنظمة أذكى" c4d="نعمل على Tripletex وPowerOffice وUniMicro وFiken وغيرها."
-c5i="handshake" c5t="سهولة التواصل" c5d="رد سريع وشريك يتابع معك باستمرار."
-c6i="target" c6t="تركيز على النمو" c6d="استشارات تدعم الربحية وتطوير العمل."
->}}
 
 {{< process_steps
 title="كيف نعمل — بشكل بسيط وواضح"
@@ -59,6 +46,6 @@ items="Damas Food AS::نحن راضون جدًا عن تعاوننا مع Accoun
 {{< cta_banner
 title="هل أنت جاهز لمزيد من السيطرة؟"
 lead="أرسل لنا رسالة وسنقترح أفضل إعداد يناسب نشاطك."
-btn_label="عرض سعر مجاني"
+btn_label="اطلب عرض سعر"
 btn_url="/ar/contact/#contact-form"
 >}}

@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-lead: "Ta kontakt for en uforpliktende prat – vi svarer innen åpningstid."
+lead: "Tell us what you need help with. We reply during business hours."
 bg: "/images/hero.jpg"
 ---
 

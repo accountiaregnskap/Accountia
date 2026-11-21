@@ -2,7 +2,7 @@
 title: "من نحن"
 translationKey: "site-about"
 bg: "/images/hero.jpg"
-lead: "فريق صغير بمعايير عالية — تنظيم وجودة ومتابعة قريبة."
+lead: "تعرّف على محاسبك وكيف نتابع أعمال شركتك."
 ---
 
 {{< anchor_point id="why-choose-us" >}}

@@ -5,10 +5,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="theme-color" content="#ffffff" />
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ i18n "site_seo_title" }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
 
 {{/* Open Graph + Twitter */}}
-{{- $ogTitle := (cond .IsHome site.Title (printf "%s · %s" .Title site.Title)) -}}
+{{- $ogTitle := (cond .IsHome (i18n "site_seo_title") (printf "%s · %s" .Title site.Title)) -}}
 {{- $ogDesc := or .Params.description .Description (or (.Summary | plainify | htmlUnescape | truncate 160) site.Params.description) -}}
 {{- $ogImage := site.Params.ogImage -}}
 {{- with .Params.og_image }}{{ $ogImage = . }}{{ end -}}
@@ -17,6 +17,9 @@
 {{- $ogImageAbs := ($ogImage | absURL) -}}
 
 <link rel="canonical" href="{{ .Permalink }}" />
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+{{ end }}
 <meta name="description" content="{{ $ogDesc }}" />
 
 <meta property="og:title" content="{{ $ogTitle }}" />
@@ -43,7 +46,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&{{ if eq .Lang "ar" }}family=Noto+Sans+Arabic:wght@400;500;600;700;800{{ else }}family=Manrope:wght@600;700;800{{ end }}&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?{{ if eq .Lang "ar" }}family=Noto+Sans+Arabic:wght@400;500;600;700;800{{ else }}family=Fraunces:opsz,wght@9..144,500..800&amp;family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800{{ end }}&amp;display=swap" rel="stylesheet">
 
-{{ $styles := resources.FromString "css/accountia.css" (printf "%s\n%s\n%s" (readFile "static/css/style.css") (readFile "static/css/modern.css") (readFile "static/css/studio.css")) | minify | fingerprint }}
+{{ $styles := resources.FromString "css/accountia.css" (delimit (slice (readFile "static/css/style.css") (readFile "static/css/modern.css") (readFile "static/css/studio.css") (readFile "static/css/editorial.css")) "\n") | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />

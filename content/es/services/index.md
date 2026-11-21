@@ -2,7 +2,7 @@
 title: "Servicios"
 translationKey: "site-services"
 bg: "/images/hero.jpg"
-lead: "Servicios para tener control, informes correctos y menos administración."
+lead: "Desde la contabilidad diaria hasta las nóminas y el cierre anual. Elige el apoyo que necesitas."
 ---
 
 {{< services_cards

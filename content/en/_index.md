@@ -1,36 +1,23 @@
 ---
 title: "Accountia"
-hero_title: "Accounting that gives you control."
-hero_lead: "Accountia helps small and mid-sized businesses with bookkeeping, payroll, VAT, annual reporting and advisory — using modern systems and clear follow-up."
-hero_cta_primary_label: "Free quote"
+hero_title: "Numbers you understand. People you know."
+hero_lead: "Accounting and payroll for small and mid-sized businesses. You’ll work with a dedicated accountant who knows your business and explains the numbers as you go."
+hero_cta_primary_label: "Request a quote"
 hero_cta_primary_url: "/en/contact/#contact-form"
-hero_cta_secondary_label: "View services"
-hero_cta_secondary_url: "/en/services/"
 hero_cards:
-  - title: "Bookkeeping"
-    icon: "chart"
-    text: "Bookkeeping, VAT and annual reporting"
+  - title: "Bookkeeping and annual accounts"
+    photo: "accountia-samarbeid.jpg"
+    text: "We handle bookkeeping, VAT reports and year-end accounts."
     url: "/en/services/bookkeeping/"
   - title: "Payroll and reporting"
-    icon: "clock"
-    text: "Accurate payroll and reporting"
+    photo: "accountia-lonn.jpg"
+    text: "We run payroll and take care of routine reporting."
     url: "/en/services/payroll/"
-  - title: "Outsourcing"
-    icon: "handshake"
-    text: "Support for your finance function"
+  - title: "Support for your finance team"
+    photo: "accountia-bedrift.jpg"
+    text: "Hand over the tasks you need help with, from invoicing to reporting."
     url: "/en/services/outsourcing/"
 ---
-
-{{< value_cards
-title="Modern accounting built for control"
-lead="We combine solid routines, modern systems and close follow‑up — so you get correct reporting and full visibility."
-c1i="shield" c1t="Reliability" c1d="Quality‑assured deliveries and clear ownership."
-c2i="clock" c2t="Predictability" c2d="Clear deadlines and proactive follow‑up."
-c3i="chart" c3t="Insights" c3d="Reports that help you make decisions — not just numbers."
-c4i="chip" c4t="Smarter systems" c4d="We work in Tripletex, PowerOffice, UniMicro, Fiken and more."
-c5i="handshake" c5t="Availability" c5d="Fast responses and a partner who follows up."
-c6i="target" c6t="Growth focus" c6d="Advisory that supports profitability and growth."
->}}
 
 {{< process_steps
 title="How we work – simple and predictable"
@@ -59,6 +46,6 @@ items="Damas Food AS::We are very pleased with our collaboration with Accountia 
 {{< cta_banner
 title="Ready for better control?"
 lead="Send us a message and we’ll recommend the best setup for your business."
-btn_label="Free quote"
+btn_label="Request a quote"
 btn_url="/en/contact/#contact-form"
 >}}

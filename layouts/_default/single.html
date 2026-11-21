@@ -7,6 +7,9 @@
       {{ if $isContact }}
         {{ partial "contact-form.html" . }}
       {{ end }}
+      {{ if eq .Params.translationKey "site-services" }}
+        {{ partial "visual-services.html" . }}
+      {{ end }}
       <div class="page-content{{ if $isPrivacy }} privacy-page-content{{ end }}">
         {{ .Content }}
       </div>

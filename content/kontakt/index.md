@@ -1,6 +1,7 @@
 ---
 title: "Kontakt"
-lead: "Ta kontakt for en uforpliktende prat eller et gratis pristilbud – vi svarer innen åpningstid."
+translationKey: "site-contact"
+lead: "Fortell oss hva du trenger hjelp med. Vi svarer i åpningstiden."
 bg: "/images/hero.jpg"
 ---
 

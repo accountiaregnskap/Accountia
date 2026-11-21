@@ -2,7 +2,7 @@
 title: "Sobre nosotros"
 translationKey: "site-about"
 bg: "/images/hero.jpg"
-lead: "Un equipo pequeño con estándares altos — estructura, calidad y seguimiento cercano."
+lead: "Conoce a tu contable y descubre cómo acompañamos a tu empresa."
 ---
 
 {{< anchor_point id="why-choose-us" >}}

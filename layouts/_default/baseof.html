@@ -7,7 +7,7 @@
   <body class="{{ .Kind }} {{ .Type }} {{ .Layout }}">
     {{ partial "header.html" . }}
 
-    <main class="site-main">
+    <main class="site-main" id="main-content">
       {{ block "main" . }}{{ end }}
     </main>
 

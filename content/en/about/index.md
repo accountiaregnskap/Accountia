@@ -2,7 +2,7 @@
 title: "About"
 translationKey: "site-about"
 bg: "/images/hero.jpg"
-lead: "A small team with high standards — structure, quality, and close follow-up."
+lead: "Meet your accountant and learn how we work with your business."
 ---
 
 {{< anchor_point id="why-choose-us" >}}

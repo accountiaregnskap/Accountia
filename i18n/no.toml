@@ -1,8 +1,23 @@
+[quote_label]
+other = "Be om pristilbud"
+
+[footer_navigation]
+other = "Hva trenger bedriften din?"
+
+[primary_navigation]
+other = "Hovedmeny"
+
+[skip_content]
+other = "Gå til innholdet"
+
+[guide_title]
+other = "Finn riktig hjelp"
+
 [agent_disclosure]
 other = "AI-svar behandles av en ekstern tjeneste. Bruk kontaktskjemaet for opplysninger om kundeforhold."
 
 [studio_kicker]
-other = "Autorisert regnskapsbyrå i Knarvik"
+other = "Et lokalt regnskapsbyrå med kunder over hele Norge"
 
 [studio_story_title]
 other = "En fast kontaktperson som kjenner bedriften din"
@@ -35,13 +50,16 @@ other = "Daglig leder og statsautorisert regnskapsfører"
 other = "Se anmeldelser på Google"
 
 [welcome_services]
-other = "Dette kan vi hjelpe med"
+other = "Sjekk hva vi kan hjelpe deg med"
 
 [contact_info_title]
 other = "Kontaktinformasjon"
 
+[site_seo_title]
+other = "Regnskapsbyrå i Knarvik | Accountia"
+
 [contact_form_title]
-other = "Uforpliktende prat"
+other = "Skriv til oss"
 
 [contact_form_intro]
 other = "Send oss en melding for en uforpliktende prat eller et gratis pristilbud. Vi svarer så raskt vi kan i åpningstiden."

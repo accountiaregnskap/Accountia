@@ -1,36 +1,23 @@
 ---
 title: "Accountia"
-hero_title: "Regnskap som gir deg kontroll."
-hero_lead: "Accountia hjelper små og mellomstore bedrifter med regnskapsføring, lønn, MVA, årsoppgjør og rådgivning – med moderne systemer og tydelig oppfølging."
-hero_cta_primary_label: "Gratis pristilbud"
+hero_title: "Tall du forstår. Folk du kjenner."
+hero_lead: "Regnskap og lønn for små og mellomstore bedrifter. Du får en fast regnskapsfører som kjenner virksomheten din og forklarer tallene underveis."
+hero_cta_primary_label: "Be om pristilbud"
 hero_cta_primary_url: "/kontakt/#contact-form"
-hero_cta_secondary_label: "Se tjenester"
-hero_cta_secondary_url: "/tjenester/"
 hero_cards:
-  - title: "Regnskapsføring"
-    icon: "chart"
-    text: "Bokføring, MVA og årsoppgjør"
+  - title: "Regnskap og årsoppgjør"
+    photo: "accountia-samarbeid.jpg"
+    text: "Vi fører regnskapet, følger opp MVA og gjør klart årsoppgjøret."
     url: "/tjenester/regnskap/"
   - title: "Lønn og A-melding"
-    icon: "clock"
-    text: "Trygg og korrekt lønnskjøring"
+    photo: "accountia-lonn.jpg"
+    text: "Vi kjører lønn og følger opp rapporteringen."
     url: "/tjenester/lonn/"
-  - title: "Outsourcing"
-    icon: "handshake"
-    text: "Avlastning for økonomifunksjonen"
+  - title: "Avlastning i økonomiarbeidet"
+    photo: "accountia-bedrift.jpg"
+    text: "Sett bort det du trenger, fra fakturering til løpende rapportering."
     url: "/tjenester/outsourcing/"
 ---
-
-{{< value_cards
-title="Et moderne regnskapsbyrå bygget for kontroll"
-lead="Vi kombinerer gode rutiner, moderne systemer og tett oppfølging – slik at du får riktig rapportering og full oversikt."
-c1i="shield" c1t="Trygghet" c1d="Kvalitetssikrede leveranser og tydelig ansvar."
-c2i="clock" c2t="Forutsigbarhet" c2d="Faste frister og proaktiv oppfølging."
-c3i="chart" c3t="Innsikt" c3d="Rapporter som gir deg kontroll – ikke bare tall."
-c4i="chip" c4t="Smartere systemer" c4d="Vi jobber i Tripletex, PowerOffice, UniMicro, Fiken m.fl."
-c5i="handshake" c5t="Tilgjengelighet" c5d="Du får raskt svar og en partner som følger opp."
-c6i="target" c6t="Vekstfokus" c6d="Rådgivning som støtter beslutninger og lønnsomhet."
->}}
 
 {{< process_steps
 title="Slik jobber vi – enkelt og forutsigbart"
@@ -59,6 +46,6 @@ items="Damas Food AS::Veldig fornøyd med samarbeidet med Accountia Regnskap. Pr
 {{< cta_banner
 title="Klar for bedre kontroll?"
 lead="Send oss en melding – så ser vi hva som passer for din bedrift."
-btn_label="Gratis pristilbud"
+btn_label="Be om pristilbud"
 btn_url="/kontakt/#contact-form"
 >}}

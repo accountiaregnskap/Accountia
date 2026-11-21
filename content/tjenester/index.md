@@ -2,7 +2,7 @@
 title: "Tjenester"
 translationKey: "site-services"
 bg: "/images/hero.jpg"
-lead: "Tjenester som gir kontroll, riktig rapportering og mindre administrasjon."
+lead: "Fra løpende bokføring til lønn og årsoppgjør. Velg det du trenger hjelp med."
 ---
 
 {{< services_cards

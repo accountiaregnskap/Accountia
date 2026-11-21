@@ -1,0 +1,16 @@
+{{ $home := site.Home }}
+<section class="visual-services" aria-labelledby="visual-services-title">
+  <h2 id="visual-services-title">{{ i18n "welcome_services" }}</h2>
+  <div class="visual-services-grid">
+    {{ range $home.Params.hero_cards }}
+      <a class="visual-service" href="{{ .url }}">
+        <img src="/images/{{ .photo }}" width="840" height="560" alt="" loading="lazy" decoding="async">
+        <span class="visual-service-copy">
+          <span class="visual-service-title">{{ .title }}</span>
+          <span class="visual-service-lead">{{ .text }}</span>
+          <span class="visual-service-arrow" aria-hidden="true">↗</span>
+        </span>
+      </a>
+    {{ end }}
+  </div>
+</section>

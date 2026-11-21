@@ -1,8 +1,23 @@
+[quote_label]
+other = "Request a quote"
+
+[footer_navigation]
+other = "What does your business need?"
+
+[primary_navigation]
+other = "Main navigation"
+
+[skip_content]
+other = "Skip to content"
+
+[guide_title]
+other = "Find the right support"
+
 [agent_disclosure]
 other = "AI replies are processed by an external service. Use the contact form for details about your account."
 
 [studio_kicker]
-other = "Authorised accounting firm in Knarvik"
+other = "An accounting firm in Knarvik working with clients across Norway"
 
 [studio_story_title]
 other = "A dedicated contact who knows your business"
@@ -35,13 +50,16 @@ other = "Managing director and authorised accountant"
 other = "See reviews on Google"
 
 [welcome_services]
-other = "How we can help"
+other = "Explore our services"
 
 [contact_info_title]
 other = "Contact information"
 
+[site_seo_title]
+other = "Accounting firm in Knarvik | Accountia"
+
 [contact_form_title]
-other = "No-obligation chat"
+other = "Send us a message"
 
 [contact_form_intro]
 other = "Send us a message for a no-obligation chat or a free quote. We'll get back to you as quickly as possible during business hours."
