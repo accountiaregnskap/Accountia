@@ -1,3 +1,18 @@
+[studio_kicker]
+other = "Autorisert regnskapsbyrå i Knarvik"
+
+[studio_story_title]
+other = "En fast kontaktperson som kjenner bedriften din"
+
+[studio_story_text]
+other = "Fra oppstart til årsoppgjør får du tydelige frister, løpende oppfølging og svar på spørsmål underveis."
+
+[studio_story_url]
+other = "/om-oss/#who-we-are"
+
+[studio_story_link]
+other = "Bli kjent med Accountia"
+
 [footer_contact]
 other = "Kontakt"
 

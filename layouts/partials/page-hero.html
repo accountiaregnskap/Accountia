@@ -1,6 +1,12 @@
-<section class="title-band">
+{{ $hasPhoto := eq .Params.translationKey "site-services" }}
+<section class="title-band{{ if $hasPhoto }} title-band--photo{{ end }}">
   <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
+    <div>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.lead }}<p>{{ . }}</p>{{ end }}
+    </div>
+    {{ if $hasPhoto }}
+      <img src="/images/accountia-bedrift.jpg" width="840" height="560" alt="" decoding="async">
+    {{ end }}
   </div>
 </section>

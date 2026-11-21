@@ -7,8 +7,13 @@
         <button type="button" class="customer-help-close" aria-label="{{ .close }}" hidden>×</button>
       </div>
       <p>{{ .intro }}</p>
+      <div class="customer-chat-log" role="log" aria-live="polite" hidden></div>
+      <form class="customer-chat-form" hidden>
+        <input name="question" aria-label="{{ .placeholder }}" placeholder="{{ .placeholder }}" maxlength="300" autocomplete="off" required>
+        <button type="submit">{{ .send }}</button>
+      </form>
       <div class="customer-help-questions">
-        {{ range .questions }}
+        {{ range first 3 .questions }}
           <details name="accountia-help-topic">
             <summary>{{ .question }}</summary>
             <p>{{ .answer }}{{ if .url }} <a href="{{ .url }}">{{ .link }}</a>{{ end }}</p>
@@ -16,6 +21,9 @@
         {{ end }}
       </div>
       <a class="customer-help-contact" href="{{ .contact_url }}">{{ .contact }}</a>
+      <script class="customer-chat-topics" type="application/json">
+        {{ dict "questions" .questions "unknown" .unknown "contact" .contact "contactUrl" .contact_url | jsonify | safeJS }}
+      </script>
     </section>
   </details>
 {{ end }}

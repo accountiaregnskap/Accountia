@@ -14,7 +14,8 @@
     {{ partial "footer.html" . }}
     {{ partial "customer-help.html" . }}
 
-    <script src="{{ "js/site.js" | relURL }}" defer></script>
+    {{ $script := resources.FromString "js/accountia.js" (readFile "static/js/site.js") | minify | fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
 
   </body>
 </html>

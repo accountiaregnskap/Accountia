@@ -1,91 +1,263 @@
 [no]
 label = "Spør Accountia"
-intro = "Velg et spørsmål for å få et raskt svar."
+intro = "Skriv et spørsmål om priser, tjenester eller oppstart."
+placeholder = "Skriv spørsmålet ditt"
+send = "Send"
+unknown = "Jeg fant ikke et sikkert svar i informasjonen vår. Kontakt oss, så hjelper vi deg videre."
 close = "Lukk hjelpen"
 contact = "Kontakt oss"
 contact_url = "/kontakt/#contact-form"
 [[no.questions]]
 question = "Hvordan får jeg et pristilbud?"
+keywords = ["pris","priser","kostnad","koster","pristilbud","tilbud","prisen"]
 answer = "Fortell litt om bedriften og hva du trenger. Vi vurderer omfanget og gir deg et gratis, tilpasset pristilbud."
 link = "Les om priser"
 url = "/priser/"
 [[no.questions]]
 question = "Kan dere hjelpe meg å bytte regnskapsfører?"
+keywords = ["bytte","bytter","skifte","skifter","ny regnskapsfører","ny regnskapsforer","endre regnskapsfører"]
 answer = "Ja. Vi planlegger overgangen med deg og avklarer hva som må overføres, ansvar og frister."
 [[no.questions]]
 question = "Hva kan dere hjelpe bedriften min med?"
+keywords = ["tjenester","tilbyr"]
 answer = "Vi hjelper med regnskap, lønn og A-melding, MVA, årsoppgjør og økonomisk rådgivning."
 link = "Se tjenester"
 url = "/tjenester/"
 [[no.questions]]
 question = "Hvilke språk finnes på nettsiden?"
+keywords = ["språk","engelsk","norsk","arabisk","spansk"]
 answer = "Nettsiden finnes på norsk, engelsk, spansk og arabisk. Bruk språkvelgeren i menyen."
+[[no.questions]]
+question = "Hvor holder dere til?"
+answer = "Du finner oss på Kvernhusmyrane 1, 5914 Isdalstø, ved AMFI Knarvik."
+link = "Adresse og kontakt"
+url = "/kontakt/"
+keywords = ["adresse","knarvik","isdalstø","ligger","besøke","sted","parkering"]
+[[no.questions]]
+question = "Hvordan får jeg tak i dere?"
+answer = "Ring 483 42 461, send e-post til info@acountia.no eller bruk kontaktskjemaet. Du finner de oppgitte åpningstidene på kontaktsiden."
+link = "Kontakt oss"
+url = "/kontakt/#contact-form"
+keywords = ["kontakt","telefon","nummer","ring","epost","e post","mail","åpningstid","åpningstider","åpent"]
+[[no.questions]]
+question = "Kan dere ta lønn og A-melding?"
+answer = "Vi hjelper med lønnskjøring og A-melding, fra oppsett til løpende rapportering."
+link = "Les om lønn"
+url = "/tjenester/lonn/"
+keywords = ["lønn","lonn","lønnskjøring","a melding","amelding","lønninger","ansatte"]
+[[no.questions]]
+question = "Kan dere hjelpe med MVA og årsoppgjør?"
+answer = "Vi hjelper med løpende bokføring, MVA-rapportering og årsoppgjør. Fortell oss hvordan dere jobber i dag, så avklarer vi hva dere trenger."
+link = "Les om regnskap"
+url = "/tjenester/regnskap/"
+keywords = ["mva","merverdiavgift","moms","årsoppgjør","skattemelding","bokføring","regnskap"]
+[[no.questions]]
+question = "Hvilke regnskapssystemer bruker dere?"
+answer = "Vi jobber i blant annet Tripletex, PowerOffice, UniMicro og Fiken."
+link = "Les om regnskap"
+url = "/tjenester/regnskap/"
+keywords = ["system","systemer","regnskapssystem","tripletex","poweroffice","unimicro","fiken"]
+[[no.questions]]
+question = "Kan dere overta økonomifunksjonen?"
+answer = "Vi kan avlaste hele eller deler av økonomifunksjonen, avhengig av hva bedriften trenger."
+link = "Les om outsourcing"
+url = "/tjenester/outsourcing/"
+keywords = ["outsourcing","utkontraktering","økonomifunksjon","økonomifunksjonen","avlaste"]
 
 [en]
 label = "Ask Accountia"
-intro = "Choose a question for a quick answer."
+intro = "Ask a question about pricing, services or getting started."
+placeholder = "Type your question"
+send = "Send"
+unknown = "I couldn’t find a reliable answer in our information. Contact us and we’ll help."
 close = "Close help"
 contact = "Contact us"
 contact_url = "/en/contact/#contact-form"
 [[en.questions]]
 question = "How do I get a quote?"
+keywords = ["price","pricing","cost","costs","fee","quote","estimate","charge","how much"]
 answer = "Tell us a little about your business and what you need. We’ll assess the scope and provide a free, tailored quote."
 link = "Read about pricing"
 url = "/en/prices/"
 [[en.questions]]
 question = "Can you help me switch accountants?"
+keywords = ["switch","switching","change accountants","new accountant","transfer"]
 answer = "Yes. We’ll plan the transition with you and agree what needs to be transferred, responsibilities and deadlines."
 [[en.questions]]
 question = "What can you help my business with?"
+keywords = ["services","service","offer"]
 answer = "We help with bookkeeping, payroll and reporting, VAT, annual accounts and financial advice."
 link = "View services"
 url = "/en/services/"
 [[en.questions]]
 question = "Which languages is the website available in?"
+keywords = ["language","languages","norwegian","english","arabic","spanish"]
 answer = "The website is available in Norwegian, English, Spanish and Arabic. Use the language selector in the menu."
+[[en.questions]]
+question = "Where are you based?"
+answer = "Our office is at Kvernhusmyrane 1, 5914 Isdalstø, by AMFI Knarvik."
+link = "Address and contact"
+url = "/en/contact/"
+keywords = ["where are you","location","address","knarvik","isdalsto","office","visit"]
+[[en.questions]]
+question = "How can I contact you?"
+answer = "Call +47 483 42 461, email info@acountia.no or use our contact form. Our opening hours are on the contact page."
+link = "Contact us"
+url = "/en/contact/#contact-form"
+keywords = ["contact","phone","call","number","email","opening","hours","open"]
+[[en.questions]]
+question = "Can you handle payroll?"
+answer = "We help with payroll and A-melding reporting, from the initial setup to regular reports."
+link = "Read about payroll"
+url = "/en/services/payroll/"
+keywords = ["payroll","salary","wages","payslip","employees","a melding"]
+[[en.questions]]
+question = "Can you help with VAT and annual accounts?"
+answer = "We can help with bookkeeping, VAT reporting and annual accounts. Tell us how your business works today so we can assess what you need."
+link = "Read about bookkeeping"
+url = "/en/services/bookkeeping/"
+keywords = ["vat","tax","bookkeeping","annual accounts","annual reporting","accounting"]
+[[en.questions]]
+question = "Which accounting systems do you use?"
+answer = "We work with systems including Tripletex, PowerOffice, UniMicro and Fiken."
+link = "Read about bookkeeping"
+url = "/en/services/bookkeeping/"
+keywords = ["software","systems","system","tripletex","poweroffice","unimicro","fiken"]
+[[en.questions]]
+question = "Can you take over our finance function?"
+answer = "We can support part or all of your finance function, depending on what your business needs."
+link = "Read about outsourcing"
+url = "/en/services/outsourcing/"
+keywords = ["outsourcing","outsource","finance function","external"]
 
 [es]
 label = "Pregunta a Accountia"
-intro = "Elige una pregunta para ver una respuesta rápida."
+intro = "Escribe una pregunta sobre precios, servicios o cómo empezar."
+placeholder = "Escribe tu pregunta"
+send = "Enviar"
+unknown = "No he encontrado una respuesta fiable en nuestra información. Contáctanos y te ayudaremos."
 close = "Cerrar ayuda"
 contact = "Contáctanos"
 contact_url = "/es/contact/#contact-form"
 [[es.questions]]
 question = "¿Cómo solicito un presupuesto?"
+keywords = ["precio","precios","coste","costo","cuesta","presupuesto","tarifa"]
 answer = "Cuéntanos un poco sobre tu empresa y lo que necesitas. Evaluaremos el alcance y te daremos un presupuesto gratuito y personalizado."
 link = "Información sobre precios"
 url = "/es/prices/"
 [[es.questions]]
 question = "¿Pueden ayudarme a cambiar de contable?"
+keywords = ["cambiar","cambio","nuevo contable","traslado"]
 answer = "Sí. Planificamos la transición contigo y acordamos qué hay que transferir, quién se encarga de cada tarea y qué plazos debemos cumplir."
 [[es.questions]]
 question = "¿En qué pueden ayudar a mi empresa?"
+keywords = ["servicio","servicios","ofrecen"]
 answer = "Te ayudamos con la contabilidad, las nóminas y declaraciones, el IVA, el cierre anual y la asesoría financiera."
 link = "Ver servicios"
 url = "/es/services/"
 [[es.questions]]
 question = "¿En qué idiomas está disponible el sitio?"
+keywords = ["idiomas","idioma","noruego","inglés","árabe","español"]
 answer = "El sitio está disponible en noruego, inglés, español y árabe. Puedes cambiar de idioma desde el menú."
+[[es.questions]]
+question = "¿Dónde está vuestra oficina?"
+answer = "Nuestra oficina está en Kvernhusmyrane 1, 5914 Isdalstø, junto a AMFI Knarvik."
+link = "Dirección y contacto"
+url = "/es/contact/"
+keywords = ["dónde","ubicacion","direccion","oficina","knarvik","isdalsto","visita"]
+[[es.questions]]
+question = "¿Cómo puedo contactar?"
+answer = "Llámanos al +47 483 42 461, escribe a info@acountia.no o usa el formulario. El horario figura en la página de contacto."
+link = "Contáctanos"
+url = "/es/contact/#contact-form"
+keywords = ["contacto","teléfono","llamar","correo","email","horario","abierto"]
+[[es.questions]]
+question = "¿Gestionan nóminas?"
+answer = "Podemos ayudarte con las nóminas y con las declaraciones A-melding, desde la configuración hasta la presentación periódica."
+link = "Información sobre nóminas"
+url = "/es/services/nomina/"
+keywords = ["nómina","nóminas","salario","salarios","empleados","a melding"]
+[[es.questions]]
+question = "¿Pueden llevar el IVA y el cierre anual?"
+answer = "Ofrecemos apoyo con la contabilidad, las declaraciones de IVA y el cierre anual."
+link = "Información sobre contabilidad"
+url = "/es/services/contabilidad/"
+keywords = ["iva","contabilidad","cierre anual","impuestos"]
+[[es.questions]]
+question = "¿Qué programas contables usan?"
+answer = "Trabajamos, entre otros, con Tripletex, PowerOffice, UniMicro y Fiken."
+link = "Información sobre contabilidad"
+url = "/es/services/contabilidad/"
+keywords = ["programas","programa","software","tripletex","poweroffice","unimicro","fiken"]
+[[es.questions]]
+question = "¿Puedo externalizar mi contabilidad?"
+answer = "Podemos ocuparnos de toda o parte de tu función financiera según lo que necesite tu empresa."
+link = "Información sobre externalización"
+url = "/es/services/outsourcing/"
+keywords = ["externalización","externalizar","outsourcing","departamento financiero"]
 
 [ar]
 label = "اسأل Accountia"
-intro = "اختر سؤالًا للحصول على إجابة سريعة."
+intro = "اكتب سؤالًا عن الأسعار أو الخدمات أو كيفية البدء."
+placeholder = "اكتب سؤالك"
+send = "إرسال"
+unknown = "لم أجد إجابة موثوقة ضمن المعلومات المتاحة. تواصل معنا لمساعدتك."
 close = "إغلاق المساعدة"
 contact = "اتصل بنا"
 contact_url = "/ar/contact/#contact-form"
 [[ar.questions]]
 question = "كيف أحصل على عرض سعر؟"
+keywords = ["سعر","السعر","اسعار","أسعار","تكلفة","كم يكلف","عرض سعر","تسعير"]
 answer = "أخبرنا قليلًا عن شركتك والخدمات التي تحتاج إليها. نحدد نطاق العمل ونقدم لك عرض سعر مجانيًا يناسب احتياجاتك."
 link = "اطّلع على معلومات الأسعار"
 url = "/ar/prices/"
 [[ar.questions]]
 question = "هل تساعدونني في تغيير المحاسب؟"
+keywords = ["تغيير","تبديل","تغيير المحاسب","محاسب جديد","الانتقال"]
 answer = "نعم. نخطط للانتقال معك ونوضح ما يجب نقله، ومن يتولى كل مهمة، والمواعيد التي يجب الالتزام بها."
 [[ar.questions]]
 question = "ما الخدمات التي تقدمونها لشركتي؟"
+keywords = ["خدمات","الخدمات","تقدمون"]
 answer = "نساعدك في مسك الدفاتر والرواتب والتقارير وضريبة القيمة المضافة والإقفال السنوي والاستشارات المالية."
 link = "اطّلع على الخدمات"
 url = "/ar/services/"
 [[ar.questions]]
 question = "ما اللغات التي يتوفر بها الموقع؟"
+keywords = ["لغة","اللغة","اللغات","النرويجية","العربية","الإنجليزية","الإسبانية"]
 answer = "يتوفر الموقع بالنرويجية والإنجليزية والإسبانية والعربية. يمكنك تغيير اللغة من القائمة."
+[[ar.questions]]
+question = "أين يقع مكتبكم؟"
+answer = "يقع مكتبنا في Kvernhusmyrane 1، 5914 Isdalstø، بجوار AMFI Knarvik."
+link = "العنوان والتواصل"
+url = "/ar/contact/"
+keywords = ["اين","أين","عنوان","العنوان","موقع","المكتب","كنارفيك","زيارة"]
+[[ar.questions]]
+question = "كيف أتواصل معكم؟"
+answer = "اتصل على ‎+47 483 42 461 أو راسلنا على info@acountia.no أو استخدم النموذج. تجد ساعات العمل في صفحة التواصل."
+link = "اتصل بنا"
+url = "/ar/contact/#contact-form"
+keywords = ["اتصال","تواصل","هاتف","رقم","بريد","ساعات العمل","الدوام"]
+[[ar.questions]]
+question = "هل تساعدون في الرواتب؟"
+answer = "نساعد في إدارة الرواتب وتقديم تقارير A-melding، من الإعداد حتى المتابعة الدورية."
+link = "اطّلع على خدمات الرواتب"
+url = "/ar/services/payroll/"
+keywords = ["راتب","رواتب","الرواتب","موظفين","الأجور","اجور","a melding"]
+[[ar.questions]]
+question = "هل تساعدون في ضريبة القيمة المضافة والإقفال السنوي؟"
+answer = "نساعدك في مسك الدفاتر وتقارير ضريبة القيمة المضافة والإقفال السنوي."
+link = "اطّلع على خدمات المحاسبة"
+url = "/ar/services/accounting/"
+keywords = ["ضريبة","الضريبة","ضرائب","القيمة المضافة","محاسبة","المحاسبة","الاقفال","الإقفال","الدفاتر"]
+[[ar.questions]]
+question = "ما برامج المحاسبة التي تستخدمونها؟"
+answer = "نعمل مع عدة أنظمة، منها Tripletex وPowerOffice وUniMicro وFiken."
+link = "اطّلع على خدمات المحاسبة"
+url = "/ar/services/accounting/"
+keywords = ["برامج","برنامج","الأنظمة","انظمة","نظام","tripletex","poweroffice","unimicro","fiken"]
+[[ar.questions]]
+question = "هل يمكنكم تولّي المهام المالية؟"
+answer = "ندعم كامل المهام المالية أو جزءًا منها بما يناسب احتياجات شركتك."
+link = "اطّلع على خدمات الاستعانة بمصادر خارجية"
+url = "/ar/services/outsourcing/"
+keywords = ["استعانة","الاستعانة","مصادر خارجية","المهام المالية","تفويض"]
